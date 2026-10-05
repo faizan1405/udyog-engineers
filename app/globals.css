@@ -1,26 +1,181 @@
 @import "tailwindcss";
 
+/**
+ * UDYOG ENGINEERS — DESIGN SYSTEM TOKENS
+ * LIGHT MODE ONLY
+ *
+ * Visual Identity:
+ * Premium Technology + Precision Equipment + Field Research + Professional Instruments.
+ * Inspired by warm white, ivory, soft grey, light beige/sand, technical charcoal,
+ * restrained deep forest green, and muted brass/gold accents.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surfaces & Backgrounds - Warm Ivory, Pure White, Soft Stone, Pale Sand */
+  --background: #F8F7F4;
+  --surface: #FFFFFF;
+  --surface-elevated: #FFFFFF;
+  --surface-secondary: #F2F0EB;
+  --surface-tertiary: #E8E5DC;
+
+  /* Typography Colors - Deep Graphite, Weathered Charcoal, Field Slate */
+  --text-primary: #141715;
+  --text-secondary: #4D544F;
+  --text-muted: #6E7570;
+
+  /* Borders & Dividers - Hairline Stone, Frame Border */
+  --border: #E2DFD6;
+  --border-subtle: #EFECE5;
+  --border-strong: #CBC7BA;
+
+  /* Brand Accents - Primary: Deep Alpine Moss / Field Olive */
+  --accent-primary: #1E3A2F;
+  --accent: #1E3A2F;
+  --accent-hover: #152A22;
+  --accent-muted: #E8EFEB;
+  --accent-foreground: #FFFFFF;
+
+  /* Brand Accents - Secondary: Muted Compass Brass / Instrument Bronze (WCAG AA Compliant) */
+  --accent-secondary: #8E733B;
+  --accent-secondary-hover: #755E2E;
+  --accent-secondary-muted: #F5F1E6;
+
+  /* Contextual Accents */
+  --accent-whatsapp: #1D7349;
+
+  /* System Focus */
+  --ring: #1E3A2F;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-tertiary: var(--surface-tertiary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-hover: var(--accent-secondary-hover);
+  --color-accent-secondary-muted: var(--accent-secondary-muted);
+  --color-accent-whatsapp: var(--accent-whatsapp);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-body), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-display), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --ease-precision: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-mechanical: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Precision Damped Transition Utilities (Phase 7B) */
+.ease-precision {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.transition-precision {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 200ms;
+}
+
+@keyframes megaMenuReveal {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-megamenu {
+  animation: megaMenuReveal 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+@keyframes mobileDrawerReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-mobile-drawer {
+  animation: mobileDrawerReveal 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Base resets & typography foundation */
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessible focus ring style */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Typography Scale Base Helpers */
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+/* Reduced motion accessibility adherence */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
