@@ -15,8 +15,9 @@ import {
   CheckCircle2,
   type LucideIcon,
 } from "lucide-react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { cn } from "@/lib/utils";
+import { cn, assetPath } from "@/lib/utils";
 import { motion, useReducedMotion } from "framer-motion";
 import { PRECISION_EASE, DURATION } from "@/lib/motion";
 
@@ -31,6 +32,8 @@ interface ApplicationDomain {
   environmentalContext: string[];
   coordinateRef: string;
   elevationRef: string;
+  imageSrc: string;
+  imageAlt: string;
 }
 
 const APPLICATION_DOMAINS: ApplicationDomain[] = [
@@ -52,8 +55,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Steep gradient timber areas",
       "High ambient moisture environments",
     ],
-    coordinateRef: "FIELD REF // APP-01",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-01",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-forestry.webp",
+    imageAlt: "Forestry resource observation and timber measurement environment",
   },
   {
     id: "wildlife",
@@ -73,8 +78,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Remote reserve & sanctuary locations",
       "Variable field lighting conditions",
     ],
-    coordinateRef: "FIELD REF // APP-02",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-02",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-wildlife.webp",
+    imageAlt: "Wildlife observation and fauna monitoring habitat environment",
   },
   {
     id: "survey",
@@ -94,8 +101,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Benchmark & control point reference",
       "Variable topographical surfaces",
     ],
-    coordinateRef: "FIELD REF // APP-03",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-03",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-survey.webp",
+    imageAlt: "Topographical surveying and geodetic coordinate capture outdoor environment",
   },
   {
     id: "geological-research",
@@ -115,8 +124,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Mountainous & remote formations",
       "Field strike & dip recording",
     ],
-    coordinateRef: "FIELD REF // APP-04",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-04",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-geological.webp",
+    imageAlt: "Geological stratigraphic mapping and rock outcrop field research environment",
   },
   {
     id: "environmental-monitoring",
@@ -136,8 +147,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Continuous field recording setups",
       "Remote microclimate stations",
     ],
-    coordinateRef: "FIELD REF // APP-05",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-05",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-environmental.webp",
+    imageAlt: "Automated meteorological monitoring station in outdoor field conditions",
   },
   {
     id: "security",
@@ -157,8 +170,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Perimeter line-of-sight monitoring",
       "Stationary & patrol deployments",
     ],
-    coordinateRef: "FIELD REF // APP-06",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-06",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-security.webp",
+    imageAlt: "Perimeter observation and electro-optical surveillance field station",
   },
   {
     id: "field-research",
@@ -178,8 +193,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "On-site manual data collection",
       "Diverse ecological habitats",
     ],
-    coordinateRef: "FIELD REF // APP-07",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-07",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-field-research.webp",
+    imageAlt: "Scientific expedition fieldwork and ecological research deployment",
   },
   {
     id: "outdoor-operations",
@@ -199,8 +216,10 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Off-grid operational setups",
       "Exposure to outdoor elements",
     ],
-    coordinateRef: "FIELD REF // APP-08",
-    elevationRef: "DEPLOYMENT CONTEXT // FIELD",
+    coordinateRef: "Field Ref · App-08",
+    elevationRef: "Deployment Context · Field",
+    imageSrc: "/images/generated/home/environments/environment-outdoor.webp",
+    imageAlt: "Remote outdoor operations and high-altitude expedition terrain",
   },
 ];
 
@@ -229,21 +248,23 @@ export function ApplicationsSection() {
         {/* Section Registration Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8 mb-10 border-b border-border">
           <div>
-            <div className="flex items-center gap-2 font-mono text-xs text-accent-secondary tracking-wider uppercase mb-2">
-              <span className="font-semibold">04 // APPLICATIONS &amp; ENVIRONMENTS</span>
-              <span className="text-border-strong">|</span>
-              <span className="text-text-muted">DEPLOYMENT DOMAINS</span>
+            <div className="flex items-center gap-2 font-sans text-xs text-accent-secondary mb-2 font-medium">
+              <span className="font-mono font-semibold">04</span>
+              <span>·</span>
+              <span className="font-semibold text-accent-secondary">Operational Domains</span>
+              <span className="text-border-strong">·</span>
+              <span className="text-text-muted">Field Environments</span>
             </div>
             <h2
               id="applications-heading"
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-text-primary font-display"
+              className="font-display font-semibold text-[30px] sm:text-[36px] md:text-[42px] lg:text-[50px] text-text-primary tracking-[-0.035em] leading-[1.06]"
             >
               Selected for Demanding Field Environments
             </h2>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-            <p className="font-sans text-sm text-text-secondary max-w-md leading-relaxed">
+            <p className="font-sans text-[15px] sm:text-base text-text-secondary max-w-md leading-relaxed">
               Technical instrumentation selected for rugged terrains, remote fieldwork, ecological monitoring, and precision geodetic measurement.
             </p>
           </div>
@@ -253,7 +274,11 @@ export function ApplicationsSection() {
             MOBILE TAB BAR (< 1024px)
             Clean, horizontally scrollable tabs with clear active state
            ========================================================================= */}
-        <div className="lg:hidden mb-6 -mx-4 px-4 overflow-x-auto scrollbar-none flex gap-2">
+        {/* =========================================================================
+            MOBILE TAB BAR (< 1024px)
+            Horizontally scrollable full-bleed photo cards with clear active state
+           ========================================================================= */}
+        <div className="lg:hidden mb-6 -mx-4 px-4 overflow-x-auto scrollbar-none flex gap-2.5">
           {APPLICATION_DOMAINS.map((domain, index) => {
             const isSelected = index === selectedIndex;
             return (
@@ -262,18 +287,56 @@ export function ApplicationsSection() {
                 type="button"
                 onClick={() => setSelectedIndex(index)}
                 className={cn(
-                  "shrink-0 inline-flex items-center gap-2 px-3.5 py-2 rounded-[2px] border text-xs font-mono transition-colors min-h-[44px]",
+                  "group relative shrink-0 overflow-hidden rounded-xl border p-3 min-w-[145px] sm:min-w-[165px] min-h-[64px] flex flex-col justify-between transition-all duration-300 text-left",
                   isSelected
-                    ? "bg-accent text-white border-accent font-semibold"
-                    : "bg-surface border-border text-text-secondary hover:border-accent-secondary"
+                    ? "border-accent ring-1 ring-accent shadow-md"
+                    : "border-white/20 shadow-2xs"
                 )}
                 aria-selected={isSelected}
                 role="tab"
               >
-                <span className={isSelected ? "text-accent-secondary-muted" : "text-accent-secondary"}>
-                  {domain.index}
+                {/* LAYER 1: Full-Bleed Environment Photo (z-0) */}
+                <div className="absolute inset-0 z-0 overflow-hidden">
+                  <Image
+                    src={assetPath(domain.imageSrc)}
+                    alt=""
+                    fill
+                    sizes="165px"
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                {/* LAYER 2: Controlled Gradient Overlay (z-10) */}
+                <div
+                  aria-hidden="true"
+                  className={cn(
+                    "absolute inset-0 z-10 transition-opacity duration-300 pointer-events-none",
+                    isSelected
+                      ? "bg-gradient-to-t from-black/85 via-black/45 to-black/20"
+                      : "bg-gradient-to-t from-black/90 via-black/60 to-black/35"
+                  )}
+                />
+
+                {/* LAYER 3: Content (z-20) */}
+                <div className="relative z-20 flex items-center justify-between w-full">
+                  <span
+                    className={cn(
+                      "font-mono text-xs font-bold px-1.5 py-0.5 rounded-sm text-[10px]",
+                      isSelected
+                        ? "bg-accent text-white"
+                        : "bg-black/60 text-accent-secondary border border-white/10"
+                    )}
+                  >
+                    {domain.index}
+                  </span>
+                  {isSelected && (
+                    <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                  )}
+                </div>
+
+                <span className="relative z-20 font-display font-semibold text-xs text-white mt-2 truncate drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+                  {domain.title}
                 </span>
-                <span>{domain.title}</span>
               </button>
             );
           })}
@@ -281,22 +344,22 @@ export function ApplicationsSection() {
 
         {/* =========================================================================
             EDITORIAL SPLIT-SCREEN LAYOUT
-            Left (5 cols): Architectural Vertical Index
+            Left (5 cols): Architectural Vertical Photo Index (All 8 Domains)
             Right (7 cols): Active Technical Deployment Dossier
            ========================================================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* LEFT: Application Index (Desktop) */}
+          {/* LEFT: Application Index (Desktop) — 8 Full-Bleed Photo Cards */}
           <div
             role="tablist"
             aria-label="Application Domains"
-            className="hidden lg:flex flex-col border border-border bg-surface rounded-[2px] overflow-hidden lg:col-span-5"
+            className="hidden lg:flex flex-col gap-2.5 lg:col-span-5"
           >
-            <div className="px-5 py-3 border-b border-border bg-surface-secondary/40 flex items-center justify-between text-[11px] font-mono text-text-muted">
-              <span>INDEX // 08 DOMAINS</span>
-              <span>SELECT TO INSPECT</span>
+            <div className="px-1 py-0.5 flex items-center justify-between text-xs font-sans text-text-muted font-medium">
+              <span>Deployment Domains (01–08)</span>
+              <span>Select to inspect</span>
             </div>
 
-            <div className="divide-y divide-border-subtle">
+            <div className="flex flex-col gap-2.5">
               {APPLICATION_DOMAINS.map((domain, index) => {
                 const isSelected = index === selectedIndex;
                 const IconComponent = domain.icon;
@@ -311,43 +374,79 @@ export function ApplicationsSection() {
                     type="button"
                     onClick={() => setSelectedIndex(index)}
                     className={cn(
-                      "w-full text-left p-4.5 transition-all flex items-start gap-3.5 group relative",
+                      "group relative w-full text-left p-3.5 rounded-xl border overflow-hidden transition-all duration-300 flex items-center justify-between min-h-[66px]",
                       isSelected
-                        ? "bg-surface-secondary/80 border-l-[3px] border-l-accent"
-                        : "hover:bg-surface-secondary/30 border-l-[3px] border-l-transparent"
+                        ? "border-accent ring-1 ring-accent shadow-md"
+                        : "border-border/80 hover:border-white/40 shadow-2xs"
                     )}
                   >
-                    <span
-                      className={cn(
-                        "font-mono text-xs font-semibold shrink-0 mt-0.5",
-                        isSelected ? "text-accent font-bold" : "text-accent-secondary"
-                      )}
-                    >
-                      {domain.index}
-                    </span>
+                    {/* LAYER 1: Full-Bleed Environment Photo (z-0) */}
+                    <div className="absolute inset-0 z-0 overflow-hidden">
+                      <Image
+                        src={assetPath(domain.imageSrc)}
+                        alt=""
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 40vw"
+                        className={cn(
+                          "object-cover object-center transition-transform duration-500 ease-out",
+                          isSelected ? "scale-[1.04]" : "group-hover:scale-[1.04]"
+                        )}
+                      />
+                    </div>
 
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between gap-2">
-                        <span
-                          className={cn(
-                            "font-display font-semibold text-sm transition-colors",
-                            isSelected
-                              ? "text-text-primary font-bold"
-                              : "text-text-primary group-hover:text-accent"
-                          )}
-                        >
-                          {domain.title}
-                        </span>
-                        <IconComponent
-                          className={cn(
-                            "w-4 h-4 shrink-0 transition-colors",
-                            isSelected ? "text-accent" : "text-text-muted group-hover:text-text-secondary"
-                          )}
-                        />
+                    {/* LAYER 2: Controlled Gradient Overlay (z-10, photo 65-80% visible) */}
+                    <div
+                      aria-hidden="true"
+                      className={cn(
+                        "absolute inset-0 z-10 transition-opacity duration-300 pointer-events-none",
+                        isSelected
+                          ? "bg-gradient-to-r from-black/75 via-black/45 to-black/25"
+                          : "bg-gradient-to-r from-black/85 via-black/60 to-black/35 group-hover:from-black/75 group-hover:via-black/50 group-hover:to-black/25"
+                      )}
+                    />
+
+                    {/* Active Brand Accent Bar (z-10) */}
+                    {isSelected && (
+                      <div
+                        aria-hidden="true"
+                        className="absolute left-0 top-0 bottom-0 w-1 bg-accent z-10"
+                      />
+                    )}
+
+                    {/* LAYER 3: Content (z-20) */}
+                    <div className="relative z-20 flex items-center gap-3 min-w-0 flex-1 pl-1">
+                      <span
+                        className={cn(
+                          "font-mono text-xs font-bold shrink-0 px-2 py-0.5 rounded-sm backdrop-blur-xs",
+                          isSelected
+                            ? "bg-accent text-white"
+                            : "bg-black/60 text-accent-secondary border border-white/10"
+                        )}
+                      >
+                        {domain.index}
+                      </span>
+
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-2">
+                          <span className="font-display font-semibold text-sm text-white truncate drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+                            {domain.title}
+                          </span>
+                        </div>
+                        <p className="font-sans text-xs text-white/75 truncate mt-0.5 leading-snug drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
+                          {domain.shortScope}
+                        </p>
                       </div>
-                      <p className="font-sans text-xs text-text-secondary mt-1 line-clamp-1 leading-relaxed">
-                        {domain.shortScope}
-                      </p>
+                    </div>
+
+                    <div className="relative z-20 flex items-center gap-2 shrink-0 ml-3">
+                      {isSelected ? (
+                        <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-accent/90 text-white text-[10px] font-mono font-semibold shadow-xs">
+                          <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                          <span>ACTIVE</span>
+                        </div>
+                      ) : (
+                        <IconComponent className="w-4 h-4 text-white/60 group-hover:text-white transition-colors" />
+                      )}
                     </div>
                   </button>
                 );
@@ -363,11 +462,11 @@ export function ApplicationsSection() {
             className="lg:col-span-7 flex flex-col border border-border bg-surface rounded-[2px] overflow-hidden shadow-[0_1px_3px_rgba(20,23,21,0.03)]"
           >
             {/* Dossier Header Bar */}
-            <div className="p-4 sm:p-5 border-b border-border bg-surface-secondary/40 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+            <div className="p-4 sm:p-5 border-b border-border bg-surface-secondary/40 flex flex-wrap items-center justify-between gap-3 text-xs font-sans">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-accent" />
                 <span className="text-text-primary font-semibold tracking-wider uppercase">
-                  DEPLOYMENT DOSSIER // {activeDomain.index}
+                  Field Application Context · <span className="font-mono">{activeDomain.index}</span>
                 </span>
               </div>
               <div className="flex items-center gap-3 text-[11px] text-text-muted">
@@ -394,10 +493,10 @@ export function ApplicationsSection() {
               {/* Title & Icon Header */}
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <span className="font-mono text-xs uppercase tracking-wider text-accent-secondary font-medium">
-                    APPLICATION SECTOR
+                  <span className="font-mono text-xs text-accent-secondary font-medium tracking-[0.04em]">
+                    Application Sector
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-bold font-display text-text-primary mt-1">
+                  <h3 className="text-2xl sm:text-[28px] lg:text-[32px] font-semibold font-display text-text-primary mt-1 tracking-[-0.025em] leading-snug">
                     {activeDomain.title}
                   </h3>
                 </div>
@@ -409,57 +508,91 @@ export function ApplicationsSection() {
 
               {/* Field Purpose Statement */}
               <div className="border-l-2 border-accent-secondary pl-4 py-1">
-                <p className="font-sans text-sm sm:text-base text-text-secondary leading-relaxed">
+                <p className="font-sans text-sm sm:text-[15px] text-text-secondary leading-relaxed">
                   {activeDomain.fieldPurpose}
                 </p>
               </div>
 
-              {/* Technical Pedestal / Plate */}
-              <div className="relative aspect-[16/8] sm:aspect-[16/7] w-full rounded-[2px] bg-surface-secondary/60 border border-border-subtle flex flex-col justify-between p-4 overflow-hidden">
+              {/* Technical Pedestal / Plate with Full-Container Photography */}
+              <div className="group/env relative aspect-[16/8] sm:aspect-[16/7] w-full rounded-[2px] bg-slate-950 border border-border-subtle flex flex-col justify-between p-4 sm:p-5 overflow-hidden shadow-xs">
+                {/* 1. Full-Bleed Real-World Application Photography (z-0) */}
+                <div className="absolute inset-0 z-0 overflow-hidden">
+                  <Image
+                    src={assetPath(activeDomain.imageSrc)}
+                    alt={activeDomain.imageAlt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                    className="object-cover transition-transform duration-500 ease-precision group-hover/env:scale-[1.04]"
+                  />
+                </div>
+
+                {/* 2. Sophisticated Directional Documentary Gradient Overlay (z-10) */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 z-10 bg-gradient-to-t from-black/85 via-black/35 to-black/20 transition-opacity duration-300 group-hover/env:opacity-90 pointer-events-none"
+                />
+
+                {/* Subtle Brand Accent Line on top edge with hover movement */}
+                <div
+                  aria-hidden="true"
+                  className="absolute top-0 left-0 right-0 h-[2px] bg-accent/60 transition-all duration-300 group-hover/env:bg-accent group-hover/env:h-[3px] z-20"
+                />
+
                 {/* 4 Corner Registration Crosshairs */}
                 <span
                   aria-hidden="true"
-                  className="absolute top-2 left-2 font-mono text-[10px] text-accent-secondary/50 select-none leading-none"
+                  className="absolute top-2.5 left-2.5 font-mono text-[10px] text-white/60 select-none leading-none z-20"
                 >
                   +
                 </span>
                 <span
                   aria-hidden="true"
-                  className="absolute top-2 right-2 font-mono text-[10px] text-accent-secondary/50 select-none leading-none"
+                  className="absolute top-2.5 right-2.5 font-mono text-[10px] text-white/60 select-none leading-none z-20"
                 >
                   +
                 </span>
                 <span
                   aria-hidden="true"
-                  className="absolute bottom-2 left-2 font-mono text-[10px] text-accent-secondary/50 select-none leading-none"
+                  className="absolute bottom-2.5 left-2.5 font-mono text-[10px] text-white/60 select-none leading-none z-20"
                 >
                   +
                 </span>
                 <span
                   aria-hidden="true"
-                  className="absolute bottom-2 right-2 font-mono text-[10px] text-accent-secondary/50 select-none leading-none"
+                  className="absolute bottom-2.5 right-2.5 font-mono text-[10px] text-white/60 select-none leading-none z-20"
                 >
                   +
                 </span>
 
-                <div className="flex flex-wrap items-center justify-between gap-1 text-[10px] font-mono text-text-muted">
-                  <span className="uppercase">FIELD STAGING ENVIRONMENT</span>
-                  <span>DOC.REF // ENV-{activeDomain.index}</span>
-                </div>
-
-                <div className="self-center flex flex-col items-center justify-center text-center py-2">
-                  <ActiveIcon className="w-10 h-10 text-accent/40 mb-2" />
-                  <span className="font-mono text-xs uppercase tracking-widest text-text-primary font-medium">
-                    {activeDomain.title} Operational Profile
-                  </span>
-                  <span className="text-[11px] font-mono text-text-muted mt-0.5">
-                    Instrument Configuration &amp; Deployment Parameters
+                {/* Top Registration Telemetry Bar over photo */}
+                <div className="relative z-20 flex flex-wrap items-center justify-between gap-1 text-[11px] font-sans text-white/90">
+                  <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-sm bg-black/50 backdrop-blur-xs border border-white/15">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                    <span className="uppercase tracking-wider font-semibold">Deployed Environment · {activeDomain.title}</span>
+                  </div>
+                  <span className="px-2 py-0.5 rounded-sm bg-black/40 backdrop-blur-xs border border-white/10 text-white/70">
+                    Ref · Env-{activeDomain.index}
                   </span>
                 </div>
 
-                <div className="flex flex-wrap items-center justify-between gap-1 text-[10px] font-mono text-text-muted">
-                  <span>SCALE: FIELD SCALE 1:1</span>
-                  <span>APPLICATION MATRIX // 01–08</span>
+                {/* Center subtle operational profile title badge */}
+                <div className="self-center flex flex-col items-center justify-center text-center py-2 relative z-20 pointer-events-none">
+                  <span className="font-sans text-xs uppercase tracking-widest text-white/90 font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                    {activeDomain.title} Field Deployment
+                  </span>
+                  <span className="text-[11px] font-sans text-white/75 mt-0.5 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+                    Operational Terrain &amp; In-Situ Hardware Validation
+                  </span>
+                </div>
+
+                {/* Bottom Telemetry Bar over photo */}
+                <div className="relative z-20 flex flex-wrap items-center justify-between gap-1 text-[10px] font-sans text-white/80">
+                  <span className="px-2 py-0.5 rounded-sm bg-black/40 backdrop-blur-xs border border-white/10">
+                    Scale: Field Scale 1:1
+                  </span>
+                  <span className="px-2 py-0.5 rounded-sm bg-black/40 backdrop-blur-xs border border-white/10">
+                    Environment Profile · {activeDomain.index} of 08
+                  </span>
                 </div>
               </div>
 
@@ -467,7 +600,7 @@ export function ApplicationsSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 {/* Relevant Disciplines */}
                 <div className="p-4 rounded-[2px] border border-border-subtle bg-background">
-                  <div className="font-mono text-xs uppercase tracking-wider text-text-primary font-semibold mb-3">
+                  <div className="font-sans text-xs uppercase tracking-wider text-text-primary font-semibold mb-3">
                     Relevant Disciplines
                   </div>
                   <ul className="space-y-2">
@@ -487,7 +620,7 @@ export function ApplicationsSection() {
 
                 {/* Environmental Constraints */}
                 <div className="p-4 rounded-[2px] border border-border-subtle bg-background">
-                  <div className="font-mono text-xs uppercase tracking-wider text-text-primary font-semibold mb-3">
+                  <div className="font-sans text-xs uppercase tracking-wider text-text-primary font-semibold mb-3">
                     Field Conditions
                   </div>
                   <ul className="space-y-2">
@@ -506,12 +639,12 @@ export function ApplicationsSection() {
 
               {/* Bottom Action Footer */}
               <div className="pt-4 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <span className="font-mono text-xs text-text-muted">
+                <span className="font-sans text-xs text-text-muted">
                   Need equipment for this environment?
                 </span>
                 <Link
                   href="#inquiry"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-accent text-white font-medium text-xs rounded-[2px] hover:bg-accent-hover transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-accent text-white font-sans font-semibold text-xs sm:text-[13px] rounded-[2px] hover:bg-accent-hover transition-colors"
                 >
                   <span>Submit Field Requirement</span>
                   <ArrowRight className="w-3.5 h-3.5" />

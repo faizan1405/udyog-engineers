@@ -20,12 +20,12 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-display font-semibold transition-colors duration-200 ease-precision focus-visible:outline-2 focus-visible:outline-offset-2 disabled:pointer-events-none disabled:opacity-50 select-none cursor-pointer tracking-[0.02em]";
+    "inline-flex items-center justify-center font-sans font-semibold transition-colors duration-200 ease-precision focus-visible:outline-2 focus-visible:outline-offset-2 disabled:pointer-events-none disabled:opacity-50 select-none cursor-pointer tracking-normal";
 
   const sizeStyles = {
-    sm: "text-xs px-3.5 py-1.5 min-h-[36px] rounded-[2px] gap-1.5",
-    md: "text-xs sm:text-sm px-4 py-2 min-h-[44px] rounded-[2px] gap-2",
-    lg: "text-sm px-6 py-2.5 min-h-[48px] rounded-[2px] gap-2.5",
+    sm: "text-[13px] px-3.5 py-1.5 min-h-[36px] rounded-[2px] gap-1.5",
+    md: "text-[14px] sm:text-[15px] px-4.5 py-2 min-h-[44px] rounded-[2px] gap-2",
+    lg: "text-[15px] sm:text-base px-6 py-2.5 min-h-[48px] rounded-[2px] gap-2.5",
   };
 
   const variantStyles = {

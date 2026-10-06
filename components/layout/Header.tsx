@@ -75,7 +75,7 @@ export function Header() {
           <Link
             href="/"
             className={cn(
-              "py-1 text-sm font-medium transition-colors",
+              "py-1 text-[15px] font-sans font-medium tracking-[-0.01em] transition-colors",
               pathname === "/"
                 ? "text-accent font-semibold"
                 : "text-text-secondary hover:text-text-primary"
@@ -97,7 +97,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "py-1 text-sm font-medium transition-colors",
+                  "py-1 text-[15px] font-sans font-medium tracking-[-0.01em] transition-colors",
                   isActive
                     ? "text-accent font-semibold"
                     : "text-text-secondary hover:text-text-primary"
@@ -116,7 +116,7 @@ export function Header() {
             href="/contact"
             variant="primary"
             size="sm"
-            className="hidden sm:inline-flex h-9 px-4 rounded-[2px] font-display font-semibold text-xs tracking-wide bg-accent hover:bg-accent-hover text-white transition-colors shadow-xs"
+            className="hidden sm:inline-flex h-9 px-4 rounded-[2px] font-sans font-semibold text-[13px] bg-accent hover:bg-accent-hover text-white transition-colors shadow-xs"
           >
             Send Inquiry
           </Button>

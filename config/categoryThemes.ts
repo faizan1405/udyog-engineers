@@ -1,0 +1,168 @@
+export interface CategoryVisualTheme {
+  index: string;
+  name: string;
+  slug: string;
+  tagline: string;
+  shortDescriptor: string;
+  accent: string;
+  accentHover: string;
+  bgLight: string;
+  borderLight: string;
+  badgeClass: string;
+  textAccentClass: string;
+  gradientFrom: string;
+  glowShadow: string;
+  features: string[];
+}
+
+export const CATEGORY_THEMES: Record<string, CategoryVisualTheme> = {
+  optics: {
+    index: "01",
+    name: "Optics",
+    slug: "optics",
+    tagline: "Field & Survey Optics",
+    shortDescriptor: "Field & Survey Optics",
+    accent: "#059669",
+    accentHover: "#047857",
+    bgLight: "#ECFDF5",
+    borderLight: "#A7F3D0",
+    badgeClass: "bg-emerald-50 text-emerald-800 border-emerald-200",
+    textAccentClass: "text-emerald-600",
+    gradientFrom: "rgba(5, 150, 105, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(5, 150, 105, 0.25)",
+    features: ["Observation", "Survey", "Field Research"],
+  },
+  gps: {
+    index: "02",
+    name: "GPS",
+    slug: "gps",
+    tagline: "Positioning & Mapping",
+    shortDescriptor: "Positioning & Mapping",
+    accent: "#2563EB",
+    accentHover: "#1D4ED8",
+    bgLight: "#EFF6FF",
+    borderLight: "#BFDBFE",
+    badgeClass: "bg-blue-50 text-blue-800 border-blue-200",
+    textAccentClass: "text-blue-600",
+    gradientFrom: "rgba(37, 99, 235, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(37, 99, 235, 0.25)",
+    features: ["Positioning", "Mapping", "Navigation"],
+  },
+  "night-vision": {
+    index: "03",
+    name: "Night Vision",
+    slug: "night-vision",
+    tagline: "Low-Light Observation",
+    shortDescriptor: "Low-Light Observation",
+    accent: "#4F46E5",
+    accentHover: "#4338CA",
+    bgLight: "#EEF2FF",
+    borderLight: "#C7D2FE",
+    badgeClass: "bg-indigo-50 text-indigo-800 border-indigo-200",
+    textAccentClass: "text-indigo-600",
+    gradientFrom: "rgba(79, 70, 229, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(79, 70, 229, 0.25)",
+    features: ["Observation", "Night Operations", "Field Surveillance"],
+  },
+  thermal: {
+    index: "04",
+    name: "Thermal",
+    slug: "thermal",
+    tagline: "Thermal Observation",
+    shortDescriptor: "Thermal Observation & Monitoring",
+    accent: "#EA580C",
+    accentHover: "#C2410C",
+    bgLight: "#FFF7ED",
+    borderLight: "#FED7AA",
+    badgeClass: "bg-orange-50 text-orange-800 border-orange-200",
+    textAccentClass: "text-orange-600",
+    gradientFrom: "rgba(234, 88, 12, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(234, 88, 12, 0.25)",
+    features: ["Thermal Observation", "Monitoring", "Low-Light Operations"],
+  },
+  "geological-compass": {
+    index: "05",
+    name: "Geological Compass",
+    slug: "geological-compass",
+    tagline: "Structural & Strike Measurement",
+    shortDescriptor: "Structural & Strike Measurement",
+    accent: "#D97706",
+    accentHover: "#B45309",
+    bgLight: "#FFFBEB",
+    borderLight: "#FDE68A",
+    badgeClass: "bg-amber-50 text-amber-800 border-amber-200",
+    textAccentClass: "text-amber-600",
+    gradientFrom: "rgba(217, 119, 6, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(217, 119, 6, 0.25)",
+    features: ["Field Orientation", "Structural Geology", "Strike & Dip"],
+  },
+  "camping-equipment": {
+    index: "06",
+    name: "Camping Equipment",
+    slug: "camping-equipment",
+    tagline: "Field Outpost & Expedition Gear",
+    shortDescriptor: "Field Outpost Gear",
+    accent: "#65A30D",
+    accentHover: "#4D7C0F",
+    bgLight: "#F7FEE7",
+    borderLight: "#D9F99D",
+    badgeClass: "bg-lime-50 text-lime-800 border-lime-200",
+    textAccentClass: "text-lime-700",
+    gradientFrom: "rgba(101, 163, 13, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(101, 163, 13, 0.25)",
+    features: ["Field Outpost", "Basecamp Support", "Expedition Gear"],
+  },
+  "weather-station": {
+    index: "07",
+    name: "Weather Station",
+    slug: "weather-station",
+    tagline: "Environmental & Weather Monitoring",
+    shortDescriptor: "Environmental Monitoring",
+    accent: "#0284C7",
+    accentHover: "#0369A1",
+    bgLight: "#F0F9FF",
+    borderLight: "#BAE6FD",
+    badgeClass: "bg-sky-50 text-sky-800 border-sky-200",
+    textAccentClass: "text-sky-600",
+    gradientFrom: "rgba(2, 132, 199, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(2, 132, 199, 0.25)",
+    features: ["Environmental Monitoring", "Weather Tracking", "Site Analysis"],
+  },
+  "forestry-items": {
+    index: "08",
+    name: "Forestry Items",
+    slug: "forestry-items",
+    tagline: "Forestry & Canopy Measurement",
+    shortDescriptor: "Forestry & Canopy Measurement",
+    accent: "#16A34A",
+    accentHover: "#15803D",
+    bgLight: "#F0FDF4",
+    borderLight: "#BBF7D0",
+    badgeClass: "bg-green-50 text-green-800 border-green-200",
+    textAccentClass: "text-green-600",
+    gradientFrom: "rgba(22, 163, 74, 0.09)",
+    glowShadow: "0 10px 30px -10px rgba(22, 163, 74, 0.25)",
+    features: ["Forest Measurement", "Canopy Survey", "Timber Inspection"],
+  },
+};
+
+export function getCategoryTheme(slug: string): CategoryVisualTheme {
+  return (
+    CATEGORY_THEMES[slug] || {
+      index: "00",
+      name: slug,
+      slug,
+      tagline: "Professional Equipment",
+      shortDescriptor: "Field & Survey Equipment",
+      accent: "#078C45",
+      accentHover: "#057037",
+      bgLight: "#E7F6ED",
+      borderLight: "#BDE2CD",
+      badgeClass: "bg-emerald-50 text-emerald-800 border-emerald-200",
+      textAccentClass: "text-emerald-600",
+      gradientFrom: "rgba(7, 140, 69, 0.09)",
+      glowShadow: "0 10px 30px -10px rgba(7, 140, 69, 0.2)",
+      features: ["Field Observation", "Survey", "Precision Instruments"],
+    }
+  );
+}

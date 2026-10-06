@@ -6,50 +6,57 @@ interface CredibilityPillar {
   tag: string;
   title: string;
   description: string;
-  specificationNote: string;
+  highlight: string;
 }
 
 const CREDIBILITY_PILLARS: CredibilityPillar[] = [
   {
     index: "01",
-    tag: "PORTFOLIO FOCUS",
-    title: "Specialist Equipment Focus",
+    tag: "Knowledge-First",
+    title: "Technical Understanding",
     description:
-      "Every discipline in our catalogue—from optical instruments and GNSS receivers to geological compasses—is curated strictly for professional survey, research, and field deployment.",
-    specificationNote: "PROFESSIONAL CATALOGUE FOCUS",
+      "Led by qualified technical professionals and scholarly leadership, ensuring each requirement is analyzed with sound engineering knowledge and rigorous application assessment.",
+    highlight: "Engineering Grounding",
   },
   {
     index: "02",
-    tag: "SPECIFICATION CLARITY",
-    title: "Clear Product Information",
+    tag: "Verified Standards",
+    title: "Quality-Focused Selection",
     description:
-      "Equipment specifications are organized around optical parameters, sensor ratings, and physical environmental characteristics to assist objective technical evaluation.",
-    specificationNote: "STRUCTURED SPECIFICATIONS",
+      "We partner with reputed national and international manufacturers, identifying equipment built to exact tolerances, high reliability, and dependable field durability.",
+    highlight: "Reputed Brands",
   },
   {
     index: "03",
-    tag: "INQUIRY COORDINATION",
-    title: "Requirement-Based Inquiry",
+    tag: "Complete Solutions",
+    title: "Application-Oriented Solutions",
     description:
-      "We operate through a direct, requirement-driven inquiry model. Field specialists and research teams receive responsive guidance tailored to project parameters.",
-    specificationNote: "DIRECT SPECIFICATION MATCHING",
+      "Supplying an instrument is never enough. We identify the exact operational context and deliver the proper complete solution based on performance and long-term value.",
+    highlight: "Purpose-Built",
   },
   {
     index: "04",
-    tag: "CATEGORY STRUCTURE",
-    title: "Requirement-Oriented Selection",
+    tag: "Institutional Service",
+    title: "Professional Coordination",
     description:
-      "Equipment categories organised around professional field, survey, observation and monitoring requirements.",
-    specificationNote: "SPECIALIST CATEGORY STRUCTURE",
+      "Responsive coordination and technical documentation for Government Departments, PSUs, research institutes, and demanding industrial procurement teams.",
+    highlight: "Direct Guidance",
+  },
+  {
+    index: "05",
+    tag: "Enduring Trust",
+    title: "Reliable Support & Integrity",
+    description:
+      "Committed to building long-term customer partnerships based on transparent guidance, reliable performance, and dependable technical assistance.",
+    highlight: "Partnership Value",
   },
 ];
 
 /**
- * CREDIBILITY / WHY CHOOSE UDYOG ENGINEERS SECTION (PHASE 4C)
+ * CREDIBILITY / WHY CHOOSE UDYOG ENGINEERS SECTION
  *
- * Architectural credibility section grounded in positioning and capabilities.
- * Avoids corporate brags, fake statistics, unverified client counts, and awards.
- * Uses hairline dividers, monospace indexing, and balanced whitespace.
+ * Modern editorial credibility presentation grounded in verified client positioning.
+ * Avoids corporate brags, fake statistics, or unverified claims.
  */
 export function CredibilitySection() {
   return (
@@ -62,88 +69,76 @@ export function CredibilitySection() {
         {/* Section Registration Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8 mb-12 border-b border-border">
           <div>
-            <div className="flex items-center gap-2 font-mono text-xs text-accent-secondary tracking-wider uppercase mb-2">
-              <span className="font-semibold">05 // WHY UDYOG ENGINEERS</span>
-              <span className="text-border-strong">|</span>
-              <span className="text-text-muted">POSITIONING &amp; PRINCIPLES</span>
+            <div className="flex items-center gap-2 font-sans text-xs text-accent-secondary mb-3 font-medium">
+              <span className="font-mono font-semibold">05</span>
+              <span>·</span>
+              <span className="font-semibold text-accent-secondary">Why Udyog Engineers</span>
+              <span className="text-border-strong">·</span>
+              <span className="text-text-muted">Core Capabilities</span>
             </div>
             <h2
               id="credibility-heading"
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-text-primary font-display max-w-2xl leading-tight"
+              className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-display font-semibold tracking-[-0.035em] leading-[1.06] text-text-primary max-w-2xl"
             >
-              Equipment Selected Around Professional Field Requirements
+              Bridging Advanced Technology with Practical Application
             </h2>
           </div>
 
           <div className="max-w-md">
-            <p className="font-sans text-sm text-text-secondary leading-relaxed">
-              We focus strictly on precision instrumentation, structured technical information, and direct requirement-driven assistance for surveyors, researchers, and field specialists.
+            <p className="font-sans text-base sm:text-lg text-text-secondary leading-[1.6]">
+              A professionally managed organization providing reliable, technically sound, and application-oriented solutions across India.
             </p>
           </div>
         </div>
 
-        {/* =========================================================================
-            ARCHITECTURAL CREDIBILITY PILLARS MATRIX
-            Hairline dividers, monospace indexing, high-contrast typography
-           ========================================================================= */}
-        <div className="border border-border rounded-[2px] bg-border overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px">
-            {CREDIBILITY_PILLARS.map((pillar) => (
-              <div
-                key={pillar.index}
-                className="p-6 sm:p-8 flex flex-col justify-between relative group bg-background hover:bg-surface transition-colors duration-200 ease-precision"
-              >
-                {/* Corner Crosshair Decoration */}
-                <span
-                  aria-hidden="true"
-                  className="absolute top-2.5 right-2.5 font-mono text-[10px] text-accent-secondary/40 select-none leading-none group-hover:text-accent-secondary transition-colors duration-200 ease-precision"
-                >
-                  +
-                </span>
+        {/* Editorial Modern Composition: 2 Feature Cards + 3 Supporting Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {CREDIBILITY_PILLARS.map((pillar, idx) => (
+            <div
+              key={pillar.index}
+              className={`p-7 sm:p-8 rounded-2xl border bg-surface-secondary/40 hover:bg-surface border-border hover:border-accent-primary/40 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden ${
+                idx === 0 ? "lg:col-span-2 bg-gradient-to-br from-surface to-surface-secondary/60" : ""
+              }`}
+            >
+              {/* Subtle top accent line on hover */}
+              <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-accent via-accent-secondary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                <div>
-                  {/* Index and Tag */}
-                  <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="font-mono text-sm font-bold text-accent-secondary">
-                      {`${pillar.index} // 04`}
-                    </span>
-                    <span className="font-mono text-[10px] tracking-widest text-text-muted uppercase">
-                      {pillar.tag}
-                    </span>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="font-display font-semibold text-lg text-text-primary mb-3">
-                    {pillar.title}
-                  </h3>
-
-                  {/* Body Copy */}
-                  <p className="font-sans text-xs text-text-secondary leading-relaxed">
-                    {pillar.description}
-                  </p>
-                </div>
-
-                {/* Bottom Technical Note */}
-                <div className="mt-8 pt-4 border-t border-border-subtle flex items-center justify-between">
-                  <span className="font-mono text-[10px] tracking-wider text-text-muted uppercase">
-                    {pillar.specificationNote}
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-4">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary bg-surface px-2.5 py-1 rounded-full border border-border-subtle">
+                    {pillar.index} / 05
                   </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent/30 group-hover:bg-accent transition-colors duration-200 ease-precision" />
+                  <span className="font-sans text-xs font-semibold uppercase tracking-wider text-accent">
+                    {pillar.tag}
+                  </span>
                 </div>
+
+                <h3 className="font-display font-semibold text-xl sm:text-2xl text-text-primary mb-3 tracking-[-0.02em]">
+                  {pillar.title}
+                </h3>
+
+                <p className="font-sans text-sm sm:text-[15px] text-text-secondary leading-[1.65]">
+                  {pillar.description}
+                </p>
               </div>
-            ))}
-          </div>
+
+              <div className="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-xs font-sans text-text-muted">
+                <span>{pillar.highlight}</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary/50 group-hover:bg-accent transition-colors" />
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Technical Philosophy Footnote */}
-        <div className="mt-8 pt-4 border-t border-border-subtle flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono text-text-muted">
+        {/* Footnote statement */}
+        <div className="mt-10 pt-6 border-t border-border-subtle flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-sans text-text-muted">
           <div className="flex items-center gap-2">
-            <span className="text-accent-secondary font-bold">UE // PHILOSOPHY</span>
+            <span className="text-accent-secondary font-semibold">Udyog Engineers</span>
             <span>·</span>
-            <span>Direct requirement-driven technical coordination</span>
+            <span className="text-text-secondary">Professionally Managed Engineering Partner</span>
           </div>
-          <div className="text-[11px] text-text-secondary">
-            Technical information &amp; specifications provided upon requirement submission.
+          <div className="text-text-secondary">
+            Serving Government, PSU, institutional research, and industrial sectors.
           </div>
         </div>
       </Container>

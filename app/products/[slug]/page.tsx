@@ -20,7 +20,6 @@ import { generateProductJsonLd, generateBreadcrumbJsonLd } from "@/lib/seo";
 import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
 import {
   ArrowDown,
-  AlertTriangle,
   ShieldCheck,
   FileText,
   Compass,
@@ -112,7 +111,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       ])
     : null;
 
-  // WhatsApp Inquiry URL (null if WhatsApp is not configured in siteConfig)
+  // WhatsApp Inquiry URL
   const whatsAppUrl = buildWhatsAppInquiryUrl({
     productName: product.name,
     productModel: product.model,
@@ -124,7 +123,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
   return (
     <div className="bg-background min-h-screen">
-      {/* Structured Data (Production verified items only) */}
+      {/* Structured Data */}
       {productJsonLd && (
         <script
           type="application/ld+json"
@@ -139,7 +138,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       )}
 
       {/* Breadcrumb Navigation Bar */}
-      <div className="border-b border-border bg-surface-secondary/40 py-1">
+      <div className="border-b border-border/80 bg-surface-secondary/40 py-2">
         <Container>
           <Breadcrumb
             items={[
@@ -154,46 +153,27 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         </Container>
       </div>
 
-      {/* Demo Notice Banner (Visible only for staged development items) */}
-      {isDemo && (
-        <div className="border-b border-amber-300 bg-amber-50/90 text-amber-950 py-3.5 px-4 text-xs">
-          <Container>
-            <div className="flex items-start sm:items-center gap-3">
-              <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5 sm:mt-0" />
-              <div className="space-y-0.5">
-                <p className="font-mono text-[11px] uppercase tracking-wider font-bold text-amber-900">
-                  INTERNAL BENCHMARK {"//"} STAGED DEMO RECORD
-                </p>
-                <p className="text-xs text-amber-800 leading-relaxed">
-                  This product record is staged for development routing and schema validation. Specifications and copy are temporary development placeholders. Excluded from production indexing, public sitemaps, and commercial procurement catalogues.
-                </p>
-              </div>
-            </div>
-          </Container>
-        </div>
-      )}
-
-      {/* 1. PRODUCT HERO & IDENTITY DOSSIER */}
-      <Section variant="default" className="py-6 sm:py-10 lg:py-12">
+      {/* 1. PRODUCT HERO & OVERVIEW */}
+      <Section variant="default" className="py-8 sm:py-12 lg:py-16">
         <Container>
-          {/* Product Header / Title Block */}
-          <div className="border-b border-border pb-5 mb-8">
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-mono mb-2.5">
+          {/* Header Block */}
+          <div className="border-b border-border/80 pb-6 mb-8 sm:mb-10">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-sans mb-3">
               <Link
                 href={`/categories/${product.categorySlug}`}
-                className="text-accent-secondary uppercase tracking-wider font-semibold hover:underline flex items-center gap-1.5"
+                className="text-brand-green font-semibold hover:underline flex items-center gap-1.5"
               >
-                <Compass className="w-3.5 h-3.5 text-accent-secondary" />
-                <span>{product.category} {"//"} PRODUCT DOSSIER</span>
+                <Compass className="w-4 h-4 text-brand-green" />
+                <span>{product.category}</span>
               </Link>
               {product.model && (
                 <>
                   <span className="text-border-strong select-none" aria-hidden="true">
-                    /
+                    •
                   </span>
-                  <span className="text-text-muted uppercase tracking-wider">
-                    MODEL {"//"}{" "}
-                    <span className="text-text-primary font-semibold">
+                  <span className="text-text-muted">
+                    Model:{" "}
+                    <span className="text-text-primary font-mono font-semibold">
                       {product.model}
                     </span>
                   </span>
@@ -201,48 +181,48 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               )}
             </div>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-display text-text-primary tracking-tight">
+            <h1 className="text-[32px] sm:text-[40px] md:text-[46px] lg:text-[52px] font-semibold font-display text-text-primary tracking-[-0.03em] leading-[1.08]">
               {product.name}
             </h1>
           </div>
 
-          {/* Asymmetric Dossier Composition: Dominant Visual + Structured Dossier */}
+          {/* Asymmetric Product Composition */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left: Dominant Hardware Imaging Canvas */}
             <div className="lg:col-span-7">
               <ProductGallery product={product} />
             </div>
 
-            {/* Right: Technical Dossier Identity & Action Panel */}
+            {/* Right: Product Details & Action Panel */}
             <div className="lg:col-span-5 space-y-6">
-              {/* Short Verified Description */}
+              {/* Short Description */}
               <div className="space-y-3">
-                <div className="flex items-center gap-2 text-[10px] font-mono text-text-muted uppercase tracking-wider">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary" />
-                  <span>EQUIPMENT CLASSIFICATION SUMMARY</span>
+                <div className="flex items-center gap-2 text-xs font-sans text-brand-green font-semibold">
+                  <span className="w-2 h-2 rounded-full bg-brand-green" />
+                  <span>Equipment Summary</span>
                 </div>
-                <p className="text-sm sm:text-base text-text-secondary leading-relaxed">
+                <p className="font-sans text-base sm:text-lg text-text-secondary leading-[1.65]">
                   {product.shortDescription}
                 </p>
               </div>
 
-              {/* Action Block: Send Inquiry + WhatsApp (when configured) */}
-              <div className="p-5 bg-surface-secondary/70 border border-border rounded-[2px] space-y-3.5 shadow-[0_1px_3px_rgba(20,23,21,0.02)]">
-                <div className="flex items-center justify-between text-[11px] font-mono text-text-muted">
-                  <span className="font-semibold text-text-primary uppercase tracking-wider">
-                    PROCUREMENT INQUIRY
+              {/* Action Block: Send Inquiry + WhatsApp */}
+              <div className="p-6 bg-surface-secondary/70 border border-border/80 rounded-2xl space-y-4 shadow-xs">
+                <div className="flex items-center justify-between text-xs font-sans text-text-muted">
+                  <span className="font-semibold text-text-primary">
+                    Procurement Inquiry
                   </span>
-                  <span>B2B / INSTITUTIONAL</span>
+                  <span>Institutional Supply</span>
                 </div>
 
-                <p className="text-xs text-text-secondary leading-relaxed">
-                  Direct engineer-to-engineer quotation and datasheet distribution. Submit your required quantities, project parameters, or tender specifications.
+                <p className="font-sans text-sm text-text-secondary leading-[1.6]">
+                  Direct technical coordination and quotation distribution. Submit your required quantities, project parameters, or tender specifications.
                 </p>
 
-                <div className="flex flex-col gap-2.5 pt-1">
+                <div className="flex flex-col gap-3 pt-1">
                   <a
                     href="#inquiry-section"
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] bg-accent text-white text-xs sm:text-sm font-semibold rounded-[2px] hover:bg-accent-hover transition-colors duration-200 ease-precision shadow-xs"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] bg-brand-green text-white font-sans text-[15px] font-semibold rounded-xl hover:bg-brand-green-hover transition-colors shadow-xs tracking-normal"
                   >
                     <span>Send Inquiry</span>
                     <ArrowDown className="w-4 h-4" />
@@ -253,7 +233,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       href={whatsAppUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] bg-surface border border-border-strong text-text-primary text-xs sm:text-sm font-semibold rounded-[2px] hover:bg-surface-secondary transition-colors duration-200 ease-precision"
+                      className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] bg-surface border border-border/80 text-text-primary font-sans text-[15px] font-semibold rounded-xl hover:bg-surface-secondary transition-colors tracking-normal"
                     >
                       <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
                       <span>Inquire via WhatsApp</span>
@@ -262,25 +242,25 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </div>
               </div>
 
-              {/* Technical Identity Meta Matrix */}
-              <div className="border border-border bg-surface rounded-[2px] p-4 text-xs font-mono space-y-2.5 shadow-[0_1px_2px_rgba(20,23,21,0.02)]">
-                <div className="flex items-center justify-between border-b border-border pb-2 text-[10px] text-text-muted uppercase">
-                  <span>METROLOGY DOSSIER</span>
-                  <span>STATUS: RECORD ACTIVE</span>
+              {/* Technical Identity Card */}
+              <div className="border border-border/80 bg-surface rounded-2xl p-5 text-xs font-sans space-y-3 shadow-xs">
+                <div className="flex items-center justify-between border-b border-border/70 pb-2.5 text-[11px] text-text-muted">
+                  <span className="font-semibold text-text-primary">Equipment Details</span>
+                  <span className="text-brand-green font-medium">Active Specification</span>
                 </div>
 
-                <div className="space-y-2 text-[11px]">
+                <div className="space-y-2.5 text-xs">
                   <div className="flex items-center justify-between">
-                    <span className="text-text-muted">DISCIPLINE:</span>
-                    <span className="text-text-primary font-medium">
+                    <span className="text-text-muted">Discipline:</span>
+                    <span className="text-text-primary font-medium text-xs sm:text-[13px]">
                       {product.category}
                     </span>
                   </div>
 
                   {product.model && (
                     <div className="flex items-center justify-between">
-                      <span className="text-text-muted">MODEL CODE:</span>
-                      <span className="text-accent-secondary font-semibold">
+                      <span className="text-text-muted">Model Reference:</span>
+                      <span className="text-brand-green font-mono font-semibold text-xs">
                         {product.model}
                       </span>
                     </div>
@@ -288,35 +268,35 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
                   {product.manufacturer && (
                     <div className="flex items-center justify-between">
-                      <span className="text-text-muted">MANUFACTURER:</span>
-                      <span className="text-text-primary font-medium">
+                      <span className="text-text-muted">Manufacturer:</span>
+                      <span className="text-text-primary font-medium text-xs sm:text-[13px]">
                         {product.manufacturer}
                       </span>
                     </div>
                   )}
 
                   <div className="flex items-center justify-between">
-                    <span className="text-text-muted">SUPPLY MODE:</span>
-                    <span className="text-text-primary">
+                    <span className="text-text-muted">Supply Channel:</span>
+                    <span className="text-text-primary text-xs sm:text-[13px]">
                       Direct Quotation / Inquiry
                     </span>
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <span className="text-text-muted">DOCUMENTATION:</span>
+                    <span className="text-text-muted">Documentation:</span>
                     {product.datasheet ? (
                       <a
                         href={product.datasheet}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-accent hover:underline flex items-center gap-1 font-medium"
+                        className="text-brand-green hover:underline flex items-center gap-1 font-semibold text-xs"
                       >
-                        <FileText className="w-3 h-3 text-accent" />
+                        <FileText className="w-3.5 h-3.5 text-brand-green" />
                         <span>Download Datasheet (PDF)</span>
                       </a>
                     ) : (
-                      <span className="text-text-primary flex items-center gap-1">
-                        <FileText className="w-3 h-3 text-accent-secondary" />
+                      <span className="text-text-primary text-xs flex items-center gap-1">
+                        <FileText className="w-3.5 h-3.5 text-brand-green" />
                         <span>Available on Inquiry</span>
                       </span>
                     )}
@@ -324,13 +304,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </div>
               </div>
 
-              {/* Verified Trust / Quality Assurance Micro Badges */}
-              <div className="flex items-center gap-4 text-[11px] font-mono text-text-muted pt-1">
+              {/* Verified Trust Micro Badges */}
+              <div className="flex items-center gap-4 text-xs font-sans text-text-muted pt-1">
                 <div className="flex items-center gap-1.5">
-                  <ShieldCheck className="w-4 h-4 text-accent" />
+                  <ShieldCheck className="w-4 h-4 text-brand-green" />
                   <span>Verified Specifications</span>
                 </div>
-                <span>·</span>
+                <span>•</span>
                 <div>Field-Calibrated Hardware</div>
               </div>
             </div>
@@ -338,9 +318,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         </Container>
       </Section>
 
-      {/* 2. KEY HIGHLIGHTS SECTION (Rendered only when verified highlights exist) */}
+      {/* 2. KEY HIGHLIGHTS SECTION */}
       {product.highlights && product.highlights.length > 0 && (
-        <Section variant="secondary" className="border-t border-border py-8 sm:py-12">
+        <Section variant="secondary" className="border-t border-border/80 py-10 sm:py-14">
           <Container>
             <ProductHighlights highlights={product.highlights} />
           </Container>
@@ -351,29 +331,29 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       <Section
         id="specifications-section"
         variant="default"
-        className="border-t border-border py-8 sm:py-12"
+        className="border-t border-border/80 py-10 sm:py-14"
       >
         <Container>
-          <div className="max-w-4xl space-y-4">
-            <div className="flex items-center justify-between border-b border-border pb-2.5">
+          <div className="max-w-4xl space-y-5">
+            <div className="flex items-center justify-between border-b border-border/80 pb-3">
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary" />
-                <span className="text-xs font-mono uppercase tracking-wider text-text-secondary font-semibold">
-                  METROLOGY MATRIX {"//"} SPECIFICATIONS
+                <span className="w-2 h-2 rounded-full bg-brand-green" />
+                <span className="text-xs font-sans text-text-secondary font-semibold uppercase tracking-wider">
+                  Technical Parameters
                 </span>
               </div>
-              <span className="font-mono text-[10px] text-text-muted">
-                CONFIRMED PARAMETERS {"//"}{" "}
-                {String(product.specifications?.length || 0).padStart(2, "0")}
+              <span className="font-sans text-xs text-text-muted">
+                Confirmed Parameters ·{" "}
+                <span className="font-mono">{String(product.specifications?.length || 0).padStart(2, "0")}</span>
               </span>
             </div>
 
-            <div className="space-y-1">
-              <h2 className="text-xl sm:text-2xl font-bold font-display text-text-primary tracking-tight">
+            <div className="space-y-1.5">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-display text-text-primary tracking-[-0.025em]">
                 Technical Specifications
               </h2>
-              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-                Calibrated parameters and verified metrology values for model{" "}
+              <p className="text-sm sm:text-base font-sans text-text-secondary leading-[1.6]">
+                Calibrated parameters and verified specification values for model{" "}
                 <span className="font-mono font-medium text-text-primary">
                   {product.model || product.name}
                 </span>
@@ -388,14 +368,14 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         </Container>
       </Section>
 
-      {/* 4. FEATURES & APPLICATIONS (Rendered only when verified data exists) */}
+      {/* 4. FEATURES & APPLICATIONS */}
       {((product.features && product.features.length > 0) ||
         (product.applications && product.applications.length > 0)) && (
         <Section
           variant="secondary"
-          className="border-t border-border py-8 sm:py-12 space-y-10"
+          className="border-t border-border/80 py-10 sm:py-14 space-y-12"
         >
-          <Container className="space-y-10">
+          <Container className="space-y-12">
             {product.features && product.features.length > 0 && (
               <ProductFeatures features={product.features} />
             )}
@@ -411,18 +391,18 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       <Section
         id="inquiry-section"
         variant="default"
-        className="border-t border-border py-10 sm:py-16"
+        className="border-t border-border/80 py-12 sm:py-18"
       >
         <Container className="max-w-3xl">
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-[11px] font-mono text-accent-secondary uppercase tracking-wider mb-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary" />
-              <span>DIRECT PROCUREMENT {"//"} TECHNICAL INQUIRY</span>
+            <div className="flex items-center gap-2 text-xs font-sans text-brand-green mb-2 font-semibold">
+              <span className="w-2 h-2 rounded-full bg-brand-green" />
+              <span>Direct Procurement · Technical Inquiry</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold font-display text-text-primary tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-display text-text-primary tracking-[-0.025em]">
               Need Details About This Equipment?
             </h2>
-            <p className="mt-2 text-xs sm:text-sm text-text-secondary leading-relaxed">
+            <p className="mt-2 text-sm sm:text-base font-sans text-text-secondary leading-[1.6]">
               Share the product reference, required specification or intended application. Pre-configured with reference parameters for{" "}
               <strong className="text-text-primary font-semibold">
                 {product.name}
@@ -444,10 +424,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         </Container>
       </Section>
 
-      {/* 6. RELATED PRODUCTS OR CATEGORY EXPLORATION */}
+      {/* 6. RELATED PRODUCTS */}
       <Section
         variant="secondary"
-        className="border-t border-border py-10 sm:py-14"
+        className="border-t border-border/80 py-12 sm:py-16"
       >
         <Container>
           <RelatedEquipment

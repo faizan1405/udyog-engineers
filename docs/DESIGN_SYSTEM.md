@@ -1,305 +1,193 @@
-# UDYOG ENGINEERS — DESIGN SYSTEM & VISUAL IDENTITY SYSTEM
+# UDYOG ENGINEERS — DESIGN SYSTEM & VISUAL IDENTITY SPECIFICATION
+**Version:** 2.0.0 (Redesign R1 — Premium Colorful Visual System & Motion Direction)  
 **Status:** Approved Architectural Document  
-**Version:** 1.0.0  
-**Phase:** Phase 3 — Visual Identity System  
-**Mode:** Strict Light Mode Only  
+**Mode:** Light-Mode First (Selective Isolated Contrast Sections Permitted)  
 
 ---
 
-## 1. BRAND PERSONALITY & POSITIONING
+## 1. WHY THE OLD DESIGN DIRECTION WAS CHANGED
 
-### Visual Positioning Statement
-> **"A precision technical instrumentation catalogue reimagined as a modern, tactile, editorial showcase for professional field, survey, optical, geological, environmental, and outdoor equipment."**
+The initial website architecture was technically robust, responsive, and functionally sound. However, the client rejected the visual presentation for the following critical reasons:
 
-Udyog Engineers represents high-caliber engineering, metrology, and professional exploration. The brand identity balances scientific rigor, field-tested dependability, and editorial sophistication.
+1. **Overly Restrained & Sterile:** The palette relied almost entirely on chalk white, pale sand, and subdued grey-beige, creating an impression of an unrendered draft or an archival paper docket.
+2. **Excessive Technical-Dossier Clutter:** Approximately 30–40% of the interface was dominated by engineering hairlines, corner registration crosshairs (`+`), monospace coordinate telemetry (`LAT 28°...`), reticle azimuth angles, and mock schematic stamps. Instead of inspiring confidence, it felt like an intimidating engineering manual or an internal government blueprint.
+3. **Static Visual Experience:** Motion was overly dampened and cautious, lacking the dynamic energy and modern polish expected of a high-caliber equipment supplier.
+4. **Lack of Category Excitement:** The 8 core product disciplines shared the exact same monochrome grey pedestal treatment, making it difficult for buyers to visually distinguish between optical instruments, GPS satellite units, thermal imagers, or weather arrays.
 
-### Core Brand Pillars
-
-1. **Precision & Metrology:**  
-   Every element reflects calibration, optical clarity, accuracy, and engineering standards. The interface feels calibrated rather than decorated.
-2. **Field-Tested Utility:**  
-   Grounded in physical reality—earth, topography, coordinates, optical lenses, and ruggedized casings. Never synthetic or artificial.
-3. **Editorial Sophistication:**  
-   Presented like a high-end European scientific journal or an archival equipment monograph. Controlled whitespace, deliberate typography, and high visual hierarchy.
-4. **Institutional Authority:**  
-   A specialized technical supplier, not a transactional retail shop. We do not persuade with sales gimmicks; we inform with datasheets, specifications, and direct engineer-to-engineer inquiries.
-
-### Visual Spectrum
-- **Technical** (not sterile)
-- **Refined** (not luxurious or flashy)
-- **Authoritative** (not intimidating)
-- **Field-Ready** (not tactical/military)
-- **Editorial** (not template-driven)
+### The New Visual Positioning:
+> **"Premium Technical Editorial × Modern Product Showcase × Dynamic Field Technology"**
+- A high-end digital equipment showcase marrying corporate credibility with vivid, modern product presentation.
+- Light-mode first, radiant, colorful, and engaging.
+- Reduces technical decoration from 30–40% down to a tasteful 10–15% precision accent.
 
 ---
 
-## 2. COLOR SYSTEM (LIGHT MODE ONLY)
+## 2. THE RICH COLOR SYSTEM
 
-The design system operates **strictly in Light Mode**. Precision measurement equipment, field survey logs, and optical catalogues rely on high-contrast daylight readability and paper-like clarity.
+The visual system anchors itself on the official Udyog Engineers logo (Green + Golden Yellow) while introducing a sophisticated, expansive supporting palette.
 
-### Semantic Color Tokens
+### Core Brand Anchors (Derived from Official Logo)
 
-| Token | HEX Code | CSS Variable | Semantic Usage |
-| :--- | :--- | :--- | :--- |
-| **Canvas Background** | `#F8F7F4` | `--background` | Warm Alabaster / Chalk Sand. Anti-glare, tactile base canvas resembling heavy archival paper. |
-| **Surface Pure** | `#FFFFFF` | `--surface` | Pure Studio White. Used for isolated product pedestals, focused cards, and high-clarity focal modules. |
-| **Surface Secondary** | `#F2F0EB` | `--surface-secondary` | Soft Limestone / Raw Sand. Alternating sections, spec panels, and card wells. |
-| **Surface Tertiary** | `#E8E5DC` | `--surface-tertiary` | Tamped Sandstone. Spec table headers, badge backdrops, subtle hover fills. |
-| **Surface Elevated** | `#FFFFFF` | `--surface-elevated` | Raised flyouts, dropdowns, sticky headers, and mobile navigation overlays. |
-| **Text Primary** | `#141715` | `--text-primary` | Deep Technical Graphite. High-contrast typography without the harshness of pure black. |
-| **Text Secondary** | `#4D544F` | `--text-secondary` | Weathered Charcoal. Long-form descriptions, section narratives, body copy. |
-| **Text Muted** | `#7C837E` | `--text-muted` | Field Slate. Metadata tags, model numbers, coordinates, and subtle labels. |
-| **Border Hairline** | `#E2DFD6` | `--border` | 1px architectural dividers, card perimeters, technical grid rules. |
-| **Border Subtle** | `#EFECE5` | `--border-subtle` | Micro-dividers within dense data tables and nested cards. |
-| **Border Strong** | `#CBC7BA` | `--border-strong` | Active state borders, focused cards, input borders, and primary dividers. |
-| **Primary Accent** | `#1E3A2F` | `--accent-primary` | Deep Alpine Moss. Sophisticated, restrained field green. **Must NOT dominate the page.** |
-| **Primary Accent Hover** | `#152A22` | `--accent-hover` | Deep Forest Shadow. Hover state for primary buttons and active indicators. |
-| **Primary Accent Muted**| `#E8EFEB` | `--accent-muted` | Pale Moss Tint. Subtle badge backgrounds, active navigation markers. |
-| **Secondary Accent** | `#9C824A` | `--accent-secondary` | Aged Compass Brass / Instrument Bronze. Matte metallic tone evoking vernier dials and compass bezels. |
-| **Secondary Accent Hover**| `#826C3C` | `--accent-secondary-hover`| Burnished Bronze. Hover states for secondary highlights. |
-| **Secondary Accent Muted**| `#F5F1E6` | `--accent-secondary-muted`| Sandstone Gold Parchment. Spec highlight chips and reference badges. |
-| **Contextual WhatsApp** | `#1D7349` | `--accent-whatsapp` | Subdued Tactical Green. Professional, non-neon WhatsApp conversion touchpoints. |
-| **Focus Ring** | `#1E3A2F` | `--ring` | 2px accessible focus outline. |
+| Token | HEX | Role & Usage |
+| :--- | :--- | :--- |
+| **Main Brand Green** | `#078C45` | Official logo green. Deep, energetic, professional. Primary CTAs, active states, key brand badges, focus rings. |
+| **Brand Green Hover** | `#057037` | Deepened green state for button hovers and active links. |
+| **Brand Green Muted** | `#E7F6ED` | Soft emerald tint for badge fills, category tags, and subtle button wells. |
+| **Brand Golden Yellow** | `#E5A812` | Official logo golden yellow. Used selectively for index markers, highlights, hover pips, micro-accents. **Never used for body text.** |
+| **Brand Yellow Muted** | `#FEF8E7` | Light golden parchment tint for feature badges and spec highlights. |
 
-### Color Usage Ratios
-- **65% Canvas & Soft Neutral Surfaces** (`#F8F7F4`, `#FFFFFF`, `#F2F0EB`)
-- **25% High-Contrast Technical Typography & Borders** (`#141715`, `#4D544F`, `#E2DFD6`)
-- **7% Primary Field Accent** (`#1E3A2F` — buttons, key links, active badges)
-- **3% Secondary Brass Accent** (`#9C824A` — model tags, precision markers, technical highlights)
+### Contrast & Supporting Palette
+
+| Token | HEX | Role & Usage |
+| :--- | :--- | :--- |
+| **Deep Contrast Navy** | `#12202C` | Sophisticated blue-black navy replacing harsh pure black. Used for primary typography, authoritative headings, and high-impact dark contrast panels. |
+| **Text Secondary Slate** | `#3D4F5E` | Refined slate for descriptions, specifications, and editorial body text. |
+| **Text Muted Slate** | `#64748B` | Mid-tone slate for indices, labels, and secondary metadata. |
+| **Cool Accent Teal** | `#198C96` / `#2A9FA8` | Restrained cyan/teal for meteorological, atmospheric, and satellite cues. |
+| **Warm Accent Terracotta**| `#D66E3A` / `#C86B42` | Controlled warm orange for thermal signatures, heat indicators, and warnings. |
+| **Contextual WhatsApp** | `#1D7349` | Direct procurement communication touchpoints. |
 
 ---
 
-## 3. TYPOGRAPHY SYSTEM
+## 3. SECTION COLOR RHYTHM
 
-The typography pairs clean geometric architectural stability with technical data legibility.
+To eliminate monotonous "white → beige → white" repetition, the layout adopts an intentional, rhythmic alternation of surface temperatures:
 
-### Font Pairing
-1. **Primary Display & Headings:** `Plus Jakarta Sans`  
-   *Attributes:* Geometric clarity, structured letterforms, balanced modern proportions.  
-   *Weights:* `600` (SemiBold), `700` (Bold), `800` (ExtraBold).
-2. **Body & Reading Text:** `Inter`  
-   *Attributes:* Maximum legibility at small sizes, neutral, transparent reading experience.  
-   *Weights:* `400` (Regular), `500` (Medium).
-3. **Technical & Specification Accent:** `JetBrains Mono`  
-   *Attributes:* Fixed-width technical clarity. Used for model identifiers, telemetry, coordinates, and datasheet parameters.  
-   *Weights:* `400` (Regular), `500` (Medium).
-
-### Type Hierarchy Scale
-
-| Role | Font Family | Size (Mobile / Desktop) | Weight | Letter Spacing | Line Height | Case / Style |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Display Hero** | Plus Jakarta Sans | `2.5rem` / `4.25rem` (68px) | 700 | `-0.03em` | `1.08` | Sentence case |
-| **H1 (Page Title)** | Plus Jakarta Sans | `2.0rem` / `2.75rem` (44px) | 700 | `-0.025em`| `1.15` | Sentence case |
-| **H2 (Section Header)** | Plus Jakarta Sans | `1.5rem` / `2.0rem` (32px) | 600 | `-0.02em` | `1.20` | Sentence case |
-| **H3 (Card / Subsection)**| Plus Jakarta Sans | `1.125rem` / `1.25rem` (20px)| 600 | `-0.015em`| `1.30` | Sentence case |
-| **Eyebrow / Category Tag**| JetBrains Mono | `0.75rem` (12px) | 500 | `+0.08em` | `1.40` | UPPERCASE |
-| **Product Titles** | Plus Jakarta Sans | `1.0rem` / `1.125rem` (18px)| 600 | `-0.01em` | `1.35` | Sentence case |
-| **Body (Editorial)** | Inter | `1.0rem` (16px) | 400 | `normal` | `1.65` | Sentence case |
-| **Body (Standard/Card)**| Inter | `0.875rem` (14px) | 400 | `normal` | `1.55` | Sentence case |
-| **Technical Specs / Data**| JetBrains Mono | `0.8125rem` (13px) | 400 / 500 | `+0.02em` | `1.45` | Monospace |
-| **Button Labels** | Plus Jakarta Sans | `0.875rem` (14px) | 600 | `+0.02em` | `1.0` | Sentence case |
-| **Micro Labels / Indices**| JetBrains Mono | `0.6875rem` (11px) | 500 | `+0.1em` | `1.2` | UPPERCASE |
+1. **Hero Introduction:** Warm White / Alabaster (`#FAF9F5`) layered with vibrant gradient lighting (emerald green aura `#078C45` + golden yellow warmth `#E5A812`).
+2. **Category Showcase:** Cool Light-Blue / Sky Tint (`#F0F5F8`) creating an immediate visual break and framing the 8 colorful discipline cards.
+3. **Featured Equipment:** Crisp Studio White (`#FFFFFF`) featuring bold product accent cards and category tags.
+4. **Applications & Environments:** Soft Sage / Muted Field Green (`#F2F7F4`) with interactive environment panels.
+5. **Why Udyog (Credibility):** Deep Navy Contrast Section (`#12202C`) as a single, powerful institutional anchor panel.
+6. **Inquiry & Consultation:** Warm Sand / Golden Ivory (`#FAF8F2`) with high-contrast form fields.
+7. **Footer:** Premium Dark Navy Surface (`#12202C`) or Crisp High-Contrast White with prominent official branding.
 
 ---
 
-## 4. GRID & LAYOUT LANGUAGE
+## 4. 8-CATEGORY COLOR IDENTITIES
 
-### Philosophy: The Art-Directed Technical Folio
-Standard B2B websites rely on monotonous, mechanical rows:
-$$\text{Heading} \rightarrow \text{Paragraph} \rightarrow \text{3 Identical Cards}$$
+Each of the 8 primary equipment domains possesses an individual accent system applied to index numerals, hover borders, micro-gradients, badge fills, and visual motifs:
 
-Udyog Engineers breaks this template monotony with an **art-directed, asymmetric editorial layout** inspired by archival equipment dossiers and high-end technical catalogues.
+| Category | Domain | Accent HEX | Light Wash | Border Tint | Visual Personality |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **01 Optics** | Terrestrial Observation & Metrology | `#059669` (Emerald) | `#ECFDF5` | `#A7F3D0` | Optical clarity, ED lens coatings, precision reticles |
+| **02 GPS** | GNSS Geodetic Positioning | `#2563EB` (Blue) | `#EFF6FF` | `#BFDBFE` | Satellite constellations, RTK telemetry, coordinates |
+| **03 Night Vision** | Electro-Optical Low-Light Systems | `#4F46E5` (Indigo) | `#EEF2FF` | `#C7D2FE` | Phosphor glow, image intensification, night surveillance |
+| **04 Thermal** | Radiometric Thermography & Scopes | `#EA580C` (Flame Orange)| `#FFF7ED` | `#FED7AA` | Heat signatures, false-color spectra, infrared optics |
+| **05 Geological Compass** | Stratum Strike & Dip Inclinometers | `#D97706` (Amber/Brass) | `#FFFBEB` | `#FDE68A` | Machined brass, magnetic azimuth, leveling vials |
+| **06 Camping Equipment** | Field Expedition & Outpost Gear | `#65A30D` (Olive) | `#F7FEE7` | `#D9F99D` | Weatherproof shelter, anodized alloys, alpine field |
+| **07 Weather Station** | Automated Meteorological Arrays | `#0284C7` (Cyan/Sky) | `#F0F9FF` | `#BAE6FD` | Anemometers, barometric sensors, telemetry towers |
+| **08 Forestry Items** | Dendrometric Canopy & Tree Survey | `#16A34A` (Forest/Lime) | `#F0FDF4` | `#BBF7D0` | Tree calipers, increment borers, laser hypsometers |
 
-### Architectural Rules
-1. **12-Column Flexible Grid:**  
-   Sections utilize asymmetric column splits (e.g., `7:5` split where an oversized product visual on the left is counterbalanced by an architectural spec sheet on the right).
-2. **Alternating Visual Rhythm:**  
-   Vary layout density between sections:
-   - *Expansive Focus Section:* Open negative space, large isolated hero equipment plate, minimal typography.
-   - *High-Density Instrumentation Section:* Structured grid of technical parameters, comparative matrices, and coordinate references.
-3. **Controlled Overlaps:**  
-   Product photography slightly overlapping structural divider lines or background stone pedestals by `24px` to `40px` creates tactile depth without tacky drop-shadows.
-4. **Hairline Structural Framing:**  
-   Sections are demarcated by fine 1px hairline rules (`border-t border-border`) with subtle corner registration crosshairs (`+`) or numeric index stamps (`01 // OVERVIEW`).
+*Usage Rule:* Category colors highlight card borders, index markers (`01`, `02`), tag pills, micro-gradients, and directional arrows. They do not overpower full page layouts.
 
 ---
 
-## 5. SHAPE LANGUAGE
+## 5. TECHNICAL-DECORATION REDUCTION RULES
 
-The physical identity of precision instruments is defined by machined aluminum, calibrated glass, milled brass gears, and knurled grips.
+To shed the sterile "technical dossier" impression:
 
-### Geometry Guidelines
-- **Corner Radii:**  
-  - Standard Cards: `rounded-[2px]` to `rounded-sm` (4px max).
-  - Badges & Metric Chips: `rounded-[2px]` or sharp `rounded-none`.
-  - Buttons: Crisp `rounded-[3px]` or `rounded-sm`.
-  - Image Pedestals: `rounded-[2px]`.
-  - **Strictly Prohibited:** `rounded-2xl`, `rounded-3xl`, and bubbly pill containers.
-- **Borders & Edges:**  
-  - 1px crisp solid borders (`--border: #E2DFD6`).
-  - Active or hover states transition border tone to `--border-strong: #CBC7BA` or `--accent: #1E3A2F`.
-- **Elevation & Shadows:**  
-  - **Zero heavy blur drop-shadows.**
-  - Separation is achieved through surface contrast (`#FFFFFF` on `#F2F0EB`) and fine 1px hairline borders.
-  - Ambient contact shadow: `0 1px 3px rgba(20, 23, 21, 0.04), 0 8px 20px -4px rgba(20, 23, 21, 0.03)`.
+- **Target Reduction:** 30–40% decoration $\rightarrow$ **10–15% precision accent**.
+- **REMOVED:**
+  - Mock latitude/longitude coordinate strings.
+  - Corner registration crosshairs (`+`) on every single box.
+  - Fake telemetry stamps (`SCHEMATIC REF // 01`, `AXIS // X-01 · Y-02`).
+  - Wireframe black/white schematic line drawings of instruments.
+  - Overly dense monospace metadata bars spanning section headers.
+- **RETAINED (Tactful Precision Accents):**
+  - Clean two-digit monospace index badges (`01`, `02 / 08`).
+  - Precise 1px borders with crisp 2–4px corner radii.
+  - Authentic product specification pills (`ED Glass`, `<25mK NETD`, `RTK GNSS`).
+  - Subtle hairline divider rules between visual blocks.
 
 ---
 
-## 6. IMAGE DIRECTION
+## 6. MOTION LANGUAGE & TOKENS
 
-Product imagery is the centerpiece of the website. Every image must convey optical precision, physical mass, and uncompromising engineering quality.
+Motion is calibrated to feel energetic, fluid, and responsive without sluggish cinematic delays or bouncy cartoon springs.
 
-### Photographic Standards
-1. **Isolated Hardware on Warm Neutral Backdrops:**  
-   Equipment isolated with crisp alpha channels or photographed directly on warm limestone/chalk backgrounds (`#F2F0EB` / `#F8F7F4`), grounded by a soft natural contact shadow.
-2. **Macro Detail & Optical Clarity:**  
-   Close-ups highlighting:
-   - Multi-coated objective lenses with emerald/violet reflections.
-   - Knurled diopter adjustment rings.
-   - Anodized aluminum housing and IPX-rated weather seals.
-   - Laser-engraved azimuth marks and metric scales.
-3. **Consistent Lighting:**  
-   Soft directional daylight studio lighting (45-degree angle). No colored neon lighting, high-contrast digital flares, or artificial CGI glows.
-4. **Contextual & Field Imagery (When Applicable):**  
-   Only authentic documentary photography of high-altitude surveys, geological strata, meteorological towers, or dense canopy forestry.  
-   **Banned:** Generic stock models, smiling office workers, random hikers, laptop coffee shops, or industrial smokestacks.
+### Timing Tokens
 
----
+| Token | Duration | Application |
+| :--- | :--- | :--- |
+| `DURATION.micro` | `180ms – 250ms` (0.20s) | Micro-interactions, icon shifts, button active states, tab markers. |
+| `DURATION.hover` | `250ms – 350ms` (0.28s) | Card lift, border color transitions, image scale, arrow translation. |
+| `DURATION.headline`| `400ms – 550ms` (0.48s) | Hero heading line reveal, masked typography entrance. |
+| `DURATION.reveal` | `400ms – 650ms` (0.50s) | Scroll reveals, section headers, content blocks. |
+| `DURATION.heroPlate`| `500ms – 700ms` (0.60s) | Equipment plate entrance from right. |
+| `DURATION.heroSequence`| `500ms – 800ms` (0.75s) | Full staggered entrance of the Hero introduction. |
 
-## 7. TECHNICAL GRAPHIC LANGUAGE
+### Easing Curves
+- **Standard Damping:** `cubic-bezier(0.16, 1, 0.3, 1)` — immediate responsiveness with smooth, friction-braked deceleration. Zero overshoot.
 
-Subtle, non-distracting graphic notations ground the website in genuine scientific instrumentation.
+### Scroll Reveal Library
+1. **Reveal A (Up Reveal):** `opacity: 0 → 1`, `translateY: 30px → 0`.
+2. **Reveal B (Side Reveal / Zig-Zag):** `opacity: 0 → 1`, `translateX: -40px / +40px → 0`. Alternating section directions establish visual rhythm.
+3. **Reveal C (Mask Reveal):** `clip-path: inset(0 100% 0 0) → inset(0 0 0 0)`.
+4. **Reveal D (Scale Reveal):** `scale: 0.96 → 1`, `opacity: 0 → 1`.
 
-### Allowable Decorative Elements (Opacity 20% – 40%)
-- **Grid Crosshairs:** Minimal hairline `+` markers placed at grid intersections and image corners.
-- **Geographic & Grid Coordinates:** Monospace coordinates marking sections (e.g., `LAT 28°38'12"N · LON 77°13'45"E`).
-- **Index Counters:** Two-digit index numerals (`01 / 08`, `02 / 08`) set in `JetBrains Mono`.
-- **Compass & Azimuth Ticks:** Minimalist degree lines (`0° · 90° · 180° · 270°`) or vernier scale ticks on dividers.
-- **Document Reference Stamps:** Subtle technical reference markers (e.g., `DOC.REF // UE-SPEC-2026`).
-- **Rule of Restraint:** Use no more than 1–2 technical elements per section viewport. They must whisper, never shout.
+### Accessibility: `prefers-reduced-motion`
+When reduced motion is signaled:
+- Transitions set to 0s duration.
+- Mask and slide offsets removed.
+- Full layout displays instantly without delays or transforms.
 
 ---
 
-## 8. CATEGORY VISUAL SYSTEM (8 CATEGORIES)
+## 7. HOVER & INTERACTION SYSTEM
 
-The 8 core categories are:
-1. **Optics**
-2. **GPS**
-3. **Night Vision**
-4. **Thermal**
-5. **Geological Compass**
-6. **Camping Equipment**
-7. **Weather Station**
-8. **Forestry Items**
+Category and product modules feature multi-layered tactile feedback on desktop:
 
-### Concept: "The Curated Field Portfolios"
-Instead of a generic 4-column e-commerce grid, categories are presented as **curated technical portfolios**.
-
-### Visual Structure
-- **Asymmetric Editorial Layout:**  
-  A dynamic modular showcase highlighting primary categories with expansive architectural panels and secondary categories with structured technical blocks.
-- **Block Anatomy:**
-  - **Index Number:** `01` through `08` in `JetBrains Mono` (`text-accent-secondary`).
-  - **Category Headline:** Bold, authoritative typography (`Plus Jakarta Sans`).
-  - **Sub-Domain Classification:** e.g., `Optics — Precision Terrestrial Observation & Metrology`.
-  - **Hero Equipment Visual:** Studio-isolated hero instrument on warm stone backdrop.
-  - **Micro-Specifications Preview:** 2–3 key technological features (e.g., `ED Fluorite Glass · BaK-4 Prisms · Nitrogen Purged`).
-  - **Directional Indicator:** Minimal hairline arrow (`→`) that shifts slightly on hover.
-- **Hover State:**  
-  Subtle `1.03x` optical zoom of the equipment image, border transition from `--border` to `--accent-primary`, and brass highlight on the index numeral.
+1. **Card Elevation:** Smooth `translateY(-4px)` with depth shadow expansion.
+2. **Image Zoom:** Equipment visual scales `1.03x` to `1.04x` within an `overflow-hidden` container.
+3. **Accent Activation:** Card border transitions from neutral `--border` to category accent color.
+4. **Micro-Gradient Flare:** Ambient gradient backdrop illuminates from 0% to 100% opacity.
+5. **Arrow Slide:** Directional icon shifts `+4px` to `+6px` horizontally.
+6. **Zero Layout Shift:** All transforms utilize GPU-accelerated CSS transforms.
 
 ---
 
-## 9. PRODUCT VISUAL SYSTEM
+## 8. BUTTON & CTA LANGUAGE
 
-### Concept: "The Technical Equipment Dossier"
-Products are showcased as precision instruments, not consumer impulse items.
-
-### Card & Detail Hierarchy
-1. **Isolated Product Visual:** Clear, centered image on warm `#F2F0EB` pedestal.
-2. **Taxonomy & Model Code:** Monospace identifier (e.g., `OPTICS // REF-ED82` or `THERM // TS-640PRO`).
-3. **Product Name:** Strong, clean heading in `Plus Jakarta Sans`.
-4. **Single Critical Specification Metric:** A high-value technical highlight (e.g., `Spectral: 8–14µm | NETD <25mK | Sensor: 640×512`).
-5. **Primary Action Link:** `View Specifications →`.
-
-### Strict B2B Purity (Anti-Patterns)
-- **NO retail pricing** or currency tags.
-- **NO star ratings** or review counts.
-- **NO "Add to Cart"** or "Buy Now" buttons.
-- **NO quantity selectors**.
-- **NO discount percentages**, "Sale" stickers, or countdown timers.
+- **Primary Action ("Explore Products"):**
+  - Background: Brand Green (`#078C45`).
+  - Text: White.
+  - Hover: Darker green (`#057037`) with smooth fill transition, subtle elevation, and arrow translation (`+4px`).
+- **Secondary Action ("Send Inquiry"):**
+  - Background: Neutral Surface Secondary (`#F3F5F7`).
+  - Border: 1px solid `--border-strong` (`#CBD5E1`).
+  - Hover: Surface Tertiary (`#E8ECEF`), border shifts to Navy (`#12202C`).
+- **WhatsApp Action:**
+  - Background: Official WhatsApp Green (`#1D7349`).
+  - Direct real-time consultation modal / link.
 
 ---
 
-## 10. BUTTON & CTA LANGUAGE
-
-Buttons communicate precision, decisiveness, and tactile feedback.
-
-### CTA Hierarchy
-
-| Level | Action Label | Visual Treatment | Role & Context |
-| :--- | :--- | :--- | :--- |
-| **Primary** | `Explore Equipment`, `View Specifications` | Background: `--accent-primary` (`#1E3A2F`), Text: White, Border: 1px solid `#1E3A2F`, Radius: `rounded-[3px]`. Hover: `--accent-hover` (`#152A22`). | Main user journey actions. |
-| **Secondary** | `Send Inquiry`, `Request Datasheet` | Background: `--surface-secondary` (`#F2F0EB`), Text: `--text-primary`, Border: 1px solid `--border-strong` (`#CBC7BA`). Hover: `--surface-tertiary`. | Inquiry workflow initiation. |
-| **Contextual** | `Direct WhatsApp Inquiry` | Background: `--accent-whatsapp` (`#1D7349`), Text: White, Radius: `rounded-[3px]`, Lucide `MessageCircle` / WhatsApp icon. | Fast real-time procurement support. |
-| **Ghost / Text** | `Download Datasheet [PDF] →` | Background: Transparent, Text: `--text-primary`, subtle underline on hover. | Contextual documentation links. |
-
 ---
 
-## 11. MOTION LANGUAGE
+## 10. TYPOGRAPHY REDESIGN T1 SPECIFICATION
 
-### Philosophy: Mechanical Damping & Optical Smoothness
-Motion reflects physical, calibrated hardware—such as the oiled resistance of a survey tripod fluid head or the smooth rotational friction of an optical focus barrel.
+### Core Pairing & Roles
+- **Display / Headings (Sora):** 
+  - Weights: `500`, `600`, `700` (Avoid excessive `800`/`900` bold).
+  - Used for Hero H1, Inner Page H1, Section H2, H3, Category titles, Product names, Major CTA headings.
+  - Tracking: Intentional negative tracking (`-0.045em` on Hero, `-0.035em` on H2/H1, `-0.02em` on H3).
+  - Line Heights: Tight architectural leading (`0.98–1.02` Hero, `1.02–1.08` Section H2/Page H1).
+- **Body & Interface (DM Sans):**
+  - Weights: `400` (Regular), `500` (Medium), `600` (Semibold).
+  - Used for paragraphs, navigation links, buttons, form controls, labels, cards, specifications, and supporting text.
+  - Line Heights: Comfortable reading leading (`1.55–1.70`). Line length target: 60–75 characters.
+- **Microcopy & Technical Telemetry (IBM Plex Mono):**
+  - Weights: `400`, `500`, `600`.
+  - Strictly restrained to 5–10% of visible text: category numbering (`01–08`), model codes, micro indices.
+  - Tracking: Positive editorial tracking (`+0.04em` to `+0.06em`).
 
-### Motion Principles
-- **Duration:** Fast to moderate (`200ms` to `350ms`). Never sluggish.
-- **Easing Curve:** Smooth deceleration: `cubic-bezier(0.16, 1, 0.3, 1)` (Zero overshoot, zero cartoon bounce).
-- **Allowed Transitions:**
-  - Masked line reveals on major headings (`overflow-hidden` slide-up).
-  - Staggered entry for cards (`50ms` delay between siblings).
-  - Gentle image scale on hover (`1.02x` to `1.03x` scale with smooth ease).
-  - Subtle horizontal translations on directional arrows (`translate-x-1`).
-  - Hairline progress or border draw animations.
-- **Strictly Banned:**
-  - Bouncy springs or rubber-band animations.
-  - 3D card flips or perspective rotations.
-  - Exaggerated scroll zoom-outs.
-  - Excessive blur/frosted glass transitions across whole pages.
-
----
-
-## 12. MOBILE DESIGN PRINCIPLES
-
-Mobile viewports must feel like an ergonomic handheld field data collector, not a cramped desktop compromise.
-
-### Mobile Rules
-1. **Single-Column Editorial Rhythm:** Asymmetric desktop layouts reconfigure into strong vertical stacks with clear hierarchy.
-2. **Horizontal Swipeable Equipment Strips:** Collections and category previews can use smooth touch-snap horizontal carousels with index markers (`01 / 06`).
-3. **Touch Target Ergonomics:** All buttons, interactive rows, and navigation toggles have a minimum touch height of `48px`.
-4. **Selective Decluttering:** High-frequency technical decorative ticks and background coordinate marks are suppressed on viewports `< 640px` to maintain pristine legibility.
-5. **Sticky Action Dock:** A clean, minimal bottom dock provides instant access to `Inquiry Form` and `WhatsApp`, ensuring effortless conversions.
-6. **Responsive Type Scaling:** Display typography scales gracefully using CSS `clamp()` to avoid awkward wrapping on 375px screens.
-
----
-
-## 13. THINGS TO AVOID (THE "NEVER DO" LIST)
-
-- **NEVER use Dark Mode:** The site is strictly Light Mode only.
-- **NEVER let Green Dominate:** The primary accent (`#1E3A2F`) is an authoritative field accent, not a full-page wash. Udyog Engineers is not an environmental charity or forestry nursery.
-- **NEVER use Industrial Clichés:** No hazard yellow/black diagonal warning stripes, no rusty grunge textures, no heavy construction tropes.
-- **NEVER use Corporate Blue Gradients:** No generic Silicon Valley tech gradients or SaaS aesthetics.
-- **NEVER use eCommerce Retail UI:** No carts, wishlists, checkout steps, strikethrough sale prices, or promotional banners.
-- **NEVER use Large SaaS Card Radii:** Avoid `rounded-2xl` / `rounded-3xl` bubble containers and large pill buttons.
-- **NEVER use Excessive Glassmorphism:** No frosted acrylic panels obscuring readability.
-- **NEVER use Fake or Stock Content:** No stock photos of models pretending to look through binoculars, no fake testimonials, no fabricated certificates.
-- **NEVER mimic Afforda Technologies:** Maintain an entirely unique, sovereign visual identity tailored exclusively for precision instruments.
-
----
-
-## 14. NEXT IMPLEMENTATION ROADMAP
-With Phase 3 complete and the Design System established:
-- **Phase 4:** Navigation, Header & Footer visual refinement.
-- **Phase 5:** Premium Homepage Architecture & Hero Experience.
-- **Phase 6:** Category Portfolios & Equipment Exploration.
-- **Phase 7:** Technical Product Detail Pages & Datasheet Display.
-- **Phase 8:** Inquiry & WhatsApp Integration Polish.
+### Type Scales Summary
+- **Hero H1:** Fluid `clamp(2.375rem, 5.5vw + 1rem, 5.125rem)` (38px mobile → 82px desktop), Sora 600, leading `1.0`.
+- **Section H2:** `text-[32px] sm:text-[38px] md:text-[44px] lg:text-[54px]`, Sora 600, leading `1.05`, tracking `-0.035em`.
+- **Inner Page H1:** `text-[36px] sm:text-[44px] md:text-[50px] lg:text-[58px]`, Sora 600, leading `1.05`, tracking `-0.035em`.
+- **Category Titles:** Sora 600 (Feature: 32–38px, Horizontal: 24–28px, Compact: 22–24px).
+- **Product Titles:** Sora 600 (Cards: 18–22px, Product Detail H1: 34–54px).
+- **Navigation:** DM Sans 15px, weight 500 (normal) / 600 (active), tracking normal.
+- **Buttons & CTAs:** DM Sans 15–16px, weight 600, natural title/sentence case (no monospace, no all-caps).
+- **Body Paragraphs:** DM Sans 16px mobile, 17–18px desktop, leading 1.6–1.65.
+- **Micro Tags:** IBM Plex Mono 10–12px, natural title case, tracking 0.04em.

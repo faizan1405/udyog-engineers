@@ -67,6 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${fontBody.variable} ${fontDisplay.variable} ${fontMono.variable} h-full antialiased`}
     >
       <head>

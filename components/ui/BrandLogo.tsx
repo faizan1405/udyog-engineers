@@ -12,7 +12,7 @@ export interface BrandLogoProps {
 
 const SIZE_MAP = {
   sm: "h-8 sm:h-9", // Mobile header / compact
-  md: "h-9 sm:h-10 md:h-11", // Desktop header standard
+  md: "h-10 sm:h-11 md:h-12 lg:h-[48px]", // Desktop header standard - increased visual presence without increasing header height
   lg: "h-11 sm:h-12 md:h-14", // Footer / prominent cards
   xl: "h-14 sm:h-16 md:h-20", // About page hero / dossier
   custom: "",

@@ -31,15 +31,15 @@ export function PageHeader({
         {breadcrumbs && <Breadcrumb items={breadcrumbs} className="mb-4 sm:mb-6" />}
         <div className="max-w-3xl">
           {eyebrow && (
-            <div className="flex items-center gap-2 font-mono text-xs text-accent-secondary tracking-wider uppercase mb-2.5 font-semibold">
+            <div className="flex items-center gap-2 font-mono text-[11px] sm:text-xs text-accent-secondary tracking-[0.04em] mb-2.5 font-semibold">
               <span>{eyebrow}</span>
             </div>
           )}
-          <h1 className="font-display font-bold text-3xl sm:text-4xl lg:text-[2.75rem] text-text-primary tracking-tight leading-tight">
+          <h1 className="font-display font-semibold text-[36px] sm:text-[44px] md:text-[50px] lg:text-[58px] text-text-primary tracking-[-0.035em] leading-[1.05]">
             {title}
           </h1>
           {subtitle && (
-            <p className="font-sans text-sm sm:text-base text-text-secondary leading-relaxed mt-3 max-w-xl">
+            <p className="font-sans text-base sm:text-lg text-text-secondary leading-[1.6] mt-3.5 max-w-2xl">
               {subtitle}
             </p>
           )}

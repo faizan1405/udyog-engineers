@@ -10,40 +10,89 @@
  * restrained deep forest green, and muted brass/gold accents.
  */
 :root {
-  /* Surfaces & Backgrounds - Warm Ivory, Pure White, Soft Stone, Pale Sand */
-  --background: #F8F7F4;
+  /* Surfaces & Backgrounds - Section Rhythm */
+  --background: #FAF9F5;
   --surface: #FFFFFF;
   --surface-elevated: #FFFFFF;
-  --surface-secondary: #F2F0EB;
-  --surface-tertiary: #E8E5DC;
+  --surface-secondary: #F3F5F7;
+  --surface-tertiary: #E8ECEF;
+  --surface-cool: #F0F5F8;
+  --surface-dark: #12202C;
 
-  /* Typography Colors - Deep Graphite, Weathered Charcoal, Field Slate */
-  --text-primary: #141715;
-  --text-secondary: #4D544F;
-  --text-muted: #6E7570;
+  /* Typography Colors - Deep Navy / Blue-Black Slate */
+  --text-primary: #12202C;
+  --text-secondary: #3D4F5E;
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
 
-  /* Borders & Dividers - Hairline Stone, Frame Border */
-  --border: #E2DFD6;
-  --border-subtle: #EFECE5;
-  --border-strong: #CBC7BA;
+  /* Borders & Dividers */
+  --border: #E2E8F0;
+  --border-subtle: #EEF2F6;
+  --border-strong: #CBD5E1;
 
-  /* Brand Accents - Primary: Deep Alpine Moss / Field Olive */
-  --accent-primary: #1E3A2F;
-  --accent: #1E3A2F;
-  --accent-hover: #152A22;
-  --accent-muted: #E8EFEB;
+  /* Brand Anchors (Official Udyog Logo Green & Golden Yellow) */
+  --brand-green: #078C45;
+  --brand-green-hover: #057037;
+  --brand-green-muted: #E7F6ED;
+  --brand-yellow: #E5A812;
+  --brand-yellow-hover: #C9920E;
+  --brand-yellow-muted: #FEF8E7;
+
+  /* Primary Brand Accents */
+  --accent-primary: #078C45;
+  --accent: #078C45;
+  --accent-hover: #057037;
+  --accent-muted: #E7F6ED;
   --accent-foreground: #FFFFFF;
 
-  /* Brand Accents - Secondary: Muted Compass Brass / Instrument Bronze (WCAG AA Compliant) */
-  --accent-secondary: #8E733B;
-  --accent-secondary-hover: #755E2E;
-  --accent-secondary-muted: #F5F1E6;
+  /* Secondary Brand Accents (Golden Yellow) */
+  --accent-secondary: #E5A812;
+  --accent-secondary-hover: #C9920E;
+  --accent-secondary-muted: #FEF8E7;
+
+  /* Rich Supporting Accents */
+  --accent-navy: #12202C;
+  --accent-teal: #198C96;
+  --accent-cyan: #2A9FA8;
+  --accent-orange: #D66E3A;
+  --accent-terracotta: #C86B42;
 
   /* Contextual Accents */
   --accent-whatsapp: #1D7349;
+  --ring: #078C45;
 
-  /* System Focus */
-  --ring: #1E3A2F;
+  /* 8 Category Accent Identities */
+  --cat-optics: #059669;
+  --cat-optics-bg: #ECFDF5;
+  --cat-optics-border: #A7F3D0;
+
+  --cat-gps: #2563EB;
+  --cat-gps-bg: #EFF6FF;
+  --cat-gps-border: #BFDBFE;
+
+  --cat-night-vision: #4F46E5;
+  --cat-night-vision-bg: #EEF2FF;
+  --cat-night-vision-border: #C7D2FE;
+
+  --cat-thermal: #EA580C;
+  --cat-thermal-bg: #FFF7ED;
+  --cat-thermal-border: #FED7AA;
+
+  --cat-compass: #D97706;
+  --cat-compass-bg: #FFFBEB;
+  --cat-compass-border: #FDE68A;
+
+  --cat-camping: #65A30D;
+  --cat-camping-bg: #F7FEE7;
+  --cat-camping-border: #D9F99D;
+
+  --cat-weather: #0284C7;
+  --cat-weather-bg: #F0F9FF;
+  --cat-weather-border: #BAE6FD;
+
+  --cat-forestry: #16A34A;
+  --cat-forestry-bg: #F0FDF4;
+  --cat-forestry-border: #BBF7D0;
 }
 
 @theme {
@@ -52,22 +101,51 @@
   --color-surface-elevated: var(--surface-elevated);
   --color-surface-secondary: var(--surface-secondary);
   --color-surface-tertiary: var(--surface-tertiary);
+  --color-surface-cool: var(--surface-cool);
+  --color-surface-dark: var(--surface-dark);
+
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-muted: var(--text-muted);
+  --color-text-inverse: var(--text-inverse);
+
   --color-border: var(--border);
   --color-border-subtle: var(--border-subtle);
   --color-border-strong: var(--border-strong);
+
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-hover: var(--brand-green-hover);
+  --color-brand-green-muted: var(--brand-green-muted);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-yellow-hover: var(--brand-yellow-hover);
+  --color-brand-yellow-muted: var(--brand-yellow-muted);
+
   --color-accent-primary: var(--accent-primary);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-muted: var(--accent-muted);
   --color-accent-foreground: var(--accent-foreground);
+
   --color-accent-secondary: var(--accent-secondary);
   --color-accent-secondary-hover: var(--accent-secondary-hover);
   --color-accent-secondary-muted: var(--accent-secondary-muted);
+
+  --color-accent-navy: var(--accent-navy);
+  --color-accent-teal: var(--accent-teal);
+  --color-accent-cyan: var(--accent-cyan);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-terracotta: var(--accent-terracotta);
   --color-accent-whatsapp: var(--accent-whatsapp);
   --color-ring: var(--ring);
+
+  --color-cat-optics: var(--cat-optics);
+  --color-cat-gps: var(--cat-gps);
+  --color-cat-night-vision: var(--cat-night-vision);
+  --color-cat-thermal: var(--cat-thermal);
+  --color-cat-compass: var(--cat-compass);
+  --color-cat-camping: var(--cat-camping);
+  --color-cat-weather: var(--cat-weather);
+  --color-cat-forestry: var(--cat-forestry);
 
   --font-sans: var(--font-body), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-display: var(--font-display), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -77,7 +155,7 @@
   --ease-mechanical: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Precision Damped Transition Utilities (Phase 7B) */
+/* Precision Damped Transition Utilities (Phase 7B & Redesign R1) */
 .ease-precision {
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
@@ -145,27 +223,128 @@ body {
   outline-offset: 2px;
 }
 
-/* Typography Scale Base Helpers */
+/* =========================================================================
+   TYPOGRAPHY SYSTEM T1 — EDITORIAL ARCHITECTURE & BASE SCALES
+   ========================================================================= */
+
+/* Base resets & typography foundation */
 h1, .h1 {
   font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
   color: var(--text-primary);
 }
 
 h2, .h2 {
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
   color: var(--text-primary);
 }
 
 h3, .h3 {
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
   color: var(--text-primary);
 }
+
+h4, .h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+/* Hero Display XL: Fluid clamp (38px at 360px up to 74-76px at 1440px+) */
+.text-hero-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.375rem, 3.43vw + 1.6rem, 4.75rem);
+  line-height: 1.0;
+  letter-spacing: -0.045em;
+}
+
+/* Section H2 Scale: 46-52px desktop, 38-44px tablet, 28-34px mobile */
+.text-section-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.875rem, 2.05vw + 1.41rem, 3.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+/* Inner Page H1: 56-68px desktop, 46-54px tablet, 38-44px mobile */
+.text-page-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.375rem, 3.6vw + 0.9rem, 4.125rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+/* Product Detail H1: 48-60px desktop, 34-42px mobile */
+.text-product-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.125rem, 3vw + 0.8rem, 3.75rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+/* Lead Copy: 18-20px desktop, 16-17px mobile, line-height 1.55-1.65 */
+.text-lead {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 0.4vw + 0.9rem, 1.25rem);
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Editorial Micro Annotation (IBM Plex Mono, 11-12px, weight 500, tracking +0.04em) */
+.text-micro-annotation {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+}
+
+/* Category Index Number (IBM Plex Mono, 13-14px, weight 600) */
+.text-index-number {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Navigation Link (DM Sans 15-16px, weight 500) */
+.text-nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Button Label (DM Sans 15-16px, weight 600) */
+.text-btn-label {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Redesign R1 Interaction & Motion Utilities (Hover & Settle only — zero infinite animations) */
+.transition-hover-rich {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 250ms ease,
+              background-color 250ms ease;
+}
+
 
 /* Reduced motion accessibility adherence */
 @media (prefers-reduced-motion: reduce) {

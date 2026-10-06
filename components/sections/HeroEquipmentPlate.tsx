@@ -3,13 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { cn, assetPath } from "@/lib/utils";
-import { isStagingOrDevelopment } from "@/lib/staging";
-
 
 export interface HeroEquipmentPlateProps {
   /**
    * Optional authentic product image source.
-   * When provided, seamlessly replaces the technical blueprint placeholder.
+   * When provided, seamlessly replaces the vector showcase asset.
    */
   imageSrc?: string;
   alt?: string;
@@ -17,398 +15,262 @@ export interface HeroEquipmentPlateProps {
 }
 
 /**
- * HERO EQUIPMENT PLATE
+ * HERO EQUIPMENT PLATE — REDESIGN R1.2
  *
- * Art-directed technical equipment plate for Udyog Engineers.
- * Designed so official hardware photography can drop in directly
- * via `imageSrc` without modifying section layout or framing.
- *
- * NOTE: Currently displays a calibrated technical instrument schematic
- * while awaiting authentic client photography.
+ * Dominant product brand visual showcase:
+ * - Unverified "EST. 1974" and software UI framing bars completely removed
+ * - Product visual made noticeably larger with minimal dead whitespace
+ * - Rich layered composition: large soft green shape, warm yellow shape, subtle teal layer, controlled shadow depth
+ * - Zero fake specifications, zero telemetry
  */
 export function HeroEquipmentPlate({
-  imageSrc,
-  alt = "Precision optical survey instrument technical dossier plate",
+  imageSrc = "/images/generated/hero/hero-optical-instrument.webp",
+  alt = "Precision optical survey total station equipment showcase",
   className,
 }: HeroEquipmentPlateProps) {
   return (
     <div
       className={cn(
-        "relative w-full border border-border bg-surface rounded-[2px] overflow-hidden",
-        "shadow-[0_1px_3px_rgba(20,23,21,0.04),0_12px_28px_-6px_rgba(20,23,21,0.04)]",
+        "relative w-full rounded-2xl sm:rounded-3xl border border-border/70 bg-white shadow-xl overflow-hidden group select-none",
+        "transition-all duration-300 ease-precision hover:shadow-2xl hover:border-brand-green/35 hover:-translate-y-1",
         className
       )}
     >
-      {/* 4 Corner Registration Crosshairs */}
-      <span
+      {/* 1. Rich Layered Color Atmosphere (Large Soft Green + Warm Yellow + Subtle Teal) */}
+      <div
         aria-hidden="true"
-        className="absolute top-1.5 left-1.5 font-mono text-[10px] text-accent-secondary/60 leading-none select-none z-20"
+        className="absolute inset-0 pointer-events-none overflow-hidden"
       >
-        +
-      </span>
-      <span
-        aria-hidden="true"
-        className="absolute top-1.5 right-1.5 font-mono text-[10px] text-accent-secondary/60 leading-none select-none z-20"
-      >
-        +
-      </span>
-      <span
-        aria-hidden="true"
-        className="absolute bottom-1.5 left-1.5 font-mono text-[10px] text-accent-secondary/60 leading-none select-none z-20"
-      >
-        +
-      </span>
-      <span
-        aria-hidden="true"
-        className="absolute bottom-1.5 right-1.5 font-mono text-[10px] text-accent-secondary/60 leading-none select-none z-20"
-      >
-        +
-      </span>
+        {/* Large Soft Emerald Brand Glow (Top-Right) */}
+        <div className="absolute -top-20 -right-20 w-[420px] h-[420px] rounded-full bg-brand-green/16 blur-3xl transition-opacity duration-300 group-hover:opacity-95" />
+        {/* Warm Golden Yellow Ambient Shape (Bottom-Left) */}
+        <div className="absolute -bottom-24 -left-20 w-[390px] h-[390px] rounded-full bg-brand-yellow/18 blur-3xl transition-opacity duration-300 group-hover:opacity-95" />
+        {/* Subtle Atmospheric Teal Layer (Center-Offset) */}
+        <div className="absolute top-1/4 left-1/4 w-[330px] h-[330px] rounded-full bg-accent-teal/12 blur-3xl" />
+        {/* Soft Organic Geometric Depth Ring */}
+        <div className="absolute inset-3 sm:inset-5 rounded-2xl border border-border/30 bg-gradient-to-br from-surface/70 via-surface-secondary/25 to-surface/80 -z-0" />
+      </div>
 
-      {/* Top Technical Metadata Header */}
-      <div className="flex items-center justify-between px-3 py-2 border-b border-border bg-surface-secondary/70 text-[10px] font-mono text-text-muted">
-        <div className="flex items-center gap-2 min-w-0">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary shrink-0" />
-          <span className="tracking-wider uppercase font-medium text-text-primary text-[9px] sm:text-[10px] truncate">
-            PLATE 01 // PRECISION OPTICAL METROLOGY
-          </span>
-        </div>
-        <div className="hidden sm:flex items-center gap-3 text-text-muted">
-          <span>AXIS // X-01 · Y-02</span>
-          <span>·</span>
-          <span>SCHEMATIC REF // 01</span>
+      {/* 2. Unobtrusive Floating Authentic Micro-Badge */}
+      <div className="absolute top-4 left-4 sm:top-5 sm:left-5 z-20 pointer-events-none">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface/90 border border-border/80 shadow-2xs backdrop-blur-xs text-[11px] font-sans font-medium text-text-secondary">
+          <span className="w-2 h-2 rounded-full bg-brand-green" />
+          <span>Professional Equipment</span>
         </div>
       </div>
 
-      {/* Main Showcase Canvas */}
-      <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] w-full flex items-center justify-center p-4 sm:p-6 bg-gradient-to-b from-surface to-surface-secondary/40 overflow-hidden">
-        {/* Subtle Precision Grid Lines */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none opacity-[0.45] bg-[linear-gradient(to_right,#E2DFD6_1px,transparent_1px),linear-gradient(to_bottom,#E2DFD6_1px,transparent_1px)] bg-[size:32px_32px]"
-        />
-
-        {/* Optical Reticle Center Rings (Decorative Background) */}
-        <svg
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full pointer-events-none opacity-30 stroke-border-strong"
-          viewBox="0 0 600 450"
-          fill="none"
-        >
-          <circle cx="300" cy="225" r="160" strokeDasharray="3 3" />
-          <circle cx="300" cy="225" r="110" />
-          <circle cx="300" cy="225" r="50" strokeDasharray="2 4" />
-          <line x1="300" y1="35" x2="300" y2="415" strokeDasharray="4 4" />
-          <line x1="110" y1="225" x2="490" y2="225" strokeDasharray="4 4" />
-          <text
-            x="308"
-            y="75"
-            fill="#7C837E"
-            fontSize="8"
-            fontFamily="monospace"
-            letterSpacing="0.1em"
-          >
-            000° AZIMUTH
-          </text>
-          <text
-            x="455"
-            y="220"
-            fill="#7C837E"
-            fontSize="8"
-            fontFamily="monospace"
-            letterSpacing="0.1em"
-          >
-            090°
-          </text>
-          <text
-            x="308"
-            y="410"
-            fill="#7C837E"
-            fontSize="8"
-            fontFamily="monospace"
-            letterSpacing="0.1em"
-          >
-            180°
-          </text>
-          <text
-            x="115"
-            y="220"
-            fill="#7C837E"
-            fontSize="8"
-            fontFamily="monospace"
-            letterSpacing="0.1em"
-          >
-            270°
-          </text>
-        </svg>
-
+      {/* 3. Dominant Equipment Visual Showcase (Enlarged to fill plate) */}
+      <div className="relative aspect-[4/3] w-full flex items-center justify-center p-2.5 sm:p-3.5 lg:p-4 overflow-hidden z-10">
         {imageSrc ? (
-          /* Production Equipment Photograph Mode */
-          <div className="relative w-full h-full flex items-center justify-center z-10">
+          /* Client Official Hardware Photography Mode */
+          <div className="relative w-full h-full flex items-center justify-center transition-transform duration-300 ease-precision group-hover:scale-[1.03]">
             <Image
               src={assetPath(imageSrc)}
               alt={alt}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 45vw"
               priority
-              className="object-contain drop-shadow-[0_16px_24px_rgba(20,23,21,0.08)]"
+              className="object-contain drop-shadow-[0_24px_36px_rgba(18,32,44,0.18)]"
             />
           </div>
         ) : (
-          /* TEMPORARY DEVELOPMENT ASSET: Precision Optical Survey Vector Monograph */
-          <div className="relative w-full h-full flex flex-col items-center justify-center z-10">
+          /* Statuesque Precision Optical Survey Instrument Illustration */
+          <div className="relative w-full h-full flex items-center justify-center transition-transform duration-300 ease-precision group-hover:scale-[1.03]">
+            {/* Subtle Radiant Silhouette Backdrop Halo */}
+            <div
+              aria-hidden="true"
+              className="absolute w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-gradient-to-tr from-brand-green/14 via-brand-yellow/14 to-accent-teal/12 blur-2xl pointer-events-none"
+            />
+
             <svg
-              className="w-full h-full max-h-[300px] sm:max-h-[340px] drop-shadow-sm select-none"
+              className="w-full h-full max-h-[360px] sm:max-h-[400px] lg:max-h-[430px] drop-shadow-[0_20px_32px_rgba(18,32,44,0.15)] select-none"
               viewBox="0 0 520 380"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               aria-label={alt}
               role="img"
             >
+              <defs>
+                {/* Deep Slate Metallic Housing Gradient */}
+                <linearGradient id="instrumentBody" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#263445" />
+                  <stop offset="50%" stopColor="#14212D" />
+                  <stop offset="100%" stopColor="#1E2B38" />
+                </linearGradient>
+                {/* Brand Green Precision Accent Stripe */}
+                <linearGradient id="brandGreenAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#078C45" />
+                  <stop offset="50%" stopColor="#10B981" />
+                  <stop offset="100%" stopColor="#057037" />
+                </linearGradient>
+                {/* Knurled Brass / Vernier Gold Ring */}
+                <linearGradient id="knurledBrass" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#F59E0B" />
+                  <stop offset="50%" stopColor="#FDE68A" />
+                  <stop offset="100%" stopColor="#D97706" />
+                </linearGradient>
+                {/* Emerald Optical Multi-Coated Objective Reflection */}
+                <radialGradient id="emeraldLensReflection" cx="35%" cy="35%" r="65%">
+                  <stop offset="0%" stopColor="#34D399" />
+                  <stop offset="55%" stopColor="#059669" />
+                  <stop offset="100%" stopColor="#064E3B" />
+                </radialGradient>
+                {/* Violet Fluorite Optical Flare */}
+                <radialGradient id="violetLensFlare" cx="70%" cy="30%" r="50%">
+                  <stop offset="0%" stopColor="#A78BFA" stopOpacity="0.85" />
+                  <stop offset="100%" stopColor="#4C1D95" stopOpacity="0" />
+                </radialGradient>
+                {/* Tribrach Shadow */}
+                <radialGradient id="baseShadow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#12202C" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="#12202C" stopOpacity="0" />
+                </radialGradient>
+              </defs>
+
+              {/* Ground Shadow Halo under Instrument */}
+              <ellipse cx="260" cy="350" rx="160" ry="15" fill="url(#baseShadow)" />
+
               {/* Tribrach Base & Leveling Screws */}
               <rect
-                x="170"
-                y="315"
-                width="180"
-                height="16"
-                rx="2"
-                fill="#F2F0EB"
-                stroke="#141715"
-                strokeWidth="1.75"
-              />
-              <rect
-                x="195"
-                y="331"
-                width="32"
-                height="10"
-                rx="1"
-                fill="#E8E5DC"
-                stroke="#141715"
+                x="150"
+                y="312"
+                width="220"
+                height="18"
+                rx="5"
+                fill="url(#instrumentBody)"
+                stroke="#12202C"
                 strokeWidth="1.5"
               />
-              <rect
-                x="293"
-                y="331"
-                width="32"
-                height="10"
-                rx="1"
-                fill="#E8E5DC"
-                stroke="#141715"
-                strokeWidth="1.5"
-              />
-              <line
-                x1="180"
-                y1="323"
-                x2="340"
-                y2="323"
-                stroke="#CBC7BA"
-                strokeDasharray="2 3"
-              />
+              {/* Leveling Foot Screws with Knurled Brass Rings */}
+              <rect x="175" y="330" width="40" height="12" rx="3" fill="url(#knurledBrass)" stroke="#12202C" strokeWidth="1" />
+              <rect x="305" y="330" width="40" height="12" rx="3" fill="url(#knurledBrass)" stroke="#12202C" strokeWidth="1" />
 
-              {/* Horizontal Graduated Bezel / Azimuth Dial */}
+              {/* Horizontal Graduated Azimuth Bezel */}
               <rect
-                x="200"
-                y="290"
-                width="120"
-                height="25"
-                rx="2"
+                x="190"
+                y="278"
+                width="140"
+                height="34"
+                rx="4"
                 fill="#FFFFFF"
-                stroke="#141715"
-                strokeWidth="1.75"
+                stroke="#12202C"
+                strokeWidth="1.5"
               />
-              {/* Millimeter Degree Ticks */}
-              {[...Array(13)].map((_, i) => (
+              {/* Brand Green Highlight Band on Bezel */}
+              <rect x="190" y="278" width="140" height="4" fill="url(#brandGreenAccent)" />
+
+              {/* Subtle Precision Millimeter Calibration Ticks */}
+              {[...Array(17)].map((_, i) => (
                 <line
                   key={i}
-                  x1={208 + i * 8.5}
-                  y1="290"
-                  x2={208 + i * 8.5}
-                  y2={i % 3 === 0 ? "300" : "296"}
-                  stroke="#4D544F"
+                  x1={Number((198 + i * 7.7).toFixed(1))}
+                  y1="286"
+                  x2={Number((198 + i * 7.7).toFixed(1))}
+                  y2={i % 4 === 0 ? "302" : "294"}
+                  stroke="#475569"
                   strokeWidth="1.2"
                 />
               ))}
 
-              {/* Vertical Standards (Dual Arms of the Theodolite) */}
+              {/* Dual Vertical Standards (Upright Arms) */}
               <path
-                d="M215 290V160L235 150V290H215Z"
-                fill="#F8F7F4"
-                stroke="#141715"
-                strokeWidth="1.75"
+                d="M206 278V152L230 142V278H206Z"
+                fill="url(#instrumentBody)"
+                stroke="#12202C"
+                strokeWidth="1.5"
               />
               <path
-                d="M305 290V160L285 150V290H305Z"
-                fill="#F8F7F4"
-                stroke="#141715"
-                strokeWidth="1.75"
+                d="M314 278V152L290 142V278H314Z"
+                fill="url(#instrumentBody)"
+                stroke="#12202C"
+                strokeWidth="1.5"
               />
 
-              {/* Horizontal Trunnion Axis Center Pivot */}
-              <circle
-                cx="260"
-                cy="175"
-                r="18"
-                fill="#FFFFFF"
-                stroke="#141715"
-                strokeWidth="1.75"
+              {/* Center Core Instrument Column */}
+              <rect
+                x="234"
+                y="204"
+                width="52"
+                height="74"
+                rx="4"
+                fill="#1E2B38"
+                stroke="#12202C"
+                strokeWidth="1.5"
               />
-              <circle cx="260" cy="175" r="7" fill="#9C824A" />
+              <rect x="242" y="214" width="36" height="4" fill="url(#knurledBrass)" rx="1" />
 
-              {/* Main Optical Telescope Barrel (Asymmetric 18° Inclined) */}
-              <g transform="rotate(-12 260 175)">
+              {/* Horizontal Trunnion Axis Center Pivot with Polished Brass Bezel */}
+              <circle cx="260" cy="168" r="24" fill="#FFFFFF" stroke="#12202C" strokeWidth="1.5" />
+              <circle cx="260" cy="168" r="17" fill="url(#knurledBrass)" stroke="#12202C" strokeWidth="1" />
+              <circle cx="260" cy="168" r="7" fill="#078C45" />
+
+              {/* Main Optical Telescope Barrel (Art-Directed 12° Incline) */}
+              <g transform="rotate(-12 260 168)">
                 {/* Sunshade Hood & Objective Lens Assembly */}
                 <rect
-                  x="110"
-                  y="157"
-                  width="44"
-                  height="36"
-                  rx="2"
-                  fill="#1E3A2F"
-                  stroke="#141715"
-                  strokeWidth="1.75"
-                />
-                {/* Multi-Coated ED Objective Lens (Emerald Glint) */}
-                <ellipse
-                  cx="112"
-                  cy="175"
+                  x="90"
+                  y="146"
+                  width="65"
+                  height="44"
                   rx="4"
-                  ry="16"
-                  fill="#2D5A46"
-                  stroke="#9C824A"
+                  fill="url(#instrumentBody)"
+                  stroke="#12202C"
                   strokeWidth="1.5"
                 />
-                <ellipse
-                  cx="113"
-                  cy="175"
-                  rx="1.5"
-                  ry="11"
-                  fill="#A3E635"
-                  fillOpacity="0.45"
-                />
+                <rect x="90" y="146" width="7" height="44" fill="url(#brandGreenAccent)" />
 
-                {/* Main Telescope Housing Barrel */}
-                <rect
-                  x="154"
-                  y="161"
-                  width="180"
-                  height="28"
-                  fill="#FFFFFF"
-                  stroke="#141715"
-                  strokeWidth="1.75"
-                />
+                {/* Multi-Coated Objective Lens with Emerald & Violet Optical Reflections */}
+                <ellipse cx="94" cy="168" rx="6" ry="20" fill="url(#emeraldLensReflection)" stroke="#E5A812" strokeWidth="1.5" />
+                <ellipse cx="95" cy="168" rx="3" ry="14" fill="url(#violetLensFlare)" />
 
-                {/* Knurled Focus Barrel Ring */}
+                {/* Main Telescope Body Tube */}
                 <rect
-                  x="218"
-                  y="158"
-                  width="26"
-                  height="34"
-                  rx="1"
-                  fill="#F2F0EB"
-                  stroke="#141715"
+                  x="155"
+                  y="150"
+                  width="188"
+                  height="36"
+                  fill="#F8FAFC"
+                  stroke="#12202C"
                   strokeWidth="1.5"
                 />
-                {[...Array(6)].map((_, i) => (
+                {/* Brand Green Dynamic Ribbon on Barrel */}
+                <rect x="155" y="166" width="188" height="4.5" fill="url(#brandGreenAccent)" />
+
+                {/* Knurled Focus Ring Assembly */}
+                <rect
+                  x="220"
+                  y="146"
+                  width="34"
+                  height="44"
+                  rx="3"
+                  fill="url(#knurledBrass)"
+                  stroke="#12202C"
+                  strokeWidth="1.2"
+                />
+                {[...Array(8)].map((_, i) => (
                   <line
                     key={i}
-                    x1={222 + i * 3.5}
-                    y1="158"
-                    x2={222 + i * 3.5}
-                    y2="192"
-                    stroke="#7C837E"
-                    strokeWidth="1"
+                    x1={Number((224 + i * 3.7).toFixed(1))}
+                    y1="146"
+                    x2={Number((224 + i * 3.7).toFixed(1))}
+                    y2="190"
+                    stroke="#78350F"
+                    strokeWidth="1.2"
                   />
                 ))}
 
-                {/* Eyepiece / Diopter Ring Assembly */}
-                <rect
-                  x="334"
-                  y="163"
-                  width="36"
-                  height="24"
-                  rx="1"
-                  fill="#141715"
-                  stroke="#141715"
-                  strokeWidth="1.5"
-                />
-                <rect
-                  x="370"
-                  y="166"
-                  width="18"
-                  height="18"
-                  rx="2"
-                  fill="#4D544F"
-                  stroke="#141715"
-                  strokeWidth="1.5"
-                />
-                {/* Optical Collimation Line (Dashed) */}
-                <line
-                  x1="70"
-                  y1="175"
-                  x2="410"
-                  y2="175"
-                  stroke="#9C824A"
-                  strokeWidth="1"
-                  strokeDasharray="4 4"
-                  opacity="0.6"
-                />
+                {/* Eyepiece / Diopter Adjustment Assembly */}
+                <rect x="343" y="154" width="40" height="28" rx="3" fill="url(#instrumentBody)" stroke="#12202C" strokeWidth="1.5" />
+                <rect x="383" y="157" width="22" height="22" rx="3" fill="#334155" stroke="#12202C" strokeWidth="1.2" />
               </g>
 
               {/* Optical Collimator Sight on Top */}
-              <rect
-                x="235"
-                y="118"
-                width="50"
-                height="10"
-                rx="1"
-                fill="#E8E5DC"
-                stroke="#141715"
-                strokeWidth="1.25"
-              />
-
-              {/* Precision Dial Pointer & Metric Stamp */}
-              <text
-                x="260"
-                y="368"
-                textAnchor="middle"
-                fontFamily="monospace"
-                fontSize="9"
-                fontWeight="600"
-                fill="#4D544F"
-                letterSpacing="0.08em"
-              >
-                OPTICAL ASSEMBLY // CROSS-SECTION SCHEMATIC REF. 01
-              </text>
+              <rect x="235" y="110" width="52" height="12" rx="3" fill="url(#brandGreenAccent)" stroke="#12202C" strokeWidth="1.2" />
             </svg>
-
-            {/* Clear Temporary Architecture Badge (Visible in staging/dev only) */}
-            {isStagingOrDevelopment() && (
-              <div className="mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface/95 border border-border-strong text-text-primary rounded-[2px] text-[10px] font-mono tracking-wider shadow-xs backdrop-blur-xs">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary" />
-                <span>TEMPORARY ASSET // OFFICIAL PHOTOGRAPHY PENDING</span>
-              </div>
-            )}
           </div>
         )}
-      </div>
-
-      {/* Bottom Technical Scale & Telemetry Rule */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-3 py-2 border-t border-border bg-surface-secondary/40 text-[10px] sm:text-[11px] font-mono">
-        {/* Vernier Measurement Micro Ticks */}
-        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-text-muted">
-          <span className="text-[9px] uppercase tracking-wider text-accent-secondary font-semibold shrink-0">
-            SCHEMATIC ANATOMY:
-          </span>
-          <span className="text-text-primary font-medium">OBJECTIVE BARREL</span>
-          <span className="text-border-strong">|</span>
-          <span className="text-text-secondary">AZIMUTH VERNIER BASE</span>
-        </div>
-
-        {/* Document Identifier */}
-        <div className="text-[10px] text-text-muted tracking-tight">
-          DOC.REF // <span className="text-text-primary">UE-SYS-2026-F</span>
-        </div>
       </div>
     </div>
   );
 }
+

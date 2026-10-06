@@ -3,67 +3,65 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Compass, ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { getFeaturedProducts } from "@/data/products";
 import { Product } from "@/types/product";
-import { isStagingOrDevelopment } from "@/lib/staging";
 import { motion, useReducedMotion } from "framer-motion";
 import { PRECISION_EASE, DURATION } from "@/lib/motion";
 import { assetPath } from "@/lib/utils";
 
 
-interface StagedProductSlot {
+import { getCategoryTheme } from "@/config/categoryThemes";
+
+interface RepresentativeEquipmentSlot {
   category: string;
   categorySlug: string;
   discipline: string;
-  provisionalTitle: string;
-  benchmarkSpec: string;
-  aspectClass: string;
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
 }
 
-const STAGED_SLOTS: StagedProductSlot[] = [
+const REPRESENTATIVE_SLOTS: RepresentativeEquipmentSlot[] = [
   {
-    category: "Optics",
+    category: "Survey & Optical Equipment",
     categorySlug: "optics",
-    discipline: "FIELD SYSTEMS",
-    provisionalTitle: "Precision Terrestrial Survey Instrument",
-    benchmarkSpec:
-      "High-resolution objective lens assembly with diopter graduation, engineered for field triangulation and optical observation.",
-    aspectClass: "aspect-[16/10]",
+    discipline: "Field & Terrestrial Optics",
+    title: "Optical Survey Total Stations & Precision Levels",
+    description:
+      "High-resolution objective optics engineered for boundary determination, structural monitoring, and terrestrial triangulation in demanding environments.",
+    imageSrc: "/images/generated/home/benchmark/benchmark-optics.webp",
+    imageAlt: "Precision optical survey total station field instrument",
   },
   {
-    category: "GPS",
+    category: "GPS & Positioning Equipment",
     categorySlug: "gps",
-    discipline: "GNSS GEODETIC",
-    provisionalTitle: "Multi-Constellation Satellite Receiver",
-    benchmarkSpec:
-      "Differential positioning array engineered for cadastral survey, mapping, and GIS field data logging.",
-    aspectClass: "aspect-[16/9]",
+    discipline: "GNSS & Geospatial Mapping",
+    title: "Geodetic GNSS Positioning & Mapping Arrays",
+    description:
+      "Multi-constellation satellite navigation receivers for geodetic reference, GIS boundary logging, and topographical coordinate recording.",
+    imageSrc: "/images/generated/home/benchmark/benchmark-gps.webp",
+    imageAlt: "Professional GNSS geodetic receiver and field data collector",
   },
   {
-    category: "Thermal",
+    category: "Thermal Observation Equipment",
     categorySlug: "thermal",
-    discipline: "ELECTRO-OPTICS",
-    provisionalTitle: "Radiometric Field Thermal Imager",
-    benchmarkSpec:
-      "High-sensitivity uncooled microbolometer detector with dual-field observation optics.",
-    aspectClass: "aspect-[16/9]",
+    discipline: "Electro-Optics & Thermography",
+    title: "Radiometric Field Thermal Observation Systems",
+    description:
+      "High-sensitivity radiometric thermal imagers and optics designed for nocturnal monitoring, perimeter security, and environmental tracking.",
+    imageSrc: "/images/generated/home/benchmark/benchmark-thermal.webp",
+    imageAlt: "High-resolution radiometric thermal imaging observation camera",
   },
 ];
 
 /**
- * FEATURED PRODUCTS COMPONENT (PHASE 4B)
+ * SELECTED EQUIPMENT SECTION
  *
- * Implements the editorial technical equipment dossier experience.
- *
- * DATA INTEGRITY LOGIC:
- * 1. If genuine production products exist in `data/products.ts` (isDemoPlaceholder: false),
- *    renders verified equipment dossiers.
- * 2. If ZERO real products exist (current state, as only demo placeholders exist),
- *    renders the complete architectural dossier layout with tasteful staging blocks
- *    clearly marked as awaiting authentic manufacturer photography and datasheets.
- *    No fake models or unverified specifications are presented as genuine.
+ * Implements representative equipment showcase with authentic category photography.
+ * Avoids fabricated product identities, maintaining genuine institutional positioning.
  */
 export function FeaturedProducts() {
   const shouldReduceMotion = useReducedMotion();
@@ -86,25 +84,27 @@ export function FeaturedProducts() {
           className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8 mb-10 border-b border-border"
         >
           <div>
-            <div className="flex items-center gap-2 font-mono text-xs text-accent-secondary tracking-wider uppercase mb-2">
-              <span className="font-semibold">03 // SELECTED EQUIPMENT</span>
-              <span className="text-border-strong">|</span>
-              <span className="text-text-muted">BENCHMARK INSTRUMENTS</span>
+            <div className="flex items-center gap-2 font-sans text-xs text-accent-secondary mb-2 font-medium">
+              <span className="font-mono font-semibold">03</span>
+              <span>·</span>
+              <span className="font-semibold text-accent-secondary">Selected Equipment</span>
+              <span className="text-border-strong">·</span>
+              <span className="text-text-muted">Field Systems</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-text-primary font-display">
-              Benchmark Field Instruments
+            <h2 className="font-display font-semibold text-[30px] sm:text-[36px] md:text-[42px] lg:text-[50px] text-text-primary tracking-[-0.035em] leading-[1.06]">
+              Selected for Demanding Field Environments
             </h2>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-            <p className="font-sans text-sm text-text-secondary max-w-md leading-relaxed">
-              Selected precision instruments engineered for field research, geodetic surveying, and optical metrology.
+            <p className="font-sans text-[15px] sm:text-base text-text-secondary max-w-md leading-relaxed">
+              Representative instrumentation engineered for field research, geodetic surveying, optical measurement, and environmental observation.
             </p>
             <Link
-              href="/products"
-              className="inline-flex items-center gap-1.5 font-mono text-xs text-accent font-semibold hover:underline self-start sm:self-auto shrink-0"
+              href="/categories"
+              className="inline-flex items-center gap-1.5 font-sans text-xs sm:text-[13px] text-accent font-semibold hover:underline self-start sm:self-auto shrink-0"
             >
-              <span>View Full Catalogue</span>
+              <span>Explore Categories</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -117,49 +117,50 @@ export function FeaturedProducts() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Primary Featured Product (7 Cols) */}
             {realFeaturedProducts[0] && (
-              <RealPrimaryDossier product={realFeaturedProducts[0]} />
+              <RealPrimaryCard product={realFeaturedProducts[0]} />
             )}
 
             {/* Supporting Products (5 Cols Stacked) */}
             <div className="lg:col-span-5 flex flex-col gap-6">
               {realFeaturedProducts.slice(1, 3).map((prod) => (
-                <RealSupportingDossier key={prod.id} product={prod} />
+                <RealSupportingCard key={prod.id} product={prod} />
               ))}
             </div>
           </div>
         ) : (
           /* =========================================================================
-              STATE B: ASSET STAGING ARCHITECTURE (NO REAL PRODUCTS YET)
-              Renders the exact production layout with clean staging pedestals,
-              avoiding fake models or fraudulent claims.
+              STATE B: REPRESENTATIVE EQUIPMENT PRESENTATION
+              Category-level showcase with authentic photography and verified themes.
              ========================================================================= */
           <div className="flex flex-col gap-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-              {/* Primary Staged Dossier: 7 Cols */}
-              <StagedPrimaryDossier slot={STAGED_SLOTS[0]} />
+              {/* Primary Representative Equipment: 7 Cols */}
+              <RepresentativePrimaryCard slot={REPRESENTATIVE_SLOTS[0]} />
 
-              {/* Supporting Staged Dossiers: 5 Cols (Stacked) */}
+              {/* Supporting Representative Equipment: 5 Cols (Stacked) */}
               <div className="lg:col-span-5 flex flex-col gap-6">
-                <StagedSupportingDossier slot={STAGED_SLOTS[1]} />
-                <StagedSupportingDossier slot={STAGED_SLOTS[2]} />
+                <RepresentativeSupportingCard slot={REPRESENTATIVE_SLOTS[1]} />
+                <RepresentativeSupportingCard slot={REPRESENTATIVE_SLOTS[2]} />
               </div>
             </div>
 
             {/* Technical Verification Status Notice */}
-            <div className="mt-4 p-4 rounded-[2px] border border-border bg-surface flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono text-text-secondary">
-              <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-accent-secondary shrink-0" />
+            <div className="mt-4 p-5 rounded-xl border border-border bg-surface flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-sm font-sans text-text-secondary shadow-xs">
+              <div className="flex items-center gap-3">
+                <ShieldCheck className="w-5 h-5 text-accent-secondary shrink-0" />
                 <span>
-                  ASSET STATUS: Authentic product datasheets &amp; official photography undergoing client verification.
+                  Authentic instrument configurations, datasheets, and direct procurement specifications available upon inquiry.
                 </span>
               </div>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-1 font-semibold text-accent hover:underline shrink-0"
-              >
-                <span>Direct Equipment Inquiry</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+              <div className="flex items-center gap-3 shrink-0">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent text-white font-sans text-xs font-semibold rounded-lg hover:bg-accent-hover transition-colors shadow-xs"
+                >
+                  <span>Send Equipment Inquiry</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
             </div>
           </div>
         )}
@@ -172,35 +173,35 @@ export function FeaturedProducts() {
    GENUINE PRODUCTION PRODUCT SUBCOMPONENTS
    ========================================================================= */
 
-function RealPrimaryDossier({ product }: { product: Product }) {
+function RealPrimaryCard({ product }: { product: Product }) {
   const benchmarkSpec =
     product.highlights?.[0] || product.specifications?.[0]?.value || "";
 
   return (
-    <div className="lg:col-span-7 flex flex-col justify-between p-7 sm:p-8 rounded-[2px] border border-border bg-surface shadow-[0_1px_3px_rgba(20,23,21,0.03)] hover:border-accent-primary transition-colors duration-200 ease-precision">
+    <div className="lg:col-span-7 flex flex-col justify-between p-7 sm:p-8 rounded-2xl border border-border/80 bg-surface shadow-xs hover:border-brand-green/40 hover:shadow-sm transition-all duration-300">
       <div>
         <div className="flex items-center justify-between gap-2 mb-2">
-          <span className="font-mono text-xs uppercase tracking-wider text-accent font-semibold">
-            {product.category} {"// BENCHMARK SPEC"}
+          <span className="font-mono text-xs text-brand-green font-semibold">
+            {product.category}
           </span>
           {product.model && (
             <span className="font-mono text-xs text-text-muted">
-              MODEL: {product.model}
+              Model: {product.model}
             </span>
           )}
         </div>
-        <h3 className="font-display font-bold text-2xl sm:text-3xl text-text-primary mt-1">
+        <h3 className="font-display font-semibold text-2xl sm:text-[28px] lg:text-[32px] text-text-primary mt-1 tracking-[-0.025em] leading-snug">
           {product.name}
         </h3>
         {benchmarkSpec && (
-          <p className="font-sans text-sm text-text-secondary mt-2 max-w-lg leading-relaxed">
+          <p className="font-sans text-sm sm:text-[15px] text-text-secondary mt-2 max-w-lg leading-relaxed">
             {benchmarkSpec}
           </p>
         )}
       </div>
 
       {/* Hardware Pedestal Area */}
-      <div className="my-6 relative aspect-[16/10] w-full rounded-[2px] bg-background border border-border-subtle flex items-center justify-center p-6 overflow-hidden">
+      <div className="my-6 relative aspect-[16/10] w-full rounded-xl bg-surface-secondary/40 border border-border/70 flex items-center justify-center p-6 overflow-hidden">
         <Image
           src={assetPath(product.heroImage)}
           alt={product.name}
@@ -210,50 +211,50 @@ function RealPrimaryDossier({ product }: { product: Product }) {
         />
       </div>
 
-      <div className="pt-4 border-t border-border flex items-center justify-between">
-        <span className="font-mono text-xs text-text-muted">
-          DOSSIER REF // {product.slug}
+      <div className="pt-4 border-t border-border/70 flex items-center justify-between">
+        <span className="font-sans text-xs text-text-muted">
+          Ref · {product.slug}
         </span>
         <Link
           href={`/products/${product.slug}`}
-          className="group inline-flex items-center gap-1.5 font-display font-semibold text-sm text-accent hover:text-accent-hover transition-colors duration-150"
+          className="group inline-flex items-center gap-1.5 font-sans font-semibold text-xs sm:text-sm text-brand-green hover:underline transition-colors duration-150"
         >
           <span>View Specifications</span>
-          <ArrowRight className="w-4 h-4 transition-transform duration-200 ease-precision group-hover:translate-x-1" />
+          <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
         </Link>
       </div>
     </div>
   );
 }
 
-function RealSupportingDossier({ product }: { product: Product }) {
+function RealSupportingCard({ product }: { product: Product }) {
   const benchmarkSpec =
     product.highlights?.[0] || product.specifications?.[0]?.value || "";
 
   return (
-    <div className="flex-1 flex flex-col justify-between p-6 rounded-[2px] border border-border bg-surface shadow-[0_1px_3px_rgba(20,23,21,0.03)] hover:border-accent-primary transition-colors duration-200 ease-precision">
+    <div className="flex-1 flex flex-col justify-between p-6 rounded-2xl border border-border/80 bg-surface shadow-xs hover:border-brand-green/40 hover:shadow-sm transition-all duration-300">
       <div>
         <div className="flex items-center justify-between gap-2 mb-1.5">
-          <span className="font-mono text-[11px] uppercase tracking-wider text-accent font-semibold">
+          <span className="font-mono text-xs text-brand-green font-semibold">
             {product.category}
           </span>
           {product.model && (
-            <span className="font-mono text-[11px] text-text-muted">
+            <span className="font-mono text-xs text-text-muted">
               {product.model}
             </span>
           )}
         </div>
-        <h3 className="font-display font-bold text-lg text-text-primary">
+        <h3 className="font-display font-semibold text-lg sm:text-xl text-text-primary tracking-[-0.02em] leading-snug">
           {product.name}
         </h3>
         {benchmarkSpec && (
-          <p className="font-sans text-xs text-text-secondary mt-1.5 leading-relaxed line-clamp-2">
+          <p className="font-sans text-xs sm:text-sm text-text-secondary mt-1.5 leading-relaxed line-clamp-2">
             {benchmarkSpec}
           </p>
         )}
       </div>
 
-      <div className="my-4 relative aspect-[16/8] w-full rounded-[2px] bg-background border border-border-subtle flex items-center justify-center p-4 overflow-hidden">
+      <div className="my-4 relative aspect-[16/8] w-full rounded-xl bg-surface-secondary/40 border border-border/70 flex items-center justify-center p-4 overflow-hidden">
         <Image
           src={assetPath(product.heroImage)}
           alt={product.name}
@@ -263,13 +264,13 @@ function RealSupportingDossier({ product }: { product: Product }) {
         />
       </div>
 
-      <div className="pt-3 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <span className="font-mono text-[10px] text-text-muted">
-          STATUS: VERIFIED
+      <div className="pt-3 border-t border-border/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <span className="font-sans text-xs text-text-muted">
+          Direct Supply
         </span>
         <Link
           href={`/products/${product.slug}`}
-          className="group inline-flex items-center gap-1 font-display font-semibold text-xs text-accent hover:text-accent-hover transition-colors"
+          className="group inline-flex items-center gap-1 font-sans font-semibold text-xs text-brand-green hover:underline transition-colors"
         >
           <span>View Specifications</span>
           <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -280,137 +281,172 @@ function RealSupportingDossier({ product }: { product: Product }) {
 }
 
 /* =========================================================================
-   ASSET STAGING SUBCOMPONENTS (DATA INTEGRITY PRESERVATION)
+   REPRESENTATIVE EQUIPMENT SUBCOMPONENTS (COLOR ACCENT + PHOTOGRAPHY)
    ========================================================================= */
 
-function StagedPrimaryDossier({ slot }: { slot: StagedProductSlot }) {
+function RepresentativePrimaryCard({ slot }: { slot: RepresentativeEquipmentSlot }) {
+  const theme = getCategoryTheme(slot.categorySlug);
+
   return (
-    <div className="lg:col-span-7 flex flex-col justify-between p-7 sm:p-8 rounded-[2px] border border-border bg-surface shadow-[0_1px_3px_rgba(20,23,21,0.03)] hover:border-accent-primary transition-colors duration-200 ease-precision">
-      <div>
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-          <span className="font-mono text-xs uppercase tracking-wider text-accent font-semibold">
-            {`${slot.category} // ${slot.discipline}`}
+    <div
+      className="lg:col-span-7 flex flex-col justify-between p-6 sm:p-8 rounded-2xl border bg-surface shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden group"
+      style={{
+        borderColor: theme.borderLight,
+      }}
+    >
+      {/* Ambient background glow */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none opacity-40 group-hover:opacity-75 transition-opacity duration-300"
+        style={{
+          background: `radial-gradient(circle at 10% 20%, ${theme.accent}12 0%, transparent 60%)`,
+        }}
+      />
+
+      <div className="relative z-10">
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <span
+            className="text-xs font-sans font-semibold tracking-wide px-2.5 py-1 rounded-full border"
+            style={{
+              backgroundColor: theme.bgLight,
+              borderColor: theme.borderLight,
+              color: theme.accent,
+            }}
+          >
+            {slot.discipline}
           </span>
-          <span className="font-mono text-[11px] text-accent-secondary bg-surface-secondary px-2 py-0.5 rounded-[2px] border border-border">
-            DOSSIER STAGING
+          <span className="font-mono text-xs text-text-muted font-medium">
+            Category Scope
           </span>
         </div>
-        <h3 className="font-display font-bold text-2xl sm:text-3xl text-text-primary mt-1">
-          {slot.provisionalTitle}
+
+        <h3 className="font-display font-semibold text-2xl sm:text-[28px] lg:text-[32px] text-text-primary tracking-[-0.025em] leading-snug">
+          {slot.title}
         </h3>
-        <p className="font-sans text-sm text-text-secondary mt-2 max-w-lg leading-relaxed">
-          {slot.benchmarkSpec}
+
+        <p className="font-sans text-sm sm:text-[15px] text-text-secondary mt-2.5 max-w-xl leading-relaxed">
+          {slot.description}
         </p>
       </div>
 
-      {/* Hardware Pedestal with Architectural Precision Crosshair */}
-      <div className="my-6 relative aspect-[16/10] w-full rounded-[2px] bg-background border border-border-subtle flex flex-col items-center justify-center p-6 overflow-hidden">
-        {/* Corner Crosshairs */}
-        <span
-          aria-hidden="true"
-          className="absolute top-2 left-2 font-mono text-[10px] text-accent-secondary/50 select-none"
-        >
-          +
-        </span>
-        <span
-          aria-hidden="true"
-          className="absolute top-2 right-2 font-mono text-[10px] text-accent-secondary/50 select-none"
-        >
-          +
-        </span>
-        <span
-          aria-hidden="true"
-          className="absolute bottom-2 left-2 font-mono text-[10px] text-accent-secondary/50 select-none"
-        >
-          +
-        </span>
-        <span
-          aria-hidden="true"
-          className="absolute bottom-2 right-2 font-mono text-[10px] text-accent-secondary/50 select-none"
-        >
-          +
-        </span>
-
-        {/* Optical Axis Reticle Marks */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none opacity-[0.25] bg-[linear-gradient(to_right,#E2DFD6_1px,transparent_1px),linear-gradient(to_bottom,#E2DFD6_1px,transparent_1px)] bg-[size:32px_32px]"
-        />
-
-        {/* Optical Silhouette Icon Graphic */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center p-4">
-          <div className="w-16 h-16 rounded-[2px] bg-surface border border-border flex items-center justify-center mb-3 shadow-xs">
-            <Compass className="w-8 h-8 text-accent-secondary" />
-          </div>
-          <span className="font-mono text-xs font-semibold uppercase tracking-wider text-text-primary">
-            {isStagingOrDevelopment()
-              ? "BENCHMARK HARDWARE ASSET STAGING"
-              : "TECHNICAL SPECIFICATION SHOWCASE"}
-          </span>
-          <span className="font-mono text-[10px] text-text-muted mt-1">
-            {isStagingOrDevelopment()
-              ? "Official client photograph pending drop-in deployment"
-              : "Direct procurement & technical quotation support"}
-          </span>
+      {/* Hardware Photography Canvas */}
+      <div
+        className="my-6 relative aspect-[16/10] w-full rounded-xl overflow-hidden border flex items-center justify-center p-6 transition-all duration-300"
+        style={{
+          backgroundColor: theme.bgLight,
+          borderColor: theme.borderLight,
+        }}
+      >
+        <div className="relative w-full h-full flex items-center justify-center transition-transform duration-500 ease-out group-hover:scale-[1.03]">
+          <Image
+            src={assetPath(slot.imageSrc)}
+            alt={slot.imageAlt}
+            fill
+            sizes="(max-width: 1024px) 100vw, 60vw"
+            className="object-contain drop-shadow-[0_12px_24px_rgba(20,23,21,0.12)]"
+          />
         </div>
       </div>
 
       {/* Bottom Action Footer */}
-      <div className="pt-4 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <span className="font-mono text-xs text-text-muted">
-          {isStagingOrDevelopment()
-            ? "STATUS // HARDWARE PHOTOGRAPHY PENDING"
-            : "SPECIFICATION // DIRECT INQUIRY"}
-        </span>
+      <div className="pt-4 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-3 relative z-10">
+        <Link
+          href={`/categories/${slot.categorySlug}`}
+          className="inline-flex items-center gap-1.5 font-sans font-semibold text-xs sm:text-sm text-accent hover:underline"
+        >
+          <span>Explore {slot.category}</span>
+          <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+        </Link>
+
         <Link
           href={`/contact?subject=inquiry-${slot.categorySlug}`}
-          className="group inline-flex items-center gap-1.5 font-display font-semibold text-sm text-accent hover:text-accent-hover transition-colors duration-150"
+          className="inline-flex items-center gap-1.5 px-4 py-2 bg-surface-secondary border border-border text-text-primary font-sans text-xs font-semibold rounded-lg hover:bg-surface-tertiary transition-colors"
         >
-          <span>Inquire for Details</span>
-          <ArrowRight className="w-4 h-4 transition-transform duration-200 ease-precision group-hover:translate-x-1" />
+          <span>Inquire Discipline</span>
         </Link>
       </div>
     </div>
   );
 }
 
-function StagedSupportingDossier({ slot }: { slot: StagedProductSlot }) {
+function RepresentativeSupportingCard({ slot }: { slot: RepresentativeEquipmentSlot }) {
+  const theme = getCategoryTheme(slot.categorySlug);
+
   return (
-    <div className="flex-1 flex flex-col justify-between p-6 rounded-[2px] border border-border bg-surface shadow-[0_1px_3px_rgba(20,23,21,0.03)] hover:border-accent-primary transition-colors duration-200 ease-precision">
-      <div>
-        <div className="flex items-center justify-between gap-2 mb-1.5">
-          <span className="font-mono text-[11px] uppercase tracking-wider text-accent font-semibold">
-            {`${slot.category} // ${slot.discipline}`}
+    <div
+      className="flex-1 flex flex-col justify-between p-6 rounded-2xl border bg-surface shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden group"
+      style={{
+        borderColor: theme.borderLight,
+      }}
+    >
+      {/* Ambient background glow */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none opacity-40 group-hover:opacity-75 transition-opacity duration-300"
+        style={{
+          background: `radial-gradient(circle at 10% 20%, ${theme.accent}12 0%, transparent 60%)`,
+        }}
+      />
+
+      <div className="relative z-10">
+        <div className="flex items-center justify-between gap-2 mb-2">
+          <span
+            className="text-[11px] font-sans font-semibold tracking-wide px-2.5 py-0.5 rounded-full border"
+            style={{
+              backgroundColor: theme.bgLight,
+              borderColor: theme.borderLight,
+              color: theme.accent,
+            }}
+          >
+            {slot.discipline}
           </span>
-          <span className="font-mono text-[10px] text-text-muted">
-            STAGING REF
+          <span className="font-mono text-xs text-text-muted">
+            0{slot.categorySlug === "gps" ? "2" : "4"} / 08
           </span>
         </div>
-        <h3 className="font-display font-bold text-lg text-text-primary">
-          {slot.provisionalTitle}
+
+        <h3 className="font-display font-semibold text-lg sm:text-xl text-text-primary tracking-[-0.02em] leading-snug">
+          {slot.title}
         </h3>
-        <p className="font-sans text-xs text-text-secondary mt-1.5 leading-relaxed line-clamp-2">
-          {slot.benchmarkSpec}
+
+        <p className="font-sans text-xs sm:text-sm text-text-secondary mt-1.5 leading-relaxed line-clamp-2">
+          {slot.description}
         </p>
       </div>
 
-      <div className="my-4 relative aspect-[16/7] w-full rounded-[2px] bg-background border border-border-subtle flex items-center justify-center p-3 overflow-hidden">
-        <div className="flex items-center gap-2.5 font-mono text-[11px] text-text-muted">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary" />
-          <span>{isStagingOrDevelopment() ? "BENCHMARK ASSET STAGING" : "TECHNICAL SPECIFICATION"}</span>
+      {/* Photography Pedestal */}
+      <div
+        className="my-4 relative aspect-[16/8] w-full rounded-xl overflow-hidden border flex items-center justify-center p-4 transition-all duration-300"
+        style={{
+          backgroundColor: theme.bgLight,
+          borderColor: theme.borderLight,
+        }}
+      >
+        <div className="relative w-full h-full flex items-center justify-center transition-transform duration-500 ease-out group-hover:scale-[1.03]">
+          <Image
+            src={assetPath(slot.imageSrc)}
+            alt={slot.imageAlt}
+            fill
+            sizes="(max-width: 1024px) 100vw, 40vw"
+            className="object-contain drop-shadow-[0_8px_16px_rgba(20,23,21,0.08)]"
+          />
         </div>
       </div>
 
-      <div className="pt-3 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <span className="font-mono text-[10px] text-text-muted">
-          SPECIFICATION // DIRECT INQUIRY
-        </span>
+      <div className="pt-3 border-t border-border flex items-center justify-between relative z-10">
+        <Link
+          href={`/categories/${slot.categorySlug}`}
+          className="inline-flex items-center gap-1 font-sans font-semibold text-xs text-accent hover:underline"
+        >
+          <span>Explore Equipment</span>
+          <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+        </Link>
+
         <Link
           href={`/contact?subject=inquiry-${slot.categorySlug}`}
-          className="group inline-flex items-center gap-1 font-display font-semibold text-xs text-accent hover:text-accent-hover transition-colors duration-150"
+          className="text-text-muted hover:text-text-primary font-sans text-xs transition-colors"
         >
-          <span>Inquire for Specs</span>
-          <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 ease-precision group-hover:translate-x-1" />
+          Inquire
         </Link>
       </div>
     </div>

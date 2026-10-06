@@ -17,16 +17,12 @@ export interface InquiryFormProps {
 }
 
 /**
- * TECHNICAL EQUIPMENT INQUIRY FORM (PHASE 4C)
- *
- * Implements an accessible, high-contrast B2B inquiry form
- * tailored for precision field and survey instrumentation.
- *
- * Adheres to:
- * - Minimum 48px touch target ergonomics on all form controls
- * - Strict Light Mode design tokens (DESIGN_SYSTEM.md)
- * - Safe WhatsApp verification (no broken wa.me URLs)
- * - Accessible input labeling and focus management
+ * TECHNICAL EQUIPMENT INQUIRY FORM
+ * Adheres to R2 visual system:
+ * - Rounded-2xl container and rounded-xl form controls
+ * - Minimum 48px touch target ergonomics
+ * - DM Sans typography system
+ * - WhatsApp consultation integration
  */
 export function InquiryForm({
   initialProduct = "",
@@ -55,7 +51,7 @@ export function InquiryForm({
     e.preventDefault();
     setStatus("submitting");
 
-    // Staged submission handler (preserves frontend architecture until backend hookup)
+    // Form submission simulation
     setTimeout(() => {
       setStatus("success");
     }, 600);
@@ -73,35 +69,35 @@ export function InquiryForm({
   return (
     <div
       className={cn(
-        "p-6 sm:p-8 bg-surface border border-border rounded-[2px] shadow-[0_1px_3px_rgba(20,23,21,0.03)]",
+        "p-6 sm:p-8 lg:p-10 bg-surface border border-border/80 rounded-2xl shadow-xs",
         className
       )}
     >
       {!hideHeader && (
-        <div className="mb-6 pb-4 border-b border-border-subtle">
-          <div className="flex items-center justify-between text-[11px] font-mono text-accent-secondary uppercase tracking-wider mb-1">
-            <span>INQUIRY FORM</span>
-            <span>SPECIFICATION REQUEST</span>
+        <div className="mb-7 pb-5 border-b border-border/70">
+          <div className="flex items-center justify-between text-xs font-sans text-brand-green font-semibold mb-2">
+            <span>Inquiry Specification</span>
+            <span className="text-text-muted font-normal">Technical Consultation</span>
           </div>
-          <h3 className="text-xl font-bold font-display text-text-primary">
-            Send Technical Equipment Inquiry
+          <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-semibold font-display text-text-primary tracking-[-0.025em]">
+            Send Equipment Inquiry
           </h3>
-          <p className="text-xs text-text-secondary mt-1">
-            Specify your equipment requirements, application parameters, or request technical datasheets.
+          <p className="text-sm sm:text-base font-sans text-text-secondary mt-2 leading-relaxed">
+            Specify your equipment requirements, application parameters, or request official technical datasheets.
           </p>
         </div>
       )}
 
       {status === "success" ? (
-        <div className="p-6 bg-surface-secondary/70 border border-border rounded-[2px] text-text-primary space-y-4">
-          <div className="flex items-center gap-2.5 text-accent font-display font-semibold text-base">
-            <CheckCircle2 className="w-5 h-5 text-accent shrink-0" />
+        <div className="p-8 bg-surface-secondary/70 border border-border/80 rounded-2xl text-text-primary space-y-4">
+          <div className="flex items-center gap-3 text-brand-green font-display font-semibold text-lg">
+            <CheckCircle2 className="w-6 h-6 text-brand-green shrink-0" />
             <span>Inquiry Specification Received</span>
           </div>
-          <p className="text-xs text-text-secondary leading-relaxed">
-            Thank you for submitting your equipment requirement. Your technical query has been recorded. Our team will review the parameters and follow up with relevant datasheets and specifications.
+          <p className="text-sm sm:text-base font-sans text-text-secondary leading-[1.65]">
+            Thank you for submitting your equipment requirement. Your query has been recorded. Our team will review the parameters and follow up promptly with relevant datasheets and specifications.
           </p>
-          <div className="pt-2 border-t border-border-subtle flex items-center justify-between">
+          <div className="pt-3 border-t border-border/70 flex items-center justify-between">
             <button
               type="button"
               onClick={() => {
@@ -117,23 +113,20 @@ export function InquiryForm({
                   message: "",
                 });
               }}
-              className="font-mono text-xs text-accent font-semibold hover:underline"
+              className="font-sans text-sm text-brand-green font-semibold hover:underline"
             >
               ← Submit Another Requirement
             </button>
-            <span className="font-mono text-[10px] text-text-muted">
-              STATUS: ACKNOWLEDGED
-            </span>
           </div>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-4" noValidate={false}>
+        <form onSubmit={handleSubmit} className="space-y-5" noValidate={false}>
           {/* Row 1: Name & Phone */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label
                 htmlFor="inquiry-name"
-                className="block text-xs font-mono uppercase tracking-wider text-text-secondary mb-1.5"
+                className="block text-[14px] sm:text-[15px] font-sans font-semibold text-text-primary mb-1.5"
               >
                 Full Name <span className="text-accent-secondary">*</span>
               </label>
@@ -145,7 +138,7 @@ export function InquiryForm({
                 autoComplete="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full min-h-[48px] px-3.5 text-sm bg-background border border-border rounded-[2px] text-text-primary placeholder:text-text-muted focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none transition-colors duration-200 ease-precision"
+                className="w-full min-h-[48px] px-4 text-base font-sans bg-background border border-border/80 rounded-xl text-text-primary placeholder:text-text-muted placeholder:text-[15px] focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 focus:outline-none transition-all duration-200"
                 placeholder="Dr. / Er. / Name"
               />
             </div>
@@ -153,7 +146,7 @@ export function InquiryForm({
             <div>
               <label
                 htmlFor="inquiry-phone"
-                className="block text-xs font-mono uppercase tracking-wider text-text-secondary mb-1.5"
+                className="block text-[14px] sm:text-[15px] font-sans font-semibold text-text-primary mb-1.5"
               >
                 Phone Number <span className="text-accent-secondary">*</span>
               </label>
@@ -166,7 +159,7 @@ export function InquiryForm({
                 autoComplete="tel"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full min-h-[48px] px-3.5 text-sm bg-background border border-border rounded-[2px] text-text-primary placeholder:text-text-muted focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none transition-colors duration-200 ease-precision"
+                className="w-full min-h-[48px] px-4 text-base font-sans bg-background border border-border/80 rounded-xl text-text-primary placeholder:text-text-muted placeholder:text-[15px] focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 focus:outline-none transition-all duration-200"
                 placeholder="+91 XXXXX XXXXX"
               />
             </div>
@@ -177,7 +170,7 @@ export function InquiryForm({
             <div>
               <label
                 htmlFor="inquiry-email"
-                className="block text-xs font-mono uppercase tracking-wider text-text-secondary mb-1.5"
+                className="block text-[14px] sm:text-[15px] font-sans font-semibold text-text-primary mb-1.5"
               >
                 Email Address <span className="text-accent-secondary">*</span>
               </label>
@@ -190,7 +183,7 @@ export function InquiryForm({
                 autoComplete="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full min-h-[48px] px-3.5 text-sm bg-background border border-border rounded-[2px] text-text-primary placeholder:text-text-muted focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none transition-colors duration-200 ease-precision"
+                className="w-full min-h-[48px] px-4 text-base font-sans bg-background border border-border/80 rounded-xl text-text-primary placeholder:text-text-muted placeholder:text-[15px] focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 focus:outline-none transition-all duration-200"
                 placeholder="name@organization.in"
               />
             </div>
@@ -198,7 +191,7 @@ export function InquiryForm({
             <div>
               <label
                 htmlFor="inquiry-category"
-                className="block text-xs font-mono uppercase tracking-wider text-text-secondary mb-1.5"
+                className="block text-[14px] sm:text-[15px] font-sans font-semibold text-text-primary mb-1.5"
               >
                 Equipment Discipline
               </label>
@@ -208,9 +201,9 @@ export function InquiryForm({
                   name="category"
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="w-full min-h-[48px] pl-3.5 pr-10 text-sm bg-background border border-border rounded-[2px] text-text-primary focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none transition-colors duration-200 ease-precision appearance-none cursor-pointer"
+                  className="w-full min-h-[48px] pl-4 pr-10 text-base font-sans bg-background border border-border/80 rounded-xl text-text-primary focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
                 >
-                  <option value="">Select Category (All Disciplines)</option>
+                  <option value="">Select Discipline (All Categories)</option>
                   {categories.map((c) => (
                     <option key={c.slug} value={c.name}>
                       {c.name}
@@ -218,7 +211,7 @@ export function InquiryForm({
                   ))}
                 </select>
                 <ChevronDown
-                  className="w-4 h-4 text-text-muted pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2"
+                  className="w-4 h-4 text-text-muted pointer-events-none absolute right-4 top-1/2 -translate-y-1/2"
                   aria-hidden="true"
                 />
               </div>
@@ -229,7 +222,7 @@ export function InquiryForm({
           <div>
             <label
               htmlFor="inquiry-product"
-              className="block text-xs font-mono uppercase tracking-wider text-text-secondary mb-1.5"
+              className="block text-[14px] sm:text-[15px] font-sans font-semibold text-text-primary mb-1.5"
             >
               Product / Model / Instrument Type (Optional)
             </label>
@@ -239,7 +232,7 @@ export function InquiryForm({
               type="text"
               value={formData.product}
               onChange={(e) => setFormData({ ...formData, product: e.target.value })}
-              className="w-full min-h-[48px] px-3.5 text-sm bg-background border border-border rounded-[2px] text-text-primary placeholder:text-text-muted focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none transition-colors duration-200 ease-precision"
+              className="w-full min-h-[48px] px-4 text-base font-sans bg-background border border-border/80 rounded-xl text-text-primary placeholder:text-text-muted placeholder:text-[15px] focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 focus:outline-none transition-all duration-200"
               placeholder="e.g. Geological Compass, Thermal Imager, Total Station"
             />
           </div>
@@ -248,9 +241,9 @@ export function InquiryForm({
           <div>
             <label
               htmlFor="inquiry-message"
-              className="block text-xs font-mono uppercase tracking-wider text-text-secondary mb-1.5"
+              className="block text-[14px] sm:text-[15px] font-sans font-semibold text-text-primary mb-1.5"
             >
-              Requirement Details / Technical Parameters <span className="text-accent-secondary">*</span>
+              Requirement Details / Parameters <span className="text-accent-secondary">*</span>
             </label>
             <textarea
               id="inquiry-message"
@@ -259,7 +252,7 @@ export function InquiryForm({
               required
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full min-h-[110px] p-3.5 text-sm bg-background border border-border rounded-[2px] text-text-primary placeholder:text-text-muted focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none transition-colors duration-200 ease-precision resize-y leading-relaxed"
+              className="w-full min-h-[110px] p-4 text-base font-sans bg-background border border-border/80 rounded-xl text-text-primary placeholder:text-text-muted placeholder:text-[15px] focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 focus:outline-none transition-all duration-200 resize-y leading-relaxed"
               placeholder="Describe your project requirement, required accuracy, environmental conditions, or institutional specifications..."
             />
           </div>
@@ -269,7 +262,7 @@ export function InquiryForm({
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-display text-sm font-semibold rounded-[2px] hover:bg-accent-hover transition-colors duration-200 ease-precision disabled:opacity-50 select-none cursor-pointer"
+              className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-green text-white font-sans text-[15px] font-semibold rounded-xl hover:bg-brand-green-hover transition-colors duration-200 disabled:opacity-50 select-none cursor-pointer tracking-normal shadow-xs"
             >
               <Send className="w-4 h-4" />
               <span>{status === "submitting" ? "Recording Requirement..." : "Submit Inquiry"}</span>
@@ -280,18 +273,12 @@ export function InquiryForm({
                 href={whatsAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[48px] inline-flex items-center justify-center gap-2 px-5 py-3 bg-surface-secondary border border-border text-text-primary font-display text-sm font-medium rounded-[2px] hover:bg-surface-tertiary transition-colors duration-200 ease-precision"
+                className="min-h-[48px] inline-flex items-center justify-center gap-2 px-5 py-3 bg-surface-secondary border border-border/80 text-text-primary font-sans text-[15px] font-semibold rounded-xl hover:bg-surface-tertiary transition-colors duration-200 tracking-normal"
               >
                 <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
                 <span>Inquire via WhatsApp</span>
               </a>
             )}
-          </div>
-
-          {/* Micro Privacy & Protocol Notice */}
-          <div className="pt-2 text-[11px] font-mono text-text-muted flex items-center justify-between">
-            <span>DIRECT TECHNICAL INQUIRY</span>
-            <span>INQUIRIES REVIEWED PROMPTLY</span>
           </div>
         </form>
       )}

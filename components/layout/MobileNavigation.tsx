@@ -63,9 +63,9 @@ export function MobileNavigation() {
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
-        aria-controls="mobile-navigation-dossier"
+        aria-controls="mobile-navigation-drawer"
         aria-label={isOpen ? "Close main navigation" : "Open main navigation"}
-        className="inline-flex items-center justify-center min-w-[48px] min-h-[48px] p-2.5 rounded-[2px] border border-border bg-surface text-text-primary hover:bg-surface-secondary focus-visible:outline-accent"
+        className="inline-flex items-center justify-center min-w-[48px] min-h-[48px] p-2.5 rounded-xl border border-border bg-surface text-text-primary hover:bg-surface-secondary focus-visible:outline-accent"
       >
         {isOpen ? (
           <X className="w-5 h-5 text-text-primary" aria-hidden="true" />
@@ -77,26 +77,26 @@ export function MobileNavigation() {
       {/* Structured Mobile Drawer Panel */}
       {isOpen && (
         <div
-          id="mobile-navigation-dossier"
+          id="mobile-navigation-drawer"
           role="dialog"
           aria-modal="true"
           aria-label="Site Navigation"
           className="fixed inset-0 top-[64px] sm:top-[68px] z-50 bg-background flex flex-col overflow-y-auto overscroll-contain overflow-x-hidden animate-mobile-drawer"
         >
-          {/* Top Architectural Dossier Bar with Official Brand Logo */}
+          {/* Top Navigation Bar with Official Brand Logo */}
           <div className="flex items-center justify-between px-5 py-3 bg-surface border-b border-border">
             <BrandLogo size="sm" />
-            <div className="text-right font-mono text-[9px] text-text-muted uppercase tracking-wider">
-              <span className="text-accent-secondary font-semibold">CATALOGUE</span>
-              <span className="block">01–08 DISCIPLINES</span>
+            <div className="text-right font-mono text-[10px] text-text-muted">
+              <span className="text-accent-secondary font-semibold block">Catalogue</span>
+              <span className="block">01–08 Disciplines</span>
             </div>
           </div>
 
           <div className="p-5 flex-1 flex flex-col justify-between">
             {/* Primary Site Navigation */}
             <div>
-              <div className="font-mono text-[11px] uppercase tracking-wider text-text-muted mb-2 font-medium">
-                PRIMARY SECTIONS
+              <div className="font-mono text-xs text-text-muted mb-2 font-medium">
+                Navigation
               </div>
               <nav aria-label="Mobile Primary Navigation" className="flex flex-col space-y-1">
                 {navLinks.map((item) => {
@@ -118,7 +118,7 @@ export function MobileNavigation() {
                       )}
                       aria-current={isActive ? "page" : undefined}
                     >
-                      <span className="font-display text-base font-semibold">
+                      <span className="font-sans text-[15px] font-medium">
                         {item.title}
                       </span>
                       <ArrowRight className="w-4 h-4 text-text-muted" />
@@ -130,16 +130,16 @@ export function MobileNavigation() {
               {/* 8 Equipment Categories Section */}
               <div className="mt-6 pt-5 border-t border-border">
                 <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider text-accent-secondary font-semibold">
+                  <div className="flex items-center gap-1.5 font-mono text-xs text-accent-secondary font-semibold">
                     <Compass className="w-3.5 h-3.5" />
-                    <span>EQUIPMENT CATEGORIES (01–08)</span>
+                    <span>Equipment Categories (01–08)</span>
                   </div>
                   <Link
                     href="/categories"
                     onClick={() => setIsOpen(false)}
-                    className="font-mono text-[11px] text-accent font-medium hover:underline"
+                    className="font-sans text-xs text-accent font-semibold hover:underline"
                   >
-                    All →
+                    View All →
                   </Link>
                 </div>
 
@@ -160,10 +160,10 @@ export function MobileNavigation() {
                         )}
                       >
                         <div className="flex items-center gap-3 min-w-0 flex-1">
-                          <span className="font-mono text-xs text-accent-secondary font-medium shrink-0">
+                          <span className="font-mono text-xs text-accent-secondary font-semibold shrink-0">
                             {cat.index}
                           </span>
-                          <span className="font-display text-sm font-medium text-text-primary truncate">
+                          <span className="font-display text-sm font-semibold text-text-primary truncate">
                             {cat.name}
                           </span>
                         </div>
@@ -180,7 +180,7 @@ export function MobileNavigation() {
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
-                className="w-full inline-flex items-center justify-center min-h-[48px] px-5 bg-accent text-white font-display font-semibold text-sm rounded-[2px] hover:bg-accent-hover transition-colors shadow-xs"
+                className="w-full inline-flex items-center justify-center min-h-[48px] px-5 bg-accent text-white font-sans font-semibold text-[15px] rounded-[2px] hover:bg-accent-hover transition-colors shadow-xs"
               >
                 <span>Send Inquiry</span>
                 <ArrowRight className="w-4 h-4 ml-1.5" />
@@ -190,7 +190,7 @@ export function MobileNavigation() {
               <div className="grid grid-cols-2 gap-2">
                 <a
                   href={`tel:${siteConfig.contact.phones[0]?.international || siteConfig.contact.phone}`}
-                  className="flex items-center justify-center gap-1.5 min-h-[44px] px-3 bg-surface border border-border rounded-[2px] font-mono text-xs text-text-primary hover:text-accent transition-colors"
+                  className="flex items-center justify-center gap-1.5 min-h-[44px] px-3 bg-surface border border-border rounded-[2px] font-sans text-xs sm:text-[13px] font-medium text-text-primary hover:text-accent transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 text-accent" />
                   <span>{siteConfig.contact.phones[0]?.display || siteConfig.contact.phone}</span>
@@ -201,7 +201,7 @@ export function MobileNavigation() {
                     href={buildWhatsAppInquiryUrl() || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1.5 min-h-[44px] px-3 bg-accent-whatsapp text-white rounded-[2px] font-display font-semibold text-xs hover:brightness-95 transition-all shadow-xs"
+                    className="flex items-center justify-center gap-1.5 min-h-[44px] px-3 bg-accent-whatsapp text-white rounded-[2px] font-sans font-semibold text-xs sm:text-[13px] hover:brightness-95 transition-all shadow-xs"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5" />
                     <span>WhatsApp</span>
@@ -212,13 +212,13 @@ export function MobileNavigation() {
               <Link
                 href="/products"
                 onClick={() => setIsOpen(false)}
-                className="w-full inline-flex items-center justify-center min-h-[44px] px-5 bg-surface-secondary text-text-primary border border-border-strong font-display font-semibold text-xs rounded-[2px] hover:bg-surface-tertiary transition-colors"
+                className="w-full inline-flex items-center justify-center min-h-[44px] px-5 bg-surface-secondary text-text-primary border border-border-strong font-sans font-semibold text-xs sm:text-[13px] rounded-[2px] hover:bg-surface-tertiary transition-colors"
               >
                 <span>Explore Products</span>
               </Link>
 
-              <div className="text-center font-mono text-[10px] text-text-muted mt-1 flex items-center justify-center gap-1.5">
-                <ShieldCheck className="w-3 h-3 text-accent-secondary" />
+              <div className="text-center font-mono text-[11px] text-text-muted mt-1 flex items-center justify-center gap-1.5">
+                <ShieldCheck className="w-3.5 h-3.5 text-accent-secondary" />
                 <span>Direct Technical Inquiry Coordination</span>
               </div>
             </div>

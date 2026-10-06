@@ -8,9 +8,9 @@ export interface ProductFeaturesProps {
 
 /**
  * PRODUCT FEATURES
- *
- * Renders verified equipment engineering attributes and functional capabilities.
- * Omitted completely if no feature data exists.
+ * Adheres to R2 visual system:
+ * - Rounded-2xl cards with warm hover
+ * - Natural editorial hierarchy
  */
 export function ProductFeatures({ features, className }: ProductFeaturesProps) {
   if (!features || features.length === 0) {
@@ -19,32 +19,32 @@ export function ProductFeatures({ features, className }: ProductFeaturesProps) {
 
   return (
     <section className={cn("space-y-4", className)}>
-      <div className="flex items-center justify-between border-b border-border pb-2.5">
+      <div className="flex items-center justify-between border-b border-border/80 pb-3">
         <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-          <h2 className="text-xs font-mono uppercase tracking-wider text-text-primary font-semibold">
-            ENGINEERING {"//"} FUNCTIONAL FEATURES
+          <span className="w-2 h-2 rounded-full bg-brand-green" />
+          <h2 className="text-xs font-sans tracking-wider text-text-primary font-semibold uppercase">
+            Engineering &amp; Functional Features
           </h2>
         </div>
-        <span className="font-mono text-[10px] text-text-muted">
-          VERIFIED ATTRIBUTES {"//"}{" "}
-          {String(features.length).padStart(2, "0")}
+        <span className="font-sans text-xs text-text-muted">
+          Confirmed Features ·{" "}
+          <span className="font-mono">{String(features.length).padStart(2, "0")}</span>
         </span>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {features.map((feat, idx) => (
           <div
             key={idx}
-            className="p-4 bg-surface border border-border rounded-[2px] shadow-[0_1px_2px_rgba(20,23,21,0.02)] flex items-start gap-3"
+            className="p-5 bg-surface border border-border/80 rounded-2xl shadow-xs flex items-start gap-3.5 hover:border-brand-green/40 transition-colors"
           >
             <span
               aria-hidden="true"
-              className="mt-0.5 font-mono text-[10px] text-accent-secondary font-semibold shrink-0"
+              className="mt-0.5 font-mono text-xs text-brand-green font-semibold shrink-0 px-2 py-0.5 rounded-full bg-brand-green/10 border border-brand-green/20"
             >
-              [{String(idx + 1).padStart(2, "0")}]
+              {String(idx + 1).padStart(2, "0")}
             </span>
-            <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+            <p className="text-sm font-sans text-text-secondary leading-[1.6]">
               {feat}
             </p>
           </div>

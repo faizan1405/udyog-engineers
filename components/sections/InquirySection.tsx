@@ -57,21 +57,23 @@ export function InquirySection() {
           className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8 mb-12 border-b border-border"
         >
           <div>
-            <div className="flex items-center gap-2 font-mono text-xs text-accent-secondary tracking-wider uppercase mb-2">
-              <span className="font-semibold">06 // EQUIPMENT INQUIRY</span>
-              <span className="text-border-strong">|</span>
-              <span className="text-text-muted">DIRECT CONVERSION</span>
+            <div className="flex items-center gap-2 font-sans text-xs text-accent-secondary mb-3 font-medium">
+              <span className="font-mono font-semibold">06</span>
+              <span>·</span>
+              <span className="font-semibold text-accent-secondary">Equipment Inquiry</span>
+              <span className="text-border-strong">·</span>
+              <span className="text-text-muted">Direct Consultation</span>
             </div>
             <h2
               id="inquiry-heading"
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-text-primary font-display"
+              className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-display font-semibold tracking-[-0.035em] leading-[1.06] text-text-primary"
             >
               Tell Us What Equipment You Need
             </h2>
           </div>
 
           <div className="max-w-md">
-            <p className="font-sans text-sm text-text-secondary leading-relaxed">
+            <p className="font-sans text-base sm:text-lg text-text-secondary leading-[1.6]">
               Share your requirement, product category, or application and the team can respond with relevant technical information and datasheets.
             </p>
           </div>
@@ -87,21 +89,21 @@ export function InquirySection() {
           <div className="lg:col-span-5 space-y-8">
             {/* The 3-Step Workflow */}
             <div className="space-y-6">
-              <div className="font-mono text-xs uppercase tracking-widest text-accent-secondary font-semibold">
-                HOW TECHNICAL INQUIRIES WORK
+              <div className="font-sans text-xs text-accent-secondary font-semibold">
+                How Technical Inquiries Work
               </div>
 
               <div className="space-y-4">
                 {/* Step 1 */}
                 <div className="flex items-start gap-4 p-4 rounded-[2px] border border-border bg-surface">
-                  <span className="font-mono text-xs font-bold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
                     01
                   </span>
                   <div>
-                    <h3 className="font-display font-semibold text-sm text-text-primary">
+                    <h3 className="font-display font-semibold text-base text-text-primary">
                       Define Your Requirement
                     </h3>
-                    <p className="font-sans text-xs text-text-secondary mt-1 leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary mt-1 leading-[1.6]">
                       Select an equipment category or describe the specific parameters, environment, and instruments your project requires.
                     </p>
                   </div>
@@ -109,14 +111,14 @@ export function InquirySection() {
 
                 {/* Step 2 */}
                 <div className="flex items-start gap-4 p-4 rounded-[2px] border border-border bg-surface">
-                  <span className="font-mono text-xs font-bold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
                     02
                   </span>
                   <div>
-                    <h3 className="font-display font-semibold text-sm text-text-primary">
+                    <h3 className="font-display font-semibold text-base text-text-primary">
                       Specification &amp; Requirement Review
                     </h3>
-                    <p className="font-sans text-xs text-text-secondary mt-1 leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary mt-1 leading-[1.6]">
                       The team reviews your inquiry against available product references, specification parameters, and catalogue information.
                     </p>
                   </div>
@@ -124,14 +126,14 @@ export function InquirySection() {
 
                 {/* Step 3 */}
                 <div className="flex items-start gap-4 p-4 rounded-[2px] border border-border bg-surface">
-                  <span className="font-mono text-xs font-bold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
                     03
                   </span>
                   <div>
-                    <h3 className="font-display font-semibold text-sm text-text-primary">
+                    <h3 className="font-display font-semibold text-base text-text-primary">
                       Direct Team Follow-Up
                     </h3>
-                    <p className="font-sans text-xs text-text-secondary mt-1 leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary mt-1 leading-[1.6]">
                       Receive relevant equipment documentation, specifications, and coordination guidance directly from our team.
                     </p>
                   </div>
@@ -147,11 +149,11 @@ export function InquirySection() {
               >
                 +
               </span>
-              <div className="flex items-center gap-2 mb-2 font-mono text-[11px] font-semibold text-accent uppercase tracking-wider">
-                <FileText className="w-3.5 h-3.5" />
+              <div className="flex items-center gap-2 mb-2 font-display text-sm font-semibold text-accent">
+                <FileText className="w-4 h-4" />
                 <span>Have a Specific Equipment Requirement?</span>
               </div>
-              <p className="font-sans text-xs text-text-secondary leading-relaxed">
+              <p className="font-sans text-sm text-text-secondary leading-[1.6]">
                 Share the category, application, product reference or specification you are looking for. The team can review the inquiry and respond with relevant available information.
               </p>
             </div>
@@ -160,21 +162,21 @@ export function InquirySection() {
             {(hasConfiguredPhone || hasConfiguredEmail || hasConfiguredAddress) && (
               <div className="p-5 border border-border rounded-[2px] bg-surface space-y-3.5">
                 <div className="flex items-center justify-between border-b border-border-subtle pb-2">
-                  <span className="font-mono text-[11px] font-semibold text-text-primary uppercase tracking-wider">
+                  <span className="font-sans text-xs font-semibold text-text-primary">
                     Direct Contact Channels
                   </span>
-                  <span className="font-mono text-[10px] text-accent-secondary font-semibold">
+                  <span className="font-sans text-[11px] text-brand-green font-semibold">
                     VERIFIED
                   </span>
                 </div>
 
                 {/* Email */}
                 {hasConfiguredEmail && (
-                  <div className="flex items-center gap-3 text-xs text-text-secondary">
+                  <div className="flex items-center gap-3 text-sm text-text-secondary">
                     <Mail className="w-4 h-4 text-accent shrink-0" />
                     <a
                       href={`mailto:${siteConfig.contact.email}`}
-                      className="hover:text-accent font-medium font-mono transition-colors"
+                      className="hover:text-accent font-sans font-medium text-text-primary transition-colors"
                     >
                       {siteConfig.contact.email}
                     </a>
@@ -183,18 +185,18 @@ export function InquirySection() {
 
                 {/* Phone & WhatsApp Lines */}
                 {siteConfig.contact.phones.length > 0 && (
-                  <div className="space-y-2 pt-1 border-t border-border-subtle">
-                    <span className="font-mono text-[10px] text-text-muted uppercase tracking-wider block">
+                  <div className="space-y-2.5 pt-1 border-t border-border-subtle">
+                    <span className="font-sans text-xs text-text-muted block">
                       Phone / WhatsApp Lines
                     </span>
                     {siteConfig.contact.phones.map((p) => (
                       <div
                         key={p.national}
-                        className="flex items-center justify-between gap-3 text-xs"
+                        className="flex items-center justify-between gap-3 text-sm"
                       >
                         <a
                           href={`tel:${p.international}`}
-                          className="flex items-center gap-2 hover:text-accent font-mono font-medium text-text-primary transition-colors"
+                          className="flex items-center gap-2 hover:text-accent font-sans font-medium text-text-primary transition-colors"
                           title={`Call ${p.display}`}
                         >
                           <Phone className="w-3.5 h-3.5 text-accent shrink-0" />
@@ -204,7 +206,7 @@ export function InquirySection() {
                           href={buildWhatsAppInquiryUrl({}, p.whatsAppDigits) || "#"}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-secondary border border-border rounded-[2px] text-accent-whatsapp font-mono text-[11px] font-medium hover:bg-surface-tertiary transition-colors"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-secondary border border-border rounded-[2px] text-accent-whatsapp font-sans text-xs font-semibold hover:bg-surface-tertiary transition-colors"
                           title={`Message ${p.display} on WhatsApp`}
                         >
                           <WhatsAppIcon className="w-3 h-3" />
@@ -217,9 +219,9 @@ export function InquirySection() {
 
                 {/* Address */}
                 {hasConfiguredAddress && (
-                  <div className="flex items-start gap-3 text-xs text-text-secondary pt-1 border-t border-border-subtle">
+                  <div className="flex items-start gap-3 text-sm text-text-secondary pt-1 border-t border-border-subtle">
                     <MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                    <span className="leading-relaxed">
+                    <span className="leading-relaxed font-sans">
                       {siteConfig.contact.address.formatted}
                     </span>
                   </div>

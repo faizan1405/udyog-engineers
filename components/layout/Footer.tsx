@@ -29,17 +29,17 @@ export function Footer() {
       {/* Top Registration Line */}
       <div className="border-b border-border-subtle py-3 bg-surface-secondary/80">
         <Container>
-          <div className="flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono text-text-muted">
+          <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-sans text-text-muted">
             <div className="flex items-center gap-2">
-              <span className="text-accent-secondary font-bold">+</span>
-              <span className="tracking-wider uppercase text-text-secondary">
-                UDYOG ENGINEERS // TECHNICAL INSTRUMENTATION ARCHIVE
+              <span className="text-brand-green font-semibold">•</span>
+              <span className="text-text-secondary">
+                Udyog Engineers · Precision Technical Instrumentation
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <span>METROLOGY &amp; SURVEY</span>
-              <span className="text-border-strong">|</span>
-              <span className="text-text-secondary">LIGHT MODE SYSTEM</span>
+              <span>Optical &amp; Survey Equipment</span>
+              <span className="text-border-strong">•</span>
+              <span className="text-text-secondary">Field Systems</span>
             </div>
           </div>
         </Container>
@@ -54,38 +54,38 @@ export function Footer() {
               <BrandLogo size="lg" />
             </Link>
 
-            <div className="font-display font-bold text-text-primary text-base tracking-tight">
+            <div className="font-display font-semibold text-text-primary text-lg tracking-[-0.02em]">
               {siteConfig.companyName}
             </div>
 
-            <p className="text-xs text-text-secondary leading-relaxed max-w-sm">
+            <p className="text-sm font-sans text-text-secondary leading-relaxed max-w-sm">
               {siteConfig.siteDescription}
             </p>
 
-            <p className="text-[11px] text-text-muted leading-relaxed max-w-sm">
+            <p className="text-xs font-sans text-text-muted leading-relaxed max-w-sm">
               Precision technical instrumentation catalogue for professional field, survey, optical, geological, environmental, and outdoor applications.
             </p>
 
-            <div className="pt-2 text-[10px] font-mono text-text-muted flex items-center gap-2">
+            <div className="pt-2 text-xs font-sans text-text-muted flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-accent-secondary" />
-              <span>SPECIFICATION-FIRST ARCHITECTURE</span>
+              <span>Specification-first architecture</span>
             </div>
           </div>
 
           {/* Equipment Disciplines: All 8 Categories (4 cols total: 2 cols + 2 cols) */}
           <div className="lg:col-span-4">
-            <h2 className="text-xs font-mono font-semibold tracking-wider text-text-primary uppercase mb-4">
+            <h2 className="text-xs font-sans font-semibold tracking-wider text-text-primary uppercase mb-4">
               Equipment Disciplines (01–08)
             </h2>
 
-            <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 text-xs">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 text-[13px] font-sans">
               {categories.map((category) => (
                 <Link
                   key={category.slug}
                   href={`/categories/${category.slug}`}
                   className="group flex items-center gap-2 text-text-secondary hover:text-accent transition-colors duration-150 ease-precision py-0.5 min-w-0"
                 >
-                  <span className="font-mono text-[10px] text-accent-secondary group-hover:text-accent shrink-0">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary group-hover:text-accent shrink-0">
                     {String(category.order).padStart(2, "0")}
                   </span>
                   <span className="group-hover:underline break-words leading-tight">{category.name}</span>
@@ -96,14 +96,14 @@ export function Footer() {
 
           {/* Navigation Column (2 cols) */}
           <div className="lg:col-span-2">
-            <h2 className="text-xs font-mono font-semibold tracking-wider text-text-primary uppercase mb-4">
+            <h2 className="text-xs font-sans font-semibold tracking-wider text-text-primary uppercase mb-4">
               Navigation
             </h2>
-            <ul className="space-y-2.5 text-xs">
+            <ul className="space-y-2.5 text-[13px] font-sans">
               <li>
                 <Link
                   href="/"
-                  className="hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
+                  className="text-text-secondary hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
                 >
                   Home
                 </Link>
@@ -111,7 +111,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/categories"
-                  className="hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
+                  className="text-text-secondary hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
                 >
                   All Categories
                 </Link>
@@ -119,7 +119,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/products"
-                  className="hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
+                  className="text-text-secondary hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
                 >
                   Equipment Catalogue
                 </Link>
@@ -127,7 +127,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
+                  className="text-text-secondary hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
                 >
                   About Udyog Engineers
                 </Link>
@@ -135,7 +135,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
+                  className="text-text-secondary hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
                 >
                   Contact &amp; Inquiries
                 </Link>
@@ -145,21 +145,21 @@ export function Footer() {
 
           {/* Direct Coordination / Contacts Column (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <h2 className="text-xs font-mono font-semibold tracking-wider text-text-primary uppercase mb-4">
+            <h2 className="text-xs font-sans font-semibold tracking-wider text-text-primary uppercase mb-4">
               Direct Inquiries
             </h2>
 
-            <div className="space-y-3 text-xs">
+            <div className="space-y-3 text-[13px] font-sans">
               {/* Verified Email */}
               <div className="space-y-1">
-                <span className="font-mono text-[10px] text-text-muted uppercase tracking-wider block">
+                <span className="font-sans text-[11px] font-medium text-text-muted block uppercase">
                   Official Email
                 </span>
                 <div className="flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5 text-accent shrink-0" />
                   <a
                     href={`mailto:${siteConfig.contact.email}`}
-                    className="hover:text-accent transition-colors font-mono text-xs break-all"
+                    className="hover:text-accent transition-colors text-text-secondary break-all"
                   >
                     {siteConfig.contact.email}
                   </a>
@@ -168,7 +168,7 @@ export function Footer() {
 
               {/* Verified Phone & WhatsApp Lines */}
               <div className="space-y-1.5 pt-1">
-                <span className="font-mono text-[10px] text-text-muted uppercase tracking-wider block">
+                <span className="font-sans text-[11px] font-medium text-text-muted block uppercase">
                   Phone / WhatsApp
                 </span>
                 {siteConfig.contact.phones.map((p) => (
@@ -178,7 +178,7 @@ export function Footer() {
                   >
                     <a
                       href={`tel:${p.international}`}
-                      className="flex items-center gap-1.5 hover:text-accent font-mono text-xs text-text-primary transition-colors"
+                      className="flex items-center gap-1.5 hover:text-accent text-text-primary transition-colors font-medium"
                       title={`Call ${p.display}`}
                     >
                       <Phone className="w-3 h-3 text-accent shrink-0" />
@@ -199,12 +199,12 @@ export function Footer() {
 
               {/* Verified Address */}
               <div className="space-y-1 pt-1">
-                <span className="font-mono text-[10px] text-text-muted uppercase tracking-wider block">
+                <span className="font-sans text-[11px] font-medium text-text-muted block uppercase">
                   Registered Address
                 </span>
                 <div className="flex items-start gap-2">
                   <MapPin className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-text-secondary leading-relaxed text-xs">
+                  <span className="text-text-secondary leading-relaxed text-xs sm:text-[13px]">
                     {siteConfig.contact.address.formatted}
                   </span>
                 </div>
@@ -214,13 +214,13 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright & Compliance */}
-        <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-muted">
+        <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-text-muted">
           <p>
             &copy; {siteConfig.legal.copyrightYear} {siteConfig.siteName}. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-4 text-[11px] font-mono">
-            <span>LIGHT MODE ARCHITECTURE</span>
+          <div className="flex items-center gap-4 text-xs font-sans">
+            <span>Quality &amp; Technical Support</span>
             <span className="text-border-strong">·</span>
             <a
               href="#main-content"

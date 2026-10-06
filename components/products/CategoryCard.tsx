@@ -32,13 +32,13 @@ export function CategoryCard({ category, className }: CategoryCardProps) {
       </div>
 
       <div className="p-4 flex flex-col flex-1">
-        <div className="flex items-center justify-between mb-1">
-          <h3 className="font-semibold text-text-primary text-base group-hover:text-accent transition-colors duration-200 ease-precision">
+        <div className="flex items-center justify-between mb-1.5">
+          <h3 className="font-display font-semibold text-lg text-text-primary group-hover:text-accent transition-colors duration-200 ease-precision tracking-[-0.02em]">
             {category.name}
           </h3>
           <ArrowRight className="w-4 h-4 text-text-muted group-hover:text-accent group-hover:translate-x-1 transition-all duration-200 ease-precision" />
         </div>
-        <p className="text-xs text-text-secondary leading-relaxed line-clamp-2">
+        <p className="font-sans text-sm text-text-secondary leading-relaxed line-clamp-2">
           {category.shortDescription}
         </p>
       </div>
