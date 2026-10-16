@@ -32,7 +32,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
       {/* Product Image Canvas */}
       <Link
         href={`/products/${product.slug}`}
-        className="block relative aspect-[4/3] bg-surface-secondary/40 overflow-hidden p-4"
+        className="block relative aspect-[4/3] bg-surface-secondary/40 overflow-hidden p-2.5 sm:p-3"
         style={{
           backgroundColor: `${theme.bgLight}66`,
         }}
@@ -47,8 +47,9 @@ export function ProductCard({ product, className }: ProductCardProps) {
         <div className="relative w-full h-full flex items-center justify-center">
           <AppImage
             src={product.heroImage}
-            alt={product.name}
+            alt={product.imageAlt || product.name}
             aspectRatioClass="aspect-[4/3]"
+            containerClassName="w-full h-full bg-transparent"
             className="transition-transform duration-500 ease-out group-hover:scale-[1.03] object-contain drop-shadow-[0_4px_12px_rgba(20,23,21,0.06)]"
           />
         </div>

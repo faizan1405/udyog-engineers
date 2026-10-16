@@ -28,12 +28,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin.co.in/products/outdoor/",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-handheld-gps.svg",
+    "heroImage": "/images/products/garmin-gpsmap-h1/hero.webp",
     "gallery": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-gpsmap-h1/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-gpsmap-h1/hero.webp"
     ],
     "shortDescription": "Premium rugged handheld GPS navigator featuring a sunlight-readable 3.5-inch color touchscreen, hybrid push-button controls, multi-band GNSS with SatIQ, and 64 GB internal memory.",
     "description": "The Garmin GPSMAP H1 is engineered for demanding backcountry expeditions, boundary surveys, and institutional mapping. Combining a generous 3.5-inch sunlight-readable color touchscreen with physical push-buttons for all-weather glove operation, it offers multi-band GNSS reception (GPS, Galileo, QZSS, BeiDou, IRNSS) powered by SatIQ technology. Preloaded with routable TopoActive mapping and direct Wi-Fi satellite imagery downloads, the H1 provides up to 145 hours in standard GPS mode and up to 840 hours in Expedition mode, housed in an IP67 waterproof, MIL-STD-810 thermal and shock-tested chassis.",
@@ -126,7 +126,10 @@ export const PRODUCTS: Product[] = [
       "garmin-etrex-32x"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin GPSMAP H1"
+    "inquiryLabel": "Inquire About Garmin GPSMAP H1",
+    "imageAlt": "Garmin GPSMAP H1 rugged multi-band handheld GPS navigator",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02812-00/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-gpsmap-67",
@@ -144,12 +147,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin.co.in/products/outdoor/gpsmap-67/",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-handheld-gps.svg",
+    "heroImage": "/images/products/garmin-gpsmap-67/hero.webp",
     "gallery": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-gpsmap-67/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-gpsmap-67/hero.webp"
     ],
     "shortDescription": "High-end multi-band GNSS outdoor handheld with 3-inch sunlight-readable display, ABC sensors, preloaded TopoActive maps, and up to 180 hours battery life in GPS mode.",
     "description": "Built to military standards (MIL-STD-810) for thermal, shock, and water resistance, the Garmin GPSMAP 67 is a premium button-operated navigator built for challenging topographical environments. Featuring multi-frequency multi-band satellite tracking (GPS, GLONASS, Galileo, QZSS, BeiDou) and built-in ABC sensors (altimeter, barometer, and 3-axis compass), it delivers extraordinary battery longevity—up to 180 hours in standard GPS mode and 840 hours in Expedition mode. High-resolution satellite imagery can be downloaded directly over Wi-Fi.",
@@ -242,7 +245,10 @@ export const PRODUCTS: Product[] = [
       "garmin-montana-710"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin GPSMAP 67"
+    "inquiryLabel": "Inquire About Garmin GPSMAP 67",
+    "imageAlt": "Garmin GPSMAP 67 handheld GPS navigator with multi-band GNSS",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02813-00/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-gps-12h",
@@ -260,12 +266,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin.co.in/products/outdoor/",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-handheld-gps.svg",
+    "heroImage": "/images/products/garmin-gps-12h/hero.webp",
     "gallery": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-gps-12h/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-gps-12h/hero.webp"
     ],
     "shortDescription": "Rugged, water-resistant floating handheld GPS with high-sensitivity receiver, high-contrast monochrome LCD, and 1,000 waypoint storage.",
     "description": "The Garmin GPS 12H is a dependable, high-durability handheld navigator designed for marine, wetland, and field applications where flotation and ruggedness are paramount. Featuring an IPX7 waterproof housing that floats if dropped in water, a high-sensitivity GPS receiver that acquires satellite signals swiftly in tree cover, and high-contrast 4-level gray LCD display with backlighting, the GPS 12H stores up to 1,000 waypoints and 100 tracks on 2 AA batteries.",
@@ -352,7 +358,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gpsmap-67"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Garmin GPS 12H"
+    "inquiryLabel": "Inquire About Garmin GPS 12H",
+    "imageAlt": "Garmin GPS 12H floating marine handheld GPS navigator",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-01504-00/g/cf-lg.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-etrex-32x",
@@ -370,12 +379,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin.co.in/products/outdoor/etrex-32x/",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-handheld-gps.svg",
+    "heroImage": "/images/products/garmin-etrex-32x/hero.webp",
     "gallery": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-etrex-32x/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-etrex-32x/hero.webp"
     ],
     "shortDescription": "Compact, rugged handheld GPS with 2.2-inch 65K color display, preloaded TopoActive maps, 3-axis tilt-compensated compass, and barometric altimeter.",
     "description": "The Garmin eTrex 32x offers field-proven reliability in a compact, pocket-sized form factor. Equipped with an upgraded 2.2-inch 65K color sunlight-readable display and preloaded TopoActive maps, the 32x adds a 3-axis tilt-compensated compass and barometric altimeter over base models. Dual-satellite constellation support (GPS and GLONASS) enables precise tracking in difficult terrain. Powered by 2 standard AA batteries for up to 25 hours of continuous operation.",
@@ -468,7 +477,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gps-12h"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin eTrex 32x"
+    "inquiryLabel": "Inquire About Garmin eTrex 32x",
+    "imageAlt": "Garmin eTrex 32x rugged handheld GPS navigator",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02257-00/g/cf-lg-59917067-77a5-4db5-ad50-6ddba7022dc1.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-montana-710",
@@ -486,12 +498,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin.co.in/products/outdoor/montana-710/",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-handheld-gps.svg",
+    "heroImage": "/images/products/garmin-montana-710/hero.webp",
     "gallery": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-montana-710/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-handheld-gps.svg"
+      "/images/products/garmin-montana-710/hero.webp"
     ],
     "shortDescription": "Rugged 5-inch dual-orientation touchscreen GPS navigator built to MIL-STD-810 with multi-GNSS tracking, ABC sensors, and TopoActive mapping.",
     "description": "Engineered for high-demand outdoor, vehicle, and field surveying tasks, the Garmin Montana 710 features an expansive 5-inch glove-friendly color touchscreen with dual orientation. Built to MIL-STD-810 military specifications for thermal, shock, vibration, and water resistance, it includes multi-GNSS (GPS, Galileo) tracking, 3-axis tilt compass, barometric altimeter, and preloaded TopoActive maps. Powered by a rechargeable lithium-ion battery pack with up to 24 hours of standard GPS use and up to 440 hours in Expedition mode.",
@@ -584,7 +596,10 @@ export const PRODUCTS: Product[] = [
       "garmin-etrex-32x"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin Montana 710"
+    "inquiryLabel": "Inquire About Garmin Montana 710",
+    "imageAlt": "Garmin Montana 710 rugged 5-inch touchscreen GPS navigator",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02133-01/v/cf-lg-9a94d1ed-4daf-40b8-bf12-26499634e02d.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-fenix-8-amoled-51mm",
@@ -602,14 +617,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-fenix-8-watch.svg",
+    "heroImage": "/images/products/garmin-fenix-8-amoled-51mm/hero.webp",
     "gallery": [
-      "/images/products/garmin-fenix-8-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-fenix-8-amoled-51mm/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-fenix-8-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-fenix-8-amoled-51mm/hero.webp"
     ],
     "shortDescription": "Flagship multisport GPS adventure smartwatch with 1.4-inch AMOLED display, titanium bezel, sapphire crystal, multi-band GNSS with SatIQ, built-in flashlight, speaker, mic, and 40m dive rating.",
     "description": "The Garmin fēnix 8 AMOLED (51 mm) is engineered for elite expedition leaders, field researchers, and outdoor professionals requiring uncompromising navigational precision and multi-week endurance. It features a brilliant 1.4-inch high-resolution AMOLED touchscreen protected by scratch-resistant sapphire crystal and a durable titanium bezel. Multi-band GNSS reception with SatIQ technology delivers superior satellite positioning in deep valleys and dense forest canopy while optimizing battery life. Preloaded with routable TopoActive continental maps with dynamic round-trip routing, the fēnix 8 includes a built-in LED flashlight, leakproof inductive push-buttons with a 40-meter dive rating, and an integrated speaker and microphone for off-grid voice commands and audio coordination.",
@@ -722,7 +735,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gpsmap-67"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin fēnix 8 AMOLED 51mm"
+    "inquiryLabel": "Inquire About Garmin fēnix 8 AMOLED 51mm",
+    "imageAlt": "Garmin fēnix 8 AMOLED 51 mm multisport GPS smartwatch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02905-00/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-fenix-8-solar-51mm",
@@ -740,14 +756,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-fenix-8-watch.svg",
+    "heroImage": "/images/products/garmin-fenix-8-solar-51mm/hero.webp",
     "gallery": [
-      "/images/products/garmin-fenix-8-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-fenix-8-solar-51mm/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-fenix-8-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-fenix-8-solar-51mm/hero.webp"
     ],
     "shortDescription": "Solar-charging multisport GPS adventure smartwatch with always-on 1.4-inch display, Power Sapphire lens, titanium bezel, up to 48 days battery, TopoActive maps, and 40m dive rating.",
     "description": "Engineered for prolonged off-grid expeditions and multi-week wilderness field campaigns, the Garmin fēnix 8 Solar (51 mm) pairs continuous solar harvesting with professional-grade multi-band GNSS positioning. Featuring a sunlight-readable 1.4-inch Memory-in-Pixel display protected by a Power Sapphire™ solar charging lens and titanium bezel, it provides up to 48 days of battery life in smartwatch mode and up to 149 hours in GPS mode with solar charging. It includes routable TopoActive maps with dynamic round-trip routing, leakproof inductive buttons with 40-meter dive certification, built-in multi-LED flashlight, integrated speaker/mic, and comprehensive ABC sensor telemetry.",
@@ -860,7 +874,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gpsmap-h1"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin fēnix 8 Solar 51mm"
+    "inquiryLabel": "Inquire About Garmin fēnix 8 Solar 51mm",
+    "imageAlt": "Garmin fēnix 8 Solar 51 mm multisport GPS smartwatch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02907-20/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-enduro-3",
@@ -878,14 +895,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-enduro-3-watch.svg",
+    "heroImage": "/images/products/garmin-enduro-3/hero.webp",
     "gallery": [
-      "/images/products/garmin-enduro-3-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-enduro-3/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-enduro-3-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-enduro-3/hero.webp"
     ],
     "shortDescription": "Ultra-performance GPS smartwatch featuring up to 320 hours in GPS mode with solar charging, ultra-lightweight 63g design, titanium bezel, preloaded TopoActive maps, and built-in flashlight.",
     "description": "The Garmin Enduro 3 is the benchmark ultra-performance GPS smartwatch designed for extreme endurance expeditions, ultramarathoners, and wilderness survey crews demanding maximum battery longevity. Weighing an ultra-light 63 grams with an UltraFit breathable nylon strap, it incorporates a high-efficiency Power Solar lens over an always-on 1.4-inch display, delivering up to 320 hours in GPS mode with solar charging and up to 90 days in smartwatch mode. Encased in a DLC titanium bezel and fiber-reinforced case, it includes SatIQ multi-band GNSS, preloaded TopoActive maps, dynamic round-trip routing, and a multi-LED flashlight twice as bright as the previous generation.",
@@ -1003,7 +1018,10 @@ export const PRODUCTS: Product[] = [
       "garmin-montana-710"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin Enduro 3"
+    "inquiryLabel": "Inquire About Garmin Enduro 3",
+    "imageAlt": "Garmin Enduro 3 ultra-performance solar GPS smartwatch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02751-00/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-instinct-2x-solar",
@@ -1021,14 +1039,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-instinct-2x-watch.svg",
+    "heroImage": "/images/products/garmin-instinct-2x-solar/hero.webp",
     "gallery": [
-      "/images/products/garmin-instinct-2x-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-instinct-2x-solar/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-instinct-2x-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-instinct-2x-solar/hero.webp"
     ],
     "shortDescription": "Bold 50mm rugged GPS smartwatch built to MIL-STD-810 military specifications with Power Glass solar charging for unlimited battery life, multi-band GNSS, and built-in flashlight.",
     "description": "Built to U.S. military standard MIL-STD-810 for thermal, shock, and water resistance up to 100 meters (10 ATM), the Garmin Instinct 2X Solar is a mission-grade outdoor GPS smartwatch designed for demanding field operations and tactical environments. Featuring a bold 50mm fiber-reinforced polymer case with a chemically strengthened Power Glass™ solar lens, it delivers unlimited battery life in smartwatch mode under 3 hours of direct sunlight per day. Equipped with multi-band multi-frequency GNSS reception, an integrated multi-LED flashlight with variable intensities and red light mode, ABC sensors (altimeter, barometer, compass), and TracBack routing to retrace paths back to starting points.",
@@ -1131,7 +1147,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gps-12h"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin Instinct 2X Solar"
+    "inquiryLabel": "Inquire About Garmin Instinct 2X Solar",
+    "imageAlt": "Garmin Instinct 2X Solar 50 mm rugged outdoor GPS watch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02805-00/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-tactix-7-amoled",
@@ -1149,14 +1168,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-tactix-7-watch.svg",
+    "heroImage": "/images/products/garmin-tactix-7-amoled/hero.webp",
     "gallery": [
-      "/images/products/garmin-tactix-7-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-tactix-7-amoled/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-tactix-7-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-tactix-7-amoled/hero.webp"
     ],
     "shortDescription": "Premium tactical GPS smartwatch with 1.4-inch AMOLED display, sapphire lens, DLC titanium bezel, Night Vision compatibility, Stealth Mode, Kill Switch, and dual-position GPS.",
     "description": "The Garmin tactix 7 AMOLED Edition is an elite tactical GPS smartwatch built for demanding security operations, specialized field maneuvers, and harsh wilderness reconnaissance. Featuring an adaptive 1.4-inch AMOLED touchscreen with physical button backup, a scratch-resistant sapphire crystal lens, and a carbon gray DLC-coated titanium bezel, it delivers mission-critical capabilities including Night Vision Goggle (NVG) compatibility, Stealth Mode (disabling wireless and location logging while recording distance), an emergency Kill Switch to wipe user memory, Jumpmaster parachuting calculations, and dual-position GPS formatting displaying MGRS and latitude/longitude simultaneously. Preloaded with TopoActive continental maps, aviation navigation, and a tactical white and green LED flashlight.",
@@ -1269,7 +1286,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gpsmap-67"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin tactix 7 AMOLED"
+    "inquiryLabel": "Inquire About Garmin tactix 7 AMOLED",
+    "imageAlt": "Garmin tactix 7 AMOLED Edition tactical GPS smartwatch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02931-02/g/cf-lg.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-epix-pro-gen2-sapphire-51mm",
@@ -1287,14 +1307,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-epix-pro-watch.svg",
+    "heroImage": "/images/products/garmin-epix-pro-gen2-sapphire-51mm/hero.webp",
     "gallery": [
-      "/images/products/garmin-epix-pro-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-epix-pro-gen2-sapphire-51mm/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-epix-pro-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-epix-pro-gen2-sapphire-51mm/hero.webp"
     ],
     "shortDescription": "High-performance GPS smartwatch featuring a brilliant 1.4-inch AMOLED display, titanium bezel, sapphire crystal, multi-band GNSS with SatIQ, built-in LED flashlight, and 31-day battery life.",
     "description": "The Garmin epix Pro (Gen 2) Sapphire Edition (51 mm) pairs high-definition AMOLED visual clarity with military-grade outdoor durability for surveyors, mountaineers, and expedition professionals. Its vivid 1.4-inch AMOLED display brings TopoActive continental maps to life with shaded relief, elevation contours, and intuitive touch panning. Protected by a scratch-resistant sapphire crystal lens and titanium bezel, it provides up to 31 days of battery life in smartwatch mode and up to 82 hours in standard GPS mode. Incorporates SatIQ multi-band GNSS positioning, an integrated multi-LED flashlight with variable white and red strobe, and full ABC sensor telemetry.",
@@ -1407,7 +1425,10 @@ export const PRODUCTS: Product[] = [
       "garmin-montana-710"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Garmin epix Pro (Gen 2) Sapphire 51mm"
+    "inquiryLabel": "Inquire About Garmin epix Pro (Gen 2) Sapphire 51mm",
+    "imageAlt": "Garmin epix Pro (Gen 2) Sapphire 51 mm GPS smartwatch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02804-00/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-instinct-crossover-solar",
@@ -1425,14 +1446,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-instinct-crossover-watch.svg",
+    "heroImage": "/images/products/garmin-instinct-crossover-solar/hero.webp",
     "gallery": [
-      "/images/products/garmin-instinct-crossover-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-instinct-crossover-solar/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-instinct-crossover-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-instinct-crossover-solar/hero.webp"
     ],
     "shortDescription": "Rugged hybrid GPS smartwatch with luminescent analog hands, RevoDrive auto-calibrating technology, Power Glass solar charging, MIL-STD-810 toughness, and dual-format GPS.",
     "description": "The Garmin Instinct Crossover Solar redefines outdoor field navigation by fusing classic luminescent analog hands with a high-contrast digital display powered by RevoDrive™ technology, which auto-calibrates needle alignment even after severe impacts. Built to MIL-STD-810 military specifications for thermal and shock resistance with a 10 ATM waterproof rating, it incorporates Power Glass™ solar charging to deliver up to 70 days of battery life in smartwatch mode (and unlimited battery life in battery saver mode). Features multi-GNSS tracking, 3-axis electronic compass, barometric altimeter, TracBack routing, and dual-format GPS coordinates.",
@@ -1535,7 +1554,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gps-12h"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Garmin Instinct Crossover Solar"
+    "inquiryLabel": "Inquire About Garmin Instinct Crossover Solar",
+    "imageAlt": "Garmin Instinct Crossover Solar hybrid GPS smartwatch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02730-01/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "garmin-descent-mk3i-51mm",
@@ -1553,14 +1575,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/garmin-descent-mk3i-watch.svg",
+    "heroImage": "/images/products/garmin-descent-mk3i-51mm/hero.webp",
     "gallery": [
-      "/images/products/garmin-descent-mk3i-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-descent-mk3i-51mm/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/garmin-descent-mk3i-watch.svg",
-      "/images/products/garmin-gps-smartwatch.svg"
+      "/images/products/garmin-descent-mk3i-51mm/hero.webp"
     ],
     "shortDescription": "Expedition dive computer and multi-band GPS smartwatch with 200m dive rating, SubWave sonar messaging, 1.4-inch AMOLED display, surface GPS entry/exit logging, and titanium bezel.",
     "description": "The Garmin Descent Mk3i (51 mm) is the premier expedition dive computer and multi-band GNSS smartwatch designed for technical marine research, amphibious field operations, and underwater survey. Certified to a 200-meter (20 ATM) dive rating with leakproof inductive push-buttons, it features a 1.4-inch high-resolution AMOLED touchscreen protected by sapphire crystal and a DLC titanium bezel. Outfitted with SubWave™ sonar technology for diver-to-diver messaging up to 30 meters, multi-band GNSS reception with automatic surface entry and exit coordinate logging, preloaded TopoActive maps with bathymetric depth contours, and a built-in LED flashlight with underwater strobe mode.",
@@ -1673,7 +1693,10 @@ export const PRODUCTS: Product[] = [
       "garmin-gps-12h"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Garmin Descent Mk3i 51mm"
+    "inquiryLabel": "Inquire About Garmin Descent Mk3i 51mm",
+    "imageAlt": "Garmin Descent Mk3i 51 mm titanium dive computer GPS watch",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02752-10/v/cf-xl.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "nikon-action-8x42",
@@ -1692,12 +1715,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.nikon.co.in/action-8x42",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/nikon-action-binocular.svg",
+    "heroImage": "/images/products/nikon-action-8x42/hero.webp",
     "gallery": [
-      "/images/products/nikon-action-binocular.svg"
+      "/images/products/nikon-action-8x42/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/nikon-action-binocular.svg"
+      "/images/products/nikon-action-8x42/hero.webp"
     ],
     "shortDescription": "Wide-field Porro prism 8x42 binocular with multilayer-coated lenses, rubber armor chassis, and broad 8.0° angular field of view.",
     "description": "The Nikon ACTION 8x42 delivers exceptional depth perception and optical brightness through its classic Porro prism design and multilayer-coated optics. Featuring an expansive 8.0° real angular field of view (140 m @ 1,000 m), long 17.3 mm eye relief, and turn-and-slide rubber eyecups, this model ensures comfortable viewing with or without eyeglasses. The durable aluminum alloy chassis is encased in shock-resistant rubber armor for reliable field handling.",
@@ -1795,7 +1818,10 @@ export const PRODUCTS: Product[] = [
       "vortex-crossfire-hd-8x42"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Nikon ACTION 8x42"
+    "inquiryLabel": "Inquire About Nikon ACTION 8x42",
+    "imageAlt": "Nikon ACTION 8x42 Porro prism binoculars",
+    "imageSourceUrl": "https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/action_x42x50/img/pic_001.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "nikon-action-10x50",
@@ -1814,12 +1840,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.nikon.co.in/action-10x50",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/nikon-action-binocular.svg",
+    "heroImage": "/images/products/nikon-action-10x50/hero.webp",
     "gallery": [
-      "/images/products/nikon-action-binocular.svg"
+      "/images/products/nikon-action-10x50/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/nikon-action-binocular.svg"
+      "/images/products/nikon-action-10x50/hero.webp"
     ],
     "shortDescription": "High-transmission 10x50 Porro prism binocular with 50 mm objective lenses, multilayer coatings, and wide 58.4° apparent field of view.",
     "description": "Equipped with large 50 mm objective lenses and Nikon's premium multilayer optical coatings, the Nikon ACTION 10x50 delivers brilliant, high-contrast images even in dawn, dusk, and heavily shaded canopy environments. The Porro prism construction maintains rich stereoscopic spatial depth, while the wide 6.4° real field of view (112 m @ 1,000 m) allows expansive scanning. Features durable rubber armoring and compatibility with Nikon tripod adapters.",
@@ -1917,7 +1943,10 @@ export const PRODUCTS: Product[] = [
       "vortex-crossfire-hd-10x50"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Nikon ACTION 10x50"
+    "inquiryLabel": "Inquire About Nikon ACTION 10x50",
+    "imageAlt": "Nikon ACTION 10x50 Porro prism binoculars",
+    "imageSourceUrl": "https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/action_x42x50/img/pic_004.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "nikon-action-16x50",
@@ -1936,12 +1965,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.nikon.co.in/action-16x50",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/nikon-action-binocular.svg",
+    "heroImage": "/images/products/nikon-action-16x50/hero.webp",
     "gallery": [
-      "/images/products/nikon-action-binocular.svg"
+      "/images/products/nikon-action-16x50/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/nikon-action-binocular.svg"
+      "/images/products/nikon-action-16x50/hero.webp"
     ],
     "shortDescription": "Powerful 16x50 long-range Porro prism binocular with 60.8° wide apparent field of view and high-definition multilayer-coated optics.",
     "description": "The Nikon ACTION 16x50 brings distant targets into sharp focus with high-powered 16x magnification and 50 mm objective lenses. Despite the high magnification, it achieves a wide 60.8° apparent field of view, making target acquisition smooth and straightforward. Built with an aluminum alloy frame wrapped in rugged rubber armor, this high-power instrument is ideally paired with a tripod adapter (Nikon TRA-2/TRA-3) for stable, shake-free long-range terrestrial observation.",
@@ -2039,7 +2068,10 @@ export const PRODUCTS: Product[] = [
       "vortex-crossfire-hd-12x50"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Nikon ACTION 16x50"
+    "inquiryLabel": "Inquire About Nikon ACTION 16x50",
+    "imageAlt": "Nikon ACTION 16x50 high-magnification Porro prism binoculars",
+    "imageSourceUrl": "https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/action_x42x50/img/pic_006.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "bushnell-powerview-2-series",
@@ -2058,12 +2090,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.bushnell.com/binoculars/powerview-2/",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/bushnell-powerview-binocular.svg",
+    "heroImage": "/images/products/bushnell-powerview-2-series/hero.webp",
     "gallery": [
-      "/images/products/bushnell-powerview-binocular.svg"
+      "/images/products/bushnell-powerview-2-series/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/bushnell-powerview-binocular.svg"
+      "/images/products/bushnell-powerview-2-series/hero.webp"
     ],
     "shortDescription": "All-metal chassis binocular series featuring multi-coated optics, textured rubber armor, and proven durability across 10x42, 10x50, 12x50, and 20x50 configurations.",
     "description": "The Bushnell PowerView 2 series represents a clean leap in durability with an all-metal aluminum alloy chassis designed to resist cracking in sub-zero cold or warping under intense field heat. Wrapped in modern textured rubber armor for a secure non-slip grip, the PowerView 2 series utilizes multi-coated optics to maximize light throughput. Available in four primary field configurations: versatile 10x42 (PWV1042), low-light 10x50 (PWV1050), long-range 12x50 (PWV1250), and extreme-distance 20x50 (PWV2050), with all full-sized models featuring integrated tripod adapter sockets.",
@@ -2141,7 +2173,10 @@ export const PRODUCTS: Product[] = [
       "vortex-crossfire-hd-12x50"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Bushnell PowerView 2 Series"
+    "inquiryLabel": "Inquire About Bushnell PowerView 2 Series",
+    "imageAlt": "Bushnell PowerView 2 series all-metal chassis binoculars",
+    "imageSourceUrl": "https://www.bushnelloutdoors.com/cdn/shop/files/PowerView2_PWV1050_Front.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-crossfire-hd-8x42",
@@ -2160,12 +2195,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/crossfire-hd-8x42-binocular.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-crossfire-binocular.svg",
+    "heroImage": "/images/products/vortex-crossfire-hd-8x42/hero.webp",
     "gallery": [
-      "/images/products/vortex-crossfire-binocular.svg"
+      "/images/products/vortex-crossfire-hd-8x42/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-crossfire-binocular.svg"
+      "/images/products/vortex-crossfire-hd-8x42/hero.webp"
     ],
     "shortDescription": "High-definition 8x42 roof prism binocular with fully multi-coated optics, 393 ft field of view, and nitrogen-purged waterproof/fogproof housing.",
     "description": "The Vortex Crossfire HD 8x42 delivers exceptional optical resolution, edge-to-edge sharpness, and color fidelity through its HD optical system. Built around a rugged roof prism chassis purged with nitrogen gas and sealed with O-rings for complete waterproof and fogproof reliability, this 8x42 model offers an expansive 7.5° angular field of view (393 ft @ 1,000 yd) with generous 17.0 mm eye relief and twist-up eyecups.",
@@ -2253,7 +2288,10 @@ export const PRODUCTS: Product[] = [
       "vortex-diamondback-hd-8x42"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Crossfire HD 8x42"
+    "inquiryLabel": "Inquire About Vortex Crossfire HD 8x42",
+    "imageAlt": "Vortex Crossfire HD 8x42 roof prism binoculars",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_bin_crossfire_42_fr_w.jpeg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-crossfire-hd-10x50",
@@ -2272,12 +2310,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/crossfire-hd-10x50-binocular.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-crossfire-binocular.svg",
+    "heroImage": "/images/products/vortex-crossfire-hd-10x50/hero.webp",
     "gallery": [
-      "/images/products/vortex-crossfire-binocular.svg"
+      "/images/products/vortex-crossfire-hd-10x50/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-crossfire-binocular.svg"
+      "/images/products/vortex-crossfire-hd-10x50/hero.webp"
     ],
     "shortDescription": "Powerful 10x50 HD roof prism binocular with 50 mm objective lenses for exceptional low-light light gathering and 320 ft field of view.",
     "description": "Combining 10x magnification with large 50 mm objective lenses, the Vortex Crossfire HD 10x50 excels in early morning, late evening, and deep canopy conditions where light transmission is critical. The HD optical system cuts chromatic aberration and delivers edge-to-edge sharpness. Sealed with O-rings and nitrogen-purged against water and fog, it features an angular field of view of 6.1° (320 ft @ 1,000 yd) and durable rubber armoring.",
@@ -2365,7 +2403,10 @@ export const PRODUCTS: Product[] = [
       "vortex-diamondback-hd-10x50"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Crossfire HD 10x50"
+    "inquiryLabel": "Inquire About Vortex Crossfire HD 10x50",
+    "imageAlt": "Vortex Crossfire HD 10x50 roof prism binoculars",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_bin_crossfire_50_fr_w.jpeg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-crossfire-hd-12x50",
@@ -2384,12 +2425,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/crossfire-hd-12x50-binocular.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-crossfire-binocular.svg",
+    "heroImage": "/images/products/vortex-crossfire-hd-12x50/hero.webp",
     "gallery": [
-      "/images/products/vortex-crossfire-binocular.svg"
+      "/images/products/vortex-crossfire-hd-12x50/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-crossfire-binocular.svg"
+      "/images/products/vortex-crossfire-hd-12x50/hero.webp"
     ],
     "shortDescription": "Long-range 12x50 HD binocular with high-resolution glass elements, 50 mm objective lenses, and 273 ft field of view for extended observation.",
     "description": "When maximum magnification is required to resolve fine detail across open country, valleys, or large industrial sites, the Vortex Crossfire HD 12x50 delivers. Its 12x power combined with 50 mm objective lenses provides clear, bright imagery while the HD optical system ensures accurate color fidelity. Built with an open-hinge rubber armored chassis that is nitrogen-purged and O-ring sealed, it includes a 1/4\"-20 tripod socket for rock-solid stability.",
@@ -2477,7 +2518,10 @@ export const PRODUCTS: Product[] = [
       "vortex-diamondback-hd-12x50"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Vortex Crossfire HD 12x50"
+    "inquiryLabel": "Inquire About Vortex Crossfire HD 12x50",
+    "imageAlt": "Vortex Crossfire HD 12x50 high-magnification roof prism binoculars",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_bin_crossfire_50_fr_w_1.jpeg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-diamondback-hd-8x42",
@@ -2496,12 +2540,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/diamondback-hd-8x42-binocular.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-diamondback-binocular.svg",
+    "heroImage": "/images/products/vortex-diamondback-hd-8x42/hero.webp",
     "gallery": [
-      "/images/products/vortex-diamondback-binocular.svg"
+      "/images/products/vortex-diamondback-hd-8x42/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-diamondback-binocular.svg"
+      "/images/products/vortex-diamondback-hd-8x42/hero.webp"
     ],
     "shortDescription": "Ultra-compact HD binocular with dielectric phase-corrected roof prisms, ArmorTek scratch-resistant lens protection, and argon gas purging.",
     "description": "The Vortex Diamondback HD 8x42 punches well above its weight class with a high-density optical system featuring dielectric multi-layer prism coatings and phase correction. Delivering a broad 7.5° field of view (393 ft @ 1,000 yd) with a remarkably close 5.0 ft focus distance, it weighs only 21.8 oz (618 g). The exterior lenses are protected by ultra-hard ArmorTek scratch-resistant coating, and the chassis is purged with argon gas for lifetime waterproof and fogproof integrity.",
@@ -2594,7 +2638,10 @@ export const PRODUCTS: Product[] = [
       "vortex-crossfire-hd-8x42"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Diamondback HD 8x42"
+    "inquiryLabel": "Inquire About Vortex Diamondback HD 8x42",
+    "imageAlt": "Vortex Diamondback HD 8x42 binoculars",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_bin_diamondback2_42_fr_w_1.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-diamondback-hd-10x50",
@@ -2613,12 +2660,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/diamondback-hd-10x50-binocular.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-diamondback-binocular.svg",
+    "heroImage": "/images/products/vortex-diamondback-hd-10x50/hero.webp",
     "gallery": [
-      "/images/products/vortex-diamondback-binocular.svg"
+      "/images/products/vortex-diamondback-hd-10x50/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-diamondback-binocular.svg"
+      "/images/products/vortex-diamondback-hd-10x50/hero.webp"
     ],
     "shortDescription": "High-power 10x50 HD binocular with 50 mm objective lenses, dielectric prism coatings, ArmorTek protection, and argon gas purging.",
     "description": "Combining high magnification with 50 mm light-gathering objectives, the Vortex Diamondback HD 10x50 provides outstanding resolution in low-light environments. Featuring dielectric multi-layer prism coatings and phase correction, this binocular produces brilliant, color-accurate imagery. The rugged chassis is purged with argon gas, protected by ArmorTek lens armor, and built with an ergonomic short-hinge design.",
@@ -2711,7 +2758,10 @@ export const PRODUCTS: Product[] = [
       "vortex-crossfire-hd-10x50"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Diamondback HD 10x50"
+    "inquiryLabel": "Inquire About Vortex Diamondback HD 10x50",
+    "imageAlt": "Vortex Diamondback HD 10x50 binoculars",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_bin_diamondback2_50_fr_w_5_1_1.jpeg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-diamondback-hd-12x50",
@@ -2730,12 +2780,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/diamondback-hd-12x50-binocular.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-diamondback-binocular.svg",
+    "heroImage": "/images/products/vortex-diamondback-hd-12x50/hero.webp",
     "gallery": [
-      "/images/products/vortex-diamondback-binocular.svg"
+      "/images/products/vortex-diamondback-hd-12x50/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-diamondback-binocular.svg"
+      "/images/products/vortex-diamondback-hd-12x50/hero.webp"
     ],
     "shortDescription": "High-magnification 12x50 HD binocular with dielectric phase-corrected roof prisms, ArmorTek coating, and argon gas purging for long-range surveying.",
     "description": "Engineered for extended-range observation where picking out fine detail is vital, the Vortex Diamondback HD 12x50 delivers sharp resolution across long sightlines. Equipped with dielectric phase-corrected roof prisms and fully multi-coated glass, it maintains brightness and contrast. The argon-purged housing provides absolute waterproof and fogproof reliability, while ArmorTek protects external lens elements from scratches, oil, and dust.",
@@ -2828,7 +2878,10 @@ export const PRODUCTS: Product[] = [
       "vortex-crossfire-hd-12x50"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Vortex Diamondback HD 12x50"
+    "inquiryLabel": "Inquire About Vortex Diamondback HD 12x50",
+    "imageAlt": "Vortex Diamondback HD 12x50 binoculars",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_bin_diamondback2_50_fr_w_5_1.jpeg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "nikon-forestry-pro-ii",
@@ -2846,12 +2899,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.nikon.co.in/forestry-pro-ii",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/nikon-forestry-rangefinder.svg",
+    "heroImage": "/images/products/nikon-forestry-pro-ii/hero.webp",
     "gallery": [
-      "/images/products/nikon-forestry-rangefinder.svg"
+      "/images/products/nikon-forestry-pro-ii/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/nikon-forestry-rangefinder.svg"
+      "/images/products/nikon-forestry-pro-ii/hero.webp"
     ],
     "shortDescription": "Professional laser rangefinder and 3-point hypsometer measuring distance up to 1,600 m (1,750 yd) with dual LCD displays, log function, and HYPER READ.",
     "description": "The Nikon Forestry Pro II Laser Rangefinder / Hypsometer is the benchmark surveying tool for forestry, utility, and civil engineering measurements. Capable of measuring actual distance up to 1,600 m (1,750 yd) and tree distances up to 1,100 m, it integrates a precision tilt inclinometer (±89°) for horizontal distance, height, angle, and vertical separation calculations. Featuring a unique 3-point measurement function (calculates tree height between two target points when the base or top is obscured) and dual LCD panels (internal 6x optical display and external backlit LCD), the unit logs up to 250 measurements and delivers readings in approx. 0.3 seconds via HYPER READ.",
@@ -2958,7 +3011,10 @@ export const PRODUCTS: Product[] = [
       "vortex-diamondback-hd-2000"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Nikon Forestry Pro II"
+    "inquiryLabel": "Inquire About Nikon Forestry Pro II",
+    "imageAlt": "Nikon Forestry Pro II laser rangefinder and hypsometer",
+    "imageSourceUrl": "https://imaging.nikon.com/sport-optics/lineup/laser/forestryproii/img/pic_001.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-triumph-hd-850",
@@ -2976,12 +3032,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/triumph-hd-850-laser-rangefinder.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-rangefinder.svg",
+    "heroImage": "/images/products/vortex-triumph-hd-850/hero.webp",
     "gallery": [
-      "/images/products/vortex-rangefinder.svg"
+      "/images/products/vortex-triumph-hd-850/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-rangefinder.svg"
+      "/images/products/vortex-triumph-hd-850/hero.webp"
     ],
     "shortDescription": "Compact 5x21 laser rangefinder with HD optical system, 850-yard reflective target range, and angle-compensated HCD ranging modes.",
     "description": "The Vortex Triumph HD 850 offers dependable laser ranging accuracy in an ultra-lightweight 4.6 oz (130 g) package. Featuring 5x magnification with a 21 mm objective lens, it delivers reflective target ranging out to 850 yards and tree ranging up to 500 yards. Equipped with Horizontal Component Distance (HCD) angle-compensated mode, Line of Sight (LOS) mode, and continuous Scan tracking, it operates on a single CR2 battery delivering over 4,000 range cycles.",
@@ -3083,7 +3139,10 @@ export const PRODUCTS: Product[] = [
       "nikon-forestry-pro-ii"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Triumph HD 850"
+    "inquiryLabel": "Inquire About Vortex Triumph HD 850",
+    "imageAlt": "Vortex Triumph HD 850 laser rangefinder",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_rf_triumphhd_850_fr_w.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-diamondback-hd-2000",
@@ -3101,12 +3160,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/diamondback-hd-2000-laser-rangefinder.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-rangefinder.svg",
+    "heroImage": "/images/products/vortex-diamondback-hd-2000/hero.webp",
     "gallery": [
-      "/images/products/vortex-rangefinder.svg"
+      "/images/products/vortex-diamondback-hd-2000/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-rangefinder.svg"
+      "/images/products/vortex-diamondback-hd-2000/hero.webp"
     ],
     "shortDescription": "Long-range 7x24 laser rangefinder with red OLED display, 2,000-yard reflective target range, and XR Plus multi-coated optics.",
     "description": "The Vortex Diamondback HD 2000 is an advanced laser rangefinder built for long-distance field surveying and target acquisition. Featuring 7x magnification with a 24 mm objective lens and XR Plus anti-reflective coatings, it reaches reflective targets out to 2,000 yards and trees up to 1,800 yards. The high-visibility red OLED display ensures immediate readout legibility in low-light environments, supported by angle-compensated HCD, LOS, and continuous Scan modes.",
@@ -3208,7 +3267,10 @@ export const PRODUCTS: Product[] = [
       "nikon-forestry-pro-ii"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Diamondback HD 2000"
+    "inquiryLabel": "Inquire About Vortex Diamondback HD 2000",
+    "imageAlt": "Vortex Diamondback HD 2000 laser rangefinder",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_ran_diamondbackhd_2000_fr_w.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "nikon-fieldscope-ed50",
@@ -3227,12 +3289,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.nikon.co.in/fieldscopes",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/nikon-fieldscope.svg",
+    "heroImage": "/images/products/nikon-fieldscope-ed50/hero.webp",
     "gallery": [
-      "/images/products/nikon-fieldscope.svg"
+      "/images/products/nikon-fieldscope-ed50/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/nikon-fieldscope.svg"
+      "/images/products/nikon-fieldscope-ed50/hero.webp"
     ],
     "shortDescription": "Ultra-compact 50 mm fieldscope with extra-low dispersion (ED) glass, nitrogen-filled waterproof construction, and straight or angled body configurations.",
     "description": "The Nikon Fieldscope ED50 / ED50-A is one of the most portable precision spotting scopes in the world. Utilizing a 50 mm objective lens engineered with Nikon's acclaimed Extra-low Dispersion (ED) glass, it virtually eliminates chromatic aberration to produce crisp, high-contrast images. Available in both Straight (ED50) and Angled (ED50-A) body formats, this fieldscope is nitrogen-purged and O-ring sealed for complete waterproof and fog-free performance in any weather condition.",
@@ -3315,7 +3377,10 @@ export const PRODUCTS: Product[] = [
       "vortex-diamondback-hd-20-60x85"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Nikon Fieldscope ED50"
+    "inquiryLabel": "Inquire About Nikon Fieldscope ED50",
+    "imageAlt": "Nikon Fieldscope ED50 compact spotting scope with ED glass",
+    "imageSourceUrl": "https://imaging.nikon.com/sport-optics/lineup/scopes/ed50/img/pic_001.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "nikon-prostaff-5-fieldscope-82",
@@ -3334,12 +3399,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.nikon.co.in/fieldscopes",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/nikon-fieldscope.svg",
+    "heroImage": "/images/products/nikon-prostaff-5-fieldscope-82/hero.webp",
     "gallery": [
-      "/images/products/nikon-fieldscope.svg"
+      "/images/products/nikon-prostaff-5-fieldscope-82/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/nikon-fieldscope.svg"
+      "/images/products/nikon-prostaff-5-fieldscope-82/hero.webp"
     ],
     "shortDescription": "Full-sized 82 mm fieldscope body with multilayer coatings, bayonet eyepiece mount, and nitrogen-purged waterproof construction for bright observation.",
     "description": "The Nikon PROSTAFF 5 Fieldscope 82 is engineered for demanding observation where large aperture light gathering is required. Featuring a generous 82 mm objective lens with multilayer coatings, it delivers bright, sharp images even under low-light dawn and dusk conditions. The body is nitrogen-purged and waterproof up to 1 meter for 10 minutes, equipped with a smooth focusing system, integrated sliding sunshade, and a bayonet mount compatible with SEP series zoom eyepieces.",
@@ -3422,7 +3487,10 @@ export const PRODUCTS: Product[] = [
       "vortex-viper-hd-20-60x85"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Nikon PROSTAFF 5 Fieldscope 82"
+    "inquiryLabel": "Inquire About Nikon PROSTAFF 5 Fieldscope 82",
+    "imageAlt": "Nikon PROSTAFF 5 Fieldscope 82 mm spotting scope",
+    "imageSourceUrl": "https://imaging.nikon.com/sport-optics/lineup/scopes/prostaff5/img/pic_001.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "nikon-monarch-fieldscope-82ed-a",
@@ -3441,12 +3509,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.nikon.co.in/fieldscopes",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/nikon-fieldscope.svg",
+    "heroImage": "/images/products/nikon-monarch-fieldscope-82ed-a/hero.webp",
     "gallery": [
-      "/images/products/nikon-fieldscope.svg"
+      "/images/products/nikon-monarch-fieldscope-82ed-a/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/nikon-fieldscope.svg"
+      "/images/products/nikon-monarch-fieldscope-82ed-a/hero.webp"
     ],
     "shortDescription": "Flagship 82 mm angled fieldscope with Advanced Apochromat ED glass, Field Flattener lens system, and MEP-20-60 zoom eyepiece compatibility.",
     "description": "The Nikon MONARCH Fieldscope 82ED-A represents the pinnacle of optical engineering for discerning field researchers and optical observers. Featuring an Advanced Apochromat optical system with Extra-low Dispersion (ED) glass, it eliminates both red, green, and blue chromatic aberration to produce true-to-life color fidelity. The integrated Field Flattener lens system ensures edge-to-edge sharpness throughout the entire field of view. Built with an angled body, optimized focusing ring, and Type 1 nitrogen-filled waterproof construction.",
@@ -3529,7 +3597,10 @@ export const PRODUCTS: Product[] = [
       "vortex-razor-hd-27-60x85"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Nikon MONARCH Fieldscope 82ED-A"
+    "inquiryLabel": "Inquire About Nikon MONARCH Fieldscope 82ED-A",
+    "imageAlt": "Nikon MONARCH Fieldscope 82ED-A angled spotting scope with ED glass",
+    "imageSourceUrl": "https://imaging.nikon.com/sport-optics/lineup/scopes/monarch/img/pic_002.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-diamondback-hd-20-60x85",
@@ -3548,12 +3619,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/diamondback-hd-20-60x85-spotting-scope.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-spotting-scope.svg",
+    "heroImage": "/images/products/vortex-diamondback-hd-20-60x85/hero.webp",
     "gallery": [
-      "/images/products/vortex-spotting-scope.svg"
+      "/images/products/vortex-diamondback-hd-20-60x85/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-spotting-scope.svg"
+      "/images/products/vortex-diamondback-hd-20-60x85/hero.webp"
     ],
     "shortDescription": "High-power 20-60x zoom spotting scope with large 85 mm objective lens, HD optical system, ArmorTek protection, and Arca-Swiss tripod compatibility.",
     "description": "The Vortex Diamondback HD 20-60x85 delivers exceptional long-range observation power with an 85 mm objective lens that excels in low-light environments. Featuring an HD optical system with select glass elements to cut chromatic aberration and deliver edge-to-edge sharpness, this spotting scope is available in both Straight and Angled configurations. The chassis is argon-purged for waterproof and fogproof integrity, protected by ArmorTek scratch-resistant lens coatings, and includes a built-in Arca-Swiss compatible tripod mount foot.",
@@ -3646,7 +3717,10 @@ export const PRODUCTS: Product[] = [
       "nikon-prostaff-5-fieldscope-82"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Diamondback HD 20-60x85"
+    "inquiryLabel": "Inquire About Vortex Diamondback HD 20-60x85",
+    "imageAlt": "Vortex Diamondback HD 20-60x85 angled spotting scope",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_spt_diamondbackhd_85_angled_fr_w.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-viper-hd-20-60x85",
@@ -3665,12 +3739,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/viper-hd-20-60x85-spotting-scope.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-spotting-scope.svg",
+    "heroImage": "/images/products/vortex-viper-hd-20-60x85/hero.webp",
     "gallery": [
-      "/images/products/vortex-spotting-scope.svg"
+      "/images/products/vortex-viper-hd-20-60x85/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-spotting-scope.svg"
+      "/images/products/vortex-viper-hd-20-60x85/hero.webp"
     ],
     "shortDescription": "Mid-tier 20-60x spotting scope with 85 mm objective lens, XR Plus multi-coatings, dielectric prism coatings, and Arca-Swiss mount.",
     "description": "The Vortex Viper HD 20-60x85 is a premium workhorse spotting scope designed to deliver exceptional clarity, light throughput, and resolution across extreme distances. Built with an 85 mm objective lens treated with XR Plus fully multi-coated glass and dielectric prism coatings, this model produces razor-sharp detail across dawn-to-dusk lighting conditions. Available in Straight and Angled configurations with ArmorTek lens coatings and argon purging.",
@@ -3763,7 +3837,10 @@ export const PRODUCTS: Product[] = [
       "nikon-monarch-fieldscope-82ed-a"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Viper HD 20-60x85"
+    "inquiryLabel": "Inquire About Vortex Viper HD 20-60x85",
+    "imageAlt": "Vortex Viper HD 20-60x85 angled spotting scope",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_spt_viperhd_85_angled_fr_w_1.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "vortex-razor-hd-27-60x85",
@@ -3782,12 +3859,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://vortexoptics.com/razor-hd-27-60x85-spotting-scope.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/vortex-spotting-scope.svg",
+    "heroImage": "/images/products/vortex-razor-hd-27-60x85/hero.webp",
     "gallery": [
-      "/images/products/vortex-spotting-scope.svg"
+      "/images/products/vortex-razor-hd-27-60x85/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/vortex-spotting-scope.svg"
+      "/images/products/vortex-razor-hd-27-60x85/hero.webp"
     ],
     "shortDescription": "Flagship 27-60x85 spotting scope with apochromatic (APO) triplet lens system, HD extra-low dispersion glass, XR Plus coatings, and Arca-Swiss mount.",
     "description": "The Vortex Razor HD 27-60x85 stands as the flagship spotting scope in the Vortex lineup. Featuring an advanced Apochromatic (APO) triplet lens system paired with high-density extra-low dispersion glass, it achieves true color rendition and virtually eliminates all chromatic aberration. The 85 mm objective lens provides unmatched optical brightness across the 27-60x magnification range. Available in Straight and Angled configurations with helical focus, ArmorTek exterior coating, and argon gas purging.",
@@ -3885,7 +3962,10 @@ export const PRODUCTS: Product[] = [
       "nikon-monarch-fieldscope-82ed-a"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Vortex Razor HD 27-60x85"
+    "inquiryLabel": "Inquire About Vortex Razor HD 27-60x85",
+    "imageAlt": "Vortex Razor HD 27-60x85 angled spotting scope",
+    "imageSourceUrl": "https://vortexoptics.com/media/catalog/product/v/t/vtx_spt_razorhd_arcaswiss_85_angled_fr_w_1.jpg",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "seek-reveal-300",
@@ -3903,12 +3983,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.thermal.com/",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/seek-thermal-camera.svg",
+    "heroImage": "/images/products/seek-reveal-300/hero.webp",
     "gallery": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-reveal-300/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-reveal-300/hero.webp"
     ],
     "shortDescription": "Rugged standalone handheld thermal imager with 320 x 240 thermal sensor, SV1 optimization, 300-lumen LED torch, and IP67 weather resistance.",
     "description": "The Seek Reveal 300 is a dedicated, ruggedized handheld thermal camera built for demanding search, industrial inspection, and perimeter surveillance tasks. Powered by a 320 x 240 thermal sensor with SV1 Image Optimization and a smooth 25 Hz frame rate, it detects thermal variances down to 35 mK. Encased in a rugged IP67 waterproof housing engineered to survive 2-meter drops, the Reveal 300 combines an ergonomic top-facing display with a built-in 300-lumen LED flashlight and over 6 hours of continuous battery life.",
@@ -3996,7 +4076,10 @@ export const PRODUCTS: Product[] = [
       "seek-compactpro-xr"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Seek Reveal 300"
+    "inquiryLabel": "Inquire About Seek Reveal 300",
+    "imageAlt": "Seek Reveal 300 handheld thermal imaging camera",
+    "imageSourceUrl": "https://www.thermal.com/uploads/1/0/1/3/101388544/reveal300-flat-for-pricing-and-spec-table-4_1.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "seek-nano-200",
@@ -4014,12 +4097,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.thermal.com/nano",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/seek-thermal-camera.svg",
+    "heroImage": "/images/products/seek-nano-200/hero.webp",
     "gallery": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-nano-200/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-nano-200/hero.webp"
     ],
     "shortDescription": "Ultra-compact plug-and-play smartphone thermal camera with 200 x 150 thermal sensor, SV1 optimization, and smooth 25 Hz frame rate.",
     "description": "The Seek Nano 200 is a next-generation plug-and-play smartphone thermal camera that transforms mobile devices into powerful diagnostic instruments. Featuring a 200 x 150 uncooled thermal sensor with SV1 Image Optimization and sub-35 mK thermal sensitivity, it captures detailed heat maps at a smooth 25 Hz frame rate. Powered directly by the smartphone's USB-C or Lightning connector, the Nano 200 requires no internal charging, making it ready for field deployment anytime.",
@@ -4102,7 +4185,10 @@ export const PRODUCTS: Product[] = [
       "seek-reveal-300"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Seek Nano 200"
+    "inquiryLabel": "Inquire About Seek Nano 200",
+    "imageAlt": "Seek Nano 200 smartphone thermal camera",
+    "imageSourceUrl": "https://www.thermal.com/uploads/1/0/1/3/101388544/nano-200-hero_orig.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "seek-nano-300",
@@ -4120,12 +4206,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.thermal.com/nano",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/seek-thermal-camera.svg",
+    "heroImage": "/images/products/seek-nano-300/hero.webp",
     "gallery": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-nano-300/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-nano-300/hero.webp"
     ],
     "shortDescription": "High-resolution 320 x 240 smartphone thermal camera featuring wide 57° x 42° FOV, SV1 optimization, and 25 Hz real-time frame rate.",
     "description": "The Seek Nano 300 delivers professional-grade 320 x 240 thermal resolution in a pocket-sized mobile camera accessory. Combining an expansive 57° x 42° field of view with SV1 Image Optimization and sub-35 mK sensitivity, it captures entire equipment rooms, breaker panels, or building envelopes in a single view. The 25 Hz frame rate delivers smooth video monitoring, while the battery-free interface draws minimal power directly from the host smartphone.",
@@ -4208,7 +4294,10 @@ export const PRODUCTS: Product[] = [
       "seek-compactpro-xr"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Seek Nano 300"
+    "inquiryLabel": "Inquire About Seek Nano 300",
+    "imageAlt": "Seek Nano 300 smartphone thermal camera",
+    "imageSourceUrl": "https://www.thermal.com/uploads/1/0/1/3/101388544/nano-300-hero_orig.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "seek-compactpro",
@@ -4226,12 +4315,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.thermal.com/compact-series.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/seek-thermal-camera.svg",
+    "heroImage": "/images/products/seek-compactpro/hero.webp",
     "gallery": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-compactpro/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-compactpro/hero.webp"
     ],
     "shortDescription": "Precision smartphone thermal camera with 320 x 240 thermal sensor, focusable lens, detection range up to 1,800 ft, and temperature span & level controls.",
     "description": "The Seek CompactPRO is an advanced thermal imaging camera designed specifically for smartphones. Boasting a high-resolution 320 x 240 thermal sensor and focusable lens, it detects heat signatures from 6 inches up to 1,800 feet (550 meters) away. The CompactPRO provides advanced thermal imaging software tools including customizable thermal span and level controls, calibrated emissivity settings, multiple color palettes, and temperature range detection from -40°C to 330°C.",
@@ -4319,7 +4408,10 @@ export const PRODUCTS: Product[] = [
       "seek-reveal-300"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Seek CompactPRO"
+    "inquiryLabel": "Inquire About Seek CompactPRO",
+    "imageAlt": "Seek CompactPRO 320x240 thermal camera for smartphones",
+    "imageSourceUrl": "https://www.thermal.com/uploads/1/0/1/3/101388544/cpro-cs_orig.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "seek-compactpro-xr",
@@ -4337,12 +4429,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.thermal.com/compact-series.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/seek-thermal-camera.svg",
+    "heroImage": "/images/products/seek-compactpro-xr/hero.webp",
     "gallery": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-compactpro-xr/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/seek-thermal-camera.svg"
+      "/images/products/seek-compactpro-xr/hero.webp"
     ],
     "shortDescription": "Long-range smartphone thermal camera with 320 x 240 thermal sensor, 9.1 mm f/1.0 focusable lens, 24° FOV, and detection distance up to 2,400 ft.",
     "description": "The Seek CompactPRO XR is engineered for long-range thermal detection, combining a 320 x 240 thermal sensor with a high-performance 9.1 mm focal length f/1.0 focusable lens. Offering a narrower 24° field of view, the XR detects heat signatures at distances up to 2,400 feet (750 meters)—making it ideal for perimeter security, agricultural asset monitoring, and utility line inspection. Operates directly from the smartphone connector with customizable thermal span and level controls.",
@@ -4425,7 +4517,10 @@ export const PRODUCTS: Product[] = [
       "seek-reveal-300"
     ],
     "featured": false,
-    "inquiryLabel": "Inquire About Seek CompactPRO XR"
+    "inquiryLabel": "Inquire About Seek CompactPRO XR",
+    "imageAlt": "Seek CompactPRO XR long-range thermal camera for smartphones",
+    "imageSourceUrl": "https://www.thermal.com/uploads/1/0/1/3/101388544/compactxr-hero-cs_orig.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "seek-firepro-300",
@@ -4443,12 +4538,12 @@ export const PRODUCTS: Product[] = [
     "sourceUrl": "https://www.thermal.com/firepro-300.html",
     "verificationStatus": "manufacturer-verified",
     "status": "verified",
-    "heroImage": "/images/products/seek-firepro-thermal.svg",
+    "heroImage": "/images/products/seek-firepro-300/hero.webp",
     "gallery": [
-      "/images/products/seek-firepro-thermal.svg"
+      "/images/products/seek-firepro-300/hero.webp"
     ],
     "galleryImages": [
-      "/images/products/seek-firepro-thermal.svg"
+      "/images/products/seek-firepro-300/hero.webp"
     ],
     "shortDescription": "Professional firefighting personal thermal imaging camera with 320 x 240 sensor, Mixed Gain with SV1, 550°C detection, and IP67 waterproof housing.",
     "description": "The Seek FirePRO 300 is a dedicated personal thermal imaging camera designed specifically for firefighting, search, and emergency rescue operations. Featuring a 320 x 240 thermal sensor equipped with Seek's breakthrough Mixed Gain technology and SV1 Image Optimization, it allows firefighters to view both high-temperature fire environments (up to 550°C) and cooler structural details simultaneously without image freezing or mode switching. Weighing just 325 grams in an ergonomic 90° viewing format, the FirePRO 300 is IP67 waterproof, 2-meter drop resistant, and features an integrated 300-lumen LED flashlight.",
@@ -4535,7 +4630,10 @@ export const PRODUCTS: Product[] = [
       "seek-compactpro"
     ],
     "featured": true,
-    "inquiryLabel": "Inquire About Seek FirePRO 300"
+    "inquiryLabel": "Inquire About Seek FirePRO 300",
+    "imageAlt": "Seek FirePRO 300 personal thermal imaging camera for firefighters",
+    "imageSourceUrl": "https://www.thermal.com/uploads/1/0/1/3/101388544/microsoftteams-image-10_orig.png",
+    "imageSourceType": "official-manufacturer"
   },
   {
     "id": "demo-optics-001",

@@ -78,7 +78,7 @@ export function ProductGallery({ product, className }: ProductGalleryProps) {
         </div>
 
         {/* Main Visual Display Canvas */}
-        <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] w-full flex items-center justify-center p-4 sm:p-8 bg-gradient-to-b from-surface to-surface-secondary/35 overflow-hidden">
+        <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] w-full flex items-center justify-center p-3 sm:p-5 bg-gradient-to-b from-surface to-surface-secondary/35 overflow-hidden">
           {/* Subtle Grid */}
           <div
             aria-hidden="true"
@@ -106,7 +106,7 @@ export function ProductGallery({ product, className }: ProductGalleryProps) {
           <div className="relative w-full h-full flex items-center justify-center z-10">
             <Image
               src={assetPath(activeSrc)}
-              alt={`${product.name} - View ${activeIndex + 1}`}
+              alt={product.imageAlt ? `${product.imageAlt} - View ${activeIndex + 1}` : `${product.name} - View ${activeIndex + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 55vw, 50vw"
               priority={activeIndex === 0}

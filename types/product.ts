@@ -46,4 +46,10 @@ export interface Product {
   sourceUrl?: string;
   sourceManufacturer?: string;
   verificationStatus?: "manufacturer-verified" | "pending" | "client-supplied";
+  /** Primary image accessible description */
+  imageAlt?: string;
+  /** Source URL for the verified product image */
+  imageSourceUrl?: string;
+  /** Sourced origin classification (e.g. 'official-manufacturer') */
+  imageSourceType?: "official-manufacturer" | "client-supplied" | "authorized-catalogue";
 }
