@@ -20,8 +20,8 @@ export const PRODUCTS: Product[] = [
     "series": "GPSMAP",
     "category": "GPS",
     "categorySlug": "gps",
-    "subcategory": "Garmin Handheld GPS",
-    "subcategorySlug": "garmin-handheld-gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
     "model": "GPSMAP H1",
     "manufacturer": "Garmin Ltd.",
     "sourceManufacturer": "Garmin Ltd.",
@@ -136,8 +136,8 @@ export const PRODUCTS: Product[] = [
     "series": "GPSMAP",
     "category": "GPS",
     "categorySlug": "gps",
-    "subcategory": "Garmin Handheld GPS",
-    "subcategorySlug": "garmin-handheld-gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
     "model": "GPSMAP 67",
     "manufacturer": "Garmin Ltd.",
     "sourceManufacturer": "Garmin Ltd.",
@@ -252,8 +252,8 @@ export const PRODUCTS: Product[] = [
     "series": "GPS Handheld",
     "category": "GPS",
     "categorySlug": "gps",
-    "subcategory": "Garmin Handheld GPS",
-    "subcategorySlug": "garmin-handheld-gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
     "model": "GPS 12H",
     "manufacturer": "Garmin Ltd.",
     "sourceManufacturer": "Garmin Ltd.",
@@ -362,8 +362,8 @@ export const PRODUCTS: Product[] = [
     "series": "eTrex",
     "category": "GPS",
     "categorySlug": "gps",
-    "subcategory": "Garmin Handheld GPS",
-    "subcategorySlug": "garmin-handheld-gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
     "model": "eTrex 32x",
     "manufacturer": "Garmin Ltd.",
     "sourceManufacturer": "Garmin Ltd.",
@@ -478,8 +478,8 @@ export const PRODUCTS: Product[] = [
     "series": "Montana",
     "category": "GPS",
     "categorySlug": "gps",
-    "subcategory": "Garmin Handheld GPS",
-    "subcategorySlug": "garmin-handheld-gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
     "model": "Montana 710",
     "manufacturer": "Garmin Ltd.",
     "sourceManufacturer": "Garmin Ltd.",
@@ -585,6 +585,1095 @@ export const PRODUCTS: Product[] = [
     ],
     "featured": true,
     "inquiryLabel": "Inquire About Garmin Montana 710"
+  },
+  {
+    "id": "garmin-fenix-8-amoled-51mm",
+    "slug": "garmin-fenix-8-amoled-51mm",
+    "name": "Garmin fēnix 8 AMOLED (51 mm)",
+    "brand": "Garmin",
+    "series": "fēnix",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "fēnix 8 AMOLED 51mm",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-fenix-8-watch.svg",
+    "gallery": [
+      "/images/products/garmin-fenix-8-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-fenix-8-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "Flagship multisport GPS adventure smartwatch with 1.4-inch AMOLED display, titanium bezel, sapphire crystal, multi-band GNSS with SatIQ, built-in flashlight, speaker, mic, and 40m dive rating.",
+    "description": "The Garmin fēnix 8 AMOLED (51 mm) is engineered for elite expedition leaders, field researchers, and outdoor professionals requiring uncompromising navigational precision and multi-week endurance. It features a brilliant 1.4-inch high-resolution AMOLED touchscreen protected by scratch-resistant sapphire crystal and a durable titanium bezel. Multi-band GNSS reception with SatIQ technology delivers superior satellite positioning in deep valleys and dense forest canopy while optimizing battery life. Preloaded with routable TopoActive continental maps with dynamic round-trip routing, the fēnix 8 includes a built-in LED flashlight, leakproof inductive push-buttons with a 40-meter dive rating, and an integrated speaker and microphone for off-grid voice commands and audio coordination.",
+    "highlights": [
+      "Brilliant 1.4-inch AMOLED touchscreen with sapphire crystal and DLC titanium bezel",
+      "Multi-band GNSS with SatIQ technology for precision positioning under heavy canopy",
+      "Preloaded TopoActive continental maps with dynamic round-trip routing and relief shading",
+      "Up to 29 days of battery life in smartwatch mode and up to 84 hours in standard GPS mode",
+      "Built-in multi-LED flashlight with variable intensities, red safety light, and cadence strobe",
+      "Dive-rated to 40 meters with leakproof inductive push-buttons and metal sensor guard",
+      "Integrated speaker and microphone for off-grid voice memos and commands"
+    ],
+    "keyHighlights": [
+      "Brilliant 1.4-inch AMOLED touchscreen with sapphire crystal and DLC titanium bezel",
+      "Multi-band GNSS with SatIQ technology for precision positioning under heavy canopy",
+      "Preloaded TopoActive continental maps with dynamic round-trip routing and relief shading",
+      "Up to 29 days of battery life in smartwatch mode and up to 84 hours in standard GPS mode",
+      "Built-in multi-LED flashlight with variable intensities, red safety light, and cadence strobe",
+      "Dive-rated to 40 meters with leakproof inductive push-buttons and metal sensor guard",
+      "Integrated speaker and microphone for off-grid voice memos and commands"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.4 inches (35.56 mm) diameter, 454 × 454 pixels",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "AMOLED (Optional Always-On Mode)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Sapphire Crystal",
+        "group": "Materials"
+      },
+      {
+        "label": "Bezel & Case Material",
+        "value": "Titanium Bezel, Fiber-Reinforced Polymer with Titanium Rear Cover",
+        "group": "Materials"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GPS, GLONASS, Galileo, QZSS, BeiDou with SatIQ Technology",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric Altimeter, 3-Axis Electronic Compass, Gyroscope, Thermometer, Pulse Ox",
+        "group": "Sensors"
+      },
+      {
+        "label": "Preloaded Maps",
+        "value": "Routable TopoActive Continental Maps, Ski Resort Maps, Golf Courses",
+        "group": "Navigation"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters) with 40-meter recreational dive rating (EN13319)",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 29 days (13 days always-on)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (GPS Mode)",
+        "value": "Up to 84 hours (65 hours always-on); Multi-band up to 62 hours",
+        "group": "Power"
+      },
+      {
+        "label": "Storage Capacity",
+        "value": "32 GB internal onboard memory",
+        "group": "Storage"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in variable-intensity white and red LED flashlight with strobe",
+        "group": "Hardware"
+      },
+      {
+        "label": "Physical Dimensions",
+        "value": "51 × 51 × 14.7 mm, fits wrists with circumference 127–210 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "95 g (case only: 67 g)",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Dynamic round-trip routing that automatically adjusts route when deviating",
+      "NextFork map guide indicating distance to next trail intersection",
+      "Up Ahead checkpoint awareness displaying food, water, and trail POIs",
+      "ClimbPro real-time ascent planner with grade, distance, and elevation gain"
+    ],
+    "applications": [
+      "Alpine expedition navigation and backcountry trail route mapping",
+      "Geospatial field reconnaissance and boundary waypoint logging",
+      "Search, rescue, and remote field emergency coordination",
+      "Multisport wilderness trekking and environmental research expeditions"
+    ],
+    "relatedProducts": [
+      "garmin-fenix-8-solar-51mm",
+      "garmin-enduro-3",
+      "garmin-tactix-7-amoled",
+      "garmin-gpsmap-67"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin fēnix 8 AMOLED 51mm"
+  },
+  {
+    "id": "garmin-fenix-8-solar-51mm",
+    "slug": "garmin-fenix-8-solar-51mm",
+    "name": "Garmin fēnix 8 Solar (51 mm)",
+    "brand": "Garmin",
+    "series": "fēnix",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "fēnix 8 Solar 51mm",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-fenix-8-watch.svg",
+    "gallery": [
+      "/images/products/garmin-fenix-8-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-fenix-8-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "Solar-charging multisport GPS adventure smartwatch with always-on 1.4-inch display, Power Sapphire lens, titanium bezel, up to 48 days battery, TopoActive maps, and 40m dive rating.",
+    "description": "Engineered for prolonged off-grid expeditions and multi-week wilderness field campaigns, the Garmin fēnix 8 Solar (51 mm) pairs continuous solar harvesting with professional-grade multi-band GNSS positioning. Featuring a sunlight-readable 1.4-inch Memory-in-Pixel display protected by a Power Sapphire™ solar charging lens and titanium bezel, it provides up to 48 days of battery life in smartwatch mode and up to 149 hours in GPS mode with solar charging. It includes routable TopoActive maps with dynamic round-trip routing, leakproof inductive buttons with 40-meter dive certification, built-in multi-LED flashlight, integrated speaker/mic, and comprehensive ABC sensor telemetry.",
+    "highlights": [
+      "Always-on 1.4-inch sunlight-visible MIP display with Power Sapphire™ solar lens",
+      "Up to 48 days in smartwatch mode and 149 hours in GPS mode with solar charging",
+      "Multi-band GNSS with SatIQ technology for uncompromising positional accuracy",
+      "Preloaded TopoActive continental maps with dynamic routing and NextFork guides",
+      "Built-in multi-LED flashlight with white and red night illumination modes",
+      "Dive-rated to 40 meters with leakproof buttons and metal sensor shield",
+      "Integrated speaker and microphone for off-grid voice commands and notes"
+    ],
+    "keyHighlights": [
+      "Always-on 1.4-inch sunlight-visible MIP display with Power Sapphire™ solar lens",
+      "Up to 48 days in smartwatch mode and 149 hours in GPS mode with solar charging",
+      "Multi-band GNSS with SatIQ technology for uncompromising positional accuracy",
+      "Preloaded TopoActive continental maps with dynamic routing and NextFork guides",
+      "Built-in multi-LED flashlight with white and red night illumination modes",
+      "Dive-rated to 40 meters with leakproof buttons and metal sensor shield",
+      "Integrated speaker and microphone for off-grid voice commands and notes"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.4 inches (35.56 mm) diameter, 280 × 280 pixels",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "Sunlight-Visible Transflective Memory-in-Pixel (MIP)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Power Sapphire™ Solar Charging Lens",
+        "group": "Materials"
+      },
+      {
+        "label": "Bezel Material",
+        "value": "Titanium with Diamond-Like Carbon (DLC) Coating",
+        "group": "Materials"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GPS, GLONASS, Galileo, QZSS, BeiDou with SatIQ Technology",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric Altimeter, 3-Axis Electronic Compass, Gyroscope, Pulse Ox, Thermometer",
+        "group": "Sensors"
+      },
+      {
+        "label": "Preloaded Maps",
+        "value": "Routable TopoActive Continental Maps with Relief Shading",
+        "group": "Navigation"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters) with 40-meter dive rating (EN13319)",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 30 days (48 days with solar charging at 50,000 lux)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (GPS Mode)",
+        "value": "Up to 95 hours (149 hours with solar charging)",
+        "group": "Power"
+      },
+      {
+        "label": "Storage Capacity",
+        "value": "32 GB onboard memory",
+        "group": "Storage"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in variable-intensity white and red LED flashlight with strobe",
+        "group": "Hardware"
+      },
+      {
+        "label": "Physical Dimensions",
+        "value": "51 × 51 × 15.4 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "95 g (case only: 67 g)",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Solar power harvesting extending mission operation across multi-week deployments",
+      "Dynamic round-trip navigation that recalculates routes without dead ends",
+      "ClimbPro ascent tracking providing gradient, elevation, and distance data",
+      "NextFork trail navigation and visual elevation projection"
+    ],
+    "applications": [
+      "Multi-week backcountry expeditions and off-grid remote field research",
+      "Forestry and wilderness path surveying without frequent power access",
+      "Mountain trekking, alpine traverses, and extreme endurance challenges",
+      "Scientific field station deployment and ecological perimeter tracking"
+    ],
+    "relatedProducts": [
+      "garmin-fenix-8-amoled-51mm",
+      "garmin-enduro-3",
+      "garmin-instinct-2x-solar",
+      "garmin-gpsmap-h1"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin fēnix 8 Solar 51mm"
+  },
+  {
+    "id": "garmin-enduro-3",
+    "slug": "garmin-enduro-3",
+    "name": "Garmin Enduro 3",
+    "brand": "Garmin",
+    "series": "Enduro",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "Enduro 3 Solar",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-enduro-3-watch.svg",
+    "gallery": [
+      "/images/products/garmin-enduro-3-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-enduro-3-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "Ultra-performance GPS smartwatch featuring up to 320 hours in GPS mode with solar charging, ultra-lightweight 63g design, titanium bezel, preloaded TopoActive maps, and built-in flashlight.",
+    "description": "The Garmin Enduro 3 is the benchmark ultra-performance GPS smartwatch designed for extreme endurance expeditions, ultramarathoners, and wilderness survey crews demanding maximum battery longevity. Weighing an ultra-light 63 grams with an UltraFit breathable nylon strap, it incorporates a high-efficiency Power Solar lens over an always-on 1.4-inch display, delivering up to 320 hours in GPS mode with solar charging and up to 90 days in smartwatch mode. Encased in a DLC titanium bezel and fiber-reinforced case, it includes SatIQ multi-band GNSS, preloaded TopoActive maps, dynamic round-trip routing, and a multi-LED flashlight twice as bright as the previous generation.",
+    "highlights": [
+      "Incredible 320 hours battery life in GPS mode with solar charging; 90 days in smartwatch mode",
+      "Ultra-lightweight 63g design featuring DLC titanium bezel and UltraFit nylon strap",
+      "Always-on 1.4-inch sunlight-readable MIP display with high-efficiency Power Solar lens",
+      "Multi-band GNSS with SatIQ technology balancing satellite accuracy and power conservation",
+      "Preloaded TopoActive continental maps with dynamic round-trip routing and relief shading",
+      "Twice-as-bright built-in LED flashlight with variable intensities and red light mode",
+      "Grade-Adjusted Pace (GAP), ClimbPro ascent planner, and real-time stamina metrics"
+    ],
+    "keyHighlights": [
+      "Incredible 320 hours battery life in GPS mode with solar charging; 90 days in smartwatch mode",
+      "Ultra-lightweight 63g design featuring DLC titanium bezel and UltraFit nylon strap",
+      "Always-on 1.4-inch sunlight-readable MIP display with high-efficiency Power Solar lens",
+      "Multi-band GNSS with SatIQ technology balancing satellite accuracy and power conservation",
+      "Preloaded TopoActive continental maps with dynamic round-trip routing and relief shading",
+      "Twice-as-bright built-in LED flashlight with variable intensities and red light mode",
+      "Grade-Adjusted Pace (GAP), ClimbPro ascent planner, and real-time stamina metrics"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.4 inches (35.56 mm) diameter, 280 × 280 pixels",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "Sunlight-Visible Transflective Memory-in-Pixel (MIP)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Power Solar™ with Sapphire Crystal Protection",
+        "group": "Materials"
+      },
+      {
+        "label": "Bezel Material",
+        "value": "Titanium with Diamond-Like Carbon (DLC) Coating",
+        "group": "Materials"
+      },
+      {
+        "label": "Strap",
+        "value": "26 mm UltraFit Breathable Elastic Nylon Band",
+        "group": "Materials"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GPS, GLONASS, Galileo, QZSS, BeiDou with SatIQ Technology",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric Altimeter, 3-Axis Electronic Compass, Gyroscope, Pulse Ox",
+        "group": "Sensors"
+      },
+      {
+        "label": "Preloaded Maps",
+        "value": "TopoActive Continental Maps with NextFork Trail Guides",
+        "group": "Navigation"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters)",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life (GPS Mode)",
+        "value": "Up to 120 hours (320 hours with solar charging at 50,000 lux)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 36 days (90 days with solar charging)",
+        "group": "Power"
+      },
+      {
+        "label": "Storage Capacity",
+        "value": "32 GB onboard memory",
+        "group": "Storage"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Integrated high-output multi-LED flashlight with variable intensities",
+        "group": "Hardware"
+      },
+      {
+        "label": "Physical Dimensions",
+        "value": "51 × 51 × 15.7 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "63 g with UltraFit strap (case only: 57 g)",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "NextFork map guides showing upcoming trail names and distances",
+      "Dynamic round-trip routing suggesting optimal courses based on target distance",
+      "Real-time stamina tracking to manage effort and avoid premature exhaustion",
+      "ClimbPro real-time gradient and vertical distance forecasting"
+    ],
+    "applications": [
+      "Ultra-endurance wilderness trekking and multi-day expedition racing",
+      "Remote ecological field tracking and backcountry boundary mapping",
+      "Long-distance forestry and environmental survey routes",
+      "High-altitude mountain expeditions where recharging is impossible"
+    ],
+    "relatedProducts": [
+      "garmin-fenix-8-solar-51mm",
+      "garmin-instinct-2x-solar",
+      "garmin-epix-pro-gen2-sapphire-51mm",
+      "garmin-montana-710"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin Enduro 3"
+  },
+  {
+    "id": "garmin-instinct-2x-solar",
+    "slug": "garmin-instinct-2x-solar",
+    "name": "Garmin Instinct 2X Solar",
+    "brand": "Garmin",
+    "series": "Instinct",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "Instinct 2X Solar (50 mm)",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-instinct-2x-watch.svg",
+    "gallery": [
+      "/images/products/garmin-instinct-2x-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-instinct-2x-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "Bold 50mm rugged GPS smartwatch built to MIL-STD-810 military specifications with Power Glass solar charging for unlimited battery life, multi-band GNSS, and built-in flashlight.",
+    "description": "Built to U.S. military standard MIL-STD-810 for thermal, shock, and water resistance up to 100 meters (10 ATM), the Garmin Instinct 2X Solar is a mission-grade outdoor GPS smartwatch designed for demanding field operations and tactical environments. Featuring a bold 50mm fiber-reinforced polymer case with a chemically strengthened Power Glass™ solar lens, it delivers unlimited battery life in smartwatch mode under 3 hours of direct sunlight per day. Equipped with multi-band multi-frequency GNSS reception, an integrated multi-LED flashlight with variable intensities and red light mode, ABC sensors (altimeter, barometer, compass), and TracBack routing to retrace paths back to starting points.",
+    "highlights": [
+      "Unlimited battery life in smartwatch mode with Power Glass™ solar charging",
+      "MIL-STD-810 military-grade thermal, shock, and 100-meter (10 ATM) water resistance",
+      "Multi-band GNSS tracking (GPS, GLONASS, Galileo) for accurate field coordinate logging",
+      "Integrated multi-LED flashlight with variable strobe modes and dedicated red night light",
+      "ABC sensor suite: barometric altimeter, 3-axis tilt-compensated compass, and weather barometer",
+      "TracBack navigation, Point-to-Point routing, and reference point logging",
+      "50mm high-strength fiber-reinforced polymer chassis with dual-window display"
+    ],
+    "keyHighlights": [
+      "Unlimited battery life in smartwatch mode with Power Glass™ solar charging",
+      "MIL-STD-810 military-grade thermal, shock, and 100-meter (10 ATM) water resistance",
+      "Multi-band GNSS tracking (GPS, GLONASS, Galileo) for accurate field coordinate logging",
+      "Integrated multi-LED flashlight with variable strobe modes and dedicated red night light",
+      "ABC sensor suite: barometric altimeter, 3-axis tilt-compensated compass, and weather barometer",
+      "TracBack navigation, Point-to-Point routing, and reference point logging",
+      "50mm high-strength fiber-reinforced polymer chassis with dual-window display"
+    ],
+    "specifications": [
+      {
+        "label": "Case Size",
+        "value": "50 × 50 × 14.5 mm, fits wrists with circumference 145–228 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Display Type",
+        "value": "Custom Dual-Window Monochrome Transflective MIP (176 × 176 pixels)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Power Glass™ Solar Charging Lens",
+        "group": "Materials"
+      },
+      {
+        "label": "Case Material",
+        "value": "Fiber-Reinforced Polymer Case and Bezel",
+        "group": "Materials"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GNSS: GPS, GLONASS, Galileo with Multi-Frequency Reception",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric Altimeter, 3-Axis Electronic Compass, Accelerometer, Thermometer, Pulse Ox",
+        "group": "Sensors"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters / 330 feet)",
+        "group": "Durability"
+      },
+      {
+        "label": "Military Standard",
+        "value": "MIL-STD-810 tested for thermal, shock, and water resistance",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 40 days; Unlimited with solar charging (3 hrs/day at 50,000 lux)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (GPS Mode)",
+        "value": "Up to 60 hours; Up to 145 hours with solar charging",
+        "group": "Power"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in multi-LED flashlight with white and red night illumination modes",
+        "group": "Hardware"
+      },
+      {
+        "label": "Weight",
+        "value": "67 g",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "TracBack routing navigating back along the logged GPS breadcrumb track",
+      "Reference Point navigation showing direction and distance to a known location",
+      "Dual-grid coordinate display supporting military grid reference system (MGRS)",
+      "Storm alert barometric trend warning of sudden atmospheric pressure drops"
+    ],
+    "applications": [
+      "Field operations, boundary patrol, and perimeter inspection",
+      "Rugged outdoor trekking, backpacking, and wilderness survival missions",
+      "Disaster response, forestry inspection, and severe weather field work",
+      "Tactical positioning, route backtracking, and waypoint navigation"
+    ],
+    "relatedProducts": [
+      "garmin-instinct-crossover-solar",
+      "garmin-tactix-7-amoled",
+      "garmin-etrex-32x",
+      "garmin-gps-12h"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin Instinct 2X Solar"
+  },
+  {
+    "id": "garmin-tactix-7-amoled",
+    "slug": "garmin-tactix-7-amoled",
+    "name": "Garmin tactix 7 AMOLED Edition",
+    "brand": "Garmin",
+    "series": "tactix",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "tactix 7 AMOLED (51 mm)",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-tactix-7-watch.svg",
+    "gallery": [
+      "/images/products/garmin-tactix-7-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-tactix-7-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "Premium tactical GPS smartwatch with 1.4-inch AMOLED display, sapphire lens, DLC titanium bezel, Night Vision compatibility, Stealth Mode, Kill Switch, and dual-position GPS.",
+    "description": "The Garmin tactix 7 AMOLED Edition is an elite tactical GPS smartwatch built for demanding security operations, specialized field maneuvers, and harsh wilderness reconnaissance. Featuring an adaptive 1.4-inch AMOLED touchscreen with physical button backup, a scratch-resistant sapphire crystal lens, and a carbon gray DLC-coated titanium bezel, it delivers mission-critical capabilities including Night Vision Goggle (NVG) compatibility, Stealth Mode (disabling wireless and location logging while recording distance), an emergency Kill Switch to wipe user memory, Jumpmaster parachuting calculations, and dual-position GPS formatting displaying MGRS and latitude/longitude simultaneously. Preloaded with TopoActive continental maps, aviation navigation, and a tactical white and green LED flashlight.",
+    "highlights": [
+      "Dedicated tactical suite: Night Vision Goggle (NVG) mode, Stealth Mode, and emergency Kill Switch",
+      "Dual-position GPS coordinate formatting (MGRS and degrees/minutes/seconds on one display)",
+      "1.4-inch vibrant AMOLED display with dimmable white and green LED tactical flashlight",
+      "Sapphire crystal lens with DLC titanium bezel and MIL-STD-810 military ruggedness",
+      "Multi-band GNSS with SatIQ technology and preloaded TopoActive continental maps",
+      "Jumpmaster activity mode following military guidelines for HAHO and HALO jumps",
+      "Projected waypoints, direct-to navigation, and worldwide airport aviation database"
+    ],
+    "keyHighlights": [
+      "Dedicated tactical suite: Night Vision Goggle (NVG) mode, Stealth Mode, and emergency Kill Switch",
+      "Dual-position GPS coordinate formatting (MGRS and degrees/minutes/seconds on one display)",
+      "1.4-inch vibrant AMOLED display with dimmable white and green LED tactical flashlight",
+      "Sapphire crystal lens with DLC titanium bezel and MIL-STD-810 military ruggedness",
+      "Multi-band GNSS with SatIQ technology and preloaded TopoActive continental maps",
+      "Jumpmaster activity mode following military guidelines for HAHO and HALO jumps",
+      "Projected waypoints, direct-to navigation, and worldwide airport aviation database"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.4 inches (35.56 mm) diameter, 454 × 454 pixels",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "AMOLED (Optional Always-On Mode, Night Vision Compatible)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Scratch-Resistant Sapphire Crystal",
+        "group": "Materials"
+      },
+      {
+        "label": "Bezel & Case Material",
+        "value": "Carbon Gray DLC Titanium Bezel, Fiber-Reinforced Polymer Case",
+        "group": "Materials"
+      },
+      {
+        "label": "Tactical Features",
+        "value": "Stealth Mode, Kill Switch, NVG Compatibility, Dual-Position GPS (MGRS), Jumpmaster",
+        "group": "Tactical"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GPS, GLONASS, Galileo, QZSS, BeiDou with SatIQ Technology",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric Altimeter, 3-Axis Electronic Compass, Gyroscope, Pulse Ox",
+        "group": "Sensors"
+      },
+      {
+        "label": "Preloaded Maps",
+        "value": "TopoActive Continental Maps, Public Land Maps, Aviation Navigation Database",
+        "group": "Navigation"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters)",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 31 days (11 days always-on)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (GPS Mode)",
+        "value": "Up to 82 hours (58 hours always-on); Multi-band up to 62 hours",
+        "group": "Power"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in multi-LED tactical flashlight with bright white and green modes",
+        "group": "Hardware"
+      },
+      {
+        "label": "Physical Dimensions",
+        "value": "51 × 51 × 16.4 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "96 g (case only: 59 g)",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Projected waypoints calculated from current position and bearing offset",
+      "Direct-To navigation and Nearest airport navigation waypoint guidance",
+      "Hunting, fishing, and tactical activity logging with ballistic calculations support",
+      "ClimbPro ascent planner and real-time stamina metrics"
+    ],
+    "applications": [
+      "Tactical field operations, covert reconnaissance, and security patrols",
+      "Night vision goggle operations and dual-coordinate field demarcation",
+      "Aviation tactical flights and high-altitude parachute deployments (Jumpmaster)",
+      "Demanding expedition navigation in extreme and hostile terrain"
+    ],
+    "relatedProducts": [
+      "garmin-fenix-8-amoled-51mm",
+      "garmin-instinct-2x-solar",
+      "garmin-epix-pro-gen2-sapphire-51mm",
+      "garmin-gpsmap-67"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin tactix 7 AMOLED"
+  },
+  {
+    "id": "garmin-epix-pro-gen2-sapphire-51mm",
+    "slug": "garmin-epix-pro-gen2-sapphire-51mm",
+    "name": "Garmin epix Pro (Gen 2) Sapphire (51 mm)",
+    "brand": "Garmin",
+    "series": "epix",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "epix Pro (Gen 2) Sapphire 51mm",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-epix-pro-watch.svg",
+    "gallery": [
+      "/images/products/garmin-epix-pro-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-epix-pro-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "High-performance GPS smartwatch featuring a brilliant 1.4-inch AMOLED display, titanium bezel, sapphire crystal, multi-band GNSS with SatIQ, built-in LED flashlight, and 31-day battery life.",
+    "description": "The Garmin epix Pro (Gen 2) Sapphire Edition (51 mm) pairs high-definition AMOLED visual clarity with military-grade outdoor durability for surveyors, mountaineers, and expedition professionals. Its vivid 1.4-inch AMOLED display brings TopoActive continental maps to life with shaded relief, elevation contours, and intuitive touch panning. Protected by a scratch-resistant sapphire crystal lens and titanium bezel, it provides up to 31 days of battery life in smartwatch mode and up to 82 hours in standard GPS mode. Incorporates SatIQ multi-band GNSS positioning, an integrated multi-LED flashlight with variable white and red strobe, and full ABC sensor telemetry.",
+    "highlights": [
+      "Ultra-bright 1.4-inch AMOLED touchscreen with sapphire crystal and lightweight titanium bezel",
+      "Up to 31 days battery life in smartwatch mode; up to 82 hours in continuous GPS mode",
+      "Multi-band GNSS with SatIQ technology automatically selecting optimal satellite reception",
+      "Preloaded TopoActive maps with relief shading, ski resort maps, and 43,000+ golf courses",
+      "Built-in LED flashlight with variable intensities, red safety strobe, and emergency SOS mode",
+      "Hill Score, Endurance Score, real-time stamina tracking, and 24/7 biometric health monitoring",
+      "10 ATM water resistance (100m) with thermal and shock protection to MIL-STD-810"
+    ],
+    "keyHighlights": [
+      "Ultra-bright 1.4-inch AMOLED touchscreen with sapphire crystal and lightweight titanium bezel",
+      "Up to 31 days battery life in smartwatch mode; up to 82 hours in continuous GPS mode",
+      "Multi-band GNSS with SatIQ technology automatically selecting optimal satellite reception",
+      "Preloaded TopoActive maps with relief shading, ski resort maps, and 43,000+ golf courses",
+      "Built-in LED flashlight with variable intensities, red safety strobe, and emergency SOS mode",
+      "Hill Score, Endurance Score, real-time stamina tracking, and 24/7 biometric health monitoring",
+      "10 ATM water resistance (100m) with thermal and shock protection to MIL-STD-810"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.4 inches (35.56 mm) diameter, 454 × 454 pixels",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "Vibrant AMOLED (Optional Always-On Mode)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Sapphire Crystal",
+        "group": "Materials"
+      },
+      {
+        "label": "Bezel & Case Material",
+        "value": "Titanium Bezel, Fiber-Reinforced Polymer with Titanium Rear Cover",
+        "group": "Materials"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GPS, GLONASS, Galileo, QZSS, BeiDou with SatIQ Technology",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric Altimeter, 3-Axis Compass, Gyroscope, Thermometer, Pulse Ox",
+        "group": "Sensors"
+      },
+      {
+        "label": "Preloaded Maps",
+        "value": "Routable TopoActive Continental Maps with Relief Shading",
+        "group": "Navigation"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters)",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 31 days (11 days always-on)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (GPS Mode)",
+        "value": "Up to 82 hours (58 hours always-on); Multi-band up to 62 hours",
+        "group": "Power"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in multi-LED flashlight with variable intensities and red safety light",
+        "group": "Hardware"
+      },
+      {
+        "label": "Storage Capacity",
+        "value": "32 GB internal memory",
+        "group": "Storage"
+      },
+      {
+        "label": "Physical Dimensions",
+        "value": "51 × 51 × 14.9 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "88 g (case only: 60 g)",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Up Ahead waypoint cues showing water points, aid stations, and trail landmarks",
+      "ClimbPro real-time elevation profile showing upcoming ascent grades and remaining gain",
+      "NextFork trail navigation displaying distance and name of upcoming junction",
+      "Round-Trip routing creating customized courses based on selected mileage"
+    ],
+    "applications": [
+      "Mountain guiding, high-altitude trekking, and backcountry expedition navigation",
+      "Geospatial field survey and topographical contour visualization",
+      "Forestry and wilderness property boundary exploration",
+      "Endurance field research and round-the-clock biometric environmental tracking"
+    ],
+    "relatedProducts": [
+      "garmin-fenix-8-amoled-51mm",
+      "garmin-enduro-3",
+      "garmin-tactix-7-amoled",
+      "garmin-montana-710"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin epix Pro (Gen 2) Sapphire 51mm"
+  },
+  {
+    "id": "garmin-instinct-crossover-solar",
+    "slug": "garmin-instinct-crossover-solar",
+    "name": "Garmin Instinct Crossover Solar",
+    "brand": "Garmin",
+    "series": "Instinct",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "Instinct Crossover Solar",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-instinct-crossover-watch.svg",
+    "gallery": [
+      "/images/products/garmin-instinct-crossover-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-instinct-crossover-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "Rugged hybrid GPS smartwatch with luminescent analog hands, RevoDrive auto-calibrating technology, Power Glass solar charging, MIL-STD-810 toughness, and dual-format GPS.",
+    "description": "The Garmin Instinct Crossover Solar redefines outdoor field navigation by fusing classic luminescent analog hands with a high-contrast digital display powered by RevoDrive™ technology, which auto-calibrates needle alignment even after severe impacts. Built to MIL-STD-810 military specifications for thermal and shock resistance with a 10 ATM waterproof rating, it incorporates Power Glass™ solar charging to deliver up to 70 days of battery life in smartwatch mode (and unlimited battery life in battery saver mode). Features multi-GNSS tracking, 3-axis electronic compass, barometric altimeter, TracBack routing, and dual-format GPS coordinates.",
+    "highlights": [
+      "Luminescent analog hands with RevoDrive™ technology ensuring self-calibration in high-impact shocks",
+      "Power Glass™ solar charging lens extending battery life up to 70 days in smartwatch mode",
+      "MIL-STD-810 thermal and shock resistance, rated waterproof to 100 meters (10 ATM)",
+      "Multi-GNSS satellite support (GPS, GLONASS, Galileo) for accurate remote tracking",
+      "Built-in 3-axis compass and barometric altimeter for real-time topographical awareness",
+      "TracBack navigation to guide users back along the exact logged route",
+      "Dual-grid coordinate display supporting military grid reference system (MGRS)"
+    ],
+    "keyHighlights": [
+      "Luminescent analog hands with RevoDrive™ technology ensuring self-calibration in high-impact shocks",
+      "Power Glass™ solar charging lens extending battery life up to 70 days in smartwatch mode",
+      "MIL-STD-810 thermal and shock resistance, rated waterproof to 100 meters (10 ATM)",
+      "Multi-GNSS satellite support (GPS, GLONASS, Galileo) for accurate remote tracking",
+      "Built-in 3-axis compass and barometric altimeter for real-time topographical awareness",
+      "TracBack navigation to guide users back along the exact logged route",
+      "Dual-grid coordinate display supporting military grid reference system (MGRS)"
+    ],
+    "specifications": [
+      {
+        "label": "Case Size",
+        "value": "45.0 × 45.0 × 16.2 mm, fits wrists with circumference 135–200 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Display Type",
+        "value": "Luminescent Analog Hands + Monochrome Transflective MIP (176 × 176 pixels)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Power Glass™ Solar Charging Lens",
+        "group": "Materials"
+      },
+      {
+        "label": "Bezel & Case Material",
+        "value": "Fiber-Reinforced Polymer with Steel Bezel Ring",
+        "group": "Materials"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "GPS, GLONASS, Galileo Multi-GNSS Satellite Support",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric Altimeter, 3-Axis Electronic Compass, Thermometer, Pulse Ox",
+        "group": "Sensors"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters)",
+        "group": "Durability"
+      },
+      {
+        "label": "Military Standard",
+        "value": "MIL-STD-810 tested for thermal and shock resistance",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 28 days (70 days with solar charging); Unlimited in Battery Saver mode",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (GPS Mode)",
+        "value": "Up to 25 hours (31 hours with solar charging)",
+        "group": "Power"
+      },
+      {
+        "label": "Physical Dimensions",
+        "value": "45 × 45 × 16.2 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "65 g",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "RevoDrive™ auto-calibration correcting hand alignment against severe physical shock",
+      "Hands move dynamically to reveal digital data readouts when navigating screens",
+      "Point-to-Point navigation and waypoint breadcrumb logging",
+      "Reference Point navigation indicating distance and heading to camp or vehicle"
+    ],
+    "applications": [
+      "Rough field operations and mechanical industrial work requiring analog dial legibility",
+      "Expedition trekking, navigation in sub-zero and high-heat environments",
+      "Geological outcrop mapping and field camp reference navigation",
+      "Outdoor boundary logging and wilderness exploration"
+    ],
+    "relatedProducts": [
+      "garmin-instinct-2x-solar",
+      "garmin-fenix-8-solar-51mm",
+      "garmin-etrex-32x",
+      "garmin-gps-12h"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Garmin Instinct Crossover Solar"
+  },
+  {
+    "id": "garmin-descent-mk3i-51mm",
+    "slug": "garmin-descent-mk3i-51mm",
+    "name": "Garmin Descent Mk3i (51 mm)",
+    "brand": "Garmin",
+    "series": "Descent",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "Descent Mk3i 51mm Titanium",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/c/wearables-smartwatches",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-descent-mk3i-watch.svg",
+    "gallery": [
+      "/images/products/garmin-descent-mk3i-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-descent-mk3i-watch.svg",
+      "/images/products/garmin-gps-smartwatch.svg"
+    ],
+    "shortDescription": "Expedition dive computer and multi-band GPS smartwatch with 200m dive rating, SubWave sonar messaging, 1.4-inch AMOLED display, surface GPS entry/exit logging, and titanium bezel.",
+    "description": "The Garmin Descent Mk3i (51 mm) is the premier expedition dive computer and multi-band GNSS smartwatch designed for technical marine research, amphibious field operations, and underwater survey. Certified to a 200-meter (20 ATM) dive rating with leakproof inductive push-buttons, it features a 1.4-inch high-resolution AMOLED touchscreen protected by sapphire crystal and a DLC titanium bezel. Outfitted with SubWave™ sonar technology for diver-to-diver messaging up to 30 meters, multi-band GNSS reception with automatic surface entry and exit coordinate logging, preloaded TopoActive maps with bathymetric depth contours, and a built-in LED flashlight with underwater strobe mode.",
+    "highlights": [
+      "200-meter (20 ATM) dive rating with leakproof inductive push buttons and titanium sensor housing",
+      "Surface GPS entry and exit coordinate logging with multi-band GNSS and SatIQ technology",
+      "SubWave™ sonar communication supporting diver-to-diver messaging up to 30 meters underwater",
+      "1.4-inch vibrant AMOLED display with sapphire crystal and scratch-resistant titanium bezel",
+      "Preloaded TopoActive maps with bathymetric depth contours and global dive site locations",
+      "Built-in LED flashlight with variable light intensities and strobe modes",
+      "Up to 66 hours in continuous dive mode and up to 25 days in smartwatch mode"
+    ],
+    "keyHighlights": [
+      "200-meter (20 ATM) dive rating with leakproof inductive push buttons and titanium sensor housing",
+      "Surface GPS entry and exit coordinate logging with multi-band GNSS and SatIQ technology",
+      "SubWave™ sonar communication supporting diver-to-diver messaging up to 30 meters underwater",
+      "1.4-inch vibrant AMOLED display with sapphire crystal and scratch-resistant titanium bezel",
+      "Preloaded TopoActive maps with bathymetric depth contours and global dive site locations",
+      "Built-in LED flashlight with variable light intensities and strobe modes",
+      "Up to 66 hours in continuous dive mode and up to 25 days in smartwatch mode"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.4 inches (35.56 mm) diameter, 454 × 454 pixels",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "Vibrant AMOLED (Optional Always-On Mode)",
+        "group": "Display"
+      },
+      {
+        "label": "Lens Material",
+        "value": "Sapphire Crystal",
+        "group": "Materials"
+      },
+      {
+        "label": "Bezel & Case Material",
+        "value": "DLC Titanium Bezel, Fiber-Reinforced Polymer with Titanium Rear Cover",
+        "group": "Materials"
+      },
+      {
+        "label": "Dive Rating & Buttons",
+        "value": "200 meters (20 ATM, EN13319) with Leakproof Inductive Push-Buttons",
+        "group": "Durability"
+      },
+      {
+        "label": "Sonar Communication",
+        "value": "SubWave™ Sonar (Diver-to-Diver Messaging and Tank Pressure Monitoring up to 30m)",
+        "group": "Marine"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GPS, GLONASS, Galileo, QZSS, BeiDou with SatIQ Technology (Surface Only)",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Depth Sensor, Barometric Altimeter, 3-Axis Compass, Gyroscope, Pulse Ox",
+        "group": "Sensors"
+      },
+      {
+        "label": "Preloaded Maps",
+        "value": "TopoActive Continental Maps with Bathymetric Depth Contours",
+        "group": "Navigation"
+      },
+      {
+        "label": "Battery Life (Dive Mode)",
+        "value": "Up to 66 hours in continuous dive mode",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life (Smartwatch)",
+        "value": "Up to 25 days (13 days always-on)",
+        "group": "Power"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in LED flashlight with variable intensities and underwater strobe mode",
+        "group": "Hardware"
+      },
+      {
+        "label": "Physical Dimensions",
+        "value": "51 × 51 × 16.4 mm",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "105.9 g (silicone band), 84.7 g (titanium case only)",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Surface GPS entry and exit coordinate logging with automatic dive log compilation",
+      "Multi-gas support: Air, Nitrox, Trimix, and 100% O2, with CCR closed-circuit rebreather mode",
+      "Dive readiness score integrating sleep, exercise, and tissue loading history",
+      "Built-in 3-axis underwater compass accessible with double-tap gesture"
+    ],
+    "applications": [
+      "Amphibious field operations, marine biological surveys, and wetland inspection",
+      "Technical deep diving, underwater search, and recovery coordination",
+      "Coastal environmental survey and underwater reef cartography",
+      "Expedition navigation combining terrestrial trekking and aquatic diving"
+    ],
+    "relatedProducts": [
+      "garmin-fenix-8-amoled-51mm",
+      "garmin-tactix-7-amoled",
+      "garmin-gpsmap-67",
+      "garmin-gps-12h"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Garmin Descent Mk3i 51mm"
   },
   {
     "id": "nikon-action-8x42",

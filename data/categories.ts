@@ -53,9 +53,9 @@ export const CATEGORIES: ProductCategory[] = [
     name: "GPS",
     slug: "gps",
     domain: "Positioning & Mapping Equipment",
-    shortDescription: "Positioning and mapping equipment for geospatial applications.",
+    shortDescription: "Positioning, mapping equipment, and rugged GPS wearables for geospatial applications.",
     description:
-      "Satellite navigation receivers, handheld GPS, and tools for field positioning and mapping.",
+      "Satellite navigation receivers, handheld GPS, and rugged multisport GPS smartwatches for field positioning, expedition tracking, and mapping.",
     image: "/images/generated/categories/category-gps.webp",
     heroImage: "/images/generated/categories/category-gps.webp",
     icon: "Navigation",
@@ -63,17 +63,26 @@ export const CATEGORIES: ProductCategory[] = [
     status: "verified",
     subcategories: [
       {
-        id: "subcat-garmin-handheld-gps",
-        name: "Garmin Handheld GPS",
-        slug: "garmin-handheld-gps",
+        id: "subcat-handheld-gps",
+        name: "Handheld GPS",
+        slug: "handheld-gps",
         description: "Rugged multi-band GNSS handheld receivers, floating navigators, and touchscreen mapping units.",
         order: 1,
+      },
+      {
+        id: "subcat-gps-smartwatches-wearables",
+        name: "GPS Smartwatches & Wearables",
+        slug: "gps-smartwatches-wearables",
+        description: "Rugged multisport GPS smartwatches, expedition navigators, and tactical wrist-worn devices engineered for field operations and backcountry exploration.",
+        order: 2,
       },
     ],
     applicationContexts: [
       "Field boundary & waypoint logging",
       "Topographical field mapping & path survey",
       "GIS spatial data collection & field navigation",
+      "Expedition navigation & outdoor trekking",
+      "Tactical field operations & dual-grid positioning",
     ],
   },
   {

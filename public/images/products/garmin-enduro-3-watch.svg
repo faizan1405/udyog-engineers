@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <!-- Subtle coordinate grid -->
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <!-- Technical Header Badge -->
+  <g transform="translate(48, 48)">
+    <rect width="210" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#D97706"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">GARMIN ENDURO™ 3</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">320H GPS SOLAR ENDURANCE</text>
+
+  <!-- Watch Schematic -->
+  <g transform="translate(400, 260)">
+    <!-- UltraFit Nylon Weave Straps with Yellow Accent Stitching -->
+    <path d="M-45 -180 L-40 -80 L40 -80 L45 -180 Z" fill="#1C211E" stroke="#121614" stroke-width="2"/>
+    <line x1="-42" y1="-175" x2="-38" y2="-85" stroke="#EAB308" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="42" y1="-175" x2="38" y2="-85" stroke="#EAB308" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+    <path d="M-40 80 L-45 180 L45 180 L40 80 Z" fill="#1C211E" stroke="#121614" stroke-width="2"/>
+    <line x1="-38" y1="85" x2="-42" y2="175" stroke="#EAB308" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="38" y1="85" x2="42" y2="175" stroke="#EAB308" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+    <!-- Rugged Ultra-Lightweight 63g Titanium Case -->
+    <circle cx="0" cy="0" r="95" fill="#202724" stroke="#141816" stroke-width="3"/>
+    <!-- DLC Titanium Bezel -->
+    <circle cx="0" cy="0" r="88" fill="#2D3632" stroke="#4B5852" stroke-width="2.5"/>
+    <circle cx="0" cy="-80" r="2.5" fill="#889891"/>
+    <circle cx="76" cy="-25" r="2.5" fill="#889891"/>
+    <circle cx="47" cy="65" r="2.5" fill="#889891"/>
+    <circle cx="-47" cy="65" r="2.5" fill="#889891"/>
+    <circle cx="-76" cy="-25" r="2.5" fill="#889891"/>
+
+    <!-- High-Efficiency Power Solar Ring (Copper/Amber Iridescent) -->
+    <circle cx="0" cy="0" r="77" fill="none" stroke="#D97706" stroke-width="5" opacity="0.85"/>
+    <circle cx="0" cy="0" r="74" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Buttons -->
+    <rect x="-105" y="-55" width="10" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+    <rect x="-105" y="-10" width="10" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+    <rect x="-105" y="35" width="10" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+    <rect x="95" y="-45" width="10" height="26" rx="4" fill="#EAB308" stroke="#141816"/>
+    <rect x="95" y="25" width="10" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+
+    <!-- Sunlight-Readable Transflective MIP Display -->
+    <circle cx="0" cy="0" r="71" fill="#141E18"/>
+
+    <!-- Topographic Trail Map Vector -->
+    <path d="M-45 10 Q-15 -25 15 -10 T55 -20" stroke="#EAB308" stroke-width="2" fill="none"/>
+    <path d="M-40 30 Q-10 15 20 25 T50 15" stroke="#34D399" stroke-width="1.5" fill="none"/>
+    <polyline points="-35,45 -10,35 15,42 45,30" stroke="#60A5FA" stroke-width="1.5" fill="none"/>
+
+    <!-- Waypoint Pin -->
+    <circle cx="15" cy="-10" r="4" fill="#EF4444"/>
+    <circle cx="15" cy="-10" r="8" stroke="#EF4444" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+
+    <!-- Solar Charging & Battery Telemetry -->
+    <text x="0" y="-36" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#F59E0B">SOLAR: 100% INTENSITY</text>
+    <text x="0" y="-18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">320h GPS REMAINING</text>
+    <text x="0" y="52" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8">CLIMBPRO · SatIQ GNSS</text>
+  </g>
+
+  <!-- Technical Spec Footer Bar -->
+  <g transform="translate(0, 475)">
+    <text x="400" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#161A18">
+      AUTHENTIC GARMIN ENDURO™ 3 ULTRA-PERFORMANCE SMARTWATCH
+    </text>
+    <text x="400" y="46" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B726E">
+      Up to 320 Hours GPS with Solar · 63g Titanium Bezel · TopoActive Maps · Built-in Flashlight
+    </text>
+  </g>
+</svg>

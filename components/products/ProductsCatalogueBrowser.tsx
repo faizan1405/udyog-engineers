@@ -16,6 +16,26 @@ export interface ProductsCatalogueBrowserProps {
   initialBrand?: string;
 }
 
+function isSubcategoryMatch(productSlug?: string, targetSlug?: string): boolean {
+  if (!productSlug || !targetSlug) return false;
+  const p = productSlug.toLowerCase();
+  const t = targetSlug.toLowerCase();
+  if (p === t) return true;
+  if (
+    (p === "garmin-handheld-gps" || p === "handheld-gps") &&
+    (t === "garmin-handheld-gps" || t === "handheld-gps")
+  ) {
+    return true;
+  }
+  if (
+    (p === "gps-smartwatches-wearables" || p === "smartwatches-wearables" || p === "gps-smartwatches") &&
+    (t === "gps-smartwatches-wearables" || t === "smartwatches-wearables" || t === "gps-smartwatches")
+  ) {
+    return true;
+  }
+  return false;
+}
+
 export function ProductsCatalogueBrowser({
   products,
   categories,
@@ -64,7 +84,7 @@ export function ProductsCatalogueBrowser({
       }
       // Subcategory match
       if (selectedSubcategory !== "all") {
-        if (!p.subcategorySlug || p.subcategorySlug.toLowerCase() !== selectedSubcategory.toLowerCase()) {
+        if (!isSubcategoryMatch(p.subcategorySlug, selectedSubcategory)) {
           return false;
         }
       }

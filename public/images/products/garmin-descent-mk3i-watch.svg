@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <!-- Subtle coordinate grid -->
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <!-- Technical Header Badge -->
+  <g transform="translate(48, 48)">
+    <rect width="220" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#0284C7"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">GARMIN DESCENT™ Mk3i</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">200M DIVE &amp; SURFACE GPS</text>
+
+  <!-- Watch Schematic -->
+  <g transform="translate(400, 260)">
+    <!-- Extra-Long Dive Silicone Straps -->
+    <path d="M-45 -180 L-40 -80 L40 -80 L45 -180 Z" fill="#1E2830" stroke="#10171D" stroke-width="2"/>
+    <line x1="-35" y1="-140" x2="35" y2="-140" stroke="#334654" stroke-width="2"/>
+    <line x1="-35" y1="-110" x2="35" y2="-110" stroke="#334654" stroke-width="2"/>
+
+    <path d="M-40 80 L-45 180 L45 180 L40 80 Z" fill="#1E2830" stroke="#10171D" stroke-width="2"/>
+    <line x1="-35" y1="110" x2="35" y2="110" stroke="#334654" stroke-width="2"/>
+    <line x1="-35" y1="140" x2="35" y2="140" stroke="#334654" stroke-width="2"/>
+
+    <!-- Rugged 200m Dive Pressure Case -->
+    <circle cx="0" cy="0" r="96" fill="#17222B" stroke="#0E161D" stroke-width="3"/>
+    <!-- Titanium Bezel with Dive Timer Notches -->
+    <circle cx="0" cy="0" r="88" fill="#263542" stroke="#415568" stroke-width="2.5"/>
+    <circle cx="0" cy="-80" r="3" fill="#38BDF8"/>
+    <circle cx="76" cy="-25" r="2.5" fill="#7890A4"/>
+    <circle cx="47" cy="65" r="2.5" fill="#7890A4"/>
+    <circle cx="-47" cy="65" r="2.5" fill="#7890A4"/>
+    <circle cx="-76" cy="-25" r="2.5" fill="#7890A4"/>
+
+    <!-- Leakproof Inductive Buttons & SubWave Sensor Guard -->
+    <rect x="-106" y="-55" width="10" height="22" rx="3" fill="#3B4F5E" stroke="#0E161D"/>
+    <rect x="-106" y="-10" width="10" height="22" rx="3" fill="#3B4F5E" stroke="#0E161D"/>
+    <rect x="-106" y="35" width="10" height="22" rx="3" fill="#3B4F5E" stroke="#0E161D"/>
+    <rect x="96" y="-45" width="10" height="26" rx="4" fill="#0284C7" stroke="#0E161D"/>
+    <rect x="96" y="25" width="10" height="22" rx="3" fill="#3B4F5E" stroke="#0E161D"/>
+
+    <!-- 1.4" Bright Underwater AMOLED Display Canvas -->
+    <circle cx="0" cy="0" r="74" fill="#040D14"/>
+
+    <!-- Bathymetric Ocean Depth Contours -->
+    <path d="M-55 10 Q-20 -20 15 -5 T60 -15" stroke="#0284C7" stroke-width="2.5" fill="none"/>
+    <path d="M-50 30 Q-15 10 20 20 T58 10" stroke="#0EA5E9" stroke-width="2" fill="none"/>
+    <path d="M-45 50 Q-5 35 25 40 T55 35" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+
+    <!-- Dive Telemetry -->
+    <text x="0" y="-36" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#38BDF8">SubWave™ SONAR OK</text>
+    <text x="0" y="-18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">DEPTH 28.4m</text>
+    <text x="0" y="0" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#7DD3FC">NDL TIME 45 MIN</text>
+    <text x="0" y="52" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8">SURFACE GPS LOGGED</text>
+  </g>
+
+  <!-- Technical Spec Footer Bar -->
+  <g transform="translate(0, 475)">
+    <text x="400" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#161A18">
+      AUTHENTIC GARMIN DESCENT™ Mk3i DIVE COMPUTER &amp; GPS WATCH
+    </text>
+    <text x="400" y="46" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B726E">
+      200m Dive Rating · SubWave™ Sonar Messaging · Surface Multi-Band GPS · 1.4&quot; AMOLED Display
+    </text>
+  </g>
+</svg>

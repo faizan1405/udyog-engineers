@@ -1,5 +1,4 @@
-import React from "react";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -40,6 +39,12 @@ export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
+  if (slug.toLowerCase() === "garmin") {
+    return {
+      title: "Garmin GPS & Wearables | Udyog Engineers",
+      description: "Garmin Handheld GPS and GPS Smartwatches & Wearables for institutional and field applications.",
+    };
+  }
   const category = getCategoryBySlug(slug);
 
   if (!category) {
@@ -157,6 +162,9 @@ function CategoryHeroPlate({ category }: { category: ProductCategory }) {
 
 export default async function CategoryDetailPage({ params }: CategoryPageProps) {
   const { slug } = await params;
+  if (slug.toLowerCase() === "garmin") {
+    redirect("/categories/gps");
+  }
   const category = getCategoryBySlug(slug);
 
   if (!category) {

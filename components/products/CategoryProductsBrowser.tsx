@@ -5,11 +5,35 @@ import { Product } from "@/types/product";
 import { ProductCategory, ProductSubcategory } from "@/types/category";
 import { ProductCard } from "@/components/products/ProductCard";
 import { cn } from "@/lib/utils";
-import { Layers } from "lucide-react";
+import { Layers, Navigation, Watch, ShieldCheck } from "lucide-react";
 
 export interface CategoryProductsBrowserProps {
   category: ProductCategory;
   products: Product[];
+}
+
+/**
+ * Normalizes and compares subcategory slugs, ensuring full compatibility
+ * with legacy slugs (e.g. garmin-handheld-gps <-> handheld-gps).
+ */
+function isSubcategoryMatch(productSlug?: string, targetSlug?: string): boolean {
+  if (!productSlug || !targetSlug) return false;
+  const p = productSlug.toLowerCase();
+  const t = targetSlug.toLowerCase();
+  if (p === t) return true;
+  if (
+    (p === "garmin-handheld-gps" || p === "handheld-gps") &&
+    (t === "garmin-handheld-gps" || t === "handheld-gps")
+  ) {
+    return true;
+  }
+  if (
+    (p === "gps-smartwatches-wearables" || p === "smartwatches-wearables" || p === "gps-smartwatches") &&
+    (t === "gps-smartwatches-wearables" || t === "smartwatches-wearables" || t === "gps-smartwatches")
+  ) {
+    return true;
+  }
+  return false;
 }
 
 export function CategoryProductsBrowser({
@@ -39,7 +63,7 @@ export function CategoryProductsBrowser({
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
       if (activeSubcategory !== "all") {
-        if (!p.subcategorySlug || p.subcategorySlug.toLowerCase() !== activeSubcategory.toLowerCase()) {
+        if (!isSubcategoryMatch(p.subcategorySlug, activeSubcategory)) {
           return false;
         }
       }
@@ -59,7 +83,7 @@ export function CategoryProductsBrowser({
     return subcategories.map((subcat) => {
       const items = products.filter(
         (p) =>
-          p.subcategorySlug?.toLowerCase() === subcat.slug.toLowerCase() &&
+          isSubcategoryMatch(p.subcategorySlug, subcat.slug) &&
           (activeBrand === "all" || p.brand?.toLowerCase() === activeBrand.toLowerCase())
       );
       return {
@@ -117,10 +141,14 @@ export function CategoryProductsBrowser({
                 <span className="font-mono text-[11px] ml-1.5 opacity-80">({products.length})</span>
               </button>
               {subcategories.map((subcat) => {
-                const count = products.filter(
-                  (p) => p.subcategorySlug?.toLowerCase() === subcat.slug.toLowerCase()
+                const count = products.filter((p) =>
+                  isSubcategoryMatch(p.subcategorySlug, subcat.slug)
                 ).length;
                 const isSelected = activeSubcategory === subcat.slug;
+                const isWatch =
+                  subcat.slug.includes("watch") ||
+                  subcat.name.toLowerCase().includes("watch");
+
                 return (
                   <button
                     key={subcat.slug}
@@ -133,6 +161,11 @@ export function CategoryProductsBrowser({
                         : "bg-surface text-text-secondary border-border/80 hover:text-text-primary hover:border-brand-green/40"
                     )}
                   >
+                    {isWatch ? (
+                      <Watch className="w-3.5 h-3.5 opacity-70" />
+                    ) : (
+                      <Navigation className="w-3.5 h-3.5 opacity-70" />
+                    )}
                     <span>{subcat.name}</span>
                     <span className="font-mono text-[11px] text-text-muted">({count})</span>
                   </button>
@@ -166,7 +199,7 @@ export function CategoryProductsBrowser({
                 const count = products.filter(
                   (p) =>
                     p.brand?.toLowerCase() === brand.toLowerCase() &&
-                    (activeSubcategory === "all" || p.subcategorySlug?.toLowerCase() === activeSubcategory.toLowerCase())
+                    (activeSubcategory === "all" || isSubcategoryMatch(p.subcategorySlug, activeSubcategory))
                 ).length;
                 return (
                   <button
@@ -191,104 +224,139 @@ export function CategoryProductsBrowser({
       </div>
 
       {/* SECTIONED VIEW: When viewing "All" and subcategories exist */}
-      {activeSubcategory === "all" && subcategories.length > 0 && activeBrand === "all" ? (
+      {activeSubcategory === "all" && subcategories.length > 0 ? (
         <div className="space-y-16">
           {productsBySubcategory.map(({ subcat, items }) => {
             if (items.length === 0) return null;
-            return (
-              <div key={subcat.slug} className="space-y-6 scroll-mt-24" id={subcat.slug}>
-                {/* Subcategory Section Header */}
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-4 border-b border-border/80">
-                  <div>
-                    <div className="flex items-center gap-2 font-sans text-xs text-brand-green mb-1 font-semibold">
-                      <span>{category.name}</span>
-                      <span className="text-border-strong">•</span>
-                      <span className="text-text-muted font-normal">Subcategory</span>
-                    </div>
-                    <h3 className="font-display font-semibold text-2xl sm:text-3xl text-text-primary tracking-[-0.02em]">
-                      {subcat.name} ({items.length})
-                    </h3>
-                    {subcat.description && (
-                      <p className="font-sans text-sm text-text-secondary mt-1.5 max-w-2xl leading-relaxed">
-                        {subcat.description}
-                      </p>
-                    )}
-                  </div>
-                  <span className="font-sans text-xs text-text-muted shrink-0">
-                    Verified Manufacturer Models
-                  </span>
-                </div>
+            const isWatchGroup =
+              subcat.slug.includes("watch") ||
+              subcat.name.toLowerCase().includes("watch");
 
-                {/* Subcategory Product Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                  {items.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                  ))}
+            return (
+              <section
+                key={subcat.slug}
+                id={subcat.slug}
+                aria-labelledby={`heading-${subcat.slug}`}
+                className="scroll-mt-24 space-y-6"
+              >
+                {/* Visual Subcategory Header Plate */}
+                <div className="rounded-2xl border border-border/80 bg-surface p-6 sm:p-7 shadow-xs">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-border/70">
+                    <div>
+                      {/* Eyebrow Pill */}
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-wider uppercase bg-brand-green/10 text-brand-green border border-brand-green/20">
+                          {isWatchGroup ? (
+                            <Watch className="w-3.5 h-3.5" />
+                          ) : (
+                            <Navigation className="w-3.5 h-3.5" />
+                          )}
+                          <span>{subcat.name.toUpperCase()}</span>
+                        </span>
+                        <span className="text-border-strong">•</span>
+                        <span className="font-sans text-xs text-text-muted">{category.name} Discipline</span>
+                      </div>
+
+                      {/* Main Subcategory Title */}
+                      <h3
+                        id={`heading-${subcat.slug}`}
+                        className="font-display font-semibold text-2xl sm:text-3xl text-text-primary tracking-[-0.025em]"
+                      >
+                        {subcat.name}
+                        <span className="font-mono text-base sm:text-lg font-normal text-text-muted ml-2">
+                          ({items.length} {items.length === 1 ? "Model" : "Models"})
+                        </span>
+                      </h3>
+
+                      {subcat.description && (
+                        <p className="font-sans text-sm sm:text-[15px] text-text-secondary mt-2 max-w-3xl leading-relaxed">
+                          {subcat.description}
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="flex items-center gap-2 text-xs font-sans text-text-muted shrink-0 self-start md:self-auto bg-surface-secondary/70 px-3.5 py-1.5 rounded-lg border border-border/60">
+                      <ShieldCheck className="w-4 h-4 text-brand-green" />
+                      <span>Verified Manufacturer Hardware</span>
+                    </div>
+                  </div>
+
+                  {/* Independent Subcategory Product Grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 pt-6">
+                    {items.map((product) => (
+                      <ProductCard key={product.id} product={product} />
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </section>
             );
           })}
         </div>
       ) : (
-        /* FILTERED VIEW: When a specific subcategory or brand is active */
+        /* FILTERED VIEW: When a specific subcategory is selected */
         <div className="space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-border/70">
-            <div>
-              <div className="flex items-center gap-2 font-sans text-xs text-brand-green mb-1 font-semibold">
-                <span>{category.name}</span>
-                {activeSubcategory !== "all" && (
-                  <>
-                    <span className="text-border-strong">•</span>
-                    <span className="text-text-primary font-medium">
-                      {subcategories.find((s) => s.slug === activeSubcategory)?.name}
-                    </span>
-                  </>
-                )}
-                {activeBrand !== "all" && (
-                  <>
-                    <span className="text-border-strong">•</span>
-                    <span className="text-brand-green font-semibold">{activeBrand}</span>
-                  </>
-                )}
+          <div className="rounded-2xl border border-border/80 bg-surface p-6 sm:p-7 shadow-xs">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-5 border-b border-border/70">
+              <div>
+                <div className="flex items-center gap-2 font-sans text-xs text-brand-green mb-1.5 font-semibold">
+                  <span>{category.name}</span>
+                  {activeSubcategory !== "all" && (
+                    <>
+                      <span className="text-border-strong">•</span>
+                      <span className="font-mono uppercase tracking-wider text-text-primary">
+                        {subcategories.find((s) => s.slug === activeSubcategory)?.name}
+                      </span>
+                    </>
+                  )}
+                  {activeBrand !== "all" && (
+                    <>
+                      <span className="text-border-strong">•</span>
+                      <span className="text-brand-green font-semibold">{activeBrand}</span>
+                    </>
+                  )}
+                </div>
+                <h3 className="font-display font-semibold text-2xl sm:text-3xl text-text-primary tracking-[-0.025em]">
+                  {activeSubcategory !== "all"
+                    ? subcategories.find((s) => s.slug === activeSubcategory)?.name
+                    : "Verified Instruments"}{" "}
+                  <span className="font-mono text-base sm:text-lg font-normal text-text-muted ml-1">
+                    ({filteredProducts.length} {filteredProducts.length === 1 ? "Model" : "Models"})
+                  </span>
+                </h3>
               </div>
-              <h3 className="font-display font-semibold text-2xl sm:text-3xl text-text-primary tracking-[-0.025em]">
-                {activeSubcategory !== "all"
-                  ? subcategories.find((s) => s.slug === activeSubcategory)?.name
-                  : "Verified Instruments"}{" "}
-                ({filteredProducts.length})
-              </h3>
+              <div className="flex items-center gap-2 text-xs font-sans text-text-muted bg-surface-secondary/70 px-3 py-1.5 rounded-lg border border-border/60">
+                <ShieldCheck className="w-4 h-4 text-brand-green" />
+                <span>Institutional Supply · Direct Quotation Coordination</span>
+              </div>
             </div>
-            <span className="font-sans text-xs text-text-muted">
-              Institutional Supply · Direct Quotation Coordination
-            </span>
-          </div>
 
-          {filteredProducts.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {filteredProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          ) : (
-            <div className="p-12 border border-border/80 bg-surface rounded-2xl text-center space-y-4 shadow-xs max-w-xl mx-auto">
-              <h4 className="font-display font-semibold text-lg text-text-primary">
-                No instruments match the selected filter
-              </h4>
-              <p className="font-sans text-sm text-text-secondary leading-relaxed">
-                Please clear or select another subcategory or manufacturer.
-              </p>
-              <button
-                type="button"
-                onClick={() => {
-                  setActiveSubcategory("all");
-                  setActiveBrand("all");
-                }}
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-green text-white font-sans text-sm font-semibold rounded-xl hover:bg-brand-green-hover transition-colors shadow-xs"
-              >
-                <span>Reset Category Filters</span>
-              </button>
-            </div>
-          )}
+            {filteredProducts.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 pt-6">
+                {filteredProducts.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+            ) : (
+              <div className="p-12 text-center space-y-4 max-w-xl mx-auto">
+                <h4 className="font-display font-semibold text-lg text-text-primary">
+                  No instruments match the selected filter
+                </h4>
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
+                  Please clear or select another subcategory or manufacturer.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveSubcategory("all");
+                    setActiveBrand("all");
+                  }}
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-green text-white font-sans text-sm font-semibold rounded-xl hover:bg-brand-green-hover transition-colors shadow-xs"
+                >
+                  <span>Reset Category Filters</span>
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>
