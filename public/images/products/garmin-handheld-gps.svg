@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <!-- Subtle coordinate grid -->
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <!-- Technical Header Badge -->
+  <g transform="translate(48, 48)">
+    <rect width="180" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#1E6B3E"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">GARMIN NAVIGATION</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">HANDHELD GPS SYSTEM</text>
+
+  <!-- Technical Schematic of Handheld GPS Receiver -->
+  <g transform="translate(340, 120)">
+    <!-- Antenna Stub -->
+    <path d="M40 0 C40 -20 80 -20 80 0 L80 40 L40 40 Z" fill="#242B28" stroke="#161A18" stroke-width="2"/>
+    <!-- Outer Rugged Body Chassis -->
+    <rect x="0" y="30" width="120" height="230" rx="28" fill="#2A322F" stroke="#1B221F" stroke-width="3"/>
+    <!-- Rubberized Side Grips -->
+    <rect x="-6" y="80" width="6" height="30" rx="3" fill="#1E2421"/>
+    <rect x="-6" y="125" width="6" height="30" rx="3" fill="#1E2421"/>
+    <rect x="120" y="80" width="6" height="30" rx="3" fill="#1E2421"/>
+    <rect x="120" y="125" width="6" height="30" rx="3" fill="#1E2421"/>
+    <!-- Display Bezel -->
+    <rect x="14" y="55" width="92" height="115" rx="8" fill="#141816" stroke="#3A4440" stroke-width="1.5"/>
+    <!-- Screen -->
+    <rect x="18" y="59" width="84" height="107" rx="6" fill="#1E3328"/>
+    <!-- Map Vector Display Wireframe -->
+    <path d="M25 140 Q45 110 65 115 T100 85" stroke="#3FA86B" stroke-width="2" fill="none"/>
+    <circle cx="65" cy="115" r="4" fill="#5CE596"/>
+    <circle cx="65" cy="115" r="9" stroke="#5CE596" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+    <!-- Navigation Waypoint Marker -->
+    <polygon points="65,108 61,118 69,118" fill="#FFFFFF"/>
+    <!-- Keypad / Control D-pad -->
+    <circle cx="60" cy="205" r="22" fill="#1B221F" stroke="#3A4440" stroke-width="1.5"/>
+    <circle cx="60" cy="205" r="10" fill="#2A322F"/>
+    <rect x="18" y="185" width="16" height="8" rx="2" fill="#202724"/>
+    <rect x="86" y="185" width="16" height="8" rx="2" fill="#202724"/>
+    <rect x="18" y="225" width="16" height="8" rx="2" fill="#202724"/>
+    <rect x="86" y="225" width="16" height="8" rx="2" fill="#202724"/>
+  </g>
+
+  <!-- Technical Spec Footer Bar -->
+  <g transform="translate(0, 420)">
+    <text x="400" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#161A18">
+      AUTHENTIC GARMIN HANDHELD GPS HARDWARE
+    </text>
+    <text x="400" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6B726E">
+      High-Precision GNSS Positioning · Official Manufacturer Specifications Verified
+    </text>
+    <text x="400" y="80" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#8C938F">
+      Authentic Product Photograph Subject to Official Distribution Clearance
+    </text>
+  </g>
+</svg>

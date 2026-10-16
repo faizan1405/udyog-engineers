@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <g transform="translate(48, 48)">
+    <rect width="220" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#C93B2B"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">SEEK THERMAL</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">FIRE & EMERGENCY THERMAL IMAGER</text>
+
+  <!-- Technical Schematic of Thermal Device -->
+  <g transform="translate(320, 115)">
+    
+      <!-- Rugged Firefighting Imager Body -->
+      <rect x="0" y="20" width="160" height="210" rx="20" fill="#C93B2B" stroke="#1A1F1D" stroke-width="3"/>
+      <rect x="15" y="45" width="130" height="110" rx="8" fill="#141816"/>
+      <!-- Thermal Matrix Spectrum Heatmap Visual -->
+      <rect x="20" y="50" width="120" height="100" rx="5" fill="#2A1B3D"/>
+      <circle cx="80" cy="100" r="35" fill="#D94E28" opacity="0.8"/>
+      <circle cx="80" cy="100" r="20" fill="#F5B324" opacity="0.9"/>
+      <circle cx="80" cy="100" r="8" fill="#FFFFFF"/>
+      <text x="80" y="185" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#FFFFFF">320 × 240 SV1</text>
+      <!-- Bottom Torch Bezel -->
+      <circle cx="80" cy="210" r="12" fill="#EAE7DE" stroke="#333"/>
+    
+  </g>
+
+  <g transform="translate(0, 420)">
+    <text x="400" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#161A18">
+      AUTHENTIC SEEK THERMAL FIREPRO 300
+    </text>
+    <text x="400" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6B726E">
+      Uncooled Microbolometer · Precision Radiometric Thermal Imaging
+    </text>
+    <text x="400" y="80" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#8C938F">
+      Authentic Product Photograph Subject to Official Distribution Clearance
+    </text>
+  </g>
+</svg>

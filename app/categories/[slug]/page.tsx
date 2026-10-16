@@ -25,7 +25,7 @@ import { generateCategoryJsonLd } from "@/lib/seo";
 import { buildWhatsAppInquiryUrl, isWhatsAppConfigured } from "@/lib/whatsapp";
 import { assetPath } from "@/lib/utils";
 import { getCategoryTheme } from "@/config/categoryThemes";
-import { ProductCard } from "@/components/products/ProductCard";
+import { CategoryProductsBrowser } from "@/components/products/CategoryProductsBrowser";
 
 interface CategoryPageProps {
   params: Promise<{ slug: string }>;
@@ -331,11 +331,10 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
 
           {/* REAL PRODUCTS EXIST */}
           {productionProducts.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {productionProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
+            <CategoryProductsBrowser
+              category={category}
+              products={productionProducts}
+            />
           ) : (
             /* POLISHED INQUIRY-DRIVEN STATE (NO FAKE PRODUCTS) */
             <div className="p-8 sm:p-12 lg:p-16 border border-border/80 bg-surface rounded-2xl text-center max-w-2xl mx-auto shadow-xs">

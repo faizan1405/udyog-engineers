@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck } from "lucide-react";
-import { getAllProducts } from "@/data/products";
+import { getProductionProducts } from "@/data/products";
 import { getAllCategories } from "@/data/categories";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { ProductCard } from "@/components/products/ProductCard";
-import { getCategoryTheme } from "@/config/categoryThemes";
+import { ProductsCatalogueBrowser } from "@/components/products/ProductsCatalogueBrowser";
 
 export const metadata: Metadata = {
   title: "Equipment Catalogue & Products | Udyog Engineers",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 export default function ProductsPage() {
-  const products = getAllProducts();
+  const products = getProductionProducts();
   const categories = getAllCategories();
 
   return (
@@ -33,54 +32,7 @@ export default function ProductsPage() {
 
       <Section variant="default" className="py-10 sm:py-14 lg:py-18">
         <Container>
-          {/* Category Filter Pills */}
-          <div className="mb-10 pb-5 border-b border-border/80">
-            <span className="font-sans text-xs text-text-muted block mb-3 font-semibold uppercase tracking-wider">
-              Browse by Discipline:
-            </span>
-            <div className="flex flex-wrap gap-2.5">
-              {categories.map((c) => {
-                const theme = getCategoryTheme(c.slug);
-                return (
-                  <Link
-                    key={c.slug}
-                    href={`/categories/${c.slug}`}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-border/80 bg-surface text-xs font-sans font-medium text-text-secondary hover:text-text-primary hover:border-brand-green hover:shadow-2xs transition-all"
-                  >
-                    <span
-                      className="font-mono text-[11px] font-semibold"
-                      style={{ color: theme.accent }}
-                    >
-                      {String(c.order).padStart(2, "0")}
-                    </span>
-                    <span>{c.name}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-6 mb-8 border-b border-border/70">
-            <div>
-              <div className="flex items-center gap-2 font-sans text-xs text-brand-green mb-1 font-semibold">
-                <span>Equipment Catalogue</span>
-                <span className="text-border-strong">•</span>
-                <span className="text-text-muted font-normal">All Disciplines</span>
-              </div>
-              <h2 className="font-display font-semibold text-2xl sm:text-3xl lg:text-4xl text-text-primary tracking-[-0.025em]">
-                All Equipment Items ({products.length})
-              </h2>
-            </div>
-            <span className="font-sans text-xs text-text-muted">
-              Catalogue Overview · Direct Quotations
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <ProductsCatalogueBrowser products={products} categories={categories} />
 
           {/* Bottom Specialized Requirement Bridge */}
           <div className="mt-16 p-8 sm:p-12 rounded-2xl border border-border/80 bg-surface shadow-xs relative overflow-hidden">

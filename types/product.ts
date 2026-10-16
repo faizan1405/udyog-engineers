@@ -19,13 +19,20 @@ export interface Product {
   categorySlug: string;
   model: string;
   manufacturer?: string; // Optional manufacturer brand / original equipment partner
+  brand?: string;
+  series?: string;
+  subcategory?: string;
+  subcategorySlug?: string;
+  variant?: string;
   shortDescription: string;
   description: string;
   heroImage: string;
   gallery: string[];
+  galleryImages?: string[];
   highlights: string[];
+  keyHighlights?: string[];
   specifications: ProductSpecification[];
-  features: string[];
+  features?: string[];
   applications: string[];
   datasheet?: string; // Optional path or URL to PDF datasheet (e.g. /datasheets/model-name.pdf)
   relatedProducts: string[]; // Related product slugs or IDs
@@ -35,4 +42,8 @@ export interface Product {
   status?: ContentStatus;
   /** Flag to indicate if this is temporary placeholder demo data */
   isDemoPlaceholder?: boolean;
+  /** Official manufacturer research reference */
+  sourceUrl?: string;
+  sourceManufacturer?: string;
+  verificationStatus?: "manufacturer-verified" | "pending" | "client-supplied";
 }

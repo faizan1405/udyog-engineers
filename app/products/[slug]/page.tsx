@@ -147,6 +147,14 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 label: product.category,
                 href: `/categories/${product.categorySlug}`,
               },
+              ...(product.subcategory
+                ? [
+                    {
+                      label: product.subcategory,
+                      href: `/categories/${product.categorySlug}?subcategory=${product.subcategorySlug || ""}`,
+                    },
+                  ]
+                : []),
               { label: product.name },
             ]}
           />
@@ -156,9 +164,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {/* 1. PRODUCT HERO & OVERVIEW */}
       <Section variant="default" className="py-8 sm:py-12 lg:py-16">
         <Container>
-          {/* Header Block */}
+          {/* Header Block: Brand -> Series -> Product Name */}
           <div className="border-b border-border/80 pb-6 mb-8 sm:mb-10">
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-sans mb-3">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 text-xs font-sans mb-3 text-text-secondary">
               <Link
                 href={`/categories/${product.categorySlug}`}
                 className="text-brand-green font-semibold hover:underline flex items-center gap-1.5"
@@ -166,6 +174,35 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 <Compass className="w-4 h-4 text-brand-green" />
                 <span>{product.category}</span>
               </Link>
+              {product.subcategory && (
+                <>
+                  <span className="text-border-strong select-none" aria-hidden="true">
+                    /
+                  </span>
+                  <Link
+                    href={`/categories/${product.categorySlug}?subcategory=${product.subcategorySlug || ""}`}
+                    className="hover:text-text-primary transition-colors"
+                  >
+                    {product.subcategory}
+                  </Link>
+                </>
+              )}
+              {product.brand && (
+                <>
+                  <span className="text-border-strong select-none" aria-hidden="true">
+                    /
+                  </span>
+                  <span className="font-semibold text-text-primary">{product.brand}</span>
+                </>
+              )}
+              {product.series && (
+                <>
+                  <span className="text-border-strong select-none" aria-hidden="true">
+                    /
+                  </span>
+                  <span className="text-text-muted">{product.series}</span>
+                </>
+              )}
               {product.model && (
                 <>
                   <span className="text-border-strong select-none" aria-hidden="true">
@@ -246,7 +283,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <div className="border border-border/80 bg-surface rounded-2xl p-5 text-xs font-sans space-y-3 shadow-xs">
                 <div className="flex items-center justify-between border-b border-border/70 pb-2.5 text-[11px] text-text-muted">
                   <span className="font-semibold text-text-primary">Equipment Details</span>
-                  <span className="text-brand-green font-medium">Active Specification</span>
+                  <span className="text-brand-green font-medium flex items-center gap-1">
+                    <ShieldCheck className="w-3.5 h-3.5 text-brand-green" />
+                    <span>Manufacturer-Verified</span>
+                  </span>
                 </div>
 
                 <div className="space-y-2.5 text-xs">
@@ -257,6 +297,33 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     </span>
                   </div>
 
+                  {product.subcategory && (
+                    <div className="flex items-center justify-between">
+                      <span className="text-text-muted">Subcategory:</span>
+                      <span className="text-text-primary font-medium text-xs sm:text-[13px]">
+                        {product.subcategory}
+                      </span>
+                    </div>
+                  )}
+
+                  {product.brand && (
+                    <div className="flex items-center justify-between">
+                      <span className="text-text-muted">Brand:</span>
+                      <span className="text-text-primary font-medium text-xs sm:text-[13px]">
+                        {product.brand}
+                      </span>
+                    </div>
+                  )}
+
+                  {product.series && (
+                    <div className="flex items-center justify-between">
+                      <span className="text-text-muted">Series:</span>
+                      <span className="text-text-primary text-xs sm:text-[13px]">
+                        {product.series}
+                      </span>
+                    </div>
+                  )}
+
                   {product.model && (
                     <div className="flex items-center justify-between">
                       <span className="text-text-muted">Model Reference:</span>
@@ -266,11 +333,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     </div>
                   )}
 
-                  {product.manufacturer && (
+                  {product.variant && (
                     <div className="flex items-center justify-between">
-                      <span className="text-text-muted">Manufacturer:</span>
-                      <span className="text-text-primary font-medium text-xs sm:text-[13px]">
-                        {product.manufacturer}
+                      <span className="text-text-muted">Configuration:</span>
+                      <span className="text-text-primary text-xs sm:text-[13px]">
+                        {product.variant}
                       </span>
                     </div>
                   )}

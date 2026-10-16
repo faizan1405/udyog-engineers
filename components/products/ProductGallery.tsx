@@ -105,7 +105,7 @@ export function ProductGallery({ product, className }: ProductGalleryProps) {
           {/* Product Image */}
           <div className="relative w-full h-full flex items-center justify-center z-10">
             <Image
-              src={activeSrc}
+              src={assetPath(activeSrc)}
               alt={`${product.name} - View ${activeIndex + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 55vw, 50vw"

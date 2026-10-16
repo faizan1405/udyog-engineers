@@ -56,22 +56,33 @@ export function ProductCard({ product, className }: ProductCardProps) {
 
       {/* Product Content */}
       <div className="flex flex-col flex-1 p-5 sm:p-6">
-        <div className="flex items-center justify-between text-xs mb-2 font-sans">
-          <span
-            className="font-semibold px-2 py-0.5 rounded-full text-[11px] border"
-            style={{
-              backgroundColor: theme.bgLight,
-              borderColor: `${theme.borderLight}99`,
-              color: theme.accent,
-            }}
-          >
-            {product.category}
-          </span>
-          {product.model && (
+        <div className="flex items-center justify-between gap-2 text-xs mb-2 font-sans">
+          <div className="flex items-center gap-1.5">
+            <span
+              className="font-semibold px-2 py-0.5 rounded-full text-[11px] border"
+              style={{
+                backgroundColor: theme.bgLight,
+                borderColor: `${theme.borderLight}99`,
+                color: theme.accent,
+              }}
+            >
+              {product.category}
+            </span>
+            {product.brand && (
+              <span className="font-sans font-semibold text-text-primary text-[11px]">
+                {product.brand}
+              </span>
+            )}
+          </div>
+          {product.subcategory ? (
+            <span className="font-sans text-text-muted text-[11px] truncate max-w-[140px]">
+              {product.subcategory}
+            </span>
+          ) : product.model ? (
             <span className="font-mono text-text-muted text-[11px]">
               {product.model}
             </span>
-          )}
+          ) : null}
         </div>
 
         <h3 className="font-display font-semibold text-text-primary text-base sm:text-lg line-clamp-1 group-hover:text-accent transition-colors duration-200 tracking-[-0.02em]">

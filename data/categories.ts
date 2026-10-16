@@ -18,7 +18,30 @@ export const CATEGORIES: ProductCategory[] = [
     heroImage: "/images/generated/categories/category-optics.webp",
     icon: "Binoculars",
     order: 1,
-    status: "development-placeholder",
+    status: "verified",
+    subcategories: [
+      {
+        id: "subcat-binoculars",
+        name: "Binoculars",
+        slug: "binoculars",
+        description: "High-definition terrestrial field binoculars for wildlife, survey, and long-range observation.",
+        order: 1,
+      },
+      {
+        id: "subcat-laser-rangefinders",
+        name: "Laser Rangefinders",
+        slug: "laser-rangefinders",
+        description: "Precision laser rangefinders and forestry hypsometers for distance, elevation, and canopy angle survey.",
+        order: 2,
+      },
+      {
+        id: "subcat-spotting-scopes",
+        name: "Field / Spotting Scopes",
+        slug: "spotting-scopes",
+        description: "High-magnification terrestrial spotting scopes with ED glass systems for distance reconnaissance.",
+        order: 3,
+      },
+    ],
     applicationContexts: [
       "Terrestrial field survey & land triangulation",
       "Optical observation & field inspection",
@@ -37,7 +60,16 @@ export const CATEGORIES: ProductCategory[] = [
     heroImage: "/images/generated/categories/category-gps.webp",
     icon: "Navigation",
     order: 2,
-    status: "development-placeholder",
+    status: "verified",
+    subcategories: [
+      {
+        id: "subcat-garmin-handheld-gps",
+        name: "Garmin Handheld GPS",
+        slug: "garmin-handheld-gps",
+        description: "Rugged multi-band GNSS handheld receivers, floating navigators, and touchscreen mapping units.",
+        order: 1,
+      },
+    ],
     applicationContexts: [
       "Field boundary & waypoint logging",
       "Topographical field mapping & path survey",
@@ -75,7 +107,30 @@ export const CATEGORIES: ProductCategory[] = [
     heroImage: "/images/generated/categories/category-thermal.webp",
     icon: "Flame",
     order: 4,
-    status: "development-placeholder",
+    status: "verified",
+    subcategories: [
+      {
+        id: "subcat-handheld-thermal",
+        name: "Handheld Thermal Cameras",
+        slug: "handheld-thermal",
+        description: "Rugged standalone thermal imagers with integrated high-output illumination for field search.",
+        order: 1,
+      },
+      {
+        id: "subcat-smartphone-thermal",
+        name: "Smartphone Thermal Cameras",
+        slug: "smartphone-thermal",
+        description: "High-resolution plug-and-play mobile thermal imaging sensor cameras for field diagnostic analysis.",
+        order: 2,
+      },
+      {
+        id: "subcat-fire-emergency-thermal",
+        name: "Fire & Emergency Thermal",
+        slug: "fire-emergency-thermal",
+        description: "Professional high-heat thermal imaging equipment designed specifically for firefighting and emergency services.",
+        order: 3,
+      },
+    ],
     applicationContexts: [
       "Thermal field observation & heat detection",
       "Low-visibility environmental inspection",
