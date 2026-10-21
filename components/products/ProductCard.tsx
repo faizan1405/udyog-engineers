@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { Product } from "@/types/product";
 import { AppImage } from "@/components/ui/AppImage";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
+import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getCategoryTheme } from "@/config/categoryThemes";
@@ -17,10 +19,11 @@ export interface ProductCardProps {
  * - Rounded-2xl card with soft border and subtle hover lift
  * - Category-accented tag
  * - Clean DM Sans text hierarchy & Sora display title
- * - No internal development labels exposed
+ * - Direct WhatsApp Inquiry conversion button with product-specific prefilled message
  */
 export function ProductCard({ product, className }: ProductCardProps) {
   const theme = getCategoryTheme(product.categorySlug);
+  const whatsAppUrl = buildWhatsAppInquiryUrl({ productName: product.name });
 
   return (
     <article
@@ -94,15 +97,26 @@ export function ProductCard({ product, className }: ProductCardProps) {
           {product.shortDescription}
         </p>
 
-        <div className="mt-5 pt-3.5 border-t border-border/70 flex items-center justify-between text-xs font-sans">
+        {/* Dual Actions: View Specifications + WhatsApp Inquiry */}
+        <div className="mt-5 pt-3.5 border-t border-border/70 flex flex-col min-[380px]:flex-row items-stretch min-[380px]:items-center justify-between gap-2 text-xs font-sans">
           <Link
             href={`/products/${product.slug}`}
-            className="group/link inline-flex items-center gap-1 font-sans font-semibold text-xs sm:text-[13px] text-accent hover:text-accent-hover transition-colors duration-150"
+            className="group/link inline-flex items-center gap-1 font-sans font-semibold text-xs sm:text-[13px] text-accent hover:text-accent-hover transition-colors duration-150 py-1"
           >
             <span>View Specifications</span>
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 ease-out group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
           </Link>
-          <span className="text-xs text-text-muted">Direct Quotation</span>
+
+          <a
+            href={whatsAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-emerald-50 hover:bg-accent-whatsapp text-emerald-800 hover:text-white border border-emerald-300/80 rounded-lg font-sans font-semibold text-xs transition-colors duration-200 shadow-2xs"
+            title={`Inquire about ${product.name} on WhatsApp`}
+          >
+            <WhatsAppIcon className="w-3.5 h-3.5" />
+            <span>Inquire on WhatsApp</span>
+          </a>
         </div>
       </div>
     </article>

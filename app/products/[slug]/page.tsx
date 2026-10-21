@@ -6,6 +6,7 @@ import {
   getAllProductSlugs,
   getRelatedProducts,
 } from "@/data/products";
+import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Section } from "@/components/ui/Section";
@@ -15,14 +16,13 @@ import { SpecificationTable } from "@/components/products/SpecificationTable";
 import { ProductFeatures } from "@/components/products/ProductFeatures";
 import { ProductApplications } from "@/components/products/ProductApplications";
 import { RelatedEquipment } from "@/components/products/RelatedEquipment";
-import { InquiryForm } from "@/components/forms/InquiryForm";
 import { generateProductJsonLd, generateBreadcrumbJsonLd } from "@/lib/seo";
 import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
 import {
-  ArrowDown,
   ShieldCheck,
   FileText,
   Compass,
+  Phone,
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
@@ -111,14 +111,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       ])
     : null;
 
-  // WhatsApp Inquiry URL
+  // Official client-formatted WhatsApp Inquiry URL:
+  // "Hello Udyog Engineers India, I am interested in the {productName}. Please share more details and availability."
   const whatsAppUrl = buildWhatsAppInquiryUrl({
     productName: product.name,
-    productModel: product.model,
-    categoryName: product.category,
-    customMessage: product.model
-      ? `Hello, I am interested in ${product.name} [${product.model}]. Please share more details.`
-      : `Hello, I am interested in ${product.name}. Please share more details.`,
   });
 
   return (
@@ -243,39 +239,37 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </p>
               </div>
 
-              {/* Action Block: Send Inquiry + WhatsApp */}
+              {/* Action Block: Inquire on WhatsApp */}
               <div className="p-6 bg-surface-secondary/70 border border-border/80 rounded-2xl space-y-4 shadow-xs">
                 <div className="flex items-center justify-between text-xs font-sans text-text-muted">
                   <span className="font-semibold text-text-primary">
                     Procurement Inquiry
                   </span>
-                  <span>Institutional Supply</span>
+                  <span>Direct WhatsApp Channel</span>
                 </div>
 
                 <p className="font-sans text-sm text-text-secondary leading-[1.6]">
-                  Direct technical coordination and quotation distribution. Submit your required quantities, project parameters, or tender specifications.
+                  Connect directly with our engineering desk on WhatsApp for formal quotations, technical specifications, and delivery timelines.
                 </p>
 
                 <div className="flex flex-col gap-3 pt-1">
                   <a
-                    href="#inquiry-section"
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] bg-brand-green text-white font-sans text-[15px] font-semibold rounded-xl hover:bg-brand-green-hover transition-colors shadow-xs tracking-normal"
+                    href={whatsAppUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2.5 px-5 py-3.5 min-h-[48px] bg-accent-whatsapp text-white font-sans text-[15px] font-semibold rounded-xl hover:bg-emerald-700 transition-colors shadow-xs tracking-normal"
                   >
-                    <span>Send Inquiry</span>
-                    <ArrowDown className="w-4 h-4" />
+                    <WhatsAppIcon className="w-5 h-5" />
+                    <span>Inquire on WhatsApp</span>
                   </a>
 
-                  {whatsAppUrl && (
-                    <a
-                      href={whatsAppUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] bg-surface border border-border/80 text-text-primary font-sans text-[15px] font-semibold rounded-xl hover:bg-surface-secondary transition-colors tracking-normal"
-                    >
-                      <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
-                      <span>Inquire via WhatsApp</span>
-                    </a>
-                  )}
+                  <a
+                    href={`tel:${siteConfig.contact.phones[0]?.international || siteConfig.contact.phone}`}
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] bg-surface border border-border/80 text-text-primary font-sans text-[15px] font-semibold rounded-xl hover:bg-surface-secondary transition-colors tracking-normal"
+                  >
+                    <Phone className="w-4 h-4 text-brand-green" />
+                    <span>Call {siteConfig.contact.phones[0]?.display || siteConfig.contact.phone}</span>
+                  </a>
                 </div>
               </div>
 
@@ -283,10 +277,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <div className="border border-border/80 bg-surface rounded-2xl p-5 text-xs font-sans space-y-3 shadow-xs">
                 <div className="flex items-center justify-between border-b border-border/70 pb-2.5 text-[11px] text-text-muted">
                   <span className="font-semibold text-text-primary">Equipment Details</span>
-                  <span className="text-brand-green font-medium flex items-center gap-1">
-                    <ShieldCheck className="w-3.5 h-3.5 text-brand-green" />
-                    <span>Manufacturer-Verified</span>
-                  </span>
+                  {product.verificationStatus === "generic-product" ? (
+                    <span className="text-brand-green font-medium flex items-center gap-1">
+                      <ShieldCheck className="w-3.5 h-3.5 text-brand-green" />
+                      <span>Field Equipment Spec</span>
+                    </span>
+                  ) : (
+                    <span className="text-brand-green font-medium flex items-center gap-1">
+                      <ShieldCheck className="w-3.5 h-3.5 text-brand-green" />
+                      <span>Institutional Equipment Spec</span>
+                    </span>
+                  )}
                 </div>
 
                 <div className="space-y-2.5 text-xs">
@@ -343,9 +344,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   )}
 
                   <div className="flex items-center justify-between">
-                    <span className="text-text-muted">Supply Channel:</span>
-                    <span className="text-text-primary text-xs sm:text-[13px]">
-                      Direct Quotation / Inquiry
+                    <span className="text-text-muted">Inquiry Channel:</span>
+                    <span className="text-text-primary text-xs sm:text-[13px] font-semibold text-emerald-800">
+                      WhatsApp Direct
                     </span>
                   </div>
 
@@ -364,10 +365,24 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     ) : (
                       <span className="text-text-primary text-xs flex items-center gap-1">
                         <FileText className="w-3.5 h-3.5 text-brand-green" />
-                        <span>Available on Inquiry</span>
+                        <span>Available on WhatsApp</span>
                       </span>
                     )}
                   </div>
+
+                  {product.manufacturerSource && (
+                    <div className="flex items-center justify-between">
+                      <span className="text-text-muted">Verified Reference:</span>
+                      <a
+                        href={product.manufacturerSource}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-brand-green hover:underline font-medium text-xs truncate max-w-[190px]"
+                      >
+                        <span>Official Source ↗</span>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -454,40 +469,65 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         </Section>
       )}
 
-      {/* 5. PRODUCT INQUIRY EXPERIENCE */}
+      {/* 5. WHATSAPP PRODUCT INQUIRY EXPERIENCE */}
       <Section
         id="inquiry-section"
         variant="default"
         className="border-t border-border/80 py-12 sm:py-18"
       >
         <Container className="max-w-3xl">
-          <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs font-sans text-brand-green mb-2 font-semibold">
-              <span className="w-2 h-2 rounded-full bg-brand-green" />
-              <span>Direct Procurement · Technical Inquiry</span>
+          <div className="p-8 sm:p-10 bg-surface border border-border/80 rounded-2xl shadow-xs space-y-6">
+            <div className="flex items-center gap-2 text-xs font-sans text-brand-green font-semibold">
+              <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
+              <span>Direct WhatsApp Inquiry</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-display text-text-primary tracking-[-0.025em]">
-              Need Details About This Equipment?
-            </h2>
-            <p className="mt-2 text-sm sm:text-base font-sans text-text-secondary leading-[1.6]">
-              Share the product reference, required specification or intended application. Pre-configured with reference parameters for{" "}
-              <strong className="text-text-primary font-semibold">
-                {product.name}
-              </strong>
-              {product.model ? ` (${product.model})` : ""}.
-            </p>
-          </div>
 
-          <InquiryForm
-            initialProduct={
-              product.model
-                ? `${product.name} [Model: ${product.model}]`
-                : product.name
-            }
-            initialProductModel={product.model}
-            initialCategory={product.category}
-            hideHeader
-          />
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-display text-text-primary tracking-[-0.025em]">
+                Inquire About {product.name}
+              </h2>
+              <p className="mt-2 text-sm sm:text-base font-sans text-text-secondary leading-[1.6]">
+                Connect directly with our engineering and procurement desk on WhatsApp. We provide prompt technical guidance, datasheets, institutional pricing, and availability confirmation.
+              </p>
+            </div>
+
+            <div className="p-4 sm:p-5 bg-surface-secondary/70 border border-border/70 rounded-xl space-y-2.5">
+              <div className="text-xs font-sans text-text-muted font-medium">
+                Your WhatsApp message will open prefilled with:
+              </div>
+              <div className="p-3 bg-surface border border-border/80 rounded-lg font-sans text-sm text-text-primary">
+                &ldquo;Hello Udyog Engineers India, I am interested in the {product.name}. Please share more details and availability.&rdquo;
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              <a
+                href={whatsAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="min-h-[50px] flex-1 inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-accent-whatsapp text-white font-sans text-[15px] font-semibold rounded-xl hover:bg-emerald-700 transition-colors shadow-xs"
+              >
+                <WhatsAppIcon className="w-5 h-5" />
+                <span>Inquire on WhatsApp</span>
+              </a>
+
+              <a
+                href={`tel:${siteConfig.contact.phones[0]?.international || siteConfig.contact.phone}`}
+                className="min-h-[50px] inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-surface-secondary border border-border/80 text-text-primary font-sans text-[15px] font-semibold rounded-xl hover:bg-surface-tertiary transition-colors"
+              >
+                <Phone className="w-4 h-4 text-brand-green" />
+                <span>Call {siteConfig.contact.phones[0]?.display || siteConfig.contact.phone}</span>
+              </a>
+            </div>
+
+            <div className="pt-4 border-t border-border/70 flex flex-wrap items-center justify-between gap-3 text-xs font-sans text-text-muted">
+              <span>Primary WhatsApp: +91 98183 20178</span>
+              <span>•</span>
+              <span>Secondary: +91 95559 03186</span>
+              <span>•</span>
+              <span>Official Email: {siteConfig.contact.email}</span>
+            </div>
+          </div>
         </Container>
       </Section>
 

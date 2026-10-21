@@ -71,7 +71,7 @@ export default function AboutPage() {
     <div className="bg-background min-h-screen">
       <PageHeader
         eyebrow="Organization Profile"
-        title="About Udyog Engineers"
+        title="About UDYOG ENGINEERS INDIA"
         subtitle="Professionally managed organization providing reliable, technically sound, and application-oriented solutions."
         breadcrumbs={[{ label: "About" }]}
       />

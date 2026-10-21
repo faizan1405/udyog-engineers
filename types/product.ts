@@ -45,7 +45,13 @@ export interface Product {
   /** Official manufacturer research reference */
   sourceUrl?: string;
   sourceManufacturer?: string;
-  verificationStatus?: "manufacturer-verified" | "pending" | "client-supplied";
+  manufacturerSource?: string;
+  verificationStatus?:
+    | "manufacturer-verified"
+    | "client-supplied-verification-pending"
+    | "generic-product"
+    | "pending"
+    | "client-supplied";
   /** Primary image accessible description */
   imageAlt?: string;
   /** Source URL for the verified product image */

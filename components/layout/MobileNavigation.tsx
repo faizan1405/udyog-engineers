@@ -15,10 +15,10 @@ const MOBILE_CATEGORIES = [
   { index: "02", name: "GPS", slug: "gps" },
   { index: "03", name: "Night Vision", slug: "night-vision" },
   { index: "04", name: "Thermal", slug: "thermal" },
-  { index: "05", name: "Geological Compass", slug: "geological-compass" },
+  { index: "05", name: "Geological Equipment", slug: "geological-equipment" },
   { index: "06", name: "Camping Equipment", slug: "camping-equipment" },
   { index: "07", name: "Weather Station", slug: "weather-station" },
-  { index: "08", name: "Forestry Items", slug: "forestry-items" },
+  { index: "08", name: "Camera Trap", slug: "camera-trap" },
 ];
 
 export function MobileNavigation() {
@@ -177,14 +177,16 @@ export function MobileNavigation() {
 
             {/* Bottom Conversion Actions */}
             <div className="mt-8 pt-6 border-t border-border flex flex-col gap-3">
-              <Link
-                href="/contact"
+              <a
+                href={buildWhatsAppInquiryUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="w-full inline-flex items-center justify-center min-h-[48px] px-5 bg-accent text-white font-sans font-semibold text-[15px] rounded-[2px] hover:bg-accent-hover transition-colors shadow-xs"
+                className="w-full inline-flex items-center justify-center gap-2 min-h-[48px] px-5 bg-accent-whatsapp text-white font-sans font-semibold text-[15px] rounded-xl hover:bg-emerald-700 transition-colors shadow-xs"
               >
-                <span>Send Inquiry</span>
-                <ArrowRight className="w-4 h-4 ml-1.5" />
-              </Link>
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>Inquire on WhatsApp</span>
+              </a>
 
               {/* Concise Verified Contact Bar */}
               <div className="grid grid-cols-2 gap-2">

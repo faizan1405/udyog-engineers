@@ -7,6 +7,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
+import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
 import Image from "next/image";
 import { HeroEquipmentPlate } from "./HeroEquipmentPlate";
 import { PRECISION_EASE, DURATION, STAGGER } from "@/lib/motion";
@@ -17,10 +18,10 @@ const CATEGORY_DISCIPLINES = [
   { index: "02", name: "GPS", slug: "gps", color: "#2563EB", imageSrc: "/images/generated/home/category-strip/category-strip-gps.webp" },
   { index: "03", name: "Night Vision", slug: "night-vision", color: "#4F46E5", imageSrc: "/images/generated/home/category-strip/category-strip-night-vision.webp" },
   { index: "04", name: "Thermal", slug: "thermal", color: "#EA580C", imageSrc: "/images/generated/home/category-strip/category-strip-thermal.webp" },
-  { index: "05", name: "Geological Compass", slug: "geological-compass", color: "#D97706", imageSrc: "/images/generated/home/category-strip/category-strip-geological-compass.webp" },
+  { index: "05", name: "Geological Equipment", slug: "geological-equipment", color: "#D97706", imageSrc: "/images/generated/home/category-strip/category-strip-geological-equipment.webp" },
   { index: "06", name: "Camping Equipment", slug: "camping-equipment", color: "#65A30D", imageSrc: "/images/generated/home/category-strip/category-strip-camping.webp" },
   { index: "07", name: "Weather Station", slug: "weather-station", color: "#0284C7", imageSrc: "/images/generated/home/category-strip/category-strip-weather.webp" },
-  { index: "08", name: "Forestry Items", slug: "forestry-items", color: "#16A34A", imageSrc: "/images/generated/home/category-strip/category-strip-forestry.webp" },
+  { index: "08", name: "Camera Trap", slug: "camera-trap", color: "#16A34A", imageSrc: "/images/generated/home/category-strip/category-strip-camera-trap.webp" },
 ];
 
 /**
@@ -166,9 +167,11 @@ export function Hero() {
           <div className="lg:col-span-7 flex flex-col justify-center">
             {/* 1. Single Small Eyebrow (No excessive mono badges) */}
             <motion.div variants={eyebrowVariants} className="order-1 mb-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-green/8 border border-brand-green/20 text-xs font-sans font-semibold text-brand-green shadow-2xs">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-green/8 border border-brand-green/20 text-xs font-sans font-semibold text-brand-green shadow-2xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-green" />
-                <span className="tracking-normal">Field &amp; Survey Technology</span>
+                <span className="tracking-wide uppercase font-bold text-text-primary">UDYOG ENGINEERS INDIA</span>
+                <span className="text-brand-green/50">•</span>
+                <span className="tracking-normal font-medium text-brand-green">Field &amp; Survey Technology</span>
               </div>
             </motion.div>
 
@@ -231,12 +234,12 @@ export function Hero() {
                 </Button>
               </div>
 
-              {/* Smaller Contextual WhatsApp Action */}
+              {/* Contextual WhatsApp Action */}
               <div className="mt-1 flex items-center gap-2 text-xs sm:text-[13px] text-text-muted">
                 <WhatsAppIcon className="w-4 h-4 text-[#25D366] shrink-0" />
                 <span className="font-sans">Quick assistance:</span>
                 <a
-                  href="https://wa.me/919818320178"
+                  href={buildWhatsAppInquiryUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans font-medium text-brand-green hover:text-brand-green-hover underline underline-offset-2 transition-colors"

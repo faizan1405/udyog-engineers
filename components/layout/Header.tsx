@@ -5,10 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { HeaderMegaMenu } from "./HeaderMegaMenu";
 import { MobileNavigation } from "./MobileNavigation";
 import { BrandLogo } from "@/components/ui/BrandLogo";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
+import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -112,14 +113,15 @@ export function Header() {
 
         {/* Action Controls & Mobile Trigger */}
         <div className="flex items-center gap-3">
-          <Button
-            href="/contact"
-            variant="primary"
-            size="sm"
-            className="hidden sm:inline-flex h-9 px-4 rounded-[2px] font-sans font-semibold text-[13px] bg-accent hover:bg-accent-hover text-white transition-colors shadow-xs"
+          <a
+            href={buildWhatsAppInquiryUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-1.5 h-9 px-4 rounded-xl font-sans font-semibold text-[13px] bg-accent-whatsapp hover:bg-emerald-700 text-white transition-colors shadow-xs"
           >
-            Send Inquiry
-          </Button>
+            <WhatsAppIcon className="w-3.5 h-3.5" />
+            <span>Inquire on WhatsApp</span>
+          </a>
 
           {/* Mobile Navigation Drawer */}
           <MobileNavigation />

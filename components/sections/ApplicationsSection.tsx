@@ -46,7 +46,7 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Equipment selected for forest resource observation, timber measurement, boundary reference, and field studies in woodland environments.",
     icon: Trees,
     primaryCategories: [
-      { name: "Forestry Items", slug: "forestry-items" },
+      { name: "Camera Trap", slug: "camera-trap" },
       { name: "Optics", slug: "optics" },
       { name: "GPS", slug: "gps" },
     ],
@@ -93,7 +93,7 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
     icon: Navigation,
     primaryCategories: [
       { name: "GPS", slug: "gps" },
-      { name: "Geological Compass", slug: "geological-compass" },
+      { name: "Geological Equipment", slug: "geological-equipment" },
       { name: "Optics", slug: "optics" },
     ],
     environmentalContext: [
@@ -115,7 +115,7 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
       "Compasses, inclinometers, and field optics for rock stratum characterization, strike and dip measurement, and geological site surveys.",
     icon: Compass,
     primaryCategories: [
-      { name: "Geological Compass", slug: "geological-compass" },
+      { name: "Geological Equipment", slug: "geological-equipment" },
       { name: "Optics", slug: "optics" },
       { name: "GPS", slug: "gps" },
     ],
@@ -186,7 +186,7 @@ const APPLICATION_DOMAINS: ApplicationDomain[] = [
     primaryCategories: [
       { name: "Optics", slug: "optics" },
       { name: "GPS", slug: "gps" },
-      { name: "Forestry Items", slug: "forestry-items" },
+      { name: "Camera Trap", slug: "camera-trap" },
     ],
     environmentalContext: [
       "Backcountry research stations",

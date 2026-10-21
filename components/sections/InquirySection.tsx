@@ -2,13 +2,13 @@
 
 import React from "react";
 import { Container } from "@/components/ui/Container";
-import { InquiryForm } from "@/components/forms/InquiryForm";
 import { siteConfig } from "@/config/site";
 import {
   FileText,
   Phone,
   Mail,
   MapPin,
+  CheckCircle2,
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
@@ -16,16 +16,14 @@ import { motion, useReducedMotion } from "framer-motion";
 import { PRECISION_EASE, DURATION } from "@/lib/motion";
 
 /**
- * INQUIRY & CONTACT CONVERSION SECTION (PHASE 4C)
+ * INQUIRY & CONTACT CONVERSION SECTION
  *
  * Primary conversion section of the homepage.
- * Communicates: Product Interest → Requirement → Inquiry → Team Follow-Up.
+ * Communicates: View Product → Direct WhatsApp Chat → Rapid Technical Follow-Up.
  *
  * Implements an architectural two-column composition:
  * Left: Process steps, procurement guidelines, and verified contacts.
- * Right: Structured equipment inquiry form panel.
- *
- * Adheres strictly to light mode tokens, zero fake claims, and WhatsApp safety.
+ * Right: High-converting WhatsApp Direct Consultation panel.
  */
 export function InquirySection() {
   const shouldReduceMotion = useReducedMotion();
@@ -40,6 +38,9 @@ export function InquirySection() {
   const hasConfiguredAddress =
     Boolean(siteConfig.contact.address.line1) &&
     !siteConfig.contact.address.line1.toUpperCase().includes("TODO");
+
+  const primaryWhatsAppUrl = buildWhatsAppInquiryUrl();
+  const secondaryWhatsAppUrl = buildWhatsAppInquiryUrl({}, "919555903186");
 
   return (
     <section
@@ -60,9 +61,9 @@ export function InquirySection() {
             <div className="flex items-center gap-2 font-sans text-xs text-accent-secondary mb-3 font-medium">
               <span className="font-mono font-semibold">06</span>
               <span>·</span>
-              <span className="font-semibold text-accent-secondary">Equipment Inquiry</span>
+              <span className="font-semibold text-accent-secondary">Equipment Consultation</span>
               <span className="text-border-strong">·</span>
-              <span className="text-text-muted">Direct Consultation</span>
+              <span className="text-text-muted">Direct WhatsApp Channel</span>
             </div>
             <h2
               id="inquiry-heading"
@@ -74,18 +75,14 @@ export function InquirySection() {
 
           <div className="max-w-md">
             <p className="font-sans text-base sm:text-lg text-text-secondary leading-[1.6]">
-              Share your requirement, product category, or application and the team can respond with relevant technical information and datasheets.
+              Share your requirement, product category, or application directly with our engineering team on WhatsApp for prompt datasheets and quotations.
             </p>
           </div>
         </motion.div>
 
-        {/* =========================================================================
-            TWO-COLUMN ARCHITECTURAL INQUIRY LAYOUT
-            Left (5 cols): Workflow Architecture & Procurement Protocol
-            Right (7 cols): Structured Form Panel
-           ========================================================================= */}
+        {/* TWO-COLUMN ARCHITECTURAL INQUIRY LAYOUT */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* LEFT: Inquiry Statement & 3-Step Coordination Flow */}
+          {/* LEFT: Inquiry Statement & 3-Step Coordination Flow (5 cols) */}
           <div className="lg:col-span-5 space-y-8">
             {/* The 3-Step Workflow */}
             <div className="space-y-6">
@@ -95,38 +92,38 @@ export function InquirySection() {
 
               <div className="space-y-4">
                 {/* Step 1 */}
-                <div className="flex items-start gap-4 p-4 rounded-[2px] border border-border bg-surface">
-                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
+                <div className="flex items-start gap-4 p-4 rounded-xl border border-border bg-surface">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-lg shrink-0">
                     01
                   </span>
                   <div>
                     <h3 className="font-display font-semibold text-base text-text-primary">
-                      Define Your Requirement
+                      Select Equipment or Discipline
                     </h3>
                     <p className="font-sans text-sm text-text-secondary mt-1 leading-[1.6]">
-                      Select an equipment category or describe the specific parameters, environment, and instruments your project requires.
+                      Explore our 94 verified instruments across 8 disciplines and click &ldquo;Inquire on WhatsApp&rdquo;.
                     </p>
                   </div>
                 </div>
 
                 {/* Step 2 */}
-                <div className="flex items-start gap-4 p-4 rounded-[2px] border border-border bg-surface">
-                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
+                <div className="flex items-start gap-4 p-4 rounded-xl border border-border bg-surface">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-lg shrink-0">
                     02
                   </span>
                   <div>
                     <h3 className="font-display font-semibold text-base text-text-primary">
-                      Specification &amp; Requirement Review
+                      Instant WhatsApp Chat
                     </h3>
                     <p className="font-sans text-sm text-text-secondary mt-1 leading-[1.6]">
-                      The team reviews your inquiry against available product references, specification parameters, and catalogue information.
+                      WhatsApp opens with a pre-formatted inquiry containing your selected model details.
                     </p>
                   </div>
                 </div>
 
                 {/* Step 3 */}
-                <div className="flex items-start gap-4 p-4 rounded-[2px] border border-border bg-surface">
-                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-[2px] shrink-0">
+                <div className="flex items-start gap-4 p-4 rounded-xl border border-border bg-surface">
+                  <span className="font-mono text-xs font-semibold text-accent-secondary px-2 py-1 bg-surface-secondary rounded-lg shrink-0">
                     03
                   </span>
                   <div>
@@ -134,7 +131,7 @@ export function InquirySection() {
                       Direct Team Follow-Up
                     </h3>
                     <p className="font-sans text-sm text-text-secondary mt-1 leading-[1.6]">
-                      Receive relevant equipment documentation, specifications, and coordination guidance directly from our team.
+                      Receive official technical datasheets, institutional quotations, and delivery guidance directly from our team.
                     </p>
                   </div>
                 </div>
@@ -142,25 +139,19 @@ export function InquirySection() {
             </div>
 
             {/* Requirement Inquiry Card */}
-            <div className="p-5 border border-border rounded-[2px] bg-surface relative overflow-hidden">
-              <span
-                aria-hidden="true"
-                className="absolute top-2 right-2 font-mono text-[10px] text-accent-secondary/40 select-none"
-              >
-                +
-              </span>
+            <div className="p-5 border border-border rounded-xl bg-surface relative overflow-hidden">
               <div className="flex items-center gap-2 mb-2 font-display text-sm font-semibold text-accent">
                 <FileText className="w-4 h-4" />
-                <span>Have a Specific Equipment Requirement?</span>
+                <span>Custom Tender or Research Specification?</span>
               </div>
               <p className="font-sans text-sm text-text-secondary leading-[1.6]">
-                Share the category, application, product reference or specification you are looking for. The team can review the inquiry and respond with relevant available information.
+                Message us with your tender parameters or accuracy tolerances. We assist Government Departments, PSUs, and universities across India.
               </p>
             </div>
 
             {/* Verified Direct Contact Channels */}
             {(hasConfiguredPhone || hasConfiguredEmail || hasConfiguredAddress) && (
-              <div className="p-5 border border-border rounded-[2px] bg-surface space-y-3.5">
+              <div className="p-5 border border-border rounded-xl bg-surface space-y-3.5">
                 <div className="flex items-center justify-between border-b border-border-subtle pb-2">
                   <span className="font-sans text-xs font-semibold text-text-primary">
                     Direct Contact Channels
@@ -203,10 +194,10 @@ export function InquirySection() {
                           <span>{p.display}</span>
                         </a>
                         <a
-                          href={buildWhatsAppInquiryUrl({}, p.whatsAppDigits) || "#"}
+                          href={buildWhatsAppInquiryUrl({}, p.whatsAppDigits)}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-secondary border border-border rounded-[2px] text-accent-whatsapp font-sans text-xs font-semibold hover:bg-surface-tertiary transition-colors"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-secondary border border-border rounded-lg text-accent-whatsapp font-sans text-xs font-semibold hover:bg-surface-tertiary transition-colors"
                           title={`Message ${p.display} on WhatsApp`}
                         >
                           <WhatsAppIcon className="w-3 h-3" />
@@ -230,24 +221,62 @@ export function InquirySection() {
             )}
           </div>
 
-          {/* RIGHT: Structured Inquiry Form Panel */}
+          {/* RIGHT: High-Converting WhatsApp Consultation Panel (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="relative">
-              {/* Corner crosshairs on container frame */}
-              <span
-                aria-hidden="true"
-                className="hidden sm:inline absolute -top-2.5 -left-2.5 font-mono text-[10px] text-accent-secondary/50 select-none z-10"
-              >
-                +
-              </span>
-              <span
-                aria-hidden="true"
-                className="hidden sm:inline absolute -top-2.5 -right-2.5 font-mono text-[10px] text-accent-secondary/50 select-none z-10"
-              >
-                +
-              </span>
+            <div className="p-8 sm:p-10 border border-border/80 bg-surface rounded-2xl shadow-xs space-y-6">
+              <div>
+                <div className="flex items-center gap-2 text-xs font-sans text-brand-green font-semibold mb-2">
+                  <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
+                  <span>Immediate Assistance</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-semibold font-display text-text-primary tracking-[-0.025em]">
+                  Start a WhatsApp Inquiry
+                </h3>
+                <p className="mt-2 text-sm sm:text-base font-sans text-text-secondary leading-[1.65]">
+                  Skip complicated forms. Connect directly with our equipment experts on WhatsApp for instant product specifications, quotation requests, and stock availability.
+                </p>
+              </div>
 
-              <InquiryForm />
+              <div className="space-y-3 pt-2">
+                <a
+                  href={primaryWhatsAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full min-h-[52px] inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-accent-whatsapp text-white font-sans text-base font-semibold rounded-xl hover:bg-emerald-700 transition-colors shadow-xs"
+                >
+                  <WhatsAppIcon className="w-5 h-5" />
+                  <span>Inquire on WhatsApp (Primary: 98183 20178)</span>
+                </a>
+
+                <a
+                  href={secondaryWhatsAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full min-h-[48px] inline-flex items-center justify-center gap-2.5 px-6 py-3 bg-surface-secondary border border-emerald-300 text-emerald-900 font-sans text-sm font-semibold rounded-xl hover:bg-emerald-50 transition-colors"
+                >
+                  <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
+                  <span>Inquire on WhatsApp (Secondary: 95559 03186)</span>
+                </a>
+              </div>
+
+              <div className="p-5 bg-surface-secondary/70 border border-border/70 rounded-xl space-y-3 text-xs font-sans text-text-secondary">
+                <div className="font-semibold text-text-primary text-sm flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-brand-green" />
+                  <span>Direct services provided:</span>
+                </div>
+                <ul className="space-y-2 pl-6 list-disc">
+                  <li>Instant equipment pricing and quotation issuance</li>
+                  <li>Official PDF technical datasheets and compliance certificates</li>
+                  <li>Delivery schedules across Indian institutional sites</li>
+                  <li>Bulk supply and tender documentation coordination</li>
+                </ul>
+              </div>
+
+              <div className="pt-4 border-t border-border/70 flex flex-wrap items-center justify-between gap-3 text-xs font-sans text-text-muted">
+                <span>Call Us Directly: +91 98183 20178</span>
+                <span>•</span>
+                <span>Email: {siteConfig.contact.email}</span>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "@/components/ui/Container";
+import { siteConfig } from "@/config/site";
 
 interface CredibilityPillar {
   index: string;
@@ -72,7 +73,7 @@ export function CredibilitySection() {
             <div className="flex items-center gap-2 font-sans text-xs text-accent-secondary mb-3 font-medium">
               <span className="font-mono font-semibold">05</span>
               <span>·</span>
-              <span className="font-semibold text-accent-secondary">Why Udyog Engineers</span>
+              <span className="font-semibold text-accent-secondary">Why {siteConfig.displayBrandName}</span>
               <span className="text-border-strong">·</span>
               <span className="text-text-muted">Core Capabilities</span>
             </div>
@@ -133,7 +134,7 @@ export function CredibilitySection() {
         {/* Footnote statement */}
         <div className="mt-10 pt-6 border-t border-border-subtle flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-sans text-text-muted">
           <div className="flex items-center gap-2">
-            <span className="text-accent-secondary font-semibold">Udyog Engineers</span>
+            <span className="text-accent-secondary font-semibold">{siteConfig.displayBrandName}</span>
             <span>·</span>
             <span className="text-text-secondary">Professionally Managed Engineering Partner</span>
           </div>

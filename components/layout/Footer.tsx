@@ -33,7 +33,7 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <span className="text-brand-green font-semibold">•</span>
               <span className="text-text-secondary">
-                Udyog Engineers · Precision Technical Instrumentation
+                {siteConfig.displayBrandName} · Precision Technical Instrumentation
               </span>
             </div>
             <div className="flex items-center gap-3">
@@ -54,8 +54,8 @@ export function Footer() {
               <BrandLogo size="lg" />
             </Link>
 
-            <div className="font-display font-semibold text-text-primary text-lg tracking-[-0.02em]">
-              {siteConfig.companyName}
+            <div className="font-display font-semibold text-text-primary text-xl tracking-[-0.02em]">
+              {siteConfig.displayBrandName}
             </div>
 
             <p className="text-sm font-sans text-text-secondary leading-relaxed max-w-sm">
@@ -129,7 +129,7 @@ export function Footer() {
                   href="/about"
                   className="text-text-secondary hover:text-accent transition-colors duration-150 ease-precision hover:underline inline-block py-0.5"
                 >
-                  About Udyog Engineers
+                  About {siteConfig.displayBrandName}
                 </Link>
               </li>
               <li>

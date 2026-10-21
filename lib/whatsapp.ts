@@ -9,7 +9,6 @@ export interface WhatsAppInquiryPayload {
 
 /**
  * Checks if an official WhatsApp phone number is configured in siteConfig.
- * Returns false if empty, undefined, placeholder, or containing 'TODO'.
  */
 export function isWhatsAppConfigured(): boolean {
   const rawNumber = siteConfig.contact.whatsAppNumber;
@@ -36,37 +35,34 @@ export function normalizeWhatsAppNumber(phone: string): string {
 }
 
 /**
- * Generates a formatted WhatsApp inquiry link based on product details or general inquiry.
+ * Generates an official WhatsApp inquiry link based on product details, category, or general inquiry.
  *
- * Sourced from `siteConfig.contact.whatsAppNumber` or an optional specific phone number.
- * If WhatsApp is unconfigured, returns `null` to avoid broken wa.me URLs.
+ * SPECIFICATION (CLIENT REQUIREMENT):
+ * - Primary WhatsApp number: +91 98183 20178 (wa.me/919818320178)
+ * - Secondary WhatsApp number: +91 95559 03186
+ * - Product format: "Hello Udyog Engineers India, I am interested in the {productName}. Please share more details and availability."
+ * - Category format: "Hello Udyog Engineers India, I am inquiring about equipment in the {categoryName} category. Please share available models and details."
+ * - General format: "Hello Udyog Engineers India, I would like to know more about your equipment and solutions. Please share your catalogue and details."
  */
 export function buildWhatsAppInquiryUrl(
   payload: WhatsAppInquiryPayload = {},
   targetNumber?: string
-): string | null {
-  if (!isWhatsAppConfigured()) {
-    return null;
-  }
-
-  const rawTarget = targetNumber || siteConfig.contact.whatsAppNumber;
+): string {
+  const rawTarget = targetNumber || siteConfig.contact.whatsAppNumber || "919818320178";
   const phoneNumber = normalizeWhatsAppNumber(rawTarget);
 
-  const { productName, productModel, categoryName, customMessage } = payload;
+  const { productName, categoryName, customMessage } = payload;
 
   let text = "";
 
   if (customMessage) {
     text = customMessage;
-  } else if (productName && productModel) {
-    text = `Hello, I am interested in ${productName} [${productModel}]. Please share more details.`;
   } else if (productName) {
-    text = `Hello, I am interested in ${productName}. Please share more details.`;
+    text = `Hello Udyog Engineers India, I am interested in the ${productName}. Please share more details and availability.`;
   } else if (categoryName) {
-    text = `Hello, I am inquiring about equipment in the "${categoryName}" category. Please share available catalogues.`;
+    text = `Hello Udyog Engineers India, I am inquiring about equipment in the ${categoryName} category. Please share available models and details.`;
   } else {
-    // Official client-specified general inquiry message (Phase 6C)
-    text = `Hello, I would like to know more about Udyog Engineers products and solutions.`;
+    text = `Hello Udyog Engineers India, I would like to know more about your equipment and solutions. Please share your catalogue and details.`;
   }
 
   const encodedText = encodeURIComponent(text);

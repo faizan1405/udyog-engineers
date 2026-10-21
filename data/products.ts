@@ -4761,6 +4761,4767 @@ export const PRODUCTS: Product[] = [
     "status": "development-placeholder",
     "isDemoPlaceholder": true
   }
+,
+  {
+    "id": "garmin-foretrex-701-ballistic",
+    "slug": "garmin-foretrex-701-ballistic",
+    "name": "Garmin Foretrex 701 Ballistic Edition",
+    "brand": "Garmin",
+    "series": "Foretrex",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "Wrist-Mounted GPS",
+    "subcategorySlug": "wrist-mounted-gps",
+    "model": "Foretrex 701 Ballistic Edition",
+    "manufacturer": "Garmin Ltd.",
+    "manufacturerSource": "https://www.garmin.co.in/products/outdoor/foretrex-701-ballistic-edition/",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin.co.in/products/outdoor/foretrex-701-ballistic-edition/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-foretrex-701-ballistic/hero.webp",
+    "gallery": [
+      "/images/products/garmin-foretrex-701-ballistic/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-foretrex-701-ballistic/hero.webp"
+    ],
+    "shortDescription": "Wrist-mounted GPS navigator built to military standards (MIL-STD-810G) with Applied Ballistics Elite software and night vision goggle compatibility.",
+    "description": "The Garmin Foretrex 701 Ballistic Edition is a durable, wrist-mounted GPS navigator designed for tactical operations and expedition navigation. Built to MIL-STD-810G standards for thermal, shock, and water resistance, it includes Applied Ballistics Elite calculation software for long-range aiming solutions. It supports GPS, GLONASS, and Galileo constellations, features dual-grid coordinates (MGRS), and is compatible with night vision goggles with over 48 hours battery life in navigation mode.",
+    "highlights": [
+      "Constructed to MIL-STD-810G thermal, shock, and water performance standards",
+      "Applied Ballistics Elite software calculates firing solutions for long-range shooting",
+      "Multi-GNSS reception: GPS, GLONASS, and Galileo satellite systems",
+      "Night vision goggle compatible display mode with tactical backlight",
+      "Dual-format GPS coordinates including MGRS and degrees/minutes",
+      "Battery life exceeds 48 hours in navigation mode on 2 AAA batteries"
+    ],
+    "keyHighlights": [
+      "Constructed to MIL-STD-810G thermal, shock, and water performance standards",
+      "Applied Ballistics Elite software calculates firing solutions for long-range shooting",
+      "Multi-GNSS reception: GPS, GLONASS, and Galileo satellite systems",
+      "Night vision goggle compatible display mode with tactical backlight",
+      "Dual-format GPS coordinates including MGRS and degrees/minutes",
+      "Battery life exceeds 48 hours in navigation mode on 2 AAA batteries"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "2.0 inches diagonal (200 x 320 pixels)",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "High-contrast monochrome transflective",
+        "group": "Display"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "GPS, GLONASS, Galileo",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "3-axis compass, barometric altimeter, accelerometer",
+        "group": "Sensors"
+      },
+      {
+        "label": "Water Rating",
+        "value": "IPX7 waterproof",
+        "group": "Durability"
+      },
+      {
+        "label": "Military Standards",
+        "value": "MIL-STD-810G thermal, shock, water",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Type",
+        "value": "2 AAA batteries (alkaline, NiMH, or lithium)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 48 hrs (GPS) / up to 1 week (UltraTrac)",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Applied Ballistics Elite solver onboard with bullet profile libraries",
+      "Dual position format displays both latitude/longitude and MGRS simultaneously",
+      "Smart notifications and automatic LiveTrack route sharing via Garmin Connect"
+    ],
+    "applications": [
+      "Hands-free tactical navigation and reconnaissance",
+      "Long-range expedition waypoint tracking",
+      "Institutional perimeter and geodetic coordinate logging"
+    ],
+    "relatedProducts": [
+      "garmin-foretrex-801",
+      "garmin-gpsmap-67",
+      "garmin-etrex-32x"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin Foretrex 701 Ballistic",
+    "imageAlt": "Garmin Foretrex 701 Ballistic Edition wrist-mounted GPS navigator"
+  },
+  {
+    "id": "garmin-foretrex-801",
+    "slug": "garmin-foretrex-801",
+    "name": "Garmin Foretrex 801",
+    "brand": "Garmin",
+    "series": "Foretrex",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "Wrist-Mounted GPS",
+    "subcategorySlug": "wrist-mounted-gps",
+    "model": "Foretrex 801",
+    "manufacturer": "Garmin Ltd.",
+    "manufacturerSource": "https://www.garmin.co.in/products/outdoor/foretrex-801/",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin.co.in/products/outdoor/foretrex-801/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-foretrex-801/hero.webp",
+    "gallery": [
+      "/images/products/garmin-foretrex-801/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-foretrex-801/hero.webp"
+    ],
+    "shortDescription": "Next-generation wrist-mounted GPS navigator featuring multi-band GNSS, tactical stealth mode, kill switch, and up to 100 hours of battery life in navigation mode.",
+    "description": "The Garmin Foretrex 801 is a mission-ready wrist-mounted GPS navigator engineered for elite outdoor teams, survey specialists, and defense personnel. Powered by upgraded multi-band GNSS for pinpoint tracking under dense canopy and mountainous terrain, the unit features tactical stealth mode (stops storing/sharing GPS data) and a kill switch to wipe device memory instantly in secure scenarios. With an IPX7 water rating and MIL-STD-810 thermal/shock compliance, the Foretrex 801 provides up to 100 hours of navigation battery life on 2 replaceable AAA batteries.",
+    "highlights": [
+      "Upgraded multi-band GNSS reception with multi-frequency positioning accuracy",
+      "Stealth mode stops logging GPS data while disabling RF wireless connectivity",
+      "Kill switch feature wipes user memory instantly in security-sensitive situations",
+      "Built to MIL-STD-810 standards for thermal, shock, and water resistance",
+      "Up to 100 hours battery life in GPS navigation mode / 1000 hours in Expedition mode",
+      "Night vision goggle compatible high-contrast 2.2-inch transflective screen"
+    ],
+    "keyHighlights": [
+      "Upgraded multi-band GNSS reception with multi-frequency positioning accuracy",
+      "Stealth mode stops logging GPS data while disabling RF wireless connectivity",
+      "Kill switch feature wipes user memory instantly in security-sensitive situations",
+      "Built to MIL-STD-810 standards for thermal, shock, and water resistance",
+      "Up to 100 hours battery life in GPS navigation mode / 1000 hours in Expedition mode",
+      "Night vision goggle compatible high-contrast 2.2-inch transflective screen"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "2.2 inches diagonal (320 x 240 pixels)",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "Monochrome transflective MIP",
+        "group": "Display"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "Multi-band GPS, GLONASS, Galileo, BeiDou",
+        "group": "Positioning"
+      },
+      {
+        "label": "Tactical Utilities",
+        "value": "Stealth Mode, Kill Switch, Jumpmaster, Dual Grid",
+        "group": "Utilities"
+      },
+      {
+        "label": "Water Rating",
+        "value": "IPX7",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 100 hrs (GPS) / 1000 hrs (Expedition)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Type",
+        "value": "2 AAA batteries (field replaceable)",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Multi-band GNSS technology maximizes positional accuracy in complex terrain",
+      "Tactical Kill Switch deletes all device memory at the press of a button",
+      "Garmin Explore mobile app integration for wireless route and waypoint planning"
+    ],
+    "applications": [
+      "Hands-free tactical boundary and perimeter patrol",
+      "Expedition navigation in extreme cold/heat environments",
+      "Scientific field transects in remote mountainous locations"
+    ],
+    "relatedProducts": [
+      "garmin-foretrex-701-ballistic",
+      "garmin-gpsmap-67",
+      "garmin-tactix-7-amoled"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin Foretrex 801",
+    "imageAlt": "Garmin Foretrex 801 multi-band wrist-mounted GPS navigator"
+  },
+  {
+    "id": "garmin-etrex-se",
+    "slug": "garmin-etrex-se",
+    "name": "Garmin eTrex SE",
+    "brand": "Garmin",
+    "series": "eTrex",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
+    "model": "eTrex SE",
+    "manufacturer": "Garmin Ltd.",
+    "manufacturerSource": "https://www.garmin.co.in/products/outdoor/etrex-se/",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin.co.in/products/outdoor/etrex-se/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-etrex-se/hero.webp",
+    "gallery": [
+      "/images/products/garmin-etrex-se/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-etrex-se/hero.webp"
+    ],
+    "shortDescription": "Modern handheld GPS with 2.2-inch high-contrast monochrome display, multi-GNSS support, digital compass, and up to 168 hours of standard battery life.",
+    "description": "The Garmin eTrex SE is an intuitive, battery-efficient handheld GPS navigator engineered for extended field mapping and wilderness exploration. Distinct from color touchscreen models, the eTrex SE features a 2.2-inch crisp high-contrast monochrome screen readable in direct sunlight. Supporting multi-GNSS satellite constellations (GPS, GLONASS, Galileo, BeiDou, QZSS), it provides rapid signal lock even in remote valleys. Offering up to 168 hours of battery life in standard tracking mode and up to 1,800 hours in expedition mode on 2 standard AA batteries, the eTrex SE connects with the Garmin Explore app for seamless waypoint management and geocaching.",
+    "highlights": [
+      "2.2-inch sunlight-readable high-contrast monochrome display",
+      "Multi-GNSS reception across GPS, GLONASS, Galileo, BeiDou, and QZSS",
+      "Up to 168 hours battery life in standard mode / 1,800 hours in Expedition mode",
+      "Digital compass provides accurate heading even while stationary",
+      "Wireless pairing with Garmin Explore app for cloud synchronization and live updates",
+      "IPX7 water-resistant rugged chassis with USB-C wired interface"
+    ],
+    "keyHighlights": [
+      "2.2-inch sunlight-readable high-contrast monochrome display",
+      "Multi-GNSS reception across GPS, GLONASS, Galileo, BeiDou, and QZSS",
+      "Up to 168 hours battery life in standard mode / 1,800 hours in Expedition mode",
+      "Digital compass provides accurate heading even while stationary",
+      "Wireless pairing with Garmin Explore app for cloud synchronization and live updates",
+      "IPX7 water-resistant rugged chassis with USB-C wired interface"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "2.2 inches (240 x 320 pixels)",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "Transflective monochrome MIP",
+        "group": "Display"
+      },
+      {
+        "label": "GNSS Constellations",
+        "value": "GPS, GLONASS, Galileo, BeiDou, QZSS",
+        "group": "Positioning"
+      },
+      {
+        "label": "Digital Compass",
+        "value": "Yes (tilt-compensated heading)",
+        "group": "Sensors"
+      },
+      {
+        "label": "Battery Life",
+        "value": "168 hrs (Standard) / 1,800 hrs (Expedition)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Type",
+        "value": "2 AA batteries (lithium/alkaline/NiMH)",
+        "group": "Power"
+      },
+      {
+        "label": "Interface",
+        "value": "USB-C, Bluetooth",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Water Rating",
+        "value": "IPX7",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "Extended battery architecture delivers weeks of continuous backcountry operation",
+      "Multi-GNSS capability ensures uninterrupted satellite tracking under canopy cover",
+      "Pairing with Garmin Explore mobile application enables real-time weather and cloud route backups"
+    ],
+    "applications": [
+      "Field forestry boundary and plot inspection",
+      "Long-duration ecological mapping expeditions",
+      "Educational and institutional survey fieldwork"
+    ],
+    "relatedProducts": [
+      "garmin-etrex-32x",
+      "garmin-gpsmap-67",
+      "garmin-gps-12h"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin eTrex SE",
+    "imageAlt": "Garmin eTrex SE monochrome multi-GNSS handheld GPS navigator"
+  },
+  {
+    "id": "garmin-fenix-7x-pro-sapphire-solar",
+    "slug": "garmin-fenix-7x-pro-sapphire-solar",
+    "name": "Garmin fēnix 7X Pro – Sapphire Solar Edition",
+    "brand": "Garmin",
+    "series": "fēnix",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "GPS Smartwatches & Wearables",
+    "subcategorySlug": "gps-smartwatches-wearables",
+    "model": "fēnix 7X Pro – Sapphire Solar (010-02778-11)",
+    "manufacturer": "Garmin Ltd.",
+    "manufacturerSource": "https://www.garmin-india.com/p/010-02778-11",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin-india.com/p/010-02778-11",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-fenix-7x-pro-sapphire-solar/hero.webp",
+    "gallery": [
+      "/images/products/garmin-fenix-7x-pro-sapphire-solar/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-fenix-7x-pro-sapphire-solar/hero.webp"
+    ],
+    "shortDescription": "Ultimate 51 mm multisport GPS smartwatch with scratch-resistant sapphire solar charging lens, built-in multi-LED flashlight, SatIQ multi-band GNSS, and preloaded TopoActive maps.",
+    "description": "The Garmin fēnix 7X Pro – Sapphire Solar Edition (Part Number: 010-02778-11) is the quintessential multisport GPS smartwatch built for demanding expeditions, military operations, and field sciences. Featuring a resilient 51 mm fiber-reinforced polymer chassis with a titanium bezel and Power Sapphire solar-charging lens, it delivers up to 37 days of battery life in smartwatch mode. Integrated multi-band GPS with SatIQ technology delivers exceptional positioning accuracy while conserving battery. Complete with preloaded routable TopoActive maps, 32 GB internal storage, an integrated variable-intensity LED flashlight with red safety beacon, and comprehensive physiological telemetry.",
+    "highlights": [
+      "Power Sapphire solar-charging lens extends battery life up to 37 days in smartwatch mode",
+      "Built-in multi-LED flashlight with variable intensities, strobe, and red safety mode",
+      "Multi-band GPS receiver with SatIQ technology automatically optimizes positioning accuracy",
+      "Rugged 51 mm titanium bezel with fiber-reinforced polymer casing tested to MIL-STD-810",
+      "Preloaded routable TopoActive maps and worldwide ski/golf resort maps with Wi-Fi downloads",
+      "Advanced training metrics, hill score, endurance score, and 24/7 health monitoring"
+    ],
+    "keyHighlights": [
+      "Power Sapphire solar-charging lens extends battery life up to 37 days in smartwatch mode",
+      "Built-in multi-LED flashlight with variable intensities, strobe, and red safety mode",
+      "Multi-band GPS receiver with SatIQ technology automatically optimizes positioning accuracy",
+      "Rugged 51 mm titanium bezel with fiber-reinforced polymer casing tested to MIL-STD-810",
+      "Preloaded routable TopoActive maps and worldwide ski/golf resort maps with Wi-Fi downloads",
+      "Advanced training metrics, hill score, endurance score, and 24/7 health monitoring"
+    ],
+    "specifications": [
+      {
+        "label": "Lens Material",
+        "value": "Power Sapphire (scratch-resistant sapphire + solar)",
+        "group": "Hardware"
+      },
+      {
+        "label": "Bezel Material",
+        "value": "Titanium",
+        "group": "Hardware"
+      },
+      {
+        "label": "Case Size",
+        "value": "51 x 51 x 14.9 mm (fits wrists 127-210 mm)",
+        "group": "Dimensions"
+      },
+      {
+        "label": "Display Size",
+        "value": "1.4 inches diagonal (280 x 280 pixels)",
+        "group": "Display"
+      },
+      {
+        "label": "Display Type",
+        "value": "Sunlight-visible, transflective memory-in-pixel (MIP)",
+        "group": "Display"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in LED flashlight (white / red light modes)",
+        "group": "Utilities"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 37 days with solar (Smartwatch) / up to 122 hrs with solar (GPS)",
+        "group": "Power"
+      },
+      {
+        "label": "Water Rating",
+        "value": "10 ATM (100 meters)",
+        "group": "Durability"
+      },
+      {
+        "label": "Memory",
+        "value": "32 GB internal storage",
+        "group": "Storage"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth, ANT+, Wi-Fi",
+        "group": "Connectivity"
+      }
+    ],
+    "features": [
+      "Solar charging Power Sapphire glass harnesses sunlight for weeks of continuous operation",
+      "SatIQ technology dynamically determines optimal satellite mode based on environmental signal strength",
+      "Integrated multi-LED flashlight provides quick illumination for camp setup and safety signaling"
+    ],
+    "applications": [
+      "Institutional wilderness fieldwork and mountaineering navigation",
+      "Remote multi-day topographical exploration and GPS tracklogging",
+      "Tactical night operations and dual-format coordinate verification"
+    ],
+    "relatedProducts": [
+      "garmin-fenix-8-solar-51mm",
+      "garmin-enduro-3",
+      "garmin-tactix-7-amoled"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Garmin fēnix 7X Pro Sapphire Solar",
+    "imageAlt": "Garmin fēnix 7X Pro Sapphire Solar Edition 51 mm titanium GPS smartwatch"
+  },
+  {
+    "id": "hikmicro-ai56",
+    "slug": "hikmicro-ai56",
+    "name": "HIKMICRO AI56 Acoustic Camera",
+    "brand": "HIKMICRO",
+    "series": "AI Series",
+    "category": "Thermal",
+    "categorySlug": "thermal",
+    "subcategory": "Acoustic Imaging",
+    "subcategorySlug": "acoustic-imaging",
+    "model": "AI56 Acoustic Camera",
+    "manufacturer": "HIKMICRO Technology Co., Ltd.",
+    "manufacturerSource": "https://www.hikmicrotech.com/en/industrial-products/ai56-acoustic-camera/",
+    "sourceManufacturer": "HIKMICRO Technology Co., Ltd.",
+    "sourceUrl": "https://www.hikmicrotech.com/en/industrial-products/ai56-acoustic-camera/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/hikmicro-ai56/hero.webp",
+    "gallery": [
+      "/images/products/hikmicro-ai56/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/hikmicro-ai56/hero.webp"
+    ],
+    "shortDescription": "High-precision acoustic imaging camera equipped with 64 low-noise MEMS microphones for real-time visualization of compressed gas leaks, vacuum leaks, and electrical partial discharge.",
+    "description": "The HIKMICRO AI56 is an advanced acoustic imaging camera designed for industrial diagnostic and facility inspection teams. It utilizes an array of 64 low-noise MEMS microphones spanning a 2 kHz to 60 kHz frequency range to capture sound pressure waves and overlay real-time sound intensity contours over an optical image. This allows technicians to locate pressurized air leaks, gas pipe leaks, steam trap failures, and electrical partial discharge (corona, floating, surface) from up to 100 meters away. Featuring a 4.3-inch LCD touchscreen with 800 x 480 resolution and up to 3.5 hours of continuous battery runtime.",
+    "highlights": [
+      "Acoustic imaging camera (NOT thermal) for visualizing sound signatures and acoustic leaks",
+      "64 low-noise MEMS microphone array with real-time sound field overlay",
+      "Broad acoustic frequency detection range from 2 kHz to 60 kHz",
+      "Long-distance acoustic detection range reaching up to 100 meters",
+      "Automatic leak quantification calculates flow rate and estimated cost loss in real time",
+      "Partial discharge detection classifies corona, floating, surface, and particle discharges"
+    ],
+    "keyHighlights": [
+      "Acoustic imaging camera (NOT thermal) for visualizing sound signatures and acoustic leaks",
+      "64 low-noise MEMS microphone array with real-time sound field overlay",
+      "Broad acoustic frequency detection range from 2 kHz to 60 kHz",
+      "Long-distance acoustic detection range reaching up to 100 meters",
+      "Automatic leak quantification calculates flow rate and estimated cost loss in real time",
+      "Partial discharge detection classifies corona, floating, surface, and particle discharges"
+    ],
+    "specifications": [
+      {
+        "label": "Instrument Type",
+        "value": "Acoustic Imaging Camera (Sound Visualization)",
+        "group": "Acoustics"
+      },
+      {
+        "label": "Number of Microphones",
+        "value": "64 low-noise MEMS microphones",
+        "group": "Acoustics"
+      },
+      {
+        "label": "Frequency Bandwidth",
+        "value": "2 kHz to 60 kHz (adjustable)",
+        "group": "Acoustics"
+      },
+      {
+        "label": "Detection Distance",
+        "value": "0.3 m to 100 m",
+        "group": "Performance"
+      },
+      {
+        "label": "Optical Camera",
+        "value": "8 MP resolution",
+        "group": "Imaging"
+      },
+      {
+        "label": "Display",
+        "value": "4.3-inch LCD touchscreen (800 x 480)",
+        "group": "Display"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 3.5 hours continuous operation",
+        "group": "Power"
+      },
+      {
+        "label": "Ingress Rating",
+        "value": "IP54",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "Real-time acoustic sound field contour superimposed onto visible high-resolution optical video",
+      "On-board leak estimation software reports flow rate in l/min and evaluates annual monetary loss",
+      "PRPD (Phase Resolved Partial Discharge) spectrum analysis identifies high-voltage insulation failures"
+    ],
+    "applications": [
+      "Industrial compressed air and inert gas leak localization",
+      "High-voltage electrical substation partial discharge inspection",
+      "Mechanical bearing vibration noise diagnostic assessments"
+    ],
+    "relatedProducts": [
+      "hikmicro-eco",
+      "hikmicro-eco-v",
+      "hikmicro-fb21"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About HIKMICRO AI56 Acoustic Camera",
+    "imageAlt": "HIKMICRO AI56 acoustic imaging camera with 64 MEMS microphone array"
+  },
+  {
+    "id": "hikmicro-fb21",
+    "slug": "hikmicro-fb21",
+    "name": "HIKMICRO FB21 Firefighting Thermal Camera",
+    "brand": "HIKMICRO",
+    "series": "FB Series",
+    "category": "Thermal",
+    "categorySlug": "thermal",
+    "subcategory": "Firefighting Thermal Imaging",
+    "subcategorySlug": "firefighting-thermal",
+    "model": "FB21 Firefighting Camera",
+    "manufacturer": "HIKMICRO Technology Co., Ltd.",
+    "manufacturerSource": "https://www.hikmicrotech.com/en/industrial-products/fb-series-firefighting-handheld-thermal-camera/",
+    "sourceManufacturer": "HIKMICRO Technology Co., Ltd.",
+    "sourceUrl": "https://www.hikmicrotech.com/en/industrial-products/fb-series-firefighting-handheld-thermal-camera/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/hikmicro-fb21/hero.webp",
+    "gallery": [
+      "/images/products/hikmicro-fb21/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/hikmicro-fb21/hero.webp"
+    ],
+    "shortDescription": "Purpose-built handheld firefighting thermal imaging camera featuring 256 x 192 IR resolution, flame-retardant chassis, 2-meter drop test rating, and high-temp measurement up to 550°C.",
+    "description": "The HIKMICRO FB21 is an NFPA-inspired handheld thermal imaging camera engineered specifically for first responders, municipal firefighting departments, and industrial rescue teams. Delivering 256 x 192 infrared resolution with a sensitive NETD < 40 mK, the FB21 enables firefighters to see through dense smoke, locate hidden embers, and navigate pitch-black structural interiors. It provides a wide temperature measurement range from -20°C to 550°C, housed inside an IP67 waterproof and 2-meter drop-tested flame-retardant enclosure with large physical buttons operable with heavy firefighting gloves.",
+    "highlights": [
+      "256 x 192 IR resolution sensor with NETD < 40 mK thermal sensitivity",
+      "Wide temperature measurement range: -20°C to 550°C (-4°F to 1022°F)",
+      "Robust IP67 enclosure rated for 2-meter drop tests and flame-retardant durability",
+      "Smooth 25 Hz frame rate for fluid real-time motion tracking in smoke",
+      "Dedicated Firefighting color palettes: Basic, Black Hot, White Hot, and Fire Detection",
+      "Large glove-friendly control buttons and high-output LED inspection worklight"
+    ],
+    "keyHighlights": [
+      "256 x 192 IR resolution sensor with NETD < 40 mK thermal sensitivity",
+      "Wide temperature measurement range: -20°C to 550°C (-4°F to 1022°F)",
+      "Robust IP67 enclosure rated for 2-meter drop tests and flame-retardant durability",
+      "Smooth 25 Hz frame rate for fluid real-time motion tracking in smoke",
+      "Dedicated Firefighting color palettes: Basic, Black Hot, White Hot, and Fire Detection",
+      "Large glove-friendly control buttons and high-output LED inspection worklight"
+    ],
+    "specifications": [
+      {
+        "label": "IR Resolution",
+        "value": "256 x 192 pixels (49,152 pixels)",
+        "group": "Thermal"
+      },
+      {
+        "label": "NETD (Thermal Sensitivity)",
+        "value": "< 40 mK (@ 25°C, F#=1.0)",
+        "group": "Thermal"
+      },
+      {
+        "label": "Frame Rate",
+        "value": "25 Hz",
+        "group": "Thermal"
+      },
+      {
+        "label": "Temperature Range",
+        "value": "-20°C to 550°C (-4°F to 1022°F)",
+        "group": "Performance"
+      },
+      {
+        "label": "Field of View (FOV)",
+        "value": "37.2° x 50.0°",
+        "group": "Optics"
+      },
+      {
+        "label": "Drop Test",
+        "value": "2 meters (6.56 feet)",
+        "group": "Durability"
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IP67",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Operating Time",
+        "value": "Up to 6 hours continuous operation",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Dedicated fire color palettes automatically highlight extreme temperature danger zones",
+      "Heavy-duty flame-retardant grip ensures reliable handling under intense heat",
+      "Fast 25 Hz image refresh enables immediate identification of structural escape paths"
+    ],
+    "applications": [
+      "Structural interior search and rescue in zero-visibility smoke",
+      "Wildfire mop-up and hidden smoldering root/ember detection",
+      "Industrial plant high-temperature hazard monitoring"
+    ],
+    "relatedProducts": [
+      "seek-firepro-300",
+      "hikmicro-ai56",
+      "hikmicro-eco"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About HIKMICRO FB21 Firefighting Camera",
+    "imageAlt": "HIKMICRO FB21 firefighting handheld thermal imaging camera"
+  },
+  {
+    "id": "hikmicro-eco",
+    "slug": "hikmicro-eco",
+    "name": "HIKMICRO ECO Handheld Infrared Camera",
+    "brand": "HIKMICRO",
+    "series": "ECO Series",
+    "category": "Thermal",
+    "categorySlug": "thermal",
+    "subcategory": "Handheld Thermal Imaging",
+    "subcategorySlug": "handheld-thermal",
+    "model": "ECO Handheld Thermal Camera",
+    "manufacturer": "HIKMICRO Technology Co., Ltd.",
+    "manufacturerSource": "https://www.hikmicrotech.com/en/industrial-products/eco-eco-v-handheld-infrared-camera/",
+    "sourceManufacturer": "HIKMICRO Technology Co., Ltd.",
+    "sourceUrl": "https://www.hikmicrotech.com/en/industrial-products/eco-eco-v-handheld-infrared-camera/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/hikmicro-eco/hero.webp",
+    "gallery": [
+      "/images/products/hikmicro-eco/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/hikmicro-eco/hero.webp"
+    ],
+    "shortDescription": "Compact handheld thermal imaging camera featuring 96 x 96 IR resolution (enhanced to 240 x 240 SuperIR), 50° wide field of view, 25 Hz frame rate, and 8-hour battery runtime.",
+    "description": "The HIKMICRO ECO is a highly responsive, ergonomic handheld thermal imaging camera engineered for building diagnostics, HVAC troubleshooting, electrical panel maintenance, and mechanical inspection. Delivering a native 96 x 96 IR detector resolution enhanced to 240 x 240 via SuperIR technology, the ECO captures temperature differentials with < 50 mK sensitivity across a -20°C to 550°C range. Its wide 50° x 50° FOV allows expansive scene coverage at close distances, backed by an IP54-rated, 2-meter drop-tested enclosure and up to 8 hours of battery runtime.",
+    "highlights": [
+      "96 x 96 IR resolution upgraded to 240 x 240 with real-time SuperIR enhancement",
+      "Smooth 25 Hz frame rate provides blur-free live panning and target inspection",
+      "Expansive 50° x 50° field of view captures large electrical cabinets in one frame",
+      "Temperature measurement range spanning -20°C to 550°C with ±2°C accuracy",
+      "Long-lasting 8-hour continuous battery life on a single charge",
+      "Rugged IP54 rating with certified 2-meter drop resistance"
+    ],
+    "keyHighlights": [
+      "96 x 96 IR resolution upgraded to 240 x 240 with real-time SuperIR enhancement",
+      "Smooth 25 Hz frame rate provides blur-free live panning and target inspection",
+      "Expansive 50° x 50° field of view captures large electrical cabinets in one frame",
+      "Temperature measurement range spanning -20°C to 550°C with ±2°C accuracy",
+      "Long-lasting 8-hour continuous battery life on a single charge",
+      "Rugged IP54 rating with certified 2-meter drop resistance"
+    ],
+    "specifications": [
+      {
+        "label": "Thermal Detector",
+        "value": "96 x 96 pixels (SuperIR 240 x 240)",
+        "group": "Thermal"
+      },
+      {
+        "label": "Thermal Sensitivity (NETD)",
+        "value": "< 50 mK (@ 25°C, F#=1.0)",
+        "group": "Thermal"
+      },
+      {
+        "label": "Frame Rate",
+        "value": "25 Hz",
+        "group": "Thermal"
+      },
+      {
+        "label": "Field of View (FOV)",
+        "value": "50.0° x 50.0°",
+        "group": "Optics"
+      },
+      {
+        "label": "Temperature Range",
+        "value": "-20°C to 550°C (-4°F to 1022°F)",
+        "group": "Performance"
+      },
+      {
+        "label": "Laser Pointer",
+        "value": "Yes (Class II)",
+        "group": "Utilities"
+      },
+      {
+        "label": "Display",
+        "value": "2.4-inch LCD (320 x 240)",
+        "group": "Display"
+      },
+      {
+        "label": "Battery Runtime",
+        "value": "Up to 8 hours continuous",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "SuperIR image processing technology dynamically boosts image resolution and edge clarity",
+      "Full-screen auto-tracking highlights maximum and minimum temperature points instantly",
+      "Built-in laser pointer simplifies precise alignment on small electrical breakers"
+    ],
+    "applications": [
+      "Electrical distribution switchgear and breaker thermal auditing",
+      "HVAC ductwork and insulation heat-loss inspection",
+      "Mechanical motor and conveyor bearing overheating diagnosis"
+    ],
+    "relatedProducts": [
+      "hikmicro-eco-v",
+      "seek-reveal-300",
+      "hikmicro-ai56"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About HIKMICRO ECO",
+    "imageAlt": "HIKMICRO ECO handheld infrared camera with SuperIR"
+  },
+  {
+    "id": "hikmicro-eco-v",
+    "slug": "hikmicro-eco-v",
+    "name": "HIKMICRO ECO-V Handheld Infrared Camera",
+    "brand": "HIKMICRO",
+    "series": "ECO Series",
+    "category": "Thermal",
+    "categorySlug": "thermal",
+    "subcategory": "Handheld Thermal Imaging",
+    "subcategorySlug": "handheld-thermal",
+    "model": "ECO-V Handheld Thermal Camera",
+    "manufacturer": "HIKMICRO Technology Co., Ltd.",
+    "manufacturerSource": "https://www.hikmicrotech.com/en/industrial-products/eco-eco-v-handheld-infrared-camera/",
+    "sourceManufacturer": "HIKMICRO Technology Co., Ltd.",
+    "sourceUrl": "https://www.hikmicrotech.com/en/industrial-products/eco-eco-v-handheld-infrared-camera/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/hikmicro-eco-v/hero.webp",
+    "gallery": [
+      "/images/products/hikmicro-eco-v/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/hikmicro-eco-v/hero.webp"
+    ],
+    "shortDescription": "Dual-sensor handheld thermal camera adding a 0.3 MP visible light camera for thermal fusion, Picture-in-Picture, and visual reference inspection.",
+    "description": "The HIKMICRO ECO-V builds upon the proven ECO platform by integrating a dedicated 0.3 MP visible optical camera alongside its 96 x 96 (SuperIR 240 x 240) infrared sensor. This bi-spectrum architecture enables dual-image fusion, Picture-in-Picture (PIP), and visual comparison modes, making it significantly easier to document inspected components in technical audit reports. Spanning a -20°C to 550°C measurement range with a 50° FOV, 25 Hz refresh rate, and 8 hours of battery life, the ECO-V provides unmatched diagnostic clarity for industrial maintenance.",
+    "highlights": [
+      "Dual-camera architecture: 96 x 96 IR sensor + 0.3 MP visible light camera",
+      "SuperIR technology elevates thermal detail up to 240 x 240 resolution",
+      "Four imaging modes: Thermal, Visual, Picture-in-Picture (PIP), and Fusion",
+      "Wide 50° x 50° field of view captures broad industrial machinery scenes",
+      "Smooth 25 Hz frame rate ensures natural motion during real-time sweeps",
+      "Up to 8 hours battery life with USB-C charging and 2-meter drop protection"
+    ],
+    "keyHighlights": [
+      "Dual-camera architecture: 96 x 96 IR sensor + 0.3 MP visible light camera",
+      "SuperIR technology elevates thermal detail up to 240 x 240 resolution",
+      "Four imaging modes: Thermal, Visual, Picture-in-Picture (PIP), and Fusion",
+      "Wide 50° x 50° field of view captures broad industrial machinery scenes",
+      "Smooth 25 Hz frame rate ensures natural motion during real-time sweeps",
+      "Up to 8 hours battery life with USB-C charging and 2-meter drop protection"
+    ],
+    "specifications": [
+      {
+        "label": "Thermal Detector",
+        "value": "96 x 96 pixels (SuperIR 240 x 240)",
+        "group": "Thermal"
+      },
+      {
+        "label": "Optical Camera",
+        "value": "0.3 MP (640 x 480 pixels)",
+        "group": "Imaging"
+      },
+      {
+        "label": "Image Modes",
+        "value": "Thermal, Visual, Picture-in-Picture, Fusion",
+        "group": "Imaging"
+      },
+      {
+        "label": "Thermal Sensitivity",
+        "value": "< 50 mK (@ 25°C, F#=1.0)",
+        "group": "Thermal"
+      },
+      {
+        "label": "Frame Rate",
+        "value": "25 Hz",
+        "group": "Thermal"
+      },
+      {
+        "label": "Temperature Range",
+        "value": "-20°C to 550°C (-4°F to 1022°F)",
+        "group": "Performance"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 8 hours continuous",
+        "group": "Power"
+      },
+      {
+        "label": "Ingress Rating",
+        "value": "IP54 (2-meter drop tested)",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "Bi-spectrum Picture-in-Picture mode overlays thermal anomalies onto clear physical context",
+      "High/Low temperature auto-tracking alerts operators to critical hot spots instantly",
+      "Internal 4 GB eMMC flash memory stores up to 30,000 thermal and visible images"
+    ],
+    "applications": [
+      "Facility building diagnostics and electrical panel documentation",
+      "Commercial HVAC air-handler and ductwork leak assessment",
+      "Manufacturing mechanical equipment maintenance auditing"
+    ],
+    "relatedProducts": [
+      "hikmicro-eco",
+      "hikmicro-ai56",
+      "seek-compactpro"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About HIKMICRO ECO-V",
+    "imageAlt": "HIKMICRO ECO-V dual-sensor handheld thermal and optical camera"
+  },
+  {
+    "id": "gardepro-a60-4k",
+    "slug": "gardepro-a60-4k",
+    "name": "GardePro A60 4K Non-Cellular Trail Camera",
+    "brand": "GardePro",
+    "series": "A Series",
+    "category": "Camera Trap",
+    "categorySlug": "camera-trap",
+    "subcategory": "Trail Cameras",
+    "subcategorySlug": "trail-cameras",
+    "model": "A60 4K",
+    "manufacturer": "GardePro",
+    "manufacturerSource": "https://gardepro.com/products/gardepro-a60-trail-camera",
+    "sourceManufacturer": "GardePro",
+    "sourceUrl": "https://gardepro.com/products/gardepro-a60-trail-camera",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/gardepro-a60-4k/hero.webp",
+    "gallery": [
+      "/images/products/gardepro-a60-4k/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/gardepro-a60-4k/hero.webp"
+    ],
+    "shortDescription": "High-performance non-cellular trail camera featuring native 4K UHD video recording with audio, 48 MP still photography, 0.1s ultra-fast trigger speed, and 940nm no-glow night vision.",
+    "description": "The GardePro A60 4K is an advanced non-cellular trail camera engineered for scientific wildlife census, nature photography, and discreet outdoor security. Featuring a premium optical lens with smart H.264/H.265 video compression, it records native 4K UHD video with clear sound and captures up to 48 MP high-resolution still images. Its cutting-edge PIR motion sensor achieves an ultra-responsive 0.1-second trigger speed with an 80-foot detection range, paired with invisible 940nm no-glow infrared LEDs that illuminate night subjects without alarming wildlife or alerting intruders.",
+    "highlights": [
+      "True 4K UHD video recording with crystal-clear audio capture",
+      "Ultra-high 48 MP still image resolution for detailed taxonomic study",
+      "Ultra-fast 0.1-second trigger speed captures rapid animal movement",
+      "940nm invisible no-glow infrared flash with up to 80-foot night range",
+      "Smart H.264/H.265 video encoding saves up to 80% memory card storage",
+      "2.4-inch color LCD display for instant in-field playback and alignment"
+    ],
+    "keyHighlights": [
+      "True 4K UHD video recording with crystal-clear audio capture",
+      "Ultra-high 48 MP still image resolution for detailed taxonomic study",
+      "Ultra-fast 0.1-second trigger speed captures rapid animal movement",
+      "940nm invisible no-glow infrared flash with up to 80-foot night range",
+      "Smart H.264/H.265 video encoding saves up to 80% memory card storage",
+      "2.4-inch color LCD display for instant in-field playback and alignment"
+    ],
+    "specifications": [
+      {
+        "label": "Video Resolution",
+        "value": "4K (3840 x 2160) at 30fps with audio",
+        "group": "Video"
+      },
+      {
+        "label": "Photo Resolution",
+        "value": "Up to 48 MP (interpolated from high-grade sensor)",
+        "group": "Photo"
+      },
+      {
+        "label": "Trigger Speed",
+        "value": "0.1 second lightning trigger",
+        "group": "Motion Detection"
+      },
+      {
+        "label": "Detection Angle & Range",
+        "value": "120° wide angle, up to 80 ft (24 m)",
+        "group": "Motion Detection"
+      },
+      {
+        "label": "Flash Type",
+        "value": "940nm No-Glow Black Infrared LEDs",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Display",
+        "value": "2.4-inch color TFT LCD",
+        "group": "Display"
+      },
+      {
+        "label": "Storage",
+        "value": "SD / SDHC / SDXC card up to 512 GB",
+        "group": "Storage"
+      },
+      {
+        "label": "Waterproof Rating",
+        "value": "IP66 weatherproof casing",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "Advanced Sony-grade optical sensor captures rich color and dynamic range",
+      "No-glow 940nm black LEDs emit zero visible light flash during nighttime capture",
+      "Durable all-weather IP66 casing withstands heavy rain, dust, and temperature extremes"
+    ],
+    "applications": [
+      "Biodiversity research and wildlife population monitoring",
+      "Protected forest reserve and game sanctuary surveillance",
+      "Remote property boundary and covert anti-poaching patrol"
+    ],
+    "relatedProducts": [
+      "gardepro-a5wf",
+      "bushnell-core-ds-4k",
+      "gardepro-x60-series"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About GardePro A60 4K",
+    "imageAlt": "GardePro A60 4K non-cellular wildlife trail camera"
+  },
+  {
+    "id": "gardepro-a5wf",
+    "slug": "gardepro-a5wf",
+    "name": "GardePro A5WF Non-Cellular Trail Camera",
+    "brand": "GardePro",
+    "series": "A Series",
+    "category": "Camera Trap",
+    "categorySlug": "camera-trap",
+    "subcategory": "Trail Cameras",
+    "subcategorySlug": "trail-cameras",
+    "model": "A5WF Non-Cellular Trail Camera",
+    "manufacturer": "GardePro",
+    "manufacturerSource": "https://gardepro.com/products/gardepro-a5wf-trail-camera",
+    "sourceManufacturer": "GardePro",
+    "sourceUrl": "https://gardepro.com/products/gardepro-a5wf-trail-camera",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/gardepro-a5wf/hero.webp",
+    "gallery": [
+      "/images/products/gardepro-a5wf/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/gardepro-a5wf/hero.webp"
+    ],
+    "shortDescription": "Non-cellular trail camera featuring white-flash color night imaging, built-in Wi-Fi and Bluetooth connection for wireless phone gallery download, and up to 32 MP capture.",
+    "description": "The GardePro A5WF Non-Cellular Trail Camera is engineered for researchers and wildlife enthusiasts seeking full-color night imagery rather than standard monochrome infrared pictures. Equipped with white-flash illumination, the A5WF captures vivid, true-to-life full-color photos and HD videos even in pitch-black midnight environments. Built-in low-power Bluetooth and Wi-Fi allow field researchers to wirelessly connect via the mobile app to adjust settings, view live framing, and download media without unmounting the camera from tree canopies.",
+    "highlights": [
+      "White Flash technology delivers true full-color night imagery and video",
+      "Low-power Bluetooth and Wi-Fi for wireless smartphone gallery transfer",
+      "Up to 32 MP high-definition still photos and 1296p HD video with audio",
+      "Fast 0.2-second trigger speed with 75-foot detection radius",
+      "Mobile app live-view simplifies angle alignment without physical unmounting",
+      "IP66 certified weatherproof housing built for monsoon and forest moisture"
+    ],
+    "keyHighlights": [
+      "White Flash technology delivers true full-color night imagery and video",
+      "Low-power Bluetooth and Wi-Fi for wireless smartphone gallery transfer",
+      "Up to 32 MP high-definition still photos and 1296p HD video with audio",
+      "Fast 0.2-second trigger speed with 75-foot detection radius",
+      "Mobile app live-view simplifies angle alignment without physical unmounting",
+      "IP66 certified weatherproof housing built for monsoon and forest moisture"
+    ],
+    "specifications": [
+      {
+        "label": "Flash Type",
+        "value": "White Flash (Vivid Color Night Vision)",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth & Wi-Fi (Non-Cellular local wireless)",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Photo Resolution",
+        "value": "Up to 32 MP",
+        "group": "Photo"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "1296p / 1080p HD with sound recording",
+        "group": "Video"
+      },
+      {
+        "label": "Trigger Speed",
+        "value": "0.2 second",
+        "group": "Motion Detection"
+      },
+      {
+        "label": "Detection Range",
+        "value": "Up to 75 ft (23 m)",
+        "group": "Motion Detection"
+      },
+      {
+        "label": "Display",
+        "value": "2.4-inch color LCD screen",
+        "group": "Display"
+      },
+      {
+        "label": "Weather Resistance",
+        "value": "IP66 waterproof rating",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "White flash system ensures biological plumage and coat coloration are recorded accurately at night",
+      "Direct smartphone Wi-Fi link avoids disturbing site scent by eliminating manual SD card swapping",
+      "Ergonomic camouflage body blends seamlessly into bark and dense brush"
+    ],
+    "applications": [
+      "Nocturnal species taxonomic identification requiring accurate natural coat color",
+      "Ecological research and behavior monitoring in forest reserves",
+      "Non-cellular perimeter and site surveillance with local wireless retrieval"
+    ],
+    "relatedProducts": [
+      "gardepro-a60-4k",
+      "gardepro-e8wf",
+      "bushnell-core-ds-4k"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About GardePro A5WF",
+    "imageAlt": "GardePro A5WF white flash color night trail camera"
+  },
+  {
+    "id": "gardepro-x60-series",
+    "slug": "gardepro-x60-series",
+    "name": "GardePro X60 Series Cellular Trail Camera",
+    "brand": "GardePro",
+    "series": "X Series",
+    "category": "Camera Trap",
+    "categorySlug": "camera-trap",
+    "subcategory": "Cellular Trail Cameras",
+    "subcategorySlug": "cellular-camera-traps",
+    "model": "X60 Series Cellular Trail Camera",
+    "manufacturer": "GardePro",
+    "manufacturerSource": "https://gardepro.com/collections/cellular-trail-cameras",
+    "sourceManufacturer": "GardePro",
+    "sourceUrl": "https://gardepro.com/collections/cellular-trail-cameras",
+    "verificationStatus": "client-supplied-verification-pending",
+    "status": "pending",
+    "heroImage": "/images/products/gardepro-x60-series/hero.webp",
+    "gallery": [
+      "/images/products/gardepro-x60-series/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/gardepro-x60-series/hero.webp"
+    ],
+    "shortDescription": "Cellular-connected remote trail camera platform designed for wildlife monitoring and perimeter observation over mobile networks for remote wildlife monitoring and perimeter observation.",
+    "description": "The GardePro X60 Series represents GardePro's connected cellular trail camera portfolio, engineered for remote unattended habitat monitoring. Equipped with a 4G LTE cellular transmission module, the X60 platform automatically uploads captured photos and video clips directly to cloud servers and mobile applications, eliminating the need to physically access remote deployment sites. NOTE: The client supplied 'Cellular Camera Trap X60'; because the manufacturer catalogue includes multiple variants (e.g. X60P / X66 Pro), this entry is established as a Series entry pending confirmation of the exact target model designation.",
+    "highlights": [
+      "4G LTE cellular connectivity enables remote over-the-air image transmission",
+      "Mobile app cloud synchronization delivers instant movement notifications",
+      "High-gain external antenna optimizes connectivity in weak cellular reception areas",
+      "Invisible 940nm no-glow flash for covert nocturnal recording",
+      "Ultra-low standby power consumption for long field autonomy",
+      "EXACT X60 VARIANT REQUIRES CLIENT CONFIRMATION BEFORE FINAL PROCUREMENT"
+    ],
+    "keyHighlights": [
+      "4G LTE cellular connectivity enables remote over-the-air image transmission",
+      "Mobile app cloud synchronization delivers instant movement notifications",
+      "High-gain external antenna optimizes connectivity in weak cellular reception areas",
+      "Invisible 940nm no-glow flash for covert nocturnal recording",
+      "Ultra-low standby power consumption for long field autonomy",
+      "EXACT X60 VARIANT REQUIRES CLIENT CONFIRMATION BEFORE FINAL PROCUREMENT"
+    ],
+    "specifications": [
+      {
+        "label": "Series Category",
+        "value": "Cellular Trail Camera Family (X60 Series)",
+        "group": "Platform"
+      },
+      {
+        "label": "Network Protocol",
+        "value": "4G LTE Multi-Band Cellular",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Transmission",
+        "value": "Automated Cloud & App Photo/Video Push",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Flash Type",
+        "value": "940nm No-Glow Black Infrared",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Enclosure",
+        "value": "Weatherproof IP66 rated",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "Remote camera management allows setting adjustments directly from mobile application",
+      "Automated health reporting monitors battery status, signal strength, and card capacity",
+      "Cellular transmission saves field labor hours on inaccessible terrain"
+    ],
+    "applications": [
+      "Remote sanctuary real-time poaching alert systems",
+      "Long-term automated wildlife migration monitoring",
+      "Unattended farm and estate perimeter security"
+    ],
+    "relatedProducts": [
+      "gardepro-a60-4k",
+      "gardepro-e8wf",
+      "bushnell-core-ds-4k"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About GardePro X60 Series",
+    "imageAlt": "GardePro X60 Series cellular trail camera platform"
+  },
+  {
+    "id": "gardepro-e8wf",
+    "slug": "gardepro-e8wf",
+    "name": "GardePro E8WF Wi-Fi Trail Camera",
+    "brand": "GardePro",
+    "series": "E Series",
+    "category": "Camera Trap",
+    "categorySlug": "camera-trap",
+    "subcategory": "Trail Cameras",
+    "subcategorySlug": "trail-cameras",
+    "model": "E8WF Wi-Fi Trail Camera",
+    "manufacturer": "GardePro",
+    "manufacturerSource": "https://gardepro.com/products/gardepro-e8-wifi-trail-camera",
+    "sourceManufacturer": "GardePro",
+    "sourceUrl": "https://gardepro.com/products/gardepro-e8-wifi-trail-camera",
+    "verificationStatus": "client-supplied-verification-pending",
+    "status": "verified",
+    "heroImage": "/images/products/gardepro-e8wf/hero.webp",
+    "gallery": [
+      "/images/products/gardepro-e8wf/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/gardepro-e8wf/hero.webp"
+    ],
+    "shortDescription": "Wireless trail camera featuring Wi-Fi connectivity and smartphone live-view framing for remote wildlife and perimeter observation for remote wildlife research and perimeter observation.",
+    "description": "The GardePro E8WF is a high-specification wireless trail camera designed for researchers requiring convenient field operation via dedicated smartphone application. Equipped with an external antenna for enhanced Wi-Fi signal range and low-power Bluetooth for rapid wake-up, the E8WF streams a live video feed to the phone for perfect alignment and enables rapid local gallery downloads. With 32 MP still resolution, 1296p video, 0.2s trigger speed, and no-glow 940nm LEDs, it represents a proven platform for biological research.",
+    "highlights": [
+      "Dedicated external antenna provides extended Wi-Fi transmission range",
+      "Bluetooth auto-wake and Wi-Fi connection for live-view framing and media sync",
+      "32 MP still image resolution and 1296p HD video with audio",
+      "0.2-second rapid trigger speed with 75-foot detection range",
+      "940nm no-glow infrared night illumination completely invisible to eyes",
+      "Dual-hinge weatherproof latching system with IP66 moisture sealing"
+    ],
+    "keyHighlights": [
+      "Dedicated external antenna provides extended Wi-Fi transmission range",
+      "Bluetooth auto-wake and Wi-Fi connection for live-view framing and media sync",
+      "32 MP still image resolution and 1296p HD video with audio",
+      "0.2-second rapid trigger speed with 75-foot detection range",
+      "940nm no-glow infrared night illumination completely invisible to eyes",
+      "Dual-hinge weatherproof latching system with IP66 moisture sealing"
+    ],
+    "specifications": [
+      {
+        "label": "Wireless Connectivity",
+        "value": "Wi-Fi (2.4 GHz) + Bluetooth 5.0 Low Energy",
+        "group": "Connectivity"
+      },
+      {
+        "label": "External Antenna",
+        "value": "High-gain rotatable antenna",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Photo Resolution",
+        "value": "Up to 32 MP",
+        "group": "Photo"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "1296p / 1080p with audio",
+        "group": "Video"
+      },
+      {
+        "label": "Trigger Speed",
+        "value": "0.2 second",
+        "group": "Motion Detection"
+      },
+      {
+        "label": "Night Flash",
+        "value": "940nm No-Glow Infrared LEDs",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Weatherproofing",
+        "value": "IP66 waterproof",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "Live-view streaming directly onto smartphone screen facilitates precise vertical alignment",
+      "Dedicated external antenna ensures robust connection through foliage up to 45 feet away",
+      "Zero visible flash ensures stealthy surveillance of nocturnal wildlife"
+    ],
+    "applications": [
+      "Canopy and elevated tree-mount wildlife observation",
+      "Sanctuary and national park trail monitoring",
+      "Institutional ecological transect documentation"
+    ],
+    "relatedProducts": [
+      "gardepro-a60-4k",
+      "gardepro-a5wf",
+      "bushnell-core-ds-4k"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About GardePro E8WF",
+    "imageAlt": "GardePro E8WF Wi-Fi wireless live view trail camera"
+  },
+  {
+    "id": "bushnell-core-ds-4k",
+    "slug": "bushnell-core-ds-4k",
+    "name": "Bushnell CORE DS-4K No Glow Trail Camera",
+    "brand": "Bushnell",
+    "series": "CORE",
+    "category": "Camera Trap",
+    "categorySlug": "camera-trap",
+    "subcategory": "Trail Cameras",
+    "subcategorySlug": "trail-cameras",
+    "model": "CORE DS-4K No Glow (BU-119987C)",
+    "manufacturer": "Bushnell",
+    "manufacturerSource": "https://www.bushnell.com/trail-cameras/core-ds-4k-trail-camera/BU-119987C.html",
+    "sourceManufacturer": "Bushnell",
+    "sourceUrl": "https://www.bushnell.com/trail-cameras/core-ds-4k-trail-camera/BU-119987C.html",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/bushnell-core-ds-4k/hero.webp",
+    "gallery": [
+      "/images/products/bushnell-core-ds-4k/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/bushnell-core-ds-4k/hero.webp"
+    ],
+    "shortDescription": "Top-tier 4K trail camera featuring Dual Image Sensors (DS) individually optimized for daytime and nighttime clarity, 32 MP photos, 0.15s trigger speed, and No-Glow LEDs.",
+    "description": "The Bushnell CORE DS-4K No Glow (Product ID: BU-119987C) is an industry-benchmark professional trail camera engineered for extreme clarity day and night. Unlike conventional single-sensor trail cameras, the CORE DS-4K incorporates Dual Image Sensors: one sensor calibrated exclusively for razor-sharp, color-saturated daytime photography, and a second high-contrast sensor fine-tuned for high-sensitivity nighttime illumination. Delivering true 4K video at 30 fps, 32 MP still images, a rapid 0.15-second trigger speed, and 110-foot No-Glow black LED night range with a 1.5-inch color LCD display.",
+    "highlights": [
+      "Dual Sensors (DS): Dedicated day sensor + dedicated high-contrast night sensor",
+      "4K video recording at 30 frames per second with high-fidelity audio",
+      "Up to 32 MP still image resolution with exceptional optical sharpness",
+      "Ultra-rapid 0.15-second trigger speed captures fast-moving animals in center frame",
+      "No-Glow Black LEDs illuminate targets up to 110 feet without emitting visible flash",
+      "Up to 12-month battery life on 6 AA batteries with rugged weatherproof build"
+    ],
+    "keyHighlights": [
+      "Dual Sensors (DS): Dedicated day sensor + dedicated high-contrast night sensor",
+      "4K video recording at 30 frames per second with high-fidelity audio",
+      "Up to 32 MP still image resolution with exceptional optical sharpness",
+      "Ultra-rapid 0.15-second trigger speed captures fast-moving animals in center frame",
+      "No-Glow Black LEDs illuminate targets up to 110 feet without emitting visible flash",
+      "Up to 12-month battery life on 6 AA batteries with rugged weatherproof build"
+    ],
+    "specifications": [
+      {
+        "label": "Product ID / SKU",
+        "value": "BU-119987C",
+        "group": "Identification"
+      },
+      {
+        "label": "Sensor Architecture",
+        "value": "Dual Sensor (DS) — Separate Day and Night Sensors",
+        "group": "Imaging"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "4K (3840 x 2160) @ 30fps with audio",
+        "group": "Video"
+      },
+      {
+        "label": "Photo Resolution",
+        "value": "32 MP",
+        "group": "Photo"
+      },
+      {
+        "label": "Trigger Speed",
+        "value": "0.15 second",
+        "group": "Motion Detection"
+      },
+      {
+        "label": "Night Flash Range",
+        "value": "110 feet (33 meters) No-Glow Black LEDs",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Display",
+        "value": "1.5-inch color LCD view screen",
+        "group": "Display"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 12 months (6 AA batteries)",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Dual Sensor system ensures day images maintain rich color while night images avoid grain and blur",
+      "No-Glow technology ensures completely invisible operation for wildlife research and security",
+      "Dynamic video duration automatically records as long as animal activity remains in sensor frame"
+    ],
+    "applications": [
+      "Flagship wildlife research and peer-reviewed biodiversity monitoring",
+      "Tiger, leopard, and endangered fauna census documentation",
+      "Covert anti-poaching security surveillance in national parks"
+    ],
+    "relatedProducts": [
+      "bushnell-core-s-4k",
+      "gardepro-a60-4k",
+      "gardepro-a5wf"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Bushnell CORE DS-4K",
+    "imageAlt": "Bushnell CORE DS-4K No Glow dual sensor trail camera"
+  },
+  {
+    "id": "bushnell-core-s-4k",
+    "slug": "bushnell-core-s-4k",
+    "name": "Bushnell CORE S-4K No Glow Trail Camera",
+    "brand": "Bushnell",
+    "series": "CORE",
+    "category": "Camera Trap",
+    "categorySlug": "camera-trap",
+    "subcategory": "Trail Cameras",
+    "subcategorySlug": "trail-cameras",
+    "model": "CORE S-4K No Glow (BU-119949C)",
+    "manufacturer": "Bushnell",
+    "manufacturerSource": "https://www.bushnell.com/trail-cameras/core-s-4k-trail-camera/BU-119949C.html",
+    "sourceManufacturer": "Bushnell",
+    "sourceUrl": "https://www.bushnell.com/trail-cameras/core-s-4k-trail-camera/BU-119949C.html",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/bushnell-core-s-4k/hero.webp",
+    "gallery": [
+      "/images/products/bushnell-core-s-4k/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/bushnell-core-s-4k/hero.webp"
+    ],
+    "shortDescription": "Streamlined 4K trail camera featuring single high-performance 4K sensor, 30 MP images, 0.2s trigger speed, No-Glow LEDs, and up to 100-foot night range.",
+    "description": "The Bushnell CORE S-4K No Glow (Product ID: BU-119949C) provides professional 4K video resolution and 30 MP still photography in a compact, highly reliable single-sensor package. Engineered with Bushnell's signature rugged casing and energy-efficient electronics, it achieves a swift 0.2-second trigger speed, an expansive 100-foot detection and night flash range, and completely covert No-Glow black LED illumination. Built to operate through monsoon downpours and sub-zero winters on 6 AA batteries.",
+    "highlights": [
+      "Single high-performance 4K sensor captures 3840 x 2160 video with audio",
+      "Crisp 30 MP still image resolution with true color rendering",
+      "Fast 0.2-second trigger speed ensures targets are logged accurately",
+      "No-Glow Black LEDs illuminate nocturnal subjects up to 100 feet invisibly",
+      "Up to 12 months battery life on 6 AA batteries with low recovery time",
+      "1.5-inch color LCD display with intuitive menu controls"
+    ],
+    "keyHighlights": [
+      "Single high-performance 4K sensor captures 3840 x 2160 video with audio",
+      "Crisp 30 MP still image resolution with true color rendering",
+      "Fast 0.2-second trigger speed ensures targets are logged accurately",
+      "No-Glow Black LEDs illuminate nocturnal subjects up to 100 feet invisibly",
+      "Up to 12 months battery life on 6 AA batteries with low recovery time",
+      "1.5-inch color LCD display with intuitive menu controls"
+    ],
+    "specifications": [
+      {
+        "label": "Product ID / SKU",
+        "value": "BU-119949C",
+        "group": "Identification"
+      },
+      {
+        "label": "Sensor Architecture",
+        "value": "Single High-Performance 4K Sensor",
+        "group": "Imaging"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "4K UHD with audio",
+        "group": "Video"
+      },
+      {
+        "label": "Photo Resolution",
+        "value": "30 MP",
+        "group": "Photo"
+      },
+      {
+        "label": "Trigger Speed",
+        "value": "0.2 second",
+        "group": "Motion Detection"
+      },
+      {
+        "label": "Night Flash Range",
+        "value": "100 feet (30 meters) No-Glow Black LEDs",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Display",
+        "value": "1.5-inch color LCD",
+        "group": "Display"
+      },
+      {
+        "label": "Durability",
+        "value": "IP66 waterproof rated",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "High-efficiency optical sensor ensures clear day color and defined night black-and-white",
+      "Compact weather-sealed case fits easily in tight branch crotches and tree mounts",
+      "Zero flash glow ensures no disturbance to nocturnal nesting or feeding behavior"
+    ],
+    "applications": [
+      "Wildlife research transects and reserve surveillance",
+      "Forestry monitoring and biodiversity habitat studies",
+      "Perimeter observation and remote security checkpoint monitoring"
+    ],
+    "relatedProducts": [
+      "bushnell-core-ds-4k",
+      "gardepro-a60-4k",
+      "gardepro-a5wf"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Bushnell CORE S-4K",
+    "imageAlt": "Bushnell CORE S-4K No Glow trail camera"
+  },
+  {
+    "id": "brunton-f-5008-compro",
+    "slug": "brunton-f-5008-compro",
+    "name": "Brunton F-5008 ComPro Pocket Transit",
+    "brand": "Brunton",
+    "series": "Pocket Transit",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "F-5008 (ComPro 0-360°)",
+    "manufacturer": "Brunton, Inc.",
+    "manufacturerSource": "https://www.brunton.com/products/compro-pocket-transit",
+    "sourceManufacturer": "Brunton, Inc.",
+    "sourceUrl": "https://www.brunton.com/products/compro-pocket-transit",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/brunton-f-5008-compro/hero.webp",
+    "gallery": [
+      "/images/products/brunton-f-5008-compro/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/brunton-f-5008-compro/hero.webp"
+    ],
+    "shortDescription": "Composite-body professional pocket transit featuring 0-360° azimuth scale, single NdFeB magnet, precision induction damping, vertical clinometer ±90°, and declination adjustment.",
+    "description": "The Brunton F-5008 ComPro Pocket Transit is the quintessential structural geology instrument, housed in an ultra-rugged composite body that is permanently non-magnetic and thermal-shock resistant. Built around a single NdFeB rare-earth magnet balanced on a sapphire jewel bearing, the ComPro rapidly seeks magnetic north with precision induction damping. It features a vertical angle clinometer scale with 1-degree resolution and 10-minute vernier accuracy (measuring vertical angles to ±90° or 100% grade), tool-less magnetic declination adjustment up to ±180°, and a precision sighting mirror for accurate line-of-sight strike and dip measurements.",
+    "highlights": [
+      "Non-magnetic composite body is durable, lightweight, and thermally stable",
+      "Single NdFeB rare-earth magnet on sapphire jewel bearing resists demagnetization",
+      "Precision magnetic induction damping ensures fast needle settling",
+      "0-360° azimuth scale with 1-degree graduation and 1/2 degree readability",
+      "Vertical angle clinometer with 10-minute vernier measures strike and dip up to ±90°",
+      "Adjustable magnetic declination enables direct true north readings up to ±180°"
+    ],
+    "keyHighlights": [
+      "Non-magnetic composite body is durable, lightweight, and thermally stable",
+      "Single NdFeB rare-earth magnet on sapphire jewel bearing resists demagnetization",
+      "Precision magnetic induction damping ensures fast needle settling",
+      "0-360° azimuth scale with 1-degree graduation and 1/2 degree readability",
+      "Vertical angle clinometer with 10-minute vernier measures strike and dip up to ±90°",
+      "Adjustable magnetic declination enables direct true north readings up to ±180°"
+    ],
+    "specifications": [
+      {
+        "label": "Model / SKU",
+        "value": "F-5008 ComPro",
+        "group": "Identification"
+      },
+      {
+        "label": "Body Material",
+        "value": "Precision non-magnetic composite",
+        "group": "Construction"
+      },
+      {
+        "label": "Azimuth Scale",
+        "value": "0-360° with 1° graduations",
+        "group": "Scale"
+      },
+      {
+        "label": "Magnet",
+        "value": "Cast NdFeB rare earth magnet",
+        "group": "Magnetic System"
+      },
+      {
+        "label": "Clinometer Range",
+        "value": "±90° with 10-minute vernier resolution (100% grade)",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Declination Adjustment",
+        "value": "±180° adjustable with brass screw",
+        "group": "Calibration"
+      },
+      {
+        "label": "Sighting",
+        "value": "Precision mirror with sighting notch and aperture",
+        "group": "Optics"
+      },
+      {
+        "label": "Level Vials",
+        "value": "Circular bullseye bubble + tubular clinometer vial",
+        "group": "Leveling"
+      }
+    ],
+    "features": [
+      "Induction damping brings the needle to rest in under 3 seconds without oscillation",
+      "Composite construction prevents magnetic distortion during close-contact outcrop survey",
+      "Tripod mountable with 1/4-20 thread for high-precision institutional survey traverse"
+    ],
+    "applications": [
+      "Structural geology strike and dip field recording",
+      "Outcrop stratigraphic analysis and fault mapping",
+      "Geological baseline field survey and mining exploration"
+    ],
+    "relatedProducts": [
+      "brunton-f-5010-geo",
+      "brunton-f-5012-axis",
+      "suunto-mc-2"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Brunton F-5008 ComPro",
+    "imageAlt": "Brunton F-5008 ComPro geological pocket transit"
+  },
+  {
+    "id": "brunton-f-5010-geo",
+    "slug": "brunton-f-5010-geo",
+    "name": "Brunton F-5010 GEO Pocket Transit",
+    "brand": "Brunton",
+    "series": "Pocket Transit",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "F-5010 GEO Pocket Transit",
+    "manufacturer": "Brunton, Inc.",
+    "manufacturerSource": "https://www.brunton.com/products/geo-transit",
+    "sourceManufacturer": "Brunton, Inc.",
+    "sourceUrl": "https://www.brunton.com/products/geo-transit",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/brunton-f-5010-geo/hero.webp",
+    "gallery": [
+      "/images/products/brunton-f-5010-geo/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/brunton-f-5010-geo/hero.webp"
+    ],
+    "shortDescription": "Solid aluminum-body geological transit purpose-built for structural geology, featuring direct strike & dip measurement in one step, hinge clinometer, and silicone-damped needle.",
+    "description": "The Brunton F-5010 GEO Pocket Transit is engineered specifically for professional structural geologists. Machined from solid aircraft-grade anodized aluminum with O-ring waterproofing, the GEO Transit features a revolutionary hinge inclinometer that allows direct measurement of strike AND dip in a single operation. Its unique flat bottom allows geologists to place the instrument flush against bedding planes, while the induction-damped single NdFeB needle provides rapid, deadbeat stabilization across worldwide magnetic inclinations.",
+    "highlights": [
+      "Machined aircraft aluminum housing with durable hard-anodized finish",
+      "Direct strike and dip measurement in a single placement step",
+      "Hinge inclinometer measures vertical dip angles with ±90° range and 2° increments",
+      "Single NdFeB rare-earth magnet balanced on sapphire bearing",
+      "O-ring sealed waterproof construction for demanding monsoon and wet cave surveys",
+      "Adjustable declination mechanism allows east or west compensation to 180°"
+    ],
+    "keyHighlights": [
+      "Machined aircraft aluminum housing with durable hard-anodized finish",
+      "Direct strike and dip measurement in a single placement step",
+      "Hinge inclinometer measures vertical dip angles with ±90° range and 2° increments",
+      "Single NdFeB rare-earth magnet balanced on sapphire bearing",
+      "O-ring sealed waterproof construction for demanding monsoon and wet cave surveys",
+      "Adjustable declination mechanism allows east or west compensation to 180°"
+    ],
+    "specifications": [
+      {
+        "label": "Model / SKU",
+        "value": "F-5010 GEO",
+        "group": "Identification"
+      },
+      {
+        "label": "Body Material",
+        "value": "Hard-anodized machined aluminum",
+        "group": "Construction"
+      },
+      {
+        "label": "Azimuth Scale",
+        "value": "0-360° with 1° increments",
+        "group": "Scale"
+      },
+      {
+        "label": "Hinge Inclinometer",
+        "value": "±90° range with 2° increments (strike & dip in 1 step)",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Internal Clinometer",
+        "value": "±90° with 10-minute vernier reading",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Water Resistance",
+        "value": "O-ring sealed waterproof",
+        "group": "Durability"
+      },
+      {
+        "label": "Needle System",
+        "value": "NdFeB magnet on sapphire jewel, induction damped",
+        "group": "Magnetic System"
+      }
+    ],
+    "features": [
+      "Hinge clinometer eliminates secondary setup, halving field data collection time",
+      "Hard-anodized aluminum body withstands impact against abrasive rock outcrops",
+      "Integrated circular bubble vial enables rapid leveling during horizontal sightings"
+    ],
+    "applications": [
+      "Advanced structural geology field mapping",
+      "Rock bedding strike, dip, and dip-direction surveys",
+      "Geotechnical slope stability analysis"
+    ],
+    "relatedProducts": [
+      "brunton-f-5008-compro",
+      "brunton-f-5012-axis",
+      "estwing-e3-22p"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Brunton F-5010 GEO",
+    "imageAlt": "Brunton F-5010 GEO aluminum pocket transit"
+  },
+  {
+    "id": "brunton-f-5012-axis",
+    "slug": "brunton-f-5012-axis",
+    "name": "Brunton F-5012 Axis Pocket Transit",
+    "brand": "Brunton",
+    "series": "Pocket Transit",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "F-5012 Axis Pocket Transit",
+    "manufacturer": "Brunton, Inc.",
+    "manufacturerSource": "https://www.brunton.com/products/axis-pocket-transit",
+    "sourceManufacturer": "Brunton, Inc.",
+    "sourceUrl": "https://www.brunton.com/products/axis-pocket-transit",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/brunton-f-5012-axis/hero.webp",
+    "gallery": [
+      "/images/products/brunton-f-5012-axis/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/brunton-f-5012-axis/hero.webp"
+    ],
+    "shortDescription": "Revolutionary dual-axis geological transit allowing simultaneous measurement of strike, dip, dip direction, and trend/plunge in any configuration or planar orientation.",
+    "description": "The Brunton F-5012 Axis Pocket Transit was designed by field geologists for geologists to solve every limitation of traditional transits. Featuring an innovative dual-axis 360-degree rotation system with a hollow sighting hinge, the Axis allows users to measure strike and dip simultaneously on any surface orientation—including inverted overhangs, vertical joint planes, and lineations—without requiring separate instrument realignment. An integrated tubular level vial and circular level combined with NdFeB magnetic induction damping make the Axis the most versatile geological orientation tool available.",
+    "highlights": [
+      "Revolutionary dual-axis rotation measures strike, dip, and trend/plunge in any plane",
+      "Hollow hinge allows direct line-of-sight sighting without mirror obstruction",
+      "Measures horizontal, vertical, and overhang planes with equal precision",
+      "Single NdFeB rare-earth magnet on sapphire jewel bearing with induction damping",
+      "Full 0-360° azimuth scale with high-contrast dual-axis graduations",
+      "Hard-anodized CNC-machined aluminum body with waterproof O-ring seals"
+    ],
+    "keyHighlights": [
+      "Revolutionary dual-axis rotation measures strike, dip, and trend/plunge in any plane",
+      "Hollow hinge allows direct line-of-sight sighting without mirror obstruction",
+      "Measures horizontal, vertical, and overhang planes with equal precision",
+      "Single NdFeB rare-earth magnet on sapphire jewel bearing with induction damping",
+      "Full 0-360° azimuth scale with high-contrast dual-axis graduations",
+      "Hard-anodized CNC-machined aluminum body with waterproof O-ring seals"
+    ],
+    "specifications": [
+      {
+        "label": "Model / SKU",
+        "value": "F-5012 Axis",
+        "group": "Identification"
+      },
+      {
+        "label": "Body Material",
+        "value": "CNC-machined hard-anodized aluminum",
+        "group": "Construction"
+      },
+      {
+        "label": "Dual Axis Range",
+        "value": "360° rotation on primary and secondary axes",
+        "group": "Measurement"
+      },
+      {
+        "label": "Azimuth Scale",
+        "value": "0-360° (1° increments)",
+        "group": "Scale"
+      },
+      {
+        "label": "Clinometer",
+        "value": "±90° range with 1° resolution",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Line of Sight",
+        "value": "Through-hinge optical sighting channel",
+        "group": "Optics"
+      },
+      {
+        "label": "Water Resistance",
+        "value": "Submersible waterproof",
+        "group": "Durability"
+      }
+    ],
+    "features": [
+      "Dual-axis capability allows measurement on overhangs and underside of cave strata",
+      "Direct measurement of plunge and trend of geological lineations in one setup",
+      "Sapphire jewel bearing ensures smooth, friction-free magnetic needle settling"
+    ],
+    "applications": [
+      "Complex structural geology in fold and thrust belts",
+      "Underground mine structural joint and fracture plane mapping",
+      "Engineering geological rock slope discontinuity logging"
+    ],
+    "relatedProducts": [
+      "brunton-f-5010-geo",
+      "brunton-f-5008-compro",
+      "suunto-pm-5-clinometer"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Brunton F-5012 Axis",
+    "imageAlt": "Brunton F-5012 Axis dual-axis pocket transit"
+  },
+  {
+    "id": "brunton-f-5020-standard",
+    "slug": "brunton-f-5020-standard",
+    "name": "Brunton F-5020 Standard Pocket Transit",
+    "brand": "Brunton",
+    "series": "Pocket Transit",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "F-5020 Standard Pocket Transit",
+    "manufacturer": "Brunton, Inc.",
+    "manufacturerSource": "https://www.brunton.com/products/standard-transit",
+    "sourceManufacturer": "Brunton, Inc.",
+    "sourceUrl": "https://www.brunton.com/products/standard-transit",
+    "verificationStatus": "client-supplied-verification-pending",
+    "status": "pending",
+    "heroImage": "/images/products/brunton-f-5020-standard/hero.webp",
+    "gallery": [
+      "/images/products/brunton-f-5020-standard/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/brunton-f-5020-standard/hero.webp"
+    ],
+    "shortDescription": "Classic precision pocket transit featuring 0-360° azimuth scale and clinometer mechanism for geological mapping for strike, dip, and structural geological mapping.",
+    "description": "The Brunton F-5020 Standard Pocket Transit represents the traditional aluminum-body pocket transit design historically utilized across worldwide surveying and field geology departments. Housed in a die-cast aluminum casing, it incorporates a balanced magnetic needle, adjustable declination, induction damping, and a vertical clinometer with vernier for slope and dip angle measurement. NOTE: F-5020 is a client-supplied designation matching Brunton's historical aluminum standard transit line (contemporary standard model: 5006LM / Standard Transit); verification is logged pending exact confirmation.",
+    "highlights": [
+      "Die-cast aluminum casing with classic textured protective finish",
+      "0-360° azimuth circle with 1-degree graduation marks",
+      "Vertical angle clinometer with vernier scale measuring to 10 minutes",
+      "Precision sighting mirror with hairline and viewing aperture",
+      "Induction damping brings needle to rapid equilibrium"
+    ],
+    "keyHighlights": [
+      "Die-cast aluminum casing with classic textured protective finish",
+      "0-360° azimuth circle with 1-degree graduation marks",
+      "Vertical angle clinometer with vernier scale measuring to 10 minutes",
+      "Precision sighting mirror with hairline and viewing aperture",
+      "Induction damping brings needle to rapid equilibrium"
+    ],
+    "specifications": [
+      {
+        "label": "Model SKU",
+        "value": "F-5020 (Client-Supplied)",
+        "group": "Identification"
+      },
+      {
+        "label": "Body Material",
+        "value": "Cast aluminum housing",
+        "group": "Construction"
+      },
+      {
+        "label": "Azimuth Scale",
+        "value": "0-360° (1° divisions)",
+        "group": "Scale"
+      },
+      {
+        "label": "Clinometer",
+        "value": "±90° range with 10-minute vernier",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Magnetic System",
+        "value": "Induction damped NdFeB needle",
+        "group": "Magnetic System"
+      }
+    ],
+    "features": [
+      "Classic mechanical transit layout favored by university geology departments",
+      "Built-in clinometer and bubble level provide elevation angle and leveling verification",
+      "Adjustable magnetic declination mechanism"
+    ],
+    "applications": [
+      "Academic geology fieldwork and geological mapping training",
+      "Topographical traverse and boundary azimuth logging",
+      "Basic mineral survey and outcrop strike/dip measurement"
+    ],
+    "relatedProducts": [
+      "brunton-f-5008-compro",
+      "brunton-f-5010-geo",
+      "suunto-kb-20"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Brunton F-5020",
+    "imageAlt": "Brunton F-5020 classic standard pocket transit"
+  },
+  {
+    "id": "brunton-truarc-15",
+    "slug": "brunton-truarc-15",
+    "name": "Brunton TruArc 15 Compass",
+    "brand": "Brunton",
+    "series": "TruArc",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "TruArc 15 (F-TRUARC15)",
+    "manufacturer": "Brunton, Inc.",
+    "manufacturerSource": "https://www.brunton.com/products/truarc-15",
+    "sourceManufacturer": "Brunton, Inc.",
+    "sourceUrl": "https://www.brunton.com/products/truarc-15",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/brunton-truarc-15/hero.webp",
+    "gallery": [
+      "/images/products/brunton-truarc-15/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/brunton-truarc-15/hero.webp"
+    ],
+    "shortDescription": "Mirror-sighting field compass featuring a global needle system (operates worldwide without balancing), tool-less declination adjustment, clinometer, and triple map scales.",
+    "description": "The Brunton TruArc 15 is a high-grade mirror sighting compass engineered for international field researchers and expedition navigators. It features Brunton's proprietary TruArc Global Needle system, which operates accurately in both Northern and Southern hemispheres without requiring needle rebalancing. Built with tool-free tool-less declination adjustment up to ±180°, an integrated vertical clinometer, sighting mirror with notch, high-resolution magnified map scales, and a durable protective cover.",
+    "highlights": [
+      "TruArc Global Needle system operates worldwide without magnetic dip balancing issues",
+      "Tool-less magnetic declination adjustment allows instant calibration up to ±180°",
+      "Integrated vertical clinometer measures slope angles and tree/outcrop heights",
+      "Protective cover with sighting mirror and center sight notch for accurate bearings",
+      "High-contrast azimuth ring with 1-degree resolution marks",
+      "Ergonomic baseplate with map magnification lens and metric/inch scales"
+    ],
+    "keyHighlights": [
+      "TruArc Global Needle system operates worldwide without magnetic dip balancing issues",
+      "Tool-less magnetic declination adjustment allows instant calibration up to ±180°",
+      "Integrated vertical clinometer measures slope angles and tree/outcrop heights",
+      "Protective cover with sighting mirror and center sight notch for accurate bearings",
+      "High-contrast azimuth ring with 1-degree resolution marks",
+      "Ergonomic baseplate with map magnification lens and metric/inch scales"
+    ],
+    "specifications": [
+      {
+        "label": "Model Number",
+        "value": "TruArc 15 (F-TRUARC15)",
+        "group": "Identification"
+      },
+      {
+        "label": "Needle System",
+        "value": "TruArc Global Needle (Worldwide balanced)",
+        "group": "Magnetic System"
+      },
+      {
+        "label": "Sighting",
+        "value": "Full-size sighting mirror with sight notch",
+        "group": "Optics"
+      },
+      {
+        "label": "Clinometer",
+        "value": "Yes (Integrated vertical pendulum clinometer)",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Declination",
+        "value": "Tool-less adjustable (±180°)",
+        "group": "Calibration"
+      },
+      {
+        "label": "Graduations",
+        "value": "1° resolution (0-360° scale)",
+        "group": "Scale"
+      },
+      {
+        "label": "Baseplate",
+        "value": "Transparent acrylic with map magnifier and scales",
+        "group": "Construction"
+      }
+    ],
+    "features": [
+      "Global needle technology allows international researchers to use one unit anywhere on Earth",
+      "Tool-less declination eliminates the risk of losing calibration keys in the wilderness",
+      "Pendulum clinometer quickly evaluates hill slope gradient and rock bed dip"
+    ],
+    "applications": [
+      "Field topographical orientation and waypoint triangulation",
+      "Geological bedding strike and slope reconnaissance",
+      "International forestry transect and expedition navigation"
+    ],
+    "relatedProducts": [
+      "suunto-mc-2",
+      "brunton-f-5008-compro",
+      "suunto-kb-20"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Brunton TruArc 15",
+    "imageAlt": "Brunton TruArc 15 global mirror sighting compass"
+  },
+  {
+    "id": "suunto-mc-2",
+    "slug": "suunto-mc-2",
+    "name": "Suunto MC-2 Mirror Sighting Compass",
+    "brand": "Suunto",
+    "series": "MC Series",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "MC-2 Global / 360",
+    "manufacturer": "Suunto Oy",
+    "manufacturerSource": "https://www.suunto.com/Products/Compasses/Suunto-MC-2/",
+    "sourceManufacturer": "Suunto Oy",
+    "sourceUrl": "https://www.suunto.com/Products/Compasses/Suunto-MC-2/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/suunto-mc-2/hero.webp",
+    "gallery": [
+      "/images/products/suunto-mc-2/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/suunto-mc-2/hero.webp"
+    ],
+    "shortDescription": "Professional mirror sighting compass with global needle balancing, optical sighting hole, clinometer, luminous bezel, and adjustable magnetic declination correction.",
+    "description": "The Suunto MC-2 is a world-renowned professional mirror sighting compass utilized by surveyors, geologists, and search-and-rescue teams. Engineered and manufactured in Finland, it features a jewel-bearing global needle system that functions seamlessly worldwide. A large sighting mirror with a precision notch and sighting hole guarantees bearing accuracy to within 1 degree. The MC-2 incorporates an integrated clinometer for measuring slope angles and tree heights, an adjustable declination correction scale with included key, luminous bezel markings for low-light work, and a transparent baseplate with anti-slip rubber pads.",
+    "highlights": [
+      "Precision mirror sighting with notch and viewing hole for accurate bearings",
+      "Globally balanced needle operates across all magnetic zones",
+      "Integrated clinometer measures vertical angles and slope gradient",
+      "Adjustable magnetic declination correction scale with calibration key",
+      "Luminous markings on bezel, needle, and orienting arrow for night use",
+      "Made in Finland with heavy-duty scratch-resistant acrylic baseplate"
+    ],
+    "keyHighlights": [
+      "Precision mirror sighting with notch and viewing hole for accurate bearings",
+      "Globally balanced needle operates across all magnetic zones",
+      "Integrated clinometer measures vertical angles and slope gradient",
+      "Adjustable magnetic declination correction scale with calibration key",
+      "Luminous markings on bezel, needle, and orienting arrow for night use",
+      "Made in Finland with heavy-duty scratch-resistant acrylic baseplate"
+    ],
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Made in Finland",
+        "group": "Construction"
+      },
+      {
+        "label": "Needle Balancing",
+        "value": "Globally balanced needle system",
+        "group": "Magnetic System"
+      },
+      {
+        "label": "Bearing Accuracy",
+        "value": "0.5° resolution, 1° graduation",
+        "group": "Performance"
+      },
+      {
+        "label": "Clinometer",
+        "value": "Yes (measures angles from 0° to 90° / 100%)",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Declination Correction",
+        "value": "Adjustable (key included)",
+        "group": "Calibration"
+      },
+      {
+        "label": "Luminous Markings",
+        "value": "Bezel, needle, and orienting indicators",
+        "group": "Low-Light"
+      },
+      {
+        "label": "Weight",
+        "value": "75 g (2.65 oz)",
+        "group": "Dimensions"
+      }
+    ],
+    "features": [
+      "Liquid-filled capsule with sapphire jewel bearing ensures oscillation-free needle movement",
+      "Sighting mirror folds flat to protect capsule during rough backcountry transport",
+      "Baseplate features magnifying lens and multiple map measuring scales (1:24k, 1:25k, 1:50k)"
+    ],
+    "applications": [
+      "Professional field geology and topographical triangulation",
+      "Search and rescue navigation in mountain terrain",
+      "Forestry inventory and canopy angle sighting"
+    ],
+    "relatedProducts": [
+      "suunto-kb-20",
+      "brunton-truarc-15",
+      "suunto-pm-5-clinometer"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Suunto MC-2",
+    "imageAlt": "Suunto MC-2 professional mirror sighting compass"
+  },
+  {
+    "id": "suunto-kb-20",
+    "slug": "suunto-kb-20",
+    "name": "Suunto KB-20 Optical Bearing Compass",
+    "brand": "Suunto",
+    "series": "KB Series",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "KB-20/360/G Optical Compass",
+    "manufacturer": "Suunto Oy",
+    "manufacturerSource": "https://www.suunto.com/Products/Compasses/Suunto-KB-20/",
+    "sourceManufacturer": "Suunto Oy",
+    "sourceUrl": "https://www.suunto.com/Products/Compasses/Suunto-KB-20/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/suunto-kb-20/hero.webp",
+    "gallery": [
+      "/images/products/suunto-kb-20/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/suunto-kb-20/hero.webp"
+    ],
+    "shortDescription": "Handheld optical bearing compass featuring 0.5° reading accuracy, high-impact floating plastic housing, and optical sighting card for precision bearings.",
+    "description": "The Suunto KB-20 is a precision handheld optical bearing compass engineered for maritime, forestry, survey, and geological fieldwork where taking rapid, dead-accurate bearings is essential. Made in Finland from high-impact floating plastic, the KB-20 will not sink if dropped in rivers or coastal wetlands. Through its optical eyepiece, users see a magnified, parallax-free compass card graduation with 0.5° reading accuracy. The liquid-filled capsule utilizes a sapphire jewel bearing with damping fluid that stabilizes instantly.",
+    "highlights": [
+      "Optical precision sighting card reads bearings to 0.5° accuracy",
+      "Buoyant high-impact plastic housing floats if dropped in water",
+      "Parallax-free optical prism sighting system with diopter adjustment",
+      "Liquid-filled capsule with sapphire jewel bearing prevents card bounce",
+      "Compact, pocket-sized form factor weighing only 36 grams",
+      "Dual-scale layout: internal optical reading plus top azimuth scale"
+    ],
+    "keyHighlights": [
+      "Optical precision sighting card reads bearings to 0.5° accuracy",
+      "Buoyant high-impact plastic housing floats if dropped in water",
+      "Parallax-free optical prism sighting system with diopter adjustment",
+      "Liquid-filled capsule with sapphire jewel bearing prevents card bounce",
+      "Compact, pocket-sized form factor weighing only 36 grams",
+      "Dual-scale layout: internal optical reading plus top azimuth scale"
+    ],
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Made in Finland",
+        "group": "Construction"
+      },
+      {
+        "label": "Housing",
+        "value": "High-impact floating plastic (buoyant)",
+        "group": "Construction"
+      },
+      {
+        "label": "Optical Accuracy",
+        "value": "0.5° reading accuracy",
+        "group": "Performance"
+      },
+      {
+        "label": "Graduation",
+        "value": "0.5° intervals (0-360° azimuth)",
+        "group": "Scale"
+      },
+      {
+        "label": "Bearing",
+        "value": "Sapphire jewel bearing with damping liquid",
+        "group": "Magnetic System"
+      },
+      {
+        "label": "Weight",
+        "value": "36 g (1.27 oz)",
+        "group": "Dimensions"
+      }
+    ],
+    "features": [
+      "Optical reading card allows simultaneous observation of distant landmark and bearing graduation",
+      "Floating body design ensures safety during boat, river, and mangrove surveys",
+      "Top-mount secondary scale allows quick approximate compass reading from above"
+    ],
+    "applications": [
+      "Riverine, wetland, and coastal geological surveys",
+      "Forestry road alignment and parcel boundary triangulation",
+      "Civil engineering and telecommunication antenna orientation"
+    ],
+    "relatedProducts": [
+      "suunto-mc-2",
+      "suunto-pm-5-clinometer",
+      "brunton-f-5008-compro"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Suunto KB-20",
+    "imageAlt": "Suunto KB-20 floating optical bearing compass"
+  },
+  {
+    "id": "suunto-pm-5-clinometer",
+    "slug": "suunto-pm-5-clinometer",
+    "name": "Suunto PM-5 Optical Clinometer",
+    "brand": "Suunto",
+    "series": "PM Series",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Clinometers",
+    "subcategorySlug": "clinometers",
+    "model": "PM-5/360 PC Clinometer",
+    "manufacturer": "Suunto Oy",
+    "manufacturerSource": "https://www.suunto.com/Products/Compasses/Suunto-PM-5/",
+    "sourceManufacturer": "Suunto Oy",
+    "sourceUrl": "https://www.suunto.com/Products/Compasses/Suunto-PM-5/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/suunto-pm-5-clinometer/hero.webp",
+    "gallery": [
+      "/images/products/suunto-pm-5-clinometer/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/suunto-pm-5-clinometer/hero.webp"
+    ],
+    "shortDescription": "Professional optical hand clinometer featuring dual degrees (±90°) and percent grade (0-150%) scales, anodized aluminum alloy body, and 0.25° reading precision.",
+    "description": "The Suunto PM-5/360 PC is the worldwide gold standard hand clinometer for measuring heights, vertical angles, and slope gradients. Encased in a rugged, anodized corrosion-resistant light-alloy housing, the PM-5 incorporates a dual-sapphire bearing card assembly immersed in high-grade damping liquid for ultra-smooth movement. Looking through the optical sighting lens, operators view dual graduated scales: degrees on the right (±90° with 0.5° graduations, readable to 0.25°) and percent grade on the left (0 to 150%). Made in Finland.",
+    "highlights": [
+      "Dual-scale optical card: Degrees (±90°) and Percent Grade (0-150%)",
+      "High optical reading accuracy: 0.25° precision via internal parallax-free optics",
+      "Corrosion-resistant anodized aluminum alloy housing built for harsh field environments",
+      "Dual sapphire jewel bearings immersed in hermetically sealed damping liquid",
+      "Optical diopter adjustment adapts to the user's individual eyesight",
+      "Made in Finland with lanyard and heavy-duty nylon carrying case"
+    ],
+    "keyHighlights": [
+      "Dual-scale optical card: Degrees (±90°) and Percent Grade (0-150%)",
+      "High optical reading accuracy: 0.25° precision via internal parallax-free optics",
+      "Corrosion-resistant anodized aluminum alloy housing built for harsh field environments",
+      "Dual sapphire jewel bearings immersed in hermetically sealed damping liquid",
+      "Optical diopter adjustment adapts to the user's individual eyesight",
+      "Made in Finland with lanyard and heavy-duty nylon carrying case"
+    ],
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Made in Finland",
+        "group": "Construction"
+      },
+      {
+        "label": "Housing Material",
+        "value": "Anodized corrosion-resistant aluminum alloy",
+        "group": "Construction"
+      },
+      {
+        "label": "Scales",
+        "value": "Degrees (±90°) and Percent (0-150%)",
+        "group": "Measurement"
+      },
+      {
+        "label": "Reading Accuracy",
+        "value": "0.25° (with 0.5° graduations)",
+        "group": "Performance"
+      },
+      {
+        "label": "Damping System",
+        "value": "Liquid damping with dual sapphire bearings",
+        "group": "Internal Mechanics"
+      },
+      {
+        "label": "Dimensions",
+        "value": "75 x 52 x 15 mm",
+        "group": "Dimensions"
+      },
+      {
+        "label": "Weight",
+        "value": "110 g (3.88 oz)",
+        "group": "Dimensions"
+      }
+    ],
+    "features": [
+      "Simultaneous view of target and angle scale allows effortless height calculation with distance tables",
+      "Hermetically sealed liquid capsule prevents bubble formation and dampens card vibration",
+      "Compact metal design fits easily into field shirt pockets or geological utility belts"
+    ],
+    "applications": [
+      "Geological outcrop dip measurement and fault scarp slope profiling",
+      "Forestry tree height calculation and canopy angle survey",
+      "Civil road gradient and utility line sag measurement"
+    ],
+    "relatedProducts": [
+      "suunto-mc-2",
+      "suunto-kb-20",
+      "brunton-f-5012-axis"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Suunto PM-5 Clinometer",
+    "imageAlt": "Suunto PM-5 professional optical clinometer"
+  },
+  {
+    "id": "estwing-e3-22p",
+    "slug": "estwing-e3-22p",
+    "name": "Estwing E3-22P Pointed Tip Rock Pick (22 oz)",
+    "brand": "Estwing",
+    "series": "Rock Pick",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Geological Hammers",
+    "subcategorySlug": "geological-hammers",
+    "model": "E3-22P Pointed Tip (22 oz)",
+    "manufacturer": "Estwing Manufacturing Co.",
+    "manufacturerSource": "https://www.estwing.com/products/rock-pick-pointed-tip",
+    "sourceManufacturer": "Estwing Manufacturing Co.",
+    "sourceUrl": "https://www.estwing.com/products/rock-pick-pointed-tip",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/estwing-e3-22p/hero.webp",
+    "gallery": [
+      "/images/products/estwing-e3-22p/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/estwing-e3-22p/hero.webp"
+    ],
+    "shortDescription": "Standard 22 oz geological rock pick forged in one piece from solid American steel with pointed tip and patented Shock Reduction Grip.",
+    "description": "The Estwing E3-22P is the premier choice of professional geologists and paleontologists worldwide. Forged in one solid piece of 100% American tool steel, the E3-22P eliminates weld points and handle detachment risks. It features a hardened square striking face on one side and a sharp, precision-pointed pick on the other for fracturing dense igneous and metamorphic rock samples. Equipped with Estwing's patented nylon vinyl Shock Reduction Grip, which reduces handle impact vibrations by up to 70% while providing maximum grip durability.",
+    "highlights": [
+      "Solid steel construction forged in one piece in Rockford, Illinois, USA",
+      "Patented Shock Reduction Grip reduces impact vibration transfer by 70%",
+      "Precision-tapered pointed tip for prying and splitting rock strata",
+      "22 oz (616 g) head weight delivers optimal striking power without excessive fatigue",
+      "13-inch (330 mm) overall length provides ideal leverage on outcrop sampling",
+      "Fully polished head and neck with blue UV-resistant molded handle"
+    ],
+    "keyHighlights": [
+      "Solid steel construction forged in one piece in Rockford, Illinois, USA",
+      "Patented Shock Reduction Grip reduces impact vibration transfer by 70%",
+      "Precision-tapered pointed tip for prying and splitting rock strata",
+      "22 oz (616 g) head weight delivers optimal striking power without excessive fatigue",
+      "13-inch (330 mm) overall length provides ideal leverage on outcrop sampling",
+      "Fully polished head and neck with blue UV-resistant molded handle"
+    ],
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Made in USA (Rockford, IL)",
+        "group": "Manufacturing"
+      },
+      {
+        "label": "Head Weight",
+        "value": "22 oz (616 g)",
+        "group": "Specifications"
+      },
+      {
+        "label": "Overall Length",
+        "value": "13 inches (330 mm)",
+        "group": "Specifications"
+      },
+      {
+        "label": "Steel Material",
+        "value": "Solid American forged tool steel",
+        "group": "Material"
+      },
+      {
+        "label": "Grip Type",
+        "value": "Bonded and molded Shock Reduction Grip (Nylon Vinyl)",
+        "group": "Handle"
+      },
+      {
+        "label": "Head Type",
+        "value": "Pointed tip with smooth square striking face",
+        "group": "Design"
+      }
+    ],
+    "features": [
+      "One-piece forged design guarantees no loose hammer heads under heavy strikes",
+      "Vibration-damping grip protects geologist wrists and elbows from repetitive strain",
+      "Balanced head-to-handle weight distribution maximizes kinetic striking energy"
+    ],
+    "applications": [
+      "Hard rock outcrop sampling and mineral collection",
+      "Fossil excavation and sedimentary matrix splitting",
+      "Institutional field geology mapping and petrological survey"
+    ],
+    "relatedProducts": [
+      "estwing-e3-14p",
+      "estwing-e3-24blc",
+      "brunton-f-5008-compro"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Estwing E3-22P",
+    "imageAlt": "Estwing E3-22P 22 oz pointed tip geological rock pick"
+  },
+  {
+    "id": "estwing-e3-14p",
+    "slug": "estwing-e3-14p",
+    "name": "Estwing E3-14P Pointed Tip Rock Pick (14 oz)",
+    "brand": "Estwing",
+    "series": "Rock Pick",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Geological Hammers",
+    "subcategorySlug": "geological-hammers",
+    "model": "E3-14P Pointed Tip (14 oz)",
+    "manufacturer": "Estwing Manufacturing Co.",
+    "manufacturerSource": "https://www.estwing.com/products/rock-pick-pointed-tip",
+    "sourceManufacturer": "Estwing Manufacturing Co.",
+    "sourceUrl": "https://www.estwing.com/products/rock-pick-pointed-tip",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/estwing-e3-14p/hero.webp",
+    "gallery": [
+      "/images/products/estwing-e3-14p/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/estwing-e3-14p/hero.webp"
+    ],
+    "shortDescription": "Lightweight 14 oz geological rock pick forged in one piece from solid American steel with pointed tip and Shock Reduction Grip for extended fieldwork.",
+    "description": "The Estwing E3-14P is the lightweight sibling of the standard 22 oz rock pick, engineered for geologists who prioritize mobility during long-distance mountain traverses and backcountry expeditions. Weighing just 14 oz (392 g) with an 11-inch (279 mm) length, it features identical one-piece solid American steel forging and the patented vibration-damping Shock Reduction Grip. The pointed tip allows delicate sampling of mineral veins and sedimentary layers with minimal specimen shattering.",
+    "highlights": [
+      "Lightweight 14 oz head weight minimizes fatigue during steep alpine traverses",
+      "Forged in one solid piece from high-grade American tool steel",
+      "Patented Shock Reduction Grip reduces handle vibration by up to 70%",
+      "Pointed pick end allows delicate micro-sampling and fossil extraction",
+      "11-inch overall length packs compactly into standard field packs",
+      "Made in Rockford, Illinois, USA"
+    ],
+    "keyHighlights": [
+      "Lightweight 14 oz head weight minimizes fatigue during steep alpine traverses",
+      "Forged in one solid piece from high-grade American tool steel",
+      "Patented Shock Reduction Grip reduces handle vibration by up to 70%",
+      "Pointed pick end allows delicate micro-sampling and fossil extraction",
+      "11-inch overall length packs compactly into standard field packs",
+      "Made in Rockford, Illinois, USA"
+    ],
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Made in USA (Rockford, IL)",
+        "group": "Manufacturing"
+      },
+      {
+        "label": "Head Weight",
+        "value": "14 oz (392 g)",
+        "group": "Specifications"
+      },
+      {
+        "label": "Overall Length",
+        "value": "11 inches (279 mm)",
+        "group": "Specifications"
+      },
+      {
+        "label": "Material",
+        "value": "Solid forged American tool steel",
+        "group": "Material"
+      },
+      {
+        "label": "Handle Grip",
+        "value": "Molded Shock Reduction Grip",
+        "group": "Handle"
+      },
+      {
+        "label": "Head Style",
+        "value": "Pointed pick with square striking face",
+        "group": "Design"
+      }
+    ],
+    "features": [
+      "Lightweight balance provides high maneuverability for delicate fossil preparation",
+      "Durable molded grip will not slip in wet, muddy, or sweaty hands",
+      "Full steel shank resists bending under heavy prying loads"
+    ],
+    "applications": [
+      "High-altitude mountain geology and steep terrain mapping",
+      "Delicate mineral and crystal specimen collection",
+      "Sedimentary bedding splitting and fossil recovery"
+    ],
+    "relatedProducts": [
+      "estwing-e3-22p",
+      "estwing-e3-24blc",
+      "brunton-f-5008-compro"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Estwing E3-14P",
+    "imageAlt": "Estwing E3-14P 14 oz lightweight geological rock pick"
+  },
+  {
+    "id": "estwing-e3-24blc",
+    "slug": "estwing-e3-24blc",
+    "name": "Estwing E3-24BLC Chisel Edge Masonry / Rock Pick",
+    "brand": "Estwing",
+    "series": "Rock Pick",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Geological Hammers",
+    "subcategorySlug": "geological-hammers",
+    "model": "E3-24BLC Chisel Edge",
+    "manufacturer": "Estwing Manufacturing Co.",
+    "manufacturerSource": "https://www.estwing.com/products/bricklayer-chisel-edge-hammer",
+    "sourceManufacturer": "Estwing Manufacturing Co.",
+    "sourceUrl": "https://www.estwing.com/products/bricklayer-chisel-edge-hammer",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/estwing-e3-24blc/hero.webp",
+    "gallery": [
+      "/images/products/estwing-e3-24blc/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/estwing-e3-24blc/hero.webp"
+    ],
+    "shortDescription": "24 oz chisel-edge rock pick and masonry hammer forged in one piece from American steel with wide chisel blade for splitting layered sedimentary rock and shale.",
+    "description": "The Estwing E3-24BLC (Big Blue Chisel Edge) is an indispensable tool for sedimentary geologists, paleontologists, and stratigraphers. Instead of a pointed pick, it features a wide, razor-sharp chisel blade opposite its square striking face. Forged in one piece from high-strength American tool steel, the 24 oz (672 g) head delivers authoritative splitting power along shale, limestone, and sandstone bedding planes. Fitted with Estwing's Shock Reduction Grip for maximum comfort and hand protection.",
+    "highlights": [
+      "Wide chisel edge excels at cleaving layered shale, slate, and sedimentary strata",
+      "Forged in one solid piece from American tool steel with no welds",
+      "Substantial 24 oz (672 g) head weight delivers high splitting leverage",
+      "Patented Shock Reduction Grip reduces impact vibration by 70%",
+      "Flat side cheeks allow controlled tapping and splitting along bedding planes",
+      "Made in Rockford, Illinois, USA"
+    ],
+    "keyHighlights": [
+      "Wide chisel edge excels at cleaving layered shale, slate, and sedimentary strata",
+      "Forged in one solid piece from American tool steel with no welds",
+      "Substantial 24 oz (672 g) head weight delivers high splitting leverage",
+      "Patented Shock Reduction Grip reduces impact vibration by 70%",
+      "Flat side cheeks allow controlled tapping and splitting along bedding planes",
+      "Made in Rockford, Illinois, USA"
+    ],
+    "specifications": [
+      {
+        "label": "Model / SKU",
+        "value": "E3-24BLC",
+        "group": "Identification"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in USA (Rockford, IL)",
+        "group": "Manufacturing"
+      },
+      {
+        "label": "Head Weight",
+        "value": "24 oz (672 g)",
+        "group": "Specifications"
+      },
+      {
+        "label": "Overall Length",
+        "value": "11 inches (279 mm)",
+        "group": "Specifications"
+      },
+      {
+        "label": "Edge Style",
+        "value": "Wide chisel blade with smooth square striking face",
+        "group": "Design"
+      },
+      {
+        "label": "Handle",
+        "value": "Bonded Shock Reduction Grip",
+        "group": "Handle"
+      }
+    ],
+    "features": [
+      "Chisel blade splits delicate fossil-bearing shales without crushing fossils",
+      "Heavy-duty solid steel backbone withstands prying apart jointed rock slabs",
+      "UV-resistant blue grip ensures visibility in dense undergrowth"
+    ],
+    "applications": [
+      "Sedimentary rock layer splitting and stratification analysis",
+      "Paleontological fossil excavation in shale and sandstone",
+      "Geological outcrop sample trimming and preparation"
+    ],
+    "relatedProducts": [
+      "estwing-e3-22p",
+      "estwing-e3-14p",
+      "brunton-f-5010-geo"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Estwing E3-24BLC",
+    "imageAlt": "Estwing E3-24BLC 24 oz chisel edge geological rock pick"
+  },
+  {
+    "id": "breithaupt-3031-cothi",
+    "slug": "breithaupt-3031-cothi",
+    "name": "Breithaupt 3031 COTHI Geological Compass",
+    "brand": "Breithaupt",
+    "series": "COTHI",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Compasses & Pocket Transits",
+    "subcategorySlug": "compasses-pocket-transits",
+    "model": "3031 COTHI (Kassel)",
+    "manufacturer": "F.W. Breithaupt & Sohn GmbH & Co. KG",
+    "manufacturerSource": "https://www.breithaupt.de/",
+    "sourceManufacturer": "F.W. Breithaupt & Sohn",
+    "sourceUrl": "https://www.breithaupt.de/",
+    "verificationStatus": "client-supplied-verification-pending",
+    "status": "pending",
+    "heroImage": "/images/products/breithaupt-3031-cothi/hero.webp",
+    "gallery": [
+      "/images/products/breithaupt-3031-cothi/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/breithaupt-3031-cothi/hero.webp"
+    ],
+    "shortDescription": "Precision structural geological compass with circular bubble level and clinometer for strike and dip field measurements for precision structural geological strike and dip survey.",
+    "description": "The Breithaupt 3031 COTHI is a precision structural geological stratum compass manufactured by F.W. Breithaupt & Sohn in Kassel, Germany. Built to stringent European surveying standards, the COTHI allows single-action measurement of azimuth, dip direction, and angle of dip. Equipped with a circular spirit level for horizontal alignment, an integrated pendulum clinometer, and a dampened needle system with manual lock to preserve readings. NOTE: Client supplied 'BREITHAUPT 3031'; this entry is logged as verification pending exact technical accessory configuration.",
+    "highlights": [
+      "Manufactured in Kassel, Germany by F.W. Breithaupt & Sohn",
+      "Single-step measurement of strike, dip direction, and angle of dip",
+      "Circular spirit level ensures precise planar horizontal calibration",
+      "Built-in pendulum clinometer measures vertical dip angles up to 90°",
+      "Needle lock button preserves recorded bearing when removing from tight crevices"
+    ],
+    "keyHighlights": [
+      "Manufactured in Kassel, Germany by F.W. Breithaupt & Sohn",
+      "Single-step measurement of strike, dip direction, and angle of dip",
+      "Circular spirit level ensures precise planar horizontal calibration",
+      "Built-in pendulum clinometer measures vertical dip angles up to 90°",
+      "Needle lock button preserves recorded bearing when removing from tight crevices"
+    ],
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Made in Germany (Kassel)",
+        "group": "Manufacturing"
+      },
+      {
+        "label": "Model Ref",
+        "value": "COTHI 3031 Family",
+        "group": "Identification"
+      },
+      {
+        "label": "Azimuth Circle",
+        "value": "0-360° (or 400 gon upon request)",
+        "group": "Scale"
+      },
+      {
+        "label": "Inclinometer",
+        "value": "±90° pendulum clinometer",
+        "group": "Clinometer"
+      },
+      {
+        "label": "Needle System",
+        "value": "Sapphire bearing with push-button needle arrester",
+        "group": "Magnetic System"
+      }
+    ],
+    "features": [
+      "Needle clamping mechanism locks the magnetic needle immediately when the lid closes",
+      "High-precision non-magnetic alloy casing prevents environmental field errors",
+      "Circular level allows rapid verification of horizontal strike plane"
+    ],
+    "applications": [
+      "Structural geology strike and dip measurement",
+      "Underground tunnel rock joint survey",
+      "Academic geological field investigations"
+    ],
+    "relatedProducts": [
+      "brunton-f-5010-geo",
+      "brunton-f-5008-compro",
+      "suunto-mc-2"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Breithaupt 3031",
+    "imageAlt": "Breithaupt 3031 COTHI geological stratum compass"
+  },
+  {
+    "id": "generic-geological-pen",
+    "slug": "generic-geological-pen",
+    "name": "Geological Field Pen & Scribe",
+    "brand": "Generic",
+    "series": "Field Accessories",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Geological Field Accessories",
+    "subcategorySlug": "geological-field-accessories",
+    "model": "Field Marking Pen & Scribe",
+    "manufacturer": "Field Equipment Standard",
+    "manufacturerSource": "Standard Field Geological Equipment",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/generic-geological-pen/hero.webp",
+    "gallery": [
+      "/images/products/generic-geological-pen/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/generic-geological-pen/hero.webp"
+    ],
+    "shortDescription": "Field marking pen with integrated scribe tip for mineral scratch testing and recording field notes on all-weather paper.",
+    "description": "Designed for field geology and geotechnical surveys, this dual-purpose field pen combines a weather-resistant ink cartridge for writing on damp field notebooks with a hardened scribe point on the cap for mineral scratch testing.",
+    "highlights": [
+          "Weather-resistant ink for damp or humid field conditions",
+          "Hardened scribe tip for basic mineral scratch testing",
+          "Textured grip for handling with field gloves",
+          "Standard pocket clip for secure vest or notebook carriage"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Geological Field Scribe & Marking Pen",
+        "group": "General"
+      },
+      {
+        "label": "Primary Function",
+        "value": "Field data notation and mineral scratch assessment",
+        "group": "Application"
+      },
+      {
+        "label": "Body Design",
+        "value": "Metal barrel with textured grip",
+        "group": "Design"
+      },
+      {
+        "label": "Ink Type",
+        "value": "Black all-weather field ink",
+        "group": "Specification"
+      }
+    ],
+    "features": [
+      "Writes through grease, mud, and water without ink smudging",
+      "Dual-purpose utility eliminates carrying separate testing needles",
+      "Durable pocket clip secures pen in field vest pockets"
+    ],
+    "applications": [
+      "Field geological notebook data logging in rainy conditions",
+      "Mineral sample hardness testing and streak verification",
+      "Core sample labeling and borehole log documentation"
+    ],
+    "relatedProducts": [
+      "generic-geological-diary",
+      "generic-geological-lens",
+      "estwing-e3-22p"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Geological Pen & Scribe",
+    "imageAlt": "All-weather geological field pen and hardness scribe"
+  },
+  {
+    "id": "generic-geological-lens",
+    "slug": "generic-geological-lens",
+    "name": "Geological Pocket Hand Lens Loupe",
+    "brand": "Generic",
+    "series": "Field Accessories",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Geological Field Accessories",
+    "subcategorySlug": "geological-field-accessories",
+    "model": "Folding Field Magnifier Loupe",
+    "manufacturer": "Field Equipment Standard",
+    "manufacturerSource": "Standard Field Geological Equipment",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/generic-geological-lens/hero.webp",
+    "gallery": [
+      "/images/products/generic-geological-lens/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/generic-geological-lens/hero.webp"
+    ],
+    "shortDescription": "Folding pocket loupe magnifier for field inspection of mineral specimens, rock textures, and geological field samples.",
+    "description": "An essential field tool for geologists, field researchers, and mining survey crews, this pocket folding magnifier loupe enables close-up visual inspection of mineral grain boundaries, rock structures, and fossil surfaces in the field.",
+    "highlights": [
+          "Compact folding swing-away protective case",
+          "Optical glass lens for field rock and mineral inspection",
+          "Lanyard attachment loop for field neck-strap carriage",
+          "Pocket-sized for everyday fieldwork"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Folding Field Magnifier Loupe",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Rock texture, mineral grain, and specimen inspection",
+        "group": "Application"
+      },
+      {
+        "label": "Housing",
+        "value": "Protective swing-away metal case",
+        "group": "Design"
+      },
+      {
+        "label": "Portability",
+        "value": "Pocket-sized with lanyard hole",
+        "group": "Portability"
+      }
+    ],
+    "features": [
+      "Corrected optics ensure accurate crystal shape and mineral color identification",
+      "Compact swing design keeps optical elements dust-free during hikes",
+      "Anti-reflective multi-coating maximizes light transmission under daylight"
+    ],
+    "applications": [
+      "Rock texture analysis and grain size categorization (Wentworth scale)",
+      "Mineral cleavage, fracture, and twinning field identification",
+      "Microfossil inspection in sedimentary rock samples"
+    ],
+    "relatedProducts": [
+      "generic-geological-pen",
+      "generic-geological-diary",
+      "estwing-e3-22p"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Geological Hand Lens",
+    "imageAlt": "20x triplet optical geological field hand lens loupe"
+  },
+  {
+    "id": "generic-geological-diary",
+    "slug": "generic-geological-diary",
+    "name": "All-Weather Geological Field Notebook",
+    "brand": "Generic",
+    "series": "Field Accessories",
+    "category": "Geological Equipment",
+    "categorySlug": "geological-equipment",
+    "subcategory": "Geological Field Accessories",
+    "subcategorySlug": "geological-field-accessories",
+    "model": "Water-Resistant Field Journal",
+    "manufacturer": "Field Equipment Standard",
+    "manufacturerSource": "Standard Field Geological Equipment",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/generic-geological-diary/hero.webp",
+    "gallery": [
+      "/images/products/generic-geological-diary/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/generic-geological-diary/hero.webp"
+    ],
+    "shortDescription": "Water-resistant field notebook with grid pages for geological mapping, field sketches, and observational notes.",
+    "description": "Designed for outdoor fieldwork, geological mapping, and environmental surveys, this field notebook features water-resistant paper that sheds water and moisture, allowing geologists to record observational data in wet field conditions.",
+    "highlights": [
+          "Water-shedding paper suitable for wet field environments",
+          "Dual grid and ruled page layout for sketching and notation",
+          "Flexible high-visibility durable cover",
+          "Compact dimensions suited for field vest pockets"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "All-Weather Field Notebook",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Geological mapping, survey notes, and field sketches",
+        "group": "Application"
+      },
+      {
+        "label": "Page Layout",
+        "value": "Grid pattern and ruled notation format",
+        "group": "Layout"
+      },
+      {
+        "label": "Binding",
+        "value": "Durable all-weather binding",
+        "group": "Binding"
+      }
+    ],
+    "features": [
+      "Pages retain pencil and all-weather pen marks permanently without ink bleeding",
+      "Integrated grain size comparison chart on back cover speeds rock description",
+      "Durable sewn and glued binding withstands rigorous field seasons"
+    ],
+    "applications": [
+      "Field geological mapping, structural note-taking, and outcrop sketches",
+      "Hydrological and mining borehole sampling logs",
+      "Environmental baseline study and soil profile documentation"
+    ],
+    "relatedProducts": [
+      "generic-geological-pen",
+      "generic-geological-lens",
+      "brunton-f-5008-compro"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Geological Field Diary",
+    "imageAlt": "All-weather waterproof geological field diary and notebook"
+  },
+  {
+    "id": "nightfox-ember",
+    "slug": "nightfox-ember",
+    "name": "Nightfox Ember Digital Night Vision Monocular",
+    "brand": "Nightfox",
+    "series": "Ember",
+    "category": "Night Vision",
+    "categorySlug": "night-vision",
+    "subcategory": "Digital Night Vision",
+    "subcategorySlug": "digital-night-vision",
+    "model": "Nightfox Ember",
+    "manufacturer": "Nightfox",
+    "manufacturerSource": "https://nightfoxstore.com/products/nightfox-ember",
+    "sourceManufacturer": "Nightfox",
+    "sourceUrl": "https://nightfoxstore.com/products/nightfox-ember",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/nightfox-ember/hero.webp",
+    "gallery": [
+      "/images/products/nightfox-ember/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/nightfox-ember/hero.webp"
+    ],
+    "shortDescription": "Compact pocket-sized digital night vision monocular with built-in 850nm infrared illuminator, high-sensitivity digital sensor, video recording, and USB rechargeable battery.",
+    "description": "The Nightfox Ember is an ultra-portable handheld digital night vision monocular engineered for nocturnal field observation, security patrols, and wildlife viewing. Built with a high-sensitivity digital sensor and a multi-level 850nm infrared illuminator, the Ember enables operators to identify subjects up to 150 meters away in pitch-black night conditions. It features a wide field of view, 1.5-inch internal color display, push-button controls, micro-SD video recording, and a built-in USB-C rechargeable lithium-ion battery.",
+    "highlights": [
+      "Compact pocket-sized ergonomic housing for effortless one-handed operation",
+      "850nm integrated infrared illuminator with 7 adjustable power levels",
+      "Viewing range up to 150 meters in total darkness",
+      "Records digital video and photos directly to micro-SD card",
+      "Internal rechargeable lithium-ion battery with convenient USB-C charging",
+      "High-contrast viewing screen with clear status indicators"
+    ],
+    "keyHighlights": [
+      "Compact pocket-sized ergonomic housing for effortless one-handed operation",
+      "850nm integrated infrared illuminator with 7 adjustable power levels",
+      "Viewing range up to 150 meters in total darkness",
+      "Records digital video and photos directly to micro-SD card",
+      "Internal rechargeable lithium-ion battery with convenient USB-C charging",
+      "High-contrast viewing screen with clear status indicators"
+    ],
+    "specifications": [
+      {
+        "label": "Device Type",
+        "value": "Digital Night Vision Monocular",
+        "group": "Optics"
+      },
+      {
+        "label": "Sensor",
+        "value": "High-sensitivity digital CMOS sensor",
+        "group": "Sensor"
+      },
+      {
+        "label": "IR Illuminator",
+        "value": "850nm with 7 brightness levels",
+        "group": "Illumination"
+      },
+      {
+        "label": "Night Range",
+        "value": "Up to 150 meters in total darkness",
+        "group": "Performance"
+      },
+      {
+        "label": "Power",
+        "value": "Integrated rechargeable lithium-ion battery (USB-C)",
+        "group": "Power"
+      },
+      {
+        "label": "Storage",
+        "value": "Micro-SD card slot (supports up to 32 GB)",
+        "group": "Storage"
+      }
+    ],
+    "features": [
+      "Variable IR output matches illumination to open fields or enclosed forest brush",
+      "USB-C charging allows continuous power bank recharging during field deployments",
+      "Lightweight composite chassis slips easily into field coat pockets"
+    ],
+    "applications": [
+      "Nocturnal wildlife observation and nocturnal birding",
+      "Property perimeter night patrolling and security checks",
+      "Expedition night trail navigation and campsite reconnaissance"
+    ],
+    "relatedProducts": [
+      "nightfox-vulpes-hd",
+      "nightfox-swift",
+      "seek-reveal-300"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Nightfox Ember",
+    "imageAlt": "Nightfox Ember pocket digital night vision monocular"
+  },
+  {
+    "id": "nightfox-vulpes-hd",
+    "slug": "nightfox-vulpes-hd",
+    "name": "Nightfox Vulpes HD Rangefinder Night Vision Binocular",
+    "brand": "Nightfox",
+    "series": "Vulpes",
+    "category": "Night Vision",
+    "categorySlug": "night-vision",
+    "subcategory": "Digital Night Vision",
+    "subcategorySlug": "digital-night-vision",
+    "model": "Nightfox Vulpes HD",
+    "manufacturer": "Nightfox",
+    "manufacturerSource": "https://nightfoxstore.com/products/nightfox-vulpes",
+    "sourceManufacturer": "Nightfox",
+    "sourceUrl": "https://nightfoxstore.com/products/nightfox-vulpes",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/nightfox-vulpes-hd/hero.webp",
+    "gallery": [
+      "/images/products/nightfox-vulpes-hd/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/nightfox-vulpes-hd/hero.webp"
+    ],
+    "shortDescription": "High-definition dual-display digital night vision binocular featuring an integrated laser rangefinder, 1080p recording, and up to 200m+ night observation distance.",
+    "description": "The Nightfox Vulpes HD (correct spelling: Vulpes) combines high-definition digital night vision optics with an integrated laser rangefinder in a comfortable binocular housing. Looking through its dual-eyepiece viewing screen, researchers can observe nocturnal wildlife up to 200+ meters in darkness while simultaneously measuring the precise line-of-sight distance to the target at the press of a button. Featuring 1080p HD video recording with audio, high-power infrared illumination, and a rechargeable battery.",
+    "highlights": [
+      "Integrated laser rangefinder displays real-time target distance on screen",
+      "1080p Full HD video recording with clear sound capture onto micro-SD",
+      "High-power infrared LED illuminates nocturnal subjects up to 200+ meters",
+      "Dual-eye wide viewing display reduces eye strain during prolonged monitoring",
+      "Optical and digital zoom capability for detailed long-range identification",
+      "Rechargeable high-capacity battery provides up to 6 hours continuous use"
+    ],
+    "keyHighlights": [
+      "Integrated laser rangefinder displays real-time target distance on screen",
+      "1080p Full HD video recording with clear sound capture onto micro-SD",
+      "High-power infrared LED illuminates nocturnal subjects up to 200+ meters",
+      "Dual-eye wide viewing display reduces eye strain during prolonged monitoring",
+      "Optical and digital zoom capability for detailed long-range identification",
+      "Rechargeable high-capacity battery provides up to 6 hours continuous use"
+    ],
+    "specifications": [
+      {
+        "label": "Instrument Type",
+        "value": "Night Vision Binocular with Laser Rangefinder",
+        "group": "General"
+      },
+      {
+        "label": "Rangefinder Distance",
+        "value": "Integrated laser rangefinder (up to 200 m)",
+        "group": "Rangefinder"
+      },
+      {
+        "label": "Video Resolution",
+        "value": "1080p Full HD with audio",
+        "group": "Video"
+      },
+      {
+        "label": "IR Illumination",
+        "value": "High-output infrared with multi-stage intensity",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Display",
+        "value": "Dual-eyepiece widescreen LCD",
+        "group": "Display"
+      },
+      {
+        "label": "Battery",
+        "value": "Rechargeable internal battery (USB charging)",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Integrated laser rangefinder eliminates guessing animal distance in dark terrain",
+      "Wide binocular screen allows comfortable viewing with both eyes open",
+      "Threaded tripod mount allows steady long-term observation from hides"
+    ],
+    "applications": [
+      "Nocturnal wildlife census and animal distance monitoring",
+      "Forest reserve and anti-poaching long-range night surveillance",
+      "Perimeter security and estate boundary monitoring"
+    ],
+    "relatedProducts": [
+      "nightfox-ember",
+      "nightfox-swift",
+      "nikon-action-10x50"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Nightfox Vulpes HD",
+    "imageAlt": "Nightfox Vulpes HD rangefinder night vision binocular"
+  },
+  {
+    "id": "nightfox-swift",
+    "slug": "nightfox-swift",
+    "name": "Nightfox Swift Digital Night Vision Goggles",
+    "brand": "Nightfox",
+    "series": "Swift",
+    "category": "Night Vision",
+    "categorySlug": "night-vision",
+    "subcategory": "Digital Night Vision",
+    "subcategorySlug": "digital-night-vision",
+    "model": "Nightfox Swift",
+    "manufacturer": "Nightfox",
+    "manufacturerSource": "https://nightfoxstore.com/products/nightfox-swift",
+    "sourceManufacturer": "Nightfox",
+    "sourceUrl": "https://nightfoxstore.com/products/nightfox-swift",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/nightfox-swift/hero.webp",
+    "gallery": [
+      "/images/products/nightfox-swift/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/nightfox-swift/hero.webp"
+    ],
+    "shortDescription": "Head-mountable digital night vision goggles featuring 1x magnification for close-quarters movement, wide field of view, and dual-display viewing.",
+    "description": "The Nightfox Swift is a 1x optical magnification digital night vision goggle designed specifically for hands-free night movement, close-quarters navigation, and covert observation. Unlike high-magnification monoculars that cause disorientation during walking, the Swift's true 1x optical magnification preserves natural depth perception and spatial orientation. Equipped with an adjustable head mount strap, wide-angle viewing screen, 850nm infrared illuminator, and a rechargeable lithium battery.",
+    "highlights": [
+      "True 1x optical magnification allows natural hands-free walking and movement",
+      "Head-mount strap included for hands-free navigation in darkness",
+      "Wide field of view enhances peripheral awareness in woodland and caves",
+      "Multi-stage 850nm infrared illuminator for variable darkness levels",
+      "Internal rechargeable battery with over 3 hours of active runtime",
+      "Compact lightweight construction minimizes neck strain"
+    ],
+    "keyHighlights": [
+      "True 1x optical magnification allows natural hands-free walking and movement",
+      "Head-mount strap included for hands-free navigation in darkness",
+      "Wide field of view enhances peripheral awareness in woodland and caves",
+      "Multi-stage 850nm infrared illuminator for variable darkness levels",
+      "Internal rechargeable battery with over 3 hours of active runtime",
+      "Compact lightweight construction minimizes neck strain"
+    ],
+    "specifications": [
+      {
+        "label": "Device Style",
+        "value": "Head-Mountable Digital Night Vision Goggles",
+        "group": "General"
+      },
+      {
+        "label": "Magnification",
+        "value": "1x optical (natural spatial perspective)",
+        "group": "Optics"
+      },
+      {
+        "label": "IR Illuminator",
+        "value": "850nm infrared with adjustable intensity",
+        "group": "Night Vision"
+      },
+      {
+        "label": "Observation Distance",
+        "value": "Up to 75 m (ideal for walking and close quarters)",
+        "group": "Performance"
+      },
+      {
+        "label": "Mounting",
+        "value": "Head mount strap included; helmet mountable",
+        "group": "Mounting"
+      },
+      {
+        "label": "Power Source",
+        "value": "Built-in rechargeable battery via USB",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "1x magnification preserves normal depth perception for walking in night terrain",
+      "Hands-free head strap allows operator to carry equipment or use walking poles",
+      "Fast startup and simple button control operable with glove hands"
+    ],
+    "applications": [
+      "Hands-free night walking and trail exploration in dense forests",
+      "Cave, tunnel, and abandoned mine reconnaissance",
+      "Night wildlife tracking and nocturnal search operations"
+    ],
+    "relatedProducts": [
+      "nightfox-ember",
+      "nightfox-vulpes-hd",
+      "seek-firepro-300"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Nightfox Swift",
+    "imageAlt": "Nightfox Swift hands-free digital night vision goggles"
+  },
+  {
+    "id": "camping-tent-4-person",
+    "slug": "camping-tent-4-person",
+    "name": "4-Person Camping Tent",
+    "brand": "Generic",
+    "series": "Field Tents",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Tents",
+    "subcategorySlug": "tents",
+    "model": "4-Person Field Dome Tent",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/camping-tent-4-person/hero.webp",
+    "gallery": [
+      "/images/products/camping-tent-4-person/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/camping-tent-4-person/hero.webp"
+    ],
+    "shortDescription": "Outdoor camping tent designed for 4-person field accommodation, temporary research campsite shelter, and outdoor expeditions.",
+    "description": "A freestanding outdoor dome tent designed for field research teams, geological survey crews, and outdoor camping accommodation. Accommodates up to 4 adults with entryway vestibule space for field equipment storage.",
+    "highlights": [
+          "Freestanding dome design with flexible sectional poles",
+          "Removable outer rainfly for weather protection",
+          "Internal mesh panels for campsite ventilation",
+          "Entry doors with storage vestibule area"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Outdoor Field Camping Tent",
+        "group": "General"
+      },
+      {
+        "label": "Design Capacity",
+        "value": "Up to 4 Persons",
+        "group": "Capacity"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Field research accommodation and campsite shelter",
+        "group": "Application"
+      },
+      {
+        "label": "Setup Style",
+        "value": "Sectional poles with ground stakes and guylines",
+        "group": "Assembly"
+      }
+    ],
+    "features": [
+      "Dual-vestibule layout keeps wet muddy field gear separated from sleeping quarters",
+      "Color-coded poles enable rapid 10-minute setup in adverse weather",
+      "Internal storage pockets and lantern hanging ring provide organized living space"
+    ],
+    "applications": [
+      "Remote geological exploration and mining survey camps",
+      "Forestry inventory and ecological research outposts",
+      "Multi-day institutional outdoor fieldwork"
+    ],
+    "relatedProducts": [
+      "camping-tent-6-person",
+      "adventure-camping-tent",
+      "camping-sleeping-bag"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About 4-Person Camping Tent",
+    "imageAlt": "4-person weather-resistant field expedition dome tent"
+  },
+  {
+    "id": "camping-tent-6-person",
+    "slug": "camping-tent-6-person",
+    "name": "6-Person Camping Tent",
+    "brand": "Generic",
+    "series": "Field Tents",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Tents",
+    "subcategorySlug": "tents",
+    "model": "6-Person Field Cabin Tent",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/camping-tent-6-person/hero.webp",
+    "gallery": [
+      "/images/products/camping-tent-6-person/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/camping-tent-6-person/hero.webp"
+    ],
+    "shortDescription": "Spacious multi-person field tent for research crew accommodation, field staging, and communal campsite use.",
+    "description": "Designed for extended field operations and multi-person expedition crews, this spacious tent provides standing height interior clearance and partitioned living space for survey teams, field scientists, and camping staff.",
+    "highlights": [
+          "Tall interior clearance allowing comfortable standing room",
+          "Multi-pole structure suitable for basecamp setups",
+          "Internal divider for partitioned crew accommodation",
+          "Mesh windows with zip-up weather flaps"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Multi-Person Field Cabin Tent",
+        "group": "General"
+      },
+      {
+        "label": "Design Capacity",
+        "value": "Up to 6 Persons",
+        "group": "Capacity"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Expedition basecamp and field research crew shelter",
+        "group": "Application"
+      },
+      {
+        "label": "Structure",
+        "value": "Multi-pole cabin frame with guylines and stakes",
+        "group": "Assembly"
+      }
+    ],
+    "features": [
+      "Standing height enables comfortable daily basecamp routine without crouching",
+      "Spacious front awning creates sheltered porch for field computer and notes review",
+      "Sturdy construction supports extended multi-week field deployment"
+    ],
+    "applications": [
+      "Long-term geological and environmental field basecamps",
+      "Institutional survey crew and student group field shelter",
+      "Disaster relief and emergency response personnel housing"
+    ],
+    "relatedProducts": [
+      "camping-tent-4-person",
+      "large-camping-base-shelter",
+      "camping-table"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About 6-Person Camping Tent",
+    "imageAlt": "6-person spacious expedition crew camping tent"
+  },
+  {
+    "id": "adventure-camping-tent",
+    "slug": "adventure-camping-tent",
+    "name": "Adventure Camping Tent",
+    "brand": "Generic",
+    "series": "Field Tents",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Tents",
+    "subcategorySlug": "tents",
+    "model": "2-Person Trekking Tent",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/adventure-camping-tent/hero.webp",
+    "gallery": [
+      "/images/products/adventure-camping-tent/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/adventure-camping-tent/hero.webp"
+    ],
+    "shortDescription": "Compact 2-person field tent designed for lightweight trail trekking and mobile survey teams.",
+    "description": "An aerodynamic, lightweight outdoor tent engineered for mobile survey pairs, trekking expeditions, and backcountry field operations where packability and quick setup are essential.",
+    "highlights": [
+          "Low-profile wind-shedding aerodynamic silhouette",
+          "Compact pack volume for carrying in expedition rucksacks",
+          "Dual-pole setup for straightforward field assembly",
+          "Integrated storage pockets for field gear"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Compact Trekking Tent",
+        "group": "General"
+      },
+      {
+        "label": "Design Capacity",
+        "value": "2 Persons",
+        "group": "Capacity"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Mobile field surveys, trekking, and remote outposts",
+        "group": "Application"
+      },
+      {
+        "label": "Packing",
+        "value": "Compact compression carry bag included",
+        "group": "Portability"
+      }
+    ],
+    "features": [
+      "Low-profile wedge shape minimizes wind resistance during mountain storms",
+      "Fast-pitch pole clips allow rapid setup in sub-zero or stormy conditions",
+      "Reflective guy lines prevent tripping during night camp tasks"
+    ],
+    "applications": [
+      "High-altitude geological transects and glaciological survey",
+      "Remote alpine reconnaissance and backpacking expeditions",
+      "Rapid solo or two-person wilderness field deployments"
+    ],
+    "relatedProducts": [
+      "camping-sleeping-bag",
+      "trekking-rucksack-60l",
+      "camping-tent-4-person"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Adventure Camping Tent",
+    "imageAlt": "Lightweight high-altitude adventure camping tent"
+  },
+  {
+    "id": "car-boot-tent",
+    "slug": "car-boot-tent",
+    "name": "Car Boot Tent",
+    "brand": "Generic",
+    "series": "Field Tents",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Tents",
+    "subcategorySlug": "tents",
+    "model": "Vehicle Tailgate Extension Tent",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/car-boot-tent/hero.webp",
+    "gallery": [
+      "/images/products/car-boot-tent/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/car-boot-tent/hero.webp"
+    ],
+    "shortDescription": "Tailgate extension tent designed to attach to SUVs and field utility vehicles for sheltered campsite staging.",
+    "description": "This vehicle-attached tent connects around the open tailgate of SUVs, crossovers, or utility field vehicles to create an extended sheltered work, sleeping, or equipment staging area during vehicular field expeditions.",
+    "highlights": [
+          "Universal sleeve fitting designed for vehicle tailgates",
+          "Extends interior vehicle space into a standing shelter",
+          "Zippered doors with mesh screens for ventilation",
+          "Can be detached when the vehicle is in transit"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Vehicle Tailgate Extension Shelter",
+        "group": "General"
+      },
+      {
+        "label": "Vehicle Fit",
+        "value": "Universal fit for SUVs, crossovers, and estate vehicles",
+        "group": "Compatibility"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Vehicular field surveys, mobile workstations, and campsite staging",
+        "group": "Application"
+      },
+      {
+        "label": "Attachment",
+        "value": "Elasticated sleeve with adjustable tension straps",
+        "group": "Assembly"
+      }
+    ],
+    "features": [
+      "Seamless connection to vehicle cargo area enables dry access to equipment drawers",
+      "Can be detached from vehicle and zipped closed as a standalone camp tent",
+      "Awning poles create shaded canopy over rear door"
+    ],
+    "applications": [
+      "Mobile vehicular field survey and GIS ground-truthing",
+      "Wildlife roadside monitoring and covert camera battery swaps",
+      "Emergency mobile rescue headquarters and field dispatch"
+    ],
+    "relatedProducts": [
+      "camping-shelter",
+      "camping-table",
+      "foldable-camping-chair"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Car Boot Tent",
+    "imageAlt": "Vehicle-attached tailgate car boot outpost tent"
+  },
+  {
+    "id": "portable-privacy-tent",
+    "slug": "portable-privacy-tent",
+    "name": "Portable Privacy / Changing Tent",
+    "brand": "Generic",
+    "series": "Field Tents",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Tents",
+    "subcategorySlug": "tents",
+    "model": "Pop-Up Field Utility Shelter",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/portable-privacy-tent/hero.webp",
+    "gallery": [
+      "/images/products/portable-privacy-tent/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/portable-privacy-tent/hero.webp"
+    ],
+    "shortDescription": "Upright pop-up utility shelter for field changing, washing, and privacy in remote camp outposts.",
+    "description": "An upright pop-up utility shelter designed for field expeditions, archaeological sites, and remote survey camps requiring privacy for changing clothes, showering, or temporary field sanitation.",
+    "highlights": [
+          "Instant spring-steel pop-up frame for rapid deployment",
+          "Full standing height interior",
+          "Zippered entry door with internal utility hanging straps",
+          "Compact circular folding profile for transport"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Pop-Up Field Privacy Shelter",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Field changing, washroom privacy, and utility shelter",
+        "group": "Application"
+      },
+      {
+        "label": "Structure",
+        "value": "Spring-steel pop-up frame with ground tie-downs",
+        "group": "Assembly"
+      },
+      {
+        "label": "Portability",
+        "value": "Folds flat into circular carry pouch",
+        "group": "Portability"
+      }
+    ],
+    "features": [
+      "Silver privacy backing prevents interior silhouette projection at night with lantern",
+      "Folds down into flat circular carry bag with shoulder straps for easy transport",
+      "Heavy-duty double-sided zippers operate smoothly from inside and outside"
+    ],
+    "applications": [
+      "Field research camp privacy changing quarters",
+      "Portable sanitation and solar shower facility at remote outposts",
+      "Isolated field medical check and decontamination station"
+    ],
+    "relatedProducts": [
+      "camping-tent-4-person",
+      "camping-tent-6-person",
+      "large-camping-base-shelter"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Portable Privacy Tent",
+    "imageAlt": "Quick-erect portable field privacy and changing tent"
+  },
+  {
+    "id": "camping-sleeping-bag",
+    "slug": "camping-sleeping-bag",
+    "name": "Sleeping Bag",
+    "brand": "Generic",
+    "series": "Sleeping & Bedding",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Sleeping & Bedding",
+    "subcategorySlug": "sleeping",
+    "model": "Outdoor Field Sleeping Bag",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/camping-sleeping-bag/hero.webp",
+    "gallery": [
+      "/images/products/camping-sleeping-bag/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/camping-sleeping-bag/hero.webp"
+    ],
+    "shortDescription": "General-purpose outdoor field sleeping bag designed for overnight camping, field research accommodation, and expedition basecamps.",
+    "description": "Designed for fieldwork accommodation and outdoor camping, this sleeping bag provides comfortable coverage for field staff, surveyors, and expedition teams. Features a full-length side zipper and includes a compact pack sack for storage and transport.",
+    "highlights": [
+          "Full-length side zipper for easy entry and temperature control",
+          "Drawstring hood contour for head coverage",
+          "Includes compression pack sack for transport",
+          "Suitable for general outdoor field camping and outpost bunks"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Outdoor Field Sleeping Bag",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Expedition basecamps, field outposts, and camping accommodation",
+        "group": "Application"
+      },
+      {
+        "label": "Format",
+        "value": "Full-length zipper with contoured hood",
+        "group": "Design"
+      },
+      {
+        "label": "Storage",
+        "value": "Compression pack sack included",
+        "group": "Portability"
+      }
+    ],
+    "features": [
+      "Synthetic fill dries quickly and insulates even if exposed to condensation",
+      "Ergonomic 3D footbox allows feet to rest naturally without compressing insulation",
+      "Internal pocket securely stores flashlight, smartphone, or battery pack"
+    ],
+    "applications": [
+      "Field research station overnight quarters",
+      "High-altitude mountain survey camps",
+      "Expedition basecamp sleeping systems"
+    ],
+    "relatedProducts": [
+      "camping-tent-4-person",
+      "adventure-camping-tent",
+      "trekking-rucksack-60l"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Expedition Sleeping Bag",
+    "imageAlt": "Technical expedition mummy sleeping bag"
+  },
+  {
+    "id": "multipurpose-camping-tarp",
+    "slug": "multipurpose-camping-tarp",
+    "name": "Multipurpose Camping Tarp",
+    "brand": "Generic",
+    "series": "Shelters",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Shelters",
+    "subcategorySlug": "shelters",
+    "model": "Heavy-Duty Field Utility Tarp",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/multipurpose-camping-tarp/hero.webp",
+    "gallery": [
+      "/images/products/multipurpose-camping-tarp/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/multipurpose-camping-tarp/hero.webp"
+    ],
+    "shortDescription": "General-purpose outdoor field tarp for ground cover, equipment protection, and temporary shade awnings.",
+    "description": "A versatile field utility tarp for outdoor teams, useful as an overhead sun/rain shelter, tent groundsheet protector, vehicle load cover, or dry equipment staging mat in remote camp settings.",
+    "highlights": [
+          "Reinforced perimeter eyelets for guyline and pole attachment",
+          "Foldable and lightweight for easy transport",
+          "Multi-use format for ground cover or overhead canopy",
+          "Washable weather-resistant surface"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Outdoor Field Utility Tarp",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Groundsheet protection, equipment cover, and shade canopy",
+        "group": "Application"
+      },
+      {
+        "label": "Attachment",
+        "value": "Perimeter eyelet grommets for ropes and stakes",
+        "group": "Features"
+      },
+      {
+        "label": "Maintenance",
+        "value": "Rinse clean and air dry",
+        "group": "Care"
+      }
+    ],
+    "features": [
+      "Reversible design: dark green blends with forest, silver reflects solar heat",
+      "Tear-stop cross weave prevents small punctures from propagating",
+      "Folds compactly into field supply boxes"
+    ],
+    "applications": [
+      "Expedition equipment cache weatherproofing",
+      "Outdoor field kitchen and mess tent rain awning",
+      "Ground moisture barrier underneath field tents"
+    ],
+    "relatedProducts": [
+      "camping-shelter",
+      "camping-tent-4-person",
+      "camping-table"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Multipurpose Camping Tarp",
+    "imageAlt": "Heavy-duty waterproof multipurpose camping tarp"
+  },
+  {
+    "id": "camping-shelter",
+    "slug": "camping-shelter",
+    "name": "Camping Shelter",
+    "brand": "Generic",
+    "series": "Shelters",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Shelters",
+    "subcategorySlug": "shelters",
+    "model": "Freestanding Screened Field Shelter",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/camping-shelter/hero.webp",
+    "gallery": [
+      "/images/products/camping-shelter/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/camping-shelter/hero.webp"
+    ],
+    "shortDescription": "Freestanding screened canopy shelter for field team briefings, dining, and insect-screened gear staging.",
+    "description": "A freestanding screened shelter designed for field camps and expedition sites. Provides an insect-screened communal area for team meetings, sample logging, dining, and equipment organization protected from direct sun and wind.",
+    "highlights": [
+          "Screened mesh walls for insect protection with full airflow",
+          "Overhead canopy for shade and light weather protection",
+          "Walk-in standing height clearance",
+          "Zippered access doors"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Screened Field Canopy Shelter",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Field camp dining, team meetings, and sample sorting",
+        "group": "Application"
+      },
+      {
+        "label": "Clearance",
+        "value": "Full walk-in standing clearance",
+        "group": "Dimensions"
+      },
+      {
+        "label": "Enclosure",
+        "value": "Fine insect mesh walls with canopy roof",
+        "group": "Features"
+      }
+    ],
+    "features": [
+      "Keeps biting insects away from sensitive team data entry and meal times",
+      "Spacious enough to house two foldable camping tables and multiple chairs",
+      "Guy-out points with reflective cords ensure stability during afternoon storms"
+    ],
+    "applications": [
+      "Field research station communal mess hall and meeting room",
+      "Insect-free outdoor lab bench for specimen cataloguing",
+      "Basecamp coordination center during ecological surveys"
+    ],
+    "relatedProducts": [
+      "large-camping-base-shelter",
+      "camping-table",
+      "foldable-camping-chair"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Camping Shelter",
+    "imageAlt": "Hexagonal insect-free camping shelter"
+  },
+  {
+    "id": "large-camping-base-shelter",
+    "slug": "large-camping-base-shelter",
+    "name": "Large Camping Base Shelter",
+    "brand": "Generic",
+    "series": "Shelters",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Shelters",
+    "subcategorySlug": "shelters",
+    "model": "Multi-Person Basecamp Outpost Shelter",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard (Generic Presentation)",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/large-camping-base-shelter/hero.webp",
+    "gallery": [
+      "/images/products/large-camping-base-shelter/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/large-camping-base-shelter/hero.webp"
+    ],
+    "shortDescription": "Spacious communal basecamp shelter designed for field research crew briefings, storage, and communal outpost shelter.",
+    "description": "An expansive communal shelter for extended field operations and field research stations. Serves as a central command hub, field dining hall, or dry equipment depot during large-scale expeditions.",
+    "highlights": [
+          "Expansive communal interior footprint",
+          "Multiple roll-up door panels for flexible access",
+          "Tall standing height throughout the interior",
+          "Heavy-duty frame suited for semi-permanent camp setups"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Basecamp Outpost Shelter",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Basecamp command hub, communal dining, and equipment depot",
+        "group": "Application"
+      },
+      {
+        "label": "Access",
+        "value": "Multiple large roll-up entry panels",
+        "group": "Design"
+      },
+      {
+        "label": "Installation",
+        "value": "Interconnected frame with guyline anchors",
+        "group": "Setup"
+      }
+    ],
+    "features": [
+      "Serves as the primary operational headquarters for field research expeditions",
+      "Sun-reflective roof fabric keeps the interior noticeably cooler during mid-day work",
+      "Ground flaps seal tightly against soil to prevent blowing sand and rain intrusion"
+    ],
+    "applications": [
+      "Field research station primary administrative and analysis headquarters",
+      "Expedition basecamp dining, meeting, and equipment staging center",
+      "Geological survey team command post in remote wilderness"
+    ],
+    "relatedProducts": [
+      "camping-shelter",
+      "camping-tent-6-person",
+      "camping-table"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Large Camping Base Shelter",
+    "imageAlt": "Large multi-person outpost base living shelter"
+  },
+  {
+    "id": "foldable-camping-chair",
+    "slug": "foldable-camping-chair",
+    "name": "Foldable Camping Chair",
+    "brand": "Generic",
+    "series": "Furniture & Outpost Gear",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Furniture & Outpost Gear",
+    "subcategorySlug": "furniture",
+    "model": "Folding Field Camp Chair",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/foldable-camping-chair/hero.webp",
+    "gallery": [
+      "/images/products/foldable-camping-chair/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/foldable-camping-chair/hero.webp"
+    ],
+    "shortDescription": "Folding outdoor camp chair with durable fabric seat and carry bag for field campsite seating.",
+    "description": "A practical folding camp chair designed for field researchers, survey personnel, and campsite relaxation. Folds compactly into an included shoulder carry bag for easy stowage in field vehicle boots.",
+    "highlights": [
+          "Tubular steel folding frame with cross-bracing",
+          "Durable fabric seat and backrest",
+          "Integrated armrest drink holder",
+          "Includes tubular carry bag with shoulder strap"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Folding Field Camp Chair",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Campsite seating, field workstation desk chair",
+        "group": "Application"
+      },
+      {
+        "label": "Frame Style",
+        "value": "Folding tubular metal frame",
+        "group": "Construction"
+      },
+      {
+        "label": "Portability",
+        "value": "Collapses into tubular carry case",
+        "group": "Portability"
+      }
+    ],
+    "features": [
+      "Solid steel cross-bracing provides stability on rocky ground without creaking",
+      "Breathable fabric back reduces perspiration during hot field deployments",
+      "Lightweight portability allows effortless relocation around field camp"
+    ],
+    "applications": [
+      "Basecamp dining and evening data analysis seating",
+      "Vehicle roadside survey station observation chair",
+      "Outdoor field research camp logistics"
+    ],
+    "relatedProducts": [
+      "camping-table",
+      "camping-shelter",
+      "ice-cooler-box"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Foldable Camping Chair",
+    "imageAlt": "Heavy-duty foldable field camping chair"
+  },
+  {
+    "id": "camping-table",
+    "slug": "camping-table",
+    "name": "Camping Table",
+    "brand": "Generic",
+    "series": "Furniture & Outpost Gear",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Furniture & Outpost Gear",
+    "subcategorySlug": "furniture",
+    "model": "Folding Aluminum Camp Table",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/camping-table/hero.webp",
+    "gallery": [
+      "/images/products/camping-table/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/camping-table/hero.webp"
+    ],
+    "shortDescription": "Folding aluminum camp table for fieldwork equipment setup, sample sorting, and campsite dining.",
+    "description": "An all-metal folding camp table designed for expedition campsites and outdoor workstations. The roll-up aluminum slat surface is easy to clean and heat-tolerant, making it well-suited for field laptops, notebooks, stoves, and meal prep.",
+    "highlights": [
+          "Roll-up aluminum slat tabletop",
+          "Folding cross-braced leg mechanism",
+          "Heat-resistant metal surface safe for field cooking stoves",
+          "Folds into included divided carry pouch"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Folding Field Camp Table",
+        "group": "General"
+      },
+      {
+        "label": "Tabletop Type",
+        "value": "Roll-up aluminum slat system",
+        "group": "Design"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Field equipment staging, sample logging, and camp dining",
+        "group": "Application"
+      },
+      {
+        "label": "Portability",
+        "value": "Disassembles into compact carry case",
+        "group": "Portability"
+      }
+    ],
+    "features": [
+      "Heat-resistant aluminum surface allows placing operating stoves directly on the table",
+      "Independent leg adjustment stabilizes instruments even on sloped terrain",
+      "Wipes clean instantly of grease, soil, and field chemicals"
+    ],
+    "applications": [
+      "Field camp GIS laptop workstation and data entry desk",
+      "Camp kitchen food preparation and stove support",
+      "Equipment repair, battery charging, and calibration station"
+    ],
+    "relatedProducts": [
+      "foldable-camping-chair",
+      "camping-shelter",
+      "ice-cooler-box"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Camping Table",
+    "imageAlt": "Roll-up aluminum lightweight field camping table"
+  },
+  {
+    "id": "ice-cooler-box",
+    "slug": "ice-cooler-box",
+    "name": "Ice Cooler Box",
+    "brand": "Generic",
+    "series": "Furniture & Outpost Gear",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Furniture & Outpost Gear",
+    "subcategorySlug": "furniture",
+    "model": "Insulated Field Ice Cooler Box",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/ice-cooler-box/hero.webp",
+    "gallery": [
+      "/images/products/ice-cooler-box/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/ice-cooler-box/hero.webp"
+    ],
+    "shortDescription": "Insulated field cooler box for storing chilled provisions, food supplies, and temperature-sensitive samples during field operations.",
+    "description": "A rigid insulated ice cooler box built for field expeditions, exploration vehicles, and remote campsites. Designed to store ice, chilled beverages, provisions, and environmental field samples requiring cool storage.",
+    "highlights": [
+          "Insulated walls and lid for temperature retention",
+          "Durable molded exterior shell",
+          "Tension latches to keep the lid firmly closed",
+          "Side carry handles and base drain spout"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Insulated Field Ice Cooler Box",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Provision storage, campsite cooling, and sample transport",
+        "group": "Application"
+      },
+      {
+        "label": "Body Style",
+        "value": "Rigid molded hardshell with insulated core",
+        "group": "Design"
+      },
+      {
+        "label": "Drainage",
+        "value": "Threaded base drain spout for melted ice",
+        "group": "Features"
+      }
+    ],
+    "features": [
+      "Rugged rotomolded shell doubles as a sturdy step stool or field seat",
+      "Preserves biological ecological samples at near-freezing temperatures in the field",
+      "Molded tie-down slots allow secure lashing into vehicles without blocking lid opening"
+    ],
+    "applications": [
+      "Remote field camp food and potable ice cold storage",
+      "Ecological water and biological tissue sample cold preservation",
+      "Vehicle expedition supply storage across hot desert or jungle terrain"
+    ],
+    "relatedProducts": [
+      "camping-table",
+      "foldable-camping-chair",
+      "isothermal-hiking-flask"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Ice Cooler Box",
+    "imageAlt": "Heavy-duty rotomolded expedition ice cooler box"
+  },
+  {
+    "id": "stainless-steel-backpacking-stove",
+    "slug": "stainless-steel-backpacking-stove",
+    "name": "Stainless Steel Backpacking Stove",
+    "brand": "Generic",
+    "series": "Field Cooking & Stoves",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Field Cooking & Stoves",
+    "subcategorySlug": "cooking",
+    "model": "Flat-Pack Biomass Field Stove",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/stainless-steel-backpacking-stove/hero.webp",
+    "gallery": [
+      "/images/products/stainless-steel-backpacking-stove/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/stainless-steel-backpacking-stove/hero.webp"
+    ],
+    "shortDescription": "Compact flat-packing stainless steel field stove using twigs and biomass for off-grid cooking.",
+    "description": "A lightweight folding camp stove designed for backcountry cooking without relying on gas canisters. Operates on naturally available biomass such as dry twigs, bark, and pine cones gathered at the campsite.",
+    "highlights": [
+          "Packs flat for minimal volume in field packs",
+          "Operates on gathered twigs, wood scraps, and solid fuel",
+          "Stainless steel sheet construction",
+          "Tool-less interlocking panel assembly"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Flat-Pack Biomass Field Stove",
+        "group": "General"
+      },
+      {
+        "label": "Fuel Compatibility",
+        "value": "Wood twigs, dry biomass, and solid fuel tablets",
+        "group": "Fuel"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Backcountry meal prep and water boiling",
+        "group": "Application"
+      },
+      {
+        "label": "Format",
+        "value": "Interlocking flat panels with carry sleeve",
+        "group": "Design"
+      }
+    ],
+    "features": [
+      "Eliminates dependency on proprietary gas canisters during long wilderness stints",
+      "Gasifier double-wall design boils 1 liter of water in under 8 minutes on dry twigs",
+      "Sturdy flat-pack design supports heavy field cookware without wobbling"
+    ],
+    "applications": [
+      "Remote backpacking geological and botanical surveys",
+      "Off-grid expedition emergency cooking and water boiling",
+      "Survival and search-and-rescue field gear caches"
+    ],
+    "relatedProducts": [
+      "portable-camping-gas-stove",
+      "water-purifier-bottle",
+      "isothermal-hiking-flask"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Stainless Steel Stove",
+    "imageAlt": "Compact stainless steel folding wood backpacking stove"
+  },
+  {
+    "id": "portable-camping-gas-stove",
+    "slug": "portable-camping-gas-stove",
+    "name": "Portable Camping Gas Stove",
+    "brand": "Generic",
+    "series": "Field Cooking & Stoves",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Field Cooking & Stoves",
+    "subcategorySlug": "cooking",
+    "model": "Single-Burner Portable Butane Stove",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/portable-camping-gas-stove/hero.webp",
+    "gallery": [
+      "/images/products/portable-camping-gas-stove/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/portable-camping-gas-stove/hero.webp"
+    ],
+    "shortDescription": "Portable single-burner butane camping stove with carry case for field campsite cooking.",
+    "description": "A self-contained single-burner gas stove widely used for expedition field kitchens, vehicle-based survey camps, and outdoor catering. Features push-turn ignition and comes in a rigid carry case.",
+    "highlights": [
+          "Integrated piezoelectric push-turn starter",
+          "Variable flame control knob for simmering or boiling",
+          "Uses standard portable bayonet-style butane canisters",
+          "Includes protective hardshell plastic carry case"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Portable Single-Burner Gas Stove",
+        "group": "General"
+      },
+      {
+        "label": "Fuel Source",
+        "value": "Standard portable nozzle/bayonet butane canister",
+        "group": "Fuel"
+      },
+      {
+        "label": "Ignition",
+        "value": "Integrated piezoelectric starter",
+        "group": "Operation"
+      },
+      {
+        "label": "Storage",
+        "value": "Hard plastic carry case included",
+        "group": "Packaging"
+      }
+    ],
+    "features": [
+      "Flame control dial adjusts seamlessly from high boiling flame down to gentle simmer",
+      "Enameled pot stand cleans easily after oil or soup spills",
+      "Compact suitcase footprint stores securely inside survey vehicle toolboxes"
+    ],
+    "applications": [
+      "Vehicle-based field survey meal preparation",
+      "Expedition basecamp daily tea, coffee, and ration cooking",
+      "Emergency field outpost boiling and sterilization"
+    ],
+    "relatedProducts": [
+      "stainless-steel-backpacking-stove",
+      "camping-table",
+      "isothermal-hiking-flask"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Portable Gas Stove",
+    "imageAlt": "Single-burner portable camping gas stove with case"
+  },
+  {
+    "id": "led-headlamp",
+    "slug": "led-headlamp",
+    "name": "LED Headlamp",
+    "brand": "Generic",
+    "series": "Field Lighting",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Field Lighting",
+    "subcategorySlug": "lighting",
+    "model": "Adjustable Outdoor LED Headlamp",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/led-headlamp/hero.webp",
+    "gallery": [
+      "/images/products/led-headlamp/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/led-headlamp/hero.webp"
+    ],
+    "shortDescription": "Hands-free adjustable LED headlamp for night surveys, camp illumination, and equipment inspection.",
+    "description": "A hands-free head-mounted flashlight for field personnel working in low-light environments, conducting nocturnal wildlife surveys, or managing campsite chores after dark.",
+    "highlights": [
+          "Hands-free adjustable elastic headband",
+          "Tilting light housing to direct beam angle",
+          "Multiple illumination settings for distance or close-up work",
+          "Rechargeable battery with USB charging"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Hands-Free Outdoor LED Headlamp",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Night field surveys, campsite illumination, and gear inspection",
+        "group": "Application"
+      },
+      {
+        "label": "Mounting",
+        "value": "Elastic adjustable headstrap",
+        "group": "Mounting"
+      },
+      {
+        "label": "Power",
+        "value": "Rechargeable battery via USB connection",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Red light mode allows reading geological maps without resetting night-adapted vision",
+      "Tilt housing allows looking down at notes or compass without straining the neck",
+      "Memory function recalls the last used brightness setting upon switching on"
+    ],
+    "applications": [
+      "Hands-free nocturnal field research and bat/insect surveys",
+      "Campsite setup and equipment sorting after sundown",
+      "Underground cave, mine, and geological adit exploration"
+    ],
+    "relatedProducts": [
+      "camping-torch",
+      "search-light",
+      "nightfox-ember"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About LED Headlamp",
+    "imageAlt": "Rechargeable dual-beam outdoor LED headlamp"
+  },
+  {
+    "id": "search-light",
+    "slug": "search-light",
+    "name": "Search Light",
+    "brand": "Generic",
+    "series": "Field Lighting",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Field Lighting",
+    "subcategorySlug": "lighting",
+    "model": "Handheld Long-Throw Searchlight",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/search-light/hero.webp",
+    "gallery": [
+      "/images/products/search-light/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/search-light/hero.webp"
+    ],
+    "shortDescription": "Handheld rechargeable searchlight with carry handle for long-range night navigation and perimeter illumination.",
+    "description": "A high-capacity handheld searchlight designed for nocturnal outdoor navigation, wildlife reserve monitoring, search operations, and perimeter inspection around remote research bases.",
+    "highlights": [
+          "Concentrated front beam for long-distance spotting",
+          "Ergonomic handle and shoulder strap attachment points",
+          "Rechargeable internal battery with charging port",
+          "Side floodlight feature for area lighting"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Handheld Rechargeable Searchlight",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Perimeter inspection, night trail reconnaissance, and search coordination",
+        "group": "Application"
+      },
+      {
+        "label": "Carriage",
+        "value": "Molded top handle with shoulder strap tabs",
+        "group": "Design"
+      },
+      {
+        "label": "Power",
+        "value": "Internal rechargeable battery",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Massive beam reach enables spotters to identify distant animals across riverbanks",
+      "Side worklight converts the searchlight into a free-standing area lantern for camp tables",
+      "Tripod mount thread at the base allows stationary security perimeter illumination"
+    ],
+    "applications": [
+      "National park night patrol and anti-poaching operations",
+      "Riverine and lake navigation spotlighting",
+      "Large-scale search and rescue perimeter sweeps"
+    ],
+    "relatedProducts": [
+      "camping-torch",
+      "led-headlamp",
+      "licence-free-walkie-talkie"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Search Light",
+    "imageAlt": "Long-throw rechargeable handheld searchlight"
+  },
+  {
+    "id": "camping-torch",
+    "slug": "camping-torch",
+    "name": "Camping Torch",
+    "brand": "Generic",
+    "series": "Field Lighting",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Field Lighting",
+    "subcategorySlug": "lighting",
+    "model": "Handheld Field LED Flashlight",
+    "manufacturer": "Technical Field Camping Standard",
+    "manufacturerSource": "Technical Field Camping Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/camping-torch/hero.webp",
+    "gallery": [
+      "/images/products/camping-torch/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/camping-torch/hero.webp"
+    ],
+    "shortDescription": "Handheld LED flashlight with aluminum housing for general field inspection and night tasks.",
+    "description": "A durable handheld LED flashlight designed for routine outdoor field tasks, equipment checks, and night walking. Built with a metal casing with non-slip grip texture.",
+    "highlights": [
+          "Metal barrel with textured knurled grip",
+          "Rechargeable internal battery with charging port",
+          "Wrist lanyard for secure handling in the field",
+          "Compact profile for pocket or belt holster carry"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Handheld Field LED Flashlight",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "General field lighting, night inspection, and outdoor navigation",
+        "group": "Application"
+      },
+      {
+        "label": "Casing",
+        "value": "Metal barrel with textured grip",
+        "group": "Design"
+      },
+      {
+        "label": "Power",
+        "value": "Rechargeable battery with USB charging",
+        "group": "Power"
+      }
+    ],
+    "features": [
+      "Sliding zoom adjusts beam diameter with one thumb while walking",
+      "Tactical tail-switch or side button operates smoothly with heavy glove hands",
+      "Anti-roll body profile prevents flashlight from rolling off sloped rock outcrops"
+    ],
+    "applications": [
+      "Personal pocket illumination during nocturnal field tasks",
+      "Equipment troubleshooting and vehicle inspection in darkness",
+      "Emergency signaling and trail reconnaissance"
+    ],
+    "relatedProducts": [
+      "led-headlamp",
+      "search-light",
+      "generic-geological-pen"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Camping Torch",
+    "imageAlt": "Tactical anodized aluminum LED field flashlight"
+  },
+  {
+    "id": "licence-free-walkie-talkie",
+    "slug": "licence-free-walkie-talkie",
+    "name": "Licence-Free Walkie-Talkie",
+    "brand": "Generic",
+    "series": "Field Communication",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Field Communication",
+    "subcategorySlug": "communication",
+    "model": "Two-Way UHF Field Radio Set",
+    "manufacturer": "Standard Field Communication Standard",
+    "manufacturerSource": "Standard Field Communication Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/licence-free-walkie-talkie/hero.webp",
+    "gallery": [
+      "/images/products/licence-free-walkie-talkie/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/licence-free-walkie-talkie/hero.webp"
+    ],
+    "shortDescription": "Handheld licence-free two-way radio set for localized voice coordination among field teams in open terrain.",
+    "description": "A pair of licence-free handheld two-way radios designed for short-range communication among field crews, surveyors, and expedition teams operating in areas without reliable mobile phone coverage.",
+    "highlights": [
+          "Operates on licence-free consumer radio frequencies",
+          "Push-to-talk button for straightforward voice communication",
+          "Belt clip for hands-free carriage on field vests",
+          "Rechargeable battery pack with desktop charging base"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Handheld Two-Way Radio Set",
+        "group": "General"
+      },
+      {
+        "label": "Frequency Band",
+        "value": "Licence-free UHF band for open terrain communication",
+        "group": "Radio"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Local team coordination, convoy travel, and campsite communication",
+        "group": "Application"
+      },
+      {
+        "label": "Accessories",
+        "value": "Belt clips, rechargeable batteries, and charging dock included",
+        "group": "Package"
+      }
+    ],
+    "features": [
+      "One-touch push-to-talk (PTT) enables instant emergency broadcasting across the entire team",
+      "VOX hands-free function triggers transmission automatically when the user speaks",
+      "Sturdy spring-loaded belt clip secures radio to field vest shoulder straps"
+    ],
+    "applications": [
+      "Geological and survey team line-of-sight coordinate verification",
+      "Field vehicle convoy coordination on remote backcountry tracks",
+      "Basecamp to outpost crew safety checks in national parks"
+    ],
+    "relatedProducts": [
+      "search-light",
+      "led-headlamp",
+      "garmin-etrex-se"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Walkie-Talkie",
+    "imageAlt": "Rugged handheld licence-free two-way field walkie-talkie"
+  },
+  {
+    "id": "water-purifier-bottle",
+    "slug": "water-purifier-bottle",
+    "name": "Outdoor Water Filter Bottle",
+    "brand": "Generic",
+    "series": "Hydration & Water",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Hydration & Water",
+    "subcategorySlug": "hydration",
+    "model": "Field Water Filtration Bottle",
+    "manufacturer": "Standard Field Hydration Standard",
+    "manufacturerSource": "Standard Field Hydration Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/water-purifier-bottle/hero.webp",
+    "gallery": [
+      "/images/products/water-purifier-bottle/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/water-purifier-bottle/hero.webp"
+    ],
+    "shortDescription": "Field water filter bottle designed for outdoor recreation and expedition hydration, intended for filtering sediment and suspended particles from outdoor water sources.",
+    "description": "A portable outdoor water bottle incorporating an internal filter assembly to help reduce sediment, suspended matter, and particulates from freshwater streams and lakes during outdoor expeditions and field surveys.",
+    "highlights": [
+          "Built-in filter assembly inside a reusable drinking bottle",
+          "Flip-top drinking spout with protective cap",
+          "Integrated carry loop for attaching to field packs",
+          "Intended for freshwater outdoor sources"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Portable Water Filtration Bottle",
+        "group": "General"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Outdoor field hydration, sediment filtering",
+        "group": "Application"
+      },
+      {
+        "label": "Format",
+        "value": "Refillable sports bottle with integrated filter straw",
+        "group": "Design"
+      },
+      {
+        "label": "Care",
+        "value": "Rinse clean after use; use with clear freshwater sources",
+        "group": "Maintenance"
+      }
+    ],
+    "features": [
+      "Enables field geologists to refill directly from mountain streams without carrying heavy water loads",
+      "Hygienic mouthpiece cap prevents trail dust from contaminating the drinking nozzle",
+      "Standard diameter fits in side rucksack water bottle pockets"
+    ],
+    "applications": [
+      "Backcountry geological mapping along mountain stream networks",
+      "Multi-day forestry survey transects without clean water supply",
+      "Emergency hydration during expedition field deployments"
+    ],
+    "relatedProducts": [
+      "isothermal-hiking-flask",
+      "trekking-rucksack-50l",
+      "stainless-steel-backpacking-stove"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About Water Purifier Bottle",
+    "imageAlt": "Integrated micro-filtration water purifier bottle"
+  },
+  {
+    "id": "isothermal-hiking-flask",
+    "slug": "isothermal-hiking-flask",
+    "name": "Isothermal Hiking Flask",
+    "brand": "Generic",
+    "series": "Hydration & Water",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Hydration & Water",
+    "subcategorySlug": "hydration",
+    "model": "Insulated Stainless Steel Flask",
+    "manufacturer": "Standard Field Hydration Standard",
+    "manufacturerSource": "Standard Field Hydration Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/isothermal-hiking-flask/hero.webp",
+    "gallery": [
+      "/images/products/isothermal-hiking-flask/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/isothermal-hiking-flask/hero.webp"
+    ],
+    "shortDescription": "Insulated stainless steel thermal bottle for carrying hot or cold beverages during field surveys.",
+    "description": "A double-wall insulated stainless steel flask designed to keep drinking water, tea, or coffee at temperature during outdoor field surveys, treks, and geological mapping excursions.",
+    "highlights": [
+          "Double-wall insulated stainless steel construction",
+          "Screw cap with leak-resistant silicone seal ring",
+          "Carry handle or loop on cap for pack attachment",
+          "Durable exterior suitable for rough outdoor handling"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Insulated Thermal Field Flask",
+        "group": "General"
+      },
+      {
+        "label": "Body Material",
+        "value": "Stainless steel body with insulated walls",
+        "group": "Construction"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Field hydration, warm or cold beverage storage",
+        "group": "Application"
+      },
+      {
+        "label": "Cap Design",
+        "value": "Threaded leak-resistant cap with carry loop",
+        "group": "Design"
+      }
+    ],
+    "features": [
+      "Maintains boiling hot soup or tea during winter geological mapping",
+      "No exterior sweat condensation prevents wetting maps and paperwork inside rucksacks",
+      "Rugged stainless steel base resists damage when set down on rough granite"
+    ],
+    "applications": [
+      "All-day hydration during high-heat or freezing field surveys",
+      "Hot liquid storage for winter research and mountaineering teams",
+      "Vehicle expedition daily travel flask"
+    ],
+    "relatedProducts": [
+      "water-purifier-bottle",
+      "trekking-rucksack-under-50l",
+      "ice-cooler-box"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Isothermal Flask",
+    "imageAlt": "Double-wall vacuum insulated stainless steel hiking flask"
+  },
+  {
+    "id": "trekking-rucksack-under-50l",
+    "slug": "trekking-rucksack-under-50l",
+    "name": "Trekking Rucksack – Under 50L",
+    "brand": "Generic",
+    "series": "Expedition Rucksacks",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Expedition Rucksacks",
+    "subcategorySlug": "rucksacks",
+    "model": "Field Daypack Rucksack",
+    "manufacturer": "Technical Rucksack Ergonomic Standard",
+    "manufacturerSource": "Technical Rucksack Ergonomic Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/trekking-rucksack-under-50l/hero.webp",
+    "gallery": [
+      "/images/products/trekking-rucksack-under-50l/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/trekking-rucksack-under-50l/hero.webp"
+    ],
+    "shortDescription": "Compact daypack rucksack for field gear, personal provisions, and single-day field surveys.",
+    "description": "A compact technical daypack rucksack designed for single-day field surveys, forestry walks, and outdoor sampling excursions. Features padded shoulder straps and external pockets for quick-access items.",
+    "highlights": [
+          "Padded shoulder harness with sternum strap",
+          "Main top-loading compartment plus exterior zipper pockets",
+          "Side mesh pockets for water bottles or field tubes",
+          "Compact volume suited for day-trip fieldwork"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Field Daypack Rucksack",
+        "group": "General"
+      },
+      {
+        "label": "Capacity Class",
+        "value": "Daypack / Under 50L Tier",
+        "group": "Capacity"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Day excursions, field sampling, and instrument carriage",
+        "group": "Application"
+      },
+      {
+        "label": "Harness",
+        "value": "Padded shoulder straps with adjustable sternum slider",
+        "group": "Harness"
+      }
+    ],
+    "features": [
+      "Compact volume allows easy maneuvering through dense thorny undergrowth",
+      "Hip belt zippered pockets store GPS unit, compass, and field scribe for instant access",
+      "Heavy-duty bottom panel resists abrasion from gravel and granite outcrops"
+    ],
+    "applications": [
+      "Single-day geological mapping and rock sample transport",
+      "Forestry inventory and ecological transect day hikes",
+      "Trail camera installation and battery swap patrol"
+    ],
+    "relatedProducts": [
+      "trekking-rucksack-50l",
+      "isothermal-hiking-flask",
+      "led-headlamp"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Trekking Rucksack Under 50L",
+    "imageAlt": "Technical trekking field rucksack under 50L"
+  },
+  {
+    "id": "trekking-rucksack-50l",
+    "slug": "trekking-rucksack-50l",
+    "name": "Trekking Rucksack – 50L",
+    "brand": "Generic",
+    "series": "Expedition Rucksacks",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Expedition Rucksacks",
+    "subcategorySlug": "rucksacks",
+    "model": "50L Field Expedition Backpack",
+    "manufacturer": "Technical Rucksack Ergonomic Standard",
+    "manufacturerSource": "Technical Rucksack Ergonomic Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/trekking-rucksack-50l/hero.webp",
+    "gallery": [
+      "/images/products/trekking-rucksack-50l/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/trekking-rucksack-50l/hero.webp"
+    ],
+    "shortDescription": "Standard multi-day expedition rucksack with padded shoulder harness and multiple compartments for field equipment transport.",
+    "description": "A 50-liter expedition backpack designed for multi-day field surveys and backcountry travel. Provides structured weight distribution via a padded hip belt and multiple storage zones for tents, bedding, and gear.",
+    "highlights": [
+          "Padded shoulder harness and load-bearing hip belt",
+          "Top lid compartment and lower gear access section",
+          "Side compression straps to stabilize cargo",
+          "Attachment loops for trekking poles and field equipment"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Multi-Day Expedition Backpack",
+        "group": "General"
+      },
+      {
+        "label": "Capacity Class",
+        "value": "50 Liters Class",
+        "group": "Capacity"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Multi-day survey treks and field camp gear carriage",
+        "group": "Application"
+      },
+      {
+        "label": "Carriage System",
+        "value": "Padded shoulder straps and adjustable hip belt",
+        "group": "Harness"
+      }
+    ],
+    "features": [
+      "Side compression straps securely lock geological hammers and tripods to the exterior",
+      "Ergonomic pre-curved hip belt prevents hotspots on long uphill climbs",
+      "Water-resistant zippers and coated fabric protect equipment from mountain drizzles"
+    ],
+    "applications": [
+      "Multi-day geological field mapping across remote ranges",
+      "Ecological camp setup and biological sample collection trips",
+      "Forestry boundary and trail inspection over rough terrain"
+    ],
+    "relatedProducts": [
+      "trekking-rucksack-under-50l",
+      "trekking-rucksack-60l",
+      "camping-sleeping-bag"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About 50L Trekking Rucksack",
+    "imageAlt": "Multi-day 50L technical field rucksack"
+  },
+  {
+    "id": "trekking-rucksack-60l",
+    "slug": "trekking-rucksack-60l",
+    "name": "Trekking Rucksack – 60L",
+    "brand": "Generic",
+    "series": "Expedition Rucksacks",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Expedition Rucksacks",
+    "subcategorySlug": "rucksacks",
+    "model": "60L Expedition Field Backpack",
+    "manufacturer": "Technical Rucksack Ergonomic Standard",
+    "manufacturerSource": "Technical Rucksack Ergonomic Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/trekking-rucksack-60l/hero.webp",
+    "gallery": [
+      "/images/products/trekking-rucksack-60l/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/trekking-rucksack-60l/hero.webp"
+    ],
+    "shortDescription": "High-capacity expedition rucksack with padded harness and exterior gear attachment points for multi-day field operations.",
+    "description": "Built for extended field missions and high-volume gear carriage, this 60-liter technical backpack accommodates camping gear, survey tools, and personal provisions for long backcountry itineraries.",
+    "highlights": [
+          "Expansive 60-liter storage volume with expandable collar",
+          "Padded back panel, shoulder straps, and lumbar hip belt",
+          "Multiple access openings to organize field equipment",
+          "External lash points for sleeping pads and tent poles"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "High-Capacity Expedition Backpack",
+        "group": "General"
+      },
+      {
+        "label": "Capacity Class",
+        "value": "60 Liters Class",
+        "group": "Capacity"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Extended field missions, remote camps, and heavy gear carriage",
+        "group": "Application"
+      },
+      {
+        "label": "Suspension",
+        "value": "Padded back panel with contoured hip belt",
+        "group": "Harness"
+      }
+    ],
+    "features": [
+      "Front suitcase-style U-zipper allows checking fragile optical tools without repacking",
+      "Load-lifter straps dynamically balance heavy gear over the center of gravity",
+      "Multiple exterior daisy chains hold ice axes, trekking poles, and external tarps"
+    ],
+    "applications": [
+      "Extended multi-day geological expeditions across roadless terrain",
+      "Wilderness biological surveys requiring heavy trapping gear and tents",
+      "Long-duration institutional research and alpine exploration"
+    ],
+    "relatedProducts": [
+      "trekking-rucksack-50l",
+      "trekking-rucksack-70l",
+      "camping-tent-4-person"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About 60L Trekking Rucksack",
+    "imageAlt": "60L extended expedition internal frame rucksack"
+  },
+  {
+    "id": "trekking-rucksack-70l",
+    "slug": "trekking-rucksack-70l",
+    "name": "Trekking Rucksack – 70L",
+    "brand": "Generic",
+    "series": "Expedition Rucksacks",
+    "category": "Camping Equipment",
+    "categorySlug": "camping-equipment",
+    "subcategory": "Expedition Rucksacks",
+    "subcategorySlug": "rucksacks",
+    "model": "70L Heavy Expedition Load Hauler",
+    "manufacturer": "Technical Rucksack Ergonomic Standard",
+    "manufacturerSource": "Technical Rucksack Ergonomic Standard",
+    "verificationStatus": "generic-product",
+    "status": "verified",
+    "heroImage": "/images/products/trekking-rucksack-70l/hero.webp",
+    "gallery": [
+      "/images/products/trekking-rucksack-70l/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/trekking-rucksack-70l/hero.webp"
+    ],
+    "shortDescription": "Large-capacity field expedition rucksack designed for transporting heavy gear loads and camp supplies on extended remote field missions.",
+    "description": "The largest capacity rucksack in the field lineup, designed for major research expeditions, remote basecamp logistics, and carrying comprehensive outdoor kits into isolated backcountry terrain.",
+    "highlights": [
+          "Generous 70-liter cargo capacity for extended expeditions",
+          "Heavy-duty padded harness with load-lifter adjustment straps",
+          "Multiple compartment dividers for systematic gear packing",
+          "Ruggedized base and reinforced stress points"
+    ],
+    "specifications": [
+      {
+        "label": "Equipment Type",
+        "value": "Heavy-Duty Expedition Load Hauler",
+        "group": "General"
+      },
+      {
+        "label": "Capacity Class",
+        "value": "70 Liters Class",
+        "group": "Capacity"
+      },
+      {
+        "label": "Primary Application",
+        "value": "Expedition logistics, extended basecamp provisioning, and heavy carriage",
+        "group": "Application"
+      },
+      {
+        "label": "Harness",
+        "value": "Heavy-duty padded harness with load-lifter straps and hip belt",
+        "group": "Harness"
+      }
+    ],
+    "features": [
+      "Heavyweight load-lifter and hip stabilizer straps eliminate pack sway on rough trails",
+      "Detachable top lid converts into a lightweight summit bag for short day scouting",
+      "High-tensile compression strap network holds bulky sleeping pads and tent bodies"
+    ],
+    "applications": [
+      "Prolonged multi-week unsupported wilderness research and exploration",
+      "Expedition equipment logistics and geological rock sample transport",
+      "High-altitude mountaineering and remote basecamp supply missions"
+    ],
+    "relatedProducts": [
+      "trekking-rucksack-60l",
+      "camping-tent-6-person",
+      "ice-cooler-box"
+    ],
+    "featured": true,
+    "inquiryLabel": "Inquire About 70L Expedition Rucksack",
+    "imageAlt": "Maximum capacity 70L heavy expedition trekking rucksack"
+  }
 ];
 
 export function getAllProducts(): Product[] {

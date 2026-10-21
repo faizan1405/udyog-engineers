@@ -32,17 +32,34 @@ interface CategoryPageProps {
 
 export async function generateStaticParams() {
   const slugs = getAllCategorySlugs();
-  return slugs.map((slug) => ({ slug }));
+  // Include legacy slugs so static export generates permanent redirects
+  return [...slugs, "forestry-items", "geological-compass", "garmin"].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
-  if (slug.toLowerCase() === "garmin") {
+  const lowerSlug = slug.toLowerCase();
+  if (lowerSlug === "garmin") {
     return {
       title: "Garmin GPS & Wearables | Udyog Engineers",
       description: "Garmin Handheld GPS and GPS Smartwatches & Wearables for institutional and field applications.",
+      alternates: { canonical: "/categories/gps" },
+    };
+  }
+  if (lowerSlug === "forestry-items") {
+    return {
+      title: "Camera Trap Equipment | Udyog Engineers",
+      description: "Field camera traps, 4K trail cameras, and wildlife monitoring systems.",
+      alternates: { canonical: "/categories/camera-trap" },
+    };
+  }
+  if (lowerSlug === "geological-compass") {
+    return {
+      title: "Geological Equipment | Udyog Engineers",
+      description: "Pocket transits, precision clinometers, forged rock picks, and geological field accessories.",
+      alternates: { canonical: "/categories/geological-equipment" },
     };
   }
   const category = getCategoryBySlug(slug);
@@ -162,8 +179,15 @@ function CategoryHeroPlate({ category }: { category: ProductCategory }) {
 
 export default async function CategoryDetailPage({ params }: CategoryPageProps) {
   const { slug } = await params;
-  if (slug.toLowerCase() === "garmin") {
+  const lowerSlug = slug.toLowerCase();
+  if (lowerSlug === "garmin") {
     redirect("/categories/gps");
+  }
+  if (lowerSlug === "forestry-items") {
+    redirect("/categories/camera-trap");
+  }
+  if (lowerSlug === "geological-compass") {
+    redirect("/categories/geological-equipment");
   }
   const category = getCategoryBySlug(slug);
 
@@ -249,29 +273,21 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
 
               {/* Action Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-                <Link
-                  href={`/contact?subject=inquiry-${category.slug}`}
-                  className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-green text-white font-sans font-semibold text-[15px] rounded-xl hover:bg-brand-green-hover transition-colors shadow-xs w-full sm:w-auto tracking-normal"
-                >
-                  <span>Inquire for {category.name}</span>
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-                </Link>
-
                 {whatsAppUrl && (
                   <a
                     href={whatsAppUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="min-h-[48px] inline-flex items-center justify-center gap-2 px-5 py-3 bg-surface-secondary border border-border/80 text-text-primary font-sans font-semibold text-[15px] rounded-xl hover:bg-surface-tertiary transition-colors w-full sm:w-auto tracking-normal"
+                    className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent-whatsapp text-white font-sans font-semibold text-[15px] rounded-xl hover:bg-emerald-700 transition-colors shadow-xs w-full sm:w-auto tracking-normal"
                   >
-                    <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
-                    <span>Inquire via WhatsApp</span>
+                    <WhatsAppIcon className="w-4 h-4" />
+                    <span>Inquire for {category.name} on WhatsApp</span>
                   </a>
                 )}
 
                 <Link
                   href="/categories"
-                  className="min-h-[48px] inline-flex items-center justify-center gap-2 px-4 py-3 text-text-secondary hover:text-text-primary font-sans font-medium text-sm transition-colors w-full sm:w-auto"
+                  className="min-h-[48px] inline-flex items-center justify-center gap-2 px-5 py-3 bg-surface-secondary border border-border/80 text-text-secondary hover:text-text-primary font-sans font-medium text-sm rounded-xl transition-colors w-full sm:w-auto"
                 >
                   <ArrowLeft className="w-3.5 h-3.5" />
                   <span>All 8 Categories</span>
@@ -464,25 +480,24 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-                <Link
-                  href={`/contact?subject=inquiry-${category.slug}`}
-                  className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-green text-white font-sans font-semibold text-[15px] rounded-xl hover:bg-brand-green-hover transition-colors shadow-xs tracking-normal"
-                >
-                  <span>Send Equipment Inquiry</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-
                 {whatsAppUrl && (
                   <a
                     href={whatsAppUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="min-h-[48px] inline-flex items-center justify-center gap-2 px-5 py-3 bg-surface-secondary border border-border/80 text-text-primary font-sans font-semibold text-[15px] rounded-xl hover:bg-surface-tertiary transition-colors tracking-normal"
+                    className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent-whatsapp text-white font-sans font-semibold text-[15px] rounded-xl hover:bg-emerald-700 transition-colors shadow-xs tracking-normal"
                   >
-                    <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
-                    <span>Inquire via WhatsApp</span>
+                    <WhatsAppIcon className="w-4 h-4" />
+                    <span>Inquire for {category.name} on WhatsApp</span>
                   </a>
                 )}
+
+                <Link
+                  href="/contact"
+                  className="min-h-[48px] inline-flex items-center justify-center gap-2 px-5 py-3 bg-surface-secondary border border-border/80 text-text-primary font-sans font-semibold text-[15px] rounded-xl hover:bg-surface-tertiary transition-colors tracking-normal"
+                >
+                  <span>Contact Information</span>
+                </Link>
               </div>
             </div>
           </div>

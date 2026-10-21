@@ -58,8 +58,6 @@ app/
   ├── robots.ts
   └── sitemap.ts
 components/
-  ├── forms/
-  │    └── InquiryForm.tsx
   ├── layout/
   │    ├── Footer.tsx
   │    ├── Header.tsx

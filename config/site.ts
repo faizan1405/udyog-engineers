@@ -72,6 +72,8 @@ export interface LegalConfig {
 
 export interface SiteConfig {
   companyName: string;
+  brandHeading: string;
+  displayBrandName: string;
   legalName?: string;
   siteName: string; // Maintained for backward compatibility
   siteTagline: string;
@@ -88,6 +90,8 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   companyName: "Udyog Engineers",
+  brandHeading: "UDYOG ENGINEERS INDIA",
+  displayBrandName: "UDYOG ENGINEERS INDIA",
   legalName: "", // Client legal business name pending official confirmation
   siteName: "Udyog Engineers",
   siteTagline: "Precision Equipment & Technical Instruments",

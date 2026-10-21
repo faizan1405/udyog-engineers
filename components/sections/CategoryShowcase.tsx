@@ -32,9 +32,13 @@ const CATEGORY_IMAGE_MAP: Record<
     src: "/images/generated/categories/category-thermal.webp",
     alt: "High-resolution handheld thermal imaging observation monocular",
   },
+  "geological-equipment": {
+    src: "/images/generated/categories/category-geological-equipment.webp",
+    alt: "Professional geological pocket transit, compass, and field survey equipment",
+  },
   "geological-compass": {
-    src: "/images/generated/categories/category-geological-compass.webp",
-    alt: "Authentic Brunton pocket transit geological compass with sighting mirror",
+    src: "/images/generated/categories/category-geological-equipment.webp",
+    alt: "Professional geological pocket transit, compass, and field survey equipment",
   },
   "camping-equipment": {
     src: "/images/generated/categories/category-camping-equipment.webp",
@@ -44,9 +48,13 @@ const CATEGORY_IMAGE_MAP: Record<
     src: "/images/generated/categories/category-weather-station.webp",
     alt: "Compact ultrasonic meteorological weather station sensor",
   },
+  "camera-trap": {
+    src: "/images/generated/categories/category-camera-trap.webp",
+    alt: "Field camera trap and trail surveillance equipment",
+  },
   "forestry-items": {
-    src: "/images/generated/categories/category-forestry-items.webp",
-    alt: "Precision forestry measurement caliper and dendrometry tool",
+    src: "/images/generated/categories/category-camera-trap.webp",
+    alt: "Field camera trap and trail surveillance equipment",
   },
 };
 
@@ -73,7 +81,7 @@ function CategoryArtwork({ slug, className }: { slug: string; className?: string
 
 /* =========================================================================
    PATTERN A: FEATURE CATEGORY MODULE (Type A — Large Feature)
-   Used for 01 Optics (Tier 1) & 05 Geological Compass (Tier 2)
+   Used for 01 Optics (Tier 1) & 05 Geological Equipment (Tier 2)
    Rich tinted background, edge accent, generous artwork canvas (45–55%)
    ========================================================================= */
 function FeatureCategoryCard({
@@ -396,7 +404,7 @@ function CompactEditorialCard({
 
 /* =========================================================================
    PATTERN D: IMAGE-LED MODULE (Type D — Image-Led)
-   Used for 07 Weather Station & 08 Forestry Items
+   Used for 07 Weather Station & 08 Camera Trap
    Artwork first, clean category title + short descriptor below
    ========================================================================= */
 function ImageLedCategoryCard({
@@ -481,7 +489,7 @@ function ImageLedCategoryCard({
  * - Unnecessary micro-labels removed for clean information density
  * - Safe, neutral, verified category copy only
  * - Verified visible animations: Optics enters from left, GPS/Night Vision enters from right,
- *   Geological Compass mask reveal from right, Thermal from left, remaining cards restrained up reveals.
+ *   Geological Equipment mask reveal from right, Thermal from left, remaining cards restrained up reveals.
  */
 export function CategoryShowcase() {
   const shouldReduceMotion = useReducedMotion();
@@ -554,8 +562,8 @@ export function CategoryShowcase() {
             DESKTOP EDITORIAL GRID (>= 1024px)
             Rhythm:
             - Tier 1: Pattern A (01 Optics, 7 cols) + Pattern B (02 GPS) & Pattern C (03 Night Vision, 5 cols)
-            - Tier 2: Pattern B (04 Thermal, 5 cols) + Pattern A (05 Geological Compass, 7 cols)
-            - Tier 3: Pattern C (06 Camping, 4 cols) + Pattern D (07 Weather, 4 cols) + Pattern D (08 Forestry, 4 cols)
+            - Tier 2: Pattern B (04 Thermal, 5 cols) + Pattern A (05 Geological Equipment, 7 cols)
+            - Tier 3: Pattern C (06 Camping, 4 cols) + Pattern D (07 Weather, 4 cols) + Pattern D (08 Camera Trap, 4 cols)
            ========================================================================= */}
         <div className="hidden lg:flex flex-col gap-8">
           {/* --- TIER 1: Optics Feature (7, enters from left) + GPS / Night Vision Stack (5, enters from right) --- */}
@@ -588,7 +596,7 @@ export function CategoryShowcase() {
             </motion.div>
           </div>
 
-          {/* --- TIER 2: Thermal (5, enters from left) + Geological Compass Feature (7, mask reveal from right) --- */}
+          {/* --- TIER 2: Thermal (5, enters from left) + Geological Equipment Feature (7, mask reveal from right) --- */}
           <div className="grid grid-cols-12 gap-8 items-stretch">
             {/* 04 Thermal (Type B Horizontal Card, enters from left) */}
             <motion.div
@@ -604,7 +612,7 @@ export function CategoryShowcase() {
               />
             </motion.div>
 
-            {/* 05 Geological Compass (Type A Feature Card with Mask Reveal from Right) */}
+            {/* 05 Geological Equipment (Type A Feature Card with Mask Reveal from Right) */}
             <div className="col-span-7 flex">
               <FeatureCategoryCard
                 category={cat5}
@@ -614,7 +622,7 @@ export function CategoryShowcase() {
             </div>
           </div>
 
-          {/* --- TIER 3: Camping (4) + Weather Station (4) + Forestry Items (4) with Staggered Up Reveals --- */}
+          {/* --- TIER 3: Camping (4) + Weather Station (4) + Camera Trap (4) with Staggered Up Reveals --- */}
           <div className="grid grid-cols-12 gap-8 items-stretch">
             {/* 06 Camping (Type C Compact Editorial) */}
             <motion.div
@@ -644,7 +652,7 @@ export function CategoryShowcase() {
               />
             </motion.div>
 
-            {/* 08 Forestry Items (Type D Image-Led) */}
+            {/* 08 Camera Trap (Type D Image-Led) */}
             <motion.div
               initial={{ opacity: shouldReduceMotion ? 1 : 0, y: shouldReduceMotion ? 0 : 35 }}
               whileInView={{ opacity: 1, y: 0 }}

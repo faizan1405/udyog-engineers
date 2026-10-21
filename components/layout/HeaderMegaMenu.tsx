@@ -45,9 +45,9 @@ const CATEGORIES_MENU_DATA: CategoryMenuItem[] = [
   },
   {
     index: "05",
-    name: "Geological Compass",
-    slug: "geological-compass",
-    descriptor: "Structural & strike measurement",
+    name: "Geological Equipment",
+    slug: "geological-equipment",
+    descriptor: "Transits, rock picks & accessories",
     color: "#D97706",
   },
   {
@@ -66,9 +66,9 @@ const CATEGORIES_MENU_DATA: CategoryMenuItem[] = [
   },
   {
     index: "08",
-    name: "Forestry Items",
-    slug: "forestry-items",
-    descriptor: "Forestry measurement & survey",
+    name: "Camera Trap",
+    slug: "camera-trap",
+    descriptor: "Wildlife camera traps & surveillance",
     color: "#16A34A",
   },
 ];

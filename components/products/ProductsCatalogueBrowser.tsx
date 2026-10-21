@@ -22,8 +22,8 @@ function isSubcategoryMatch(productSlug?: string, targetSlug?: string): boolean 
   const t = targetSlug.toLowerCase();
   if (p === t) return true;
   if (
-    (p === "garmin-handheld-gps" || p === "handheld-gps") &&
-    (t === "garmin-handheld-gps" || t === "handheld-gps")
+    (p === "garmin-handheld-gps" || p === "handheld-gps" || p === "wrist-mounted-gps") &&
+    (t === "garmin-handheld-gps" || t === "handheld-gps" || t === "wrist-mounted-gps")
   ) {
     return true;
   }

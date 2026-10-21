@@ -2,37 +2,37 @@ import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
-import { InquiryForm } from "@/components/forms/InquiryForm";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { siteConfig } from "@/config/site";
 import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, CheckCircle2, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact & Equipment Inquiry | Udyog Engineers",
+  title: "Contact & Equipment Inquiries | Udyog Engineers India",
   description:
-    "Direct contact and technical equipment quotation request for Udyog Engineers.",
+    "Direct contact and WhatsApp consultation for precision field, survey, optical, and technical equipment.",
   alternates: {
     canonical: "/contact",
   },
 };
 
 export default function ContactPage() {
-  const whatsAppUrl = buildWhatsAppInquiryUrl();
+  const primaryWhatsAppUrl = buildWhatsAppInquiryUrl();
+  const secondaryWhatsAppUrl = buildWhatsAppInquiryUrl({}, "919555903186");
 
   return (
     <div className="bg-background min-h-screen">
       <PageHeader
         eyebrow="Direct Coordination"
         title="Contact &amp; Equipment Inquiries"
-        subtitle="Connect with our team for equipment inquiries, product datasheets, and specification details."
+        subtitle="Connect with our team directly on WhatsApp or by phone for product availability, datasheets, and procurement coordination."
         breadcrumbs={[{ label: "Contact" }]}
       />
 
       <Section variant="default" className="py-12 sm:py-16 lg:py-20">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-            {/* Contact Details & Guidelines */}
+            {/* Contact Details & Guidelines (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold font-display text-text-primary tracking-[-0.02em]">
@@ -90,7 +90,7 @@ export default function ContactPage() {
 
                           {/* WhatsApp Chat link */}
                           <a
-                            href={buildWhatsAppInquiryUrl({}, p.whatsAppDigits) || "#"}
+                            href={buildWhatsAppInquiryUrl({}, p.whatsAppDigits)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1.5 px-3 py-1 bg-surface border border-emerald-300/80 rounded-lg text-accent-whatsapp font-sans text-xs font-semibold hover:bg-emerald-50 transition-colors shadow-2xs"
@@ -120,35 +120,67 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-
-              {/* Instant WhatsApp Quick Connect Action */}
-              {whatsAppUrl && (
-                <div className="p-6 border border-emerald-200/90 bg-emerald-50/50 rounded-2xl space-y-3 shadow-xs">
-                  <div className="flex items-center gap-2 text-text-primary font-display font-semibold text-base">
-                    <WhatsAppIcon className="w-5 h-5 text-accent-whatsapp" />
-                    <span>Instant WhatsApp Communication</span>
-                  </div>
-                  <p className="text-sm font-sans text-text-secondary leading-[1.6]">
-                    Direct messaging channel for urgent datasheet requests, equipment availability queries, and real-time coordination.
-                  </p>
-                  <div className="pt-2">
-                    <a
-                      href={whatsAppUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="min-h-[46px] inline-flex items-center gap-2 px-5 py-2.5 bg-accent-whatsapp text-white text-[15px] font-sans font-semibold rounded-xl hover:brightness-95 transition-all duration-200 shadow-xs tracking-normal"
-                    >
-                      <WhatsAppIcon className="w-4 h-4" />
-                      <span>Open WhatsApp Chat</span>
-                    </a>
-                  </div>
-                </div>
-              )}
             </div>
 
-            {/* Inquiry Form Column */}
+            {/* Direct WhatsApp Consultation Column (7 cols) */}
             <div className="lg:col-span-7">
-              <InquiryForm />
+              <div className="p-8 sm:p-10 border border-border/80 bg-surface rounded-2xl shadow-xs space-y-6">
+                <div>
+                  <div className="flex items-center gap-2 text-xs font-sans text-brand-green font-semibold mb-2">
+                    <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
+                    <span>Instant Consultation · Fast Technical Response</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-semibold font-display text-text-primary tracking-[-0.025em]">
+                    Connect on WhatsApp
+                  </h3>
+                  <p className="mt-2 text-sm sm:text-base font-sans text-text-secondary leading-[1.65]">
+                    For the fastest assistance, initiate a direct chat with our technical sales team. We share verified product datasheets, availability status, and quotation details in real time.
+                  </p>
+                </div>
+
+                <div className="space-y-3 pt-2">
+                  <a
+                    href={primaryWhatsAppUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full min-h-[52px] inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-accent-whatsapp text-white font-sans text-base font-semibold rounded-xl hover:bg-emerald-700 transition-colors shadow-xs"
+                  >
+                    <WhatsAppIcon className="w-5 h-5" />
+                    <span>Inquire on WhatsApp (Primary: 98183 20178)</span>
+                  </a>
+
+                  <a
+                    href={secondaryWhatsAppUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full min-h-[48px] inline-flex items-center justify-center gap-2.5 px-6 py-3 bg-surface-secondary border border-emerald-300 text-emerald-900 font-sans text-sm font-semibold rounded-xl hover:bg-emerald-50 transition-colors"
+                  >
+                    <WhatsAppIcon className="w-4 h-4 text-accent-whatsapp" />
+                    <span>Inquire on WhatsApp (Secondary: 95559 03186)</span>
+                  </a>
+                </div>
+
+                <div className="p-5 bg-surface-secondary/70 border border-border/70 rounded-xl space-y-3 text-xs font-sans text-text-secondary">
+                  <div className="font-semibold text-text-primary text-sm flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-brand-green" />
+                    <span>What we provide on WhatsApp:</span>
+                  </div>
+                  <ul className="space-y-2 pl-6 list-disc">
+                    <li>Official manufacturer datasheets &amp; technical specifications</li>
+                    <li>Institutional and government procurement quotations</li>
+                    <li>Stock availability and expected dispatch schedules</li>
+                    <li>Technical guidance on sensor accuracy, range, and environmental ratings</li>
+                  </ul>
+                </div>
+
+                <div className="pt-4 border-t border-border/70 flex flex-wrap items-center justify-between gap-3 text-xs font-sans text-text-muted">
+                  <div className="flex items-center gap-1.5">
+                    <Clock className="w-3.5 h-3.5 text-text-muted" />
+                    <span>Business Hours: Mon – Sat, 9:30 AM – 6:30 PM IST</span>
+                  </div>
+                  <span>Location: Gurgaon, Haryana</span>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
