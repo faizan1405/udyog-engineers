@@ -5806,7 +5806,7 @@ export const PRODUCTS: Product[] = [
     "category": "Camera Trap",
     "categorySlug": "camera-trap",
     "subcategory": "Cellular Trail Cameras",
-    "subcategorySlug": "cellular-camera-traps",
+    "subcategorySlug": "cellular-trail-cameras",
     "model": "X60 Series Cellular Trail Camera",
     "manufacturer": "GardePro",
     "manufacturerSource": "https://gardepro.com/collections/cellular-trail-cameras",
