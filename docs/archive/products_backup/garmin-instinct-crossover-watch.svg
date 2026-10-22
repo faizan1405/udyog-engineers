@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <!-- Subtle coordinate grid -->
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <!-- Technical Header Badge -->
+  <g transform="translate(48, 48)">
+    <rect width="230" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#D97706"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">GARMIN INSTINCT® CROSSOVER</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">RUGGED HYBRID GPS SOLAR</text>
+
+  <!-- Watch Schematic -->
+  <g transform="translate(400, 260)">
+    <!-- Rugged Silicone Straps -->
+    <path d="M-45 -180 L-42 -82 L42 -82 L45 -180 Z" fill="#222825" stroke="#141816" stroke-width="2"/>
+    <path d="M-42 82 L-45 180 L45 180 L42 82 Z" fill="#222825" stroke="#141816" stroke-width="2"/>
+
+    <!-- Rugged Polymer Case with Bezel -->
+    <circle cx="0" cy="0" r="96" fill="#262E2A" stroke="#161B18" stroke-width="3"/>
+    <circle cx="0" cy="0" r="84" fill="#1C221E" stroke="#36423C" stroke-width="2"/>
+    <!-- Solar Ring -->
+    <circle cx="0" cy="0" r="76" fill="none" stroke="#D97706" stroke-width="4" opacity="0.8"/>
+
+    <!-- Buttons -->
+    <rect x="-106" y="-55" width="10" height="20" rx="3" fill="#3D4943" stroke="#141816"/>
+    <rect x="-106" y="-10" width="10" height="20" rx="3" fill="#3D4943" stroke="#141816"/>
+    <rect x="-106" y="35" width="10" height="20" rx="3" fill="#3D4943" stroke="#141816"/>
+    <rect x="96" y="-45" width="10" height="22" rx="3" fill="#3D4943" stroke="#141816"/>
+    <rect x="96" y="25" width="10" height="20" rx="3" fill="#3D4943" stroke="#141816"/>
+
+    <!-- Screen Canvas -->
+    <circle cx="0" cy="0" r="71" fill="#101813"/>
+
+    <!-- Digital Sub-Screens Behind Hands -->
+    <rect x="-50" y="-38" width="100" height="20" rx="4" fill="#18251D" stroke="#2D4234"/>
+    <text x="0" y="-24" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#4ADE80">SOLAR · GPS LOCK</text>
+
+    <rect x="-50" y="18" width="100" height="22" rx="4" fill="#18251D" stroke="#2D4234"/>
+    <text x="0" y="33" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#F8FAFC">28°38&apos;N 77°13&apos;E</text>
+
+    <!-- Luminescent Analog Hands (RevoDrive™ Precision) -->
+    <!-- Hour Hand pointing to 10 -->
+    <polygon points="-2,-2 -26,-28 -22,-32 2,-2" fill="#E2E8F0" stroke="#0F172A" stroke-width="1.5"/>
+    <line x1="-5" y1="-5" x2="-22" y2="-28" stroke="#4ADE80" stroke-width="2"/>
+    <!-- Minute Hand pointing to 2 -->
+    <polygon points="-2,-2 38,-22 42,-18 2,2" fill="#E2E8F0" stroke="#0F172A" stroke-width="1.5"/>
+    <line x1="5" y1="-2" x2="38" y2="-18" stroke="#4ADE80" stroke-width="2"/>
+    <!-- Center Pivot Pin -->
+    <circle cx="0" cy="0" r="5" fill="#4ADE80" stroke="#0F172A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Technical Spec Footer Bar -->
+  <g transform="translate(0, 475)">
+    <text x="400" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#161A18">
+      AUTHENTIC GARMIN INSTINCT® CROSSOVER SOLAR HYBRID
+    </text>
+    <text x="400" y="46" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B726E">
+      RevoDrive™ Auto-Calibrating Analog Hands · Power Glass™ Solar · MIL-STD-810 Toughness · Dual-Format GPS
+    </text>
+  </g>
+</svg>

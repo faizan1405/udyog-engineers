@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <!-- Subtle coordinate grid -->
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <!-- Technical Header Badge -->
+  <g transform="translate(48, 48)">
+    <rect width="210" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#1E6B3E"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">GARMIN fēnix® 8 SERIES</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">51mm TITANIUM / SAPPHIRE</text>
+
+  <!-- Watch Schematic -->
+  <g transform="translate(400, 260)">
+    <!-- Silicone Straps -->
+    <path d="M-45 -180 L-40 -80 L40 -80 L45 -180 Z" fill="#242B28" stroke="#161A18" stroke-width="2"/>
+    <circle cx="0" cy="-140" r="3" fill="#3D4944"/>
+    <circle cx="0" cy="-115" r="3" fill="#3D4944"/>
+    <path d="M-40 80 L-45 180 L45 180 L40 80 Z" fill="#242B28" stroke="#161A18" stroke-width="2"/>
+    <circle cx="0" cy="105" r="3" fill="#3D4944"/>
+    <circle cx="0" cy="130" r="3" fill="#3D4944"/>
+    <circle cx="0" cy="155" r="3" fill="#3D4944"/>
+
+    <!-- Rugged Watch Case -->
+    <circle cx="0" cy="0" r="96" fill="#1E2421" stroke="#141816" stroke-width="3"/>
+    <!-- Titanium Bezel -->
+    <circle cx="0" cy="0" r="88" fill="#303834" stroke="#485550" stroke-width="2.5"/>
+    <circle cx="0" cy="-80" r="2.5" fill="#7E8E87"/>
+    <circle cx="76" cy="-25" r="2.5" fill="#7E8E87"/>
+    <circle cx="47" cy="65" r="2.5" fill="#7E8E87"/>
+    <circle cx="-47" cy="65" r="2.5" fill="#7E8E87"/>
+    <circle cx="-76" cy="-25" r="2.5" fill="#7E8E87"/>
+
+    <!-- Leakproof Inductive Buttons & Sensor Guard -->
+    <rect x="-106" y="-55" width="11" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+    <rect x="-106" y="-10" width="11" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+    <rect x="-106" y="35" width="11" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+    <!-- Start Button with Orange Accent Ring -->
+    <rect x="95" y="-45" width="11" height="26" rx="4" fill="#E65100" stroke="#141816"/>
+    <!-- Mic / Sensor Guard Plate on Right -->
+    <rect x="95" y="25" width="11" height="22" rx="3" fill="#43504A" stroke="#141816"/>
+
+    <!-- 1.4" AMOLED Display Canvas -->
+    <circle cx="0" cy="0" r="74" fill="#0A0E0C"/>
+
+    <!-- TopoActive Map Contours -->
+    <path d="M-55 15 Q-20 -30 10 -15 T60 -25" stroke="#38BDF8" stroke-width="2" fill="none"/>
+    <path d="M-50 35 Q-15 10 20 25 T60 5" stroke="#22C55E" stroke-width="2" fill="none"/>
+    <path d="M-45 55 Q-5 35 25 45 T55 40" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+
+    <!-- Center Navigation Pinpoint -->
+    <circle cx="5" cy="5" r="5" fill="#22C55E"/>
+    <circle cx="5" cy="5" r="12" stroke="#22C55E" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+    <polygon points="5,-5 1,-1 9,-1" fill="#FFFFFF"/>
+
+    <!-- Bezel Compass Cardinal Markings -->
+    <text x="0" y="-76" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#94A3B8">N</text>
+    <text x="76" y="3" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#94A3B8">E</text>
+    <text x="0" y="82" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#94A3B8">S</text>
+    <text x="-76" y="3" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#94A3B8">W</text>
+
+    <!-- Telemetry Readouts -->
+    <text x="0" y="-38" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#38BDF8">SatIQ MULTI-BAND</text>
+    <text x="0" y="-20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">10:08</text>
+    <text x="0" y="52" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#E2E8F0">40M DIVE RATED</text>
+  </g>
+
+  <!-- Technical Spec Footer Bar -->
+  <g transform="translate(0, 475)">
+    <text x="400" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#161A18">
+      AUTHENTIC GARMIN fēnix® 8 MULTISPORT GPS SMARTWATCH
+    </text>
+    <text x="400" y="46" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B726E">
+      AMOLED / Solar Options · TopoActive Continental Maps · Built-in Flashlight &amp; Mic · 40m Dive Rated
+    </text>
+  </g>
+</svg>

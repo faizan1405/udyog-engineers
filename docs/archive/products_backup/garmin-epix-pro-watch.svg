@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <!-- Subtle coordinate grid -->
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <!-- Technical Header Badge -->
+  <g transform="translate(48, 48)">
+    <rect width="210" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#2563EB"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">GARMIN epix™ PRO (GEN 2)</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">SAPPHIRE AMOLED 51mm</text>
+
+  <!-- Watch Schematic -->
+  <g transform="translate(400, 260)">
+    <!-- Premium QuickFit Silicone Strap -->
+    <path d="M-45 -180 L-40 -80 L40 -80 L45 -180 Z" fill="#222826" stroke="#141816" stroke-width="2"/>
+    <line x1="-35" y1="-140" x2="35" y2="-140" stroke="#3A4440" stroke-width="2"/>
+    <line x1="-35" y1="-110" x2="35" y2="-110" stroke="#3A4440" stroke-width="2"/>
+
+    <path d="M-40 80 L-45 180 L45 180 L40 80 Z" fill="#222826" stroke="#141816" stroke-width="2"/>
+    <line x1="-35" y1="110" x2="35" y2="110" stroke="#3A4440" stroke-width="2"/>
+    <line x1="-35" y1="140" x2="35" y2="140" stroke="#3A4440" stroke-width="2"/>
+
+    <!-- Rugged Watch Case -->
+    <circle cx="0" cy="0" r="96" fill="#1C221F" stroke="#121614" stroke-width="3"/>
+    <!-- Brushed Titanium Bezel -->
+    <circle cx="0" cy="0" r="88" fill="#323C37" stroke="#505F58" stroke-width="2.5"/>
+    <circle cx="0" cy="-80" r="2.5" fill="#8EA198"/>
+    <circle cx="76" cy="-25" r="2.5" fill="#8EA198"/>
+    <circle cx="47" cy="65" r="2.5" fill="#8EA198"/>
+    <circle cx="-47" cy="65" r="2.5" fill="#8EA198"/>
+    <circle cx="-76" cy="-25" r="2.5" fill="#8EA198"/>
+
+    <!-- Push Buttons -->
+    <rect x="-106" y="-55" width="10" height="22" rx="3" fill="#44524C" stroke="#121614"/>
+    <rect x="-106" y="-10" width="10" height="22" rx="3" fill="#44524C" stroke="#121614"/>
+    <rect x="-106" y="35" width="10" height="22" rx="3" fill="#44524C" stroke="#121614"/>
+    <rect x="96" y="-45" width="10" height="26" rx="4" fill="#2563EB" stroke="#121614"/>
+    <rect x="96" y="25" width="10" height="22" rx="3" fill="#44524C" stroke="#121614"/>
+
+    <!-- 1.4" High-Definition AMOLED Display Canvas -->
+    <circle cx="0" cy="0" r="74" fill="#080E14"/>
+
+    <!-- Topo Relief Shading & Elevation Contours -->
+    <path d="M-55 20 Q-25 -30 15 -10 T60 -20" stroke="#38BDF8" stroke-width="2.5" fill="none"/>
+    <path d="M-50 40 Q-15 15 25 30 T60 10" stroke="#60A5FA" stroke-width="2" fill="none"/>
+    <path d="M-45 60 Q-5 40 30 50 T55 45" stroke="#93C5FD" stroke-width="1.5" stroke-dasharray="2 3" fill="none"/>
+
+    <!-- Center GPS Target Lock -->
+    <circle cx="15" cy="-10" r="5" fill="#38BDF8"/>
+    <circle cx="15" cy="-10" r="11" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+
+    <!-- Telemetry -->
+    <text x="0" y="-36" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#38BDF8">TopoActive SHADED RELIEF</text>
+    <text x="0" y="-18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">10:08</text>
+    <text x="0" y="52" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8">31 DAYS · MULTI-BAND SatIQ</text>
+  </g>
+
+  <!-- Technical Spec Footer Bar -->
+  <g transform="translate(0, 475)">
+    <text x="400" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#161A18">
+      AUTHENTIC GARMIN epix™ PRO (GEN 2) SAPPHIRE SMARTWATCH
+    </text>
+    <text x="400" y="46" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B726E">
+      1.4&quot; AMOLED Touchscreen · Titanium Bezel · Shaded Relief Topo Maps · Built-in LED Flashlight
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <rect width="800" height="600" fill="#F8F7F4"/>
+  <rect x="24" y="24" width="752" height="552" rx="16" fill="#F1EFEA" stroke="#DDD9CE" stroke-width="1.5"/>
+  
+  <!-- Subtle coordinate grid -->
+  <g opacity="0.25" stroke="#BFB9AA" stroke-width="1" stroke-dasharray="4 8">
+    <line x1="24" y1="150" x2="776" y2="150"/>
+    <line x1="24" y1="300" x2="776" y2="300"/>
+    <line x1="24" y1="450" x2="776" y2="450"/>
+    <line x1="200" y1="24" x2="200" y2="576"/>
+    <line x1="400" y1="24" x2="400" y2="576"/>
+    <line x1="600" y1="24" x2="600" y2="576"/>
+  </g>
+
+  <!-- Technical Header Badge -->
+  <g transform="translate(48, 48)">
+    <rect width="210" height="28" rx="14" fill="#E2DFD5" stroke="#CCC7BA"/>
+    <circle cx="16" cy="14" r="5" fill="#15803D"/>
+    <text x="30" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2C3531" letter-spacing="0.08em">GARMIN tactix® 7 SERIES</text>
+  </g>
+  <text x="752" y="66" text-anchor="end" font-family="ui-monospace, monospace" font-size="11" fill="#7E8580">TACTICAL FIELD OPERATIONS</text>
+
+  <!-- Watch Schematic -->
+  <g transform="translate(400, 260)">
+    <!-- Stealth Black Tactical Nylon Straps -->
+    <path d="M-45 -180 L-40 -80 L40 -80 L45 -180 Z" fill="#171A19" stroke="#0D100F" stroke-width="2"/>
+    <line x1="-35" y1="-140" x2="35" y2="-140" stroke="#2D3330" stroke-width="2"/>
+    <line x1="-35" y1="-110" x2="35" y2="-110" stroke="#2D3330" stroke-width="2"/>
+
+    <path d="M-40 80 L-45 180 L45 180 L40 80 Z" fill="#171A19" stroke="#0D100F" stroke-width="2"/>
+    <line x1="-35" y1="110" x2="35" y2="110" stroke="#2D3330" stroke-width="2"/>
+    <line x1="-35" y1="140" x2="35" y2="140" stroke="#2D3330" stroke-width="2"/>
+
+    <!-- Matte DLC Black Polymer Case -->
+    <circle cx="0" cy="0" r="96" fill="#1A1F1D" stroke="#0F1312" stroke-width="3"/>
+    <!-- Tactical Knurled Bezel -->
+    <circle cx="0" cy="0" r="88" fill="#242B28" stroke="#37433E" stroke-width="2.5"/>
+    <!-- 24-Hour Bezel Military Markings -->
+    <text x="0" y="-76" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#5A6C63">24</text>
+    <text x="76" y="3" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#5A6C63">06</text>
+    <text x="0" y="82" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#5A6C63">12</text>
+    <text x="-76" y="3" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#5A6C63">18</text>
+
+    <!-- Buttons -->
+    <rect x="-106" y="-55" width="10" height="22" rx="3" fill="#2D3632" stroke="#0F1312"/>
+    <rect x="-106" y="-10" width="10" height="22" rx="3" fill="#2D3632" stroke="#0F1312"/>
+    <rect x="-106" y="35" width="10" height="22" rx="3" fill="#2D3632" stroke="#0F1312"/>
+    <rect x="96" y="-45" width="10" height="26" rx="4" fill="#22C55E" stroke="#0F1312"/>
+    <rect x="96" y="25" width="10" height="22" rx="3" fill="#2D3632" stroke="#0F1312"/>
+
+    <!-- Tactical Screen Canvas (NVG Green Aesthetic) -->
+    <circle cx="0" cy="0" r="74" fill="#0A100C"/>
+
+    <!-- Tactical Crosshair & Reticle -->
+    <circle cx="0" cy="0" r="58" stroke="#166534" stroke-width="1" stroke-dasharray="3 5" fill="none"/>
+    <circle cx="0" cy="0" r="32" stroke="#22C55E" stroke-width="1" opacity="0.6" fill="none"/>
+    <line x1="-65" y1="0" x2="-35" y2="0" stroke="#22C55E" stroke-width="1.5"/>
+    <line x1="35" y1="0" x2="65" y2="0" stroke="#22C55E" stroke-width="1.5"/>
+    <line x1="0" y1="-65" x2="0" y2="-35" stroke="#22C55E" stroke-width="1.5"/>
+    <line x1="0" y1="35" x2="0" y2="65" stroke="#22C55E" stroke-width="1.5"/>
+
+    <!-- MGRS & Tactical Telemetry -->
+    <text x="0" y="-38" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#22C55E">STEALTH MODE · NVG OK</text>
+    <text x="0" y="-16" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#E2E8F0">43R XH 824 195</text>
+    <text x="0" y="0" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#86EFAC">28°38&apos;14&quot;N 77°13&apos;42&quot;E</text>
+    <text x="0" y="24" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" font-weight="800" fill="#FFFFFF">14:26:08 Z</text>
+    <text x="0" y="52" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#22C55E">KILL SWITCH ARMED</text>
+  </g>
+
+  <!-- Technical Spec Footer Bar -->
+  <g transform="translate(0, 475)">
+    <text x="400" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#161A18">
+      AUTHENTIC GARMIN tactix® 7 TACTICAL GPS SMARTWATCH
+    </text>
+    <text x="400" y="46" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B726E">
+      NVG Compatible · Dual-Position MGRS GPS · Stealth Mode &amp; Kill Switch · Sapphire Lens &amp; DLC Titanium
+    </text>
+  </g>
+</svg>
