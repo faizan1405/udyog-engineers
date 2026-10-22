@@ -30,12 +30,13 @@ export function AppImage({
   ...props
 }: AppImageProps) {
   const finalSrc = assetPath(src ? String(src) : fallbackSrc);
+  const defaultFit = className?.includes("object-") ? "" : "object-cover";
 
   if (aspectRatioClass) {
     return (
       <div
         className={cn(
-          "relative overflow-hidden bg-surface-secondary",
+          "relative overflow-hidden",
           aspectRatioClass,
           containerClassName
         )}
@@ -46,7 +47,7 @@ export function AppImage({
           fill
           sizes={sizes}
           priority={priority}
-          className={cn("object-cover transition-opacity duration-300", className)}
+          className={cn(defaultFit, "transition-opacity duration-300", className)}
           {...props}
         />
       </div>
@@ -59,7 +60,7 @@ export function AppImage({
       alt={alt}
       sizes={sizes}
       priority={priority}
-      className={className}
+      className={cn(defaultFit, className)}
       {...props}
     />
   );

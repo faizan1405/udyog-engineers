@@ -40,8 +40,6 @@
 | Seek CompactPRO | `/images/products/seek-compactpro/hero.webp` | Exact Verified Model | Official Manufacturer Media | Authorized Catalogue Reference | Verified |
 | Seek CompactPRO XR | `/images/products/seek-compactpro-xr/hero.webp` | Exact Verified Model | Official Manufacturer Media | Authorized Catalogue Reference | Verified |
 | Seek FirePRO 300 | `/images/products/seek-firepro-300/hero.webp` | Exact Verified Model | Official Manufacturer Media | Authorized Catalogue Reference | Verified |
-| [DEMO PLACEHOLDER] Precision Survey Binocular 10x42 | `/images/products/placeholder-product.svg` | Demo Mockup | Internal Prototype Visual | Development Only | Excluded from Production |
-| [DEMO PLACEHOLDER] Handheld Thermal Imager 640 | `/images/products/placeholder-product.svg` | Demo Mockup | Internal Prototype Visual | Development Only | Excluded from Production |
 | Garmin Foretrex 701 Ballistic Edition | `/images/products/garmin-foretrex-701-ballistic/hero.webp` | Exact Verified Model | Garmin Official CDN / Product Media | Authorized Catalogue Reference | Verified |
 | Garmin Foretrex 801 | `/images/products/garmin-foretrex-801/hero.webp` | Exact Verified Model | Garmin Official CDN / Product Media | Authorized Catalogue Reference | Verified |
 | Garmin eTrex SE | `/images/products/garmin-etrex-se/hero.webp` | Exact Verified Model | Garmin Official CDN / Product Media | Authorized Catalogue Reference | Verified |

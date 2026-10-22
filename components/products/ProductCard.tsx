@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Product } from "@/types/product";
-import { AppImage } from "@/components/ui/AppImage";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { buildWhatsAppInquiryUrl } from "@/lib/whatsapp";
 import { ArrowUpRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, assetPath } from "@/lib/utils";
 import { getCategoryTheme } from "@/config/categoryThemes";
 
 export interface ProductCardProps {
@@ -35,7 +35,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
       {/* Product Image Canvas */}
       <Link
         href={`/products/${product.slug}`}
-        className="block relative aspect-[4/3] bg-surface-secondary/40 overflow-hidden p-2.5 sm:p-3"
+        className="block relative aspect-[4/3] overflow-hidden p-3 sm:p-3.5 group-hover:opacity-95 transition-opacity"
         style={{
           backgroundColor: `${theme.bgLight}66`,
         }}
@@ -48,12 +48,12 @@ export function ProductCard({ product, className }: ProductCardProps) {
           }}
         />
         <div className="relative w-full h-full flex items-center justify-center">
-          <AppImage
-            src={product.heroImage}
+          <Image
+            src={assetPath(product.heroImage)}
             alt={product.imageAlt || product.name}
-            aspectRatioClass="aspect-[4/3]"
-            containerClassName="w-full h-full bg-transparent"
-            className="transition-transform duration-500 ease-out group-hover:scale-[1.03] object-contain drop-shadow-[0_4px_12px_rgba(20,23,21,0.06)]"
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-contain p-1 sm:p-1.5 transition-transform duration-500 ease-out group-hover:scale-[1.04] drop-shadow-[0_6px_16px_rgba(20,23,21,0.08)]"
           />
         </div>
       </Link>

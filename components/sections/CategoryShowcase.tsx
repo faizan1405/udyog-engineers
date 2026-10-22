@@ -717,16 +717,32 @@ export function CategoryShowcase() {
                   >
                     <div className="flex items-center gap-3.5 min-w-0 flex-1">
                       <div
-                        className="w-11 h-11 rounded-lg flex items-center justify-center shrink-0 border"
+                        className="relative w-14 h-14 rounded-xl flex items-center justify-center shrink-0 border overflow-hidden p-1 shadow-2xs"
                         style={{ backgroundColor: th.bgLight, borderColor: th.borderLight }}
                       >
-                        <span className="font-mono text-[13px] font-semibold" style={{ color: th.accent }}>
-                          {th.index}
-                        </span>
+                        {cat.image ? (
+                          <Image
+                            src={assetPath(cat.image)}
+                            alt={cat.name}
+                            fill
+                            sizes="56px"
+                            className="object-contain p-1 drop-shadow-xs"
+                          />
+                        ) : (
+                          <span className="font-mono text-[13px] font-semibold" style={{ color: th.accent }}>
+                            {th.index}
+                          </span>
+                        )}
                       </div>
 
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-2">
+                          <span
+                            className="font-mono text-[10px] font-semibold px-1.5 py-0.5 rounded border"
+                            style={{ backgroundColor: `${th.bgLight}`, borderColor: `${th.borderLight}`, color: th.accent }}
+                          >
+                            {th.index}
+                          </span>
                           <h3 className="font-display font-semibold text-[15px] sm:text-base text-text-primary group-hover:text-brand-green transition-colors truncate">
                             {cat.name}
                           </h3>
