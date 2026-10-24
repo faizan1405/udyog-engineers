@@ -86,6 +86,13 @@ export const CATEGORIES: ProductCategory[] = [
         description: "Rugged multisport GPS smartwatches, expedition navigators, and tactical wrist-worn devices engineered for field operations and backcountry exploration.",
         order: 3,
       },
+      {
+        id: "subcat-marine-gps",
+        name: "Marine GPS",
+        slug: "marine-gps",
+        description: "Rugged floating marine handheld GPS navigators and water-resistant receivers for maritime, coastal, and wetland navigation.",
+        order: 4,
+      },
     ],
     applicationContexts: [
       "Field boundary & waypoint logging",
@@ -93,6 +100,7 @@ export const CATEGORIES: ProductCategory[] = [
       "GIS spatial data collection & field navigation",
       "Expedition navigation & outdoor trekking",
       "Tactical field operations & dual-grid positioning",
+      "Marine coastal navigation & wetland water survey",
     ],
   },
   {

@@ -364,6 +364,393 @@ export const PRODUCTS: Product[] = [
     "imageSourceType": "official-manufacturer"
   },
   {
+    "id": "garmin-etrex-22x",
+    "slug": "garmin-etrex-22x",
+    "name": "Garmin eTrex 22x",
+    "brand": "Garmin",
+    "series": "eTrex",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
+    "model": "eTrex 22x",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin.com/en-US/p/669244",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-etrex-22x/hero.webp",
+    "gallery": [
+      "/images/products/garmin-etrex-22x/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-etrex-22x/hero.webp"
+    ],
+    "shortDescription": "Rugged handheld GPS navigator with 2.2-inch 65K colour display, preloaded TopoActive maps, dual GPS and GLONASS reception, and 8 GB internal memory.",
+    "description": "The Garmin eTrex 22x delivers dependable, straightforward navigation for outdoor field surveys, forestry inspection, and expedition tracking. Featuring a sunlight-readable 2.2-inch colour display with 240 × 320 resolution, the device supports dual GPS and GLONASS satellite constellations to maintain reliable positioning in dense forest canopy and deep terrain. Preloaded with routable TopoActive maps and featuring 8 GB of internal memory with microSD card expansion, it operates for up to 25 hours on 2 AA batteries within an IPX7 water-resistant housing.",
+    "highlights": [
+      "2.2-inch sunlight-readable 65K colour display (240 × 320 pixels)",
+      "Dual GPS and GLONASS satellite constellation tracking",
+      "8 GB internal memory with microSD card expansion slot",
+      "Preloaded routable TopoActive maps for roads, trails, and waterways",
+      "Up to 25 hours continuous battery life in GPS mode on 2 AA batteries",
+      "Rugged IPX7 water-resistant construction for harsh field environments"
+    ],
+    "keyHighlights": [
+      "2.2-inch sunlight-readable 65K colour display (240 × 320 pixels)",
+      "Dual GPS and GLONASS satellite constellation tracking",
+      "8 GB internal memory with microSD card expansion slot",
+      "Preloaded routable TopoActive maps for roads, trails, and waterways",
+      "Up to 25 hours continuous battery life in GPS mode on 2 AA batteries",
+      "Rugged IPX7 water-resistant construction for harsh field environments"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.4\" × 1.7\" (3.5 × 4.4 cm); 2.2\" diag (5.6 cm)",
+        "group": "Display"
+      },
+      {
+        "label": "Display Resolution",
+        "value": "240 × 320 pixels, 65K colour transflective TFT",
+        "group": "Display"
+      },
+      {
+        "label": "GNSS Reception",
+        "value": "Dual GPS and GLONASS constellation support",
+        "group": "Positioning"
+      },
+      {
+        "label": "Internal Storage",
+        "value": "8 GB (microSD card slot up to 32 GB)",
+        "group": "Storage"
+      },
+      {
+        "label": "Waypoints / Routes",
+        "value": "2,000 waypoints, 200 routes, 10,000 track points",
+        "group": "Storage"
+      },
+      {
+        "label": "Water Rating",
+        "value": "IPX7 waterproof",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Type",
+        "value": "2 AA batteries (NiMH, Lithium, or Alkaline)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 25 hours in GPS mode",
+        "group": "Power"
+      },
+      {
+        "label": "Interface",
+        "value": "Mini USB (NMEA 0183 compatible)",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Mapping",
+        "value": "Preloaded TopoActive maps with BirdsEye Satellite Imagery support",
+        "group": "Mapping"
+      },
+      {
+        "label": "Dimensions",
+        "value": "5.4 × 10.3 × 3.3 cm (2.1\" × 4.0\" × 1.3\")",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "141.7 g (5 oz) with batteries",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Thumb-stick controller for intuitive single-handed operation in field conditions",
+      "Paperless geocaching support with direct GPX file transfer",
+      "BirdsEye Satellite Imagery subscription support for aerial photo overlay"
+    ],
+    "applications": [
+      "Forestry plot demarcation, canopy surveying, and timber inventory",
+      "Field trail reconnaissance, ecological transect logging, and wildlife habitat mapping",
+      "Rural property boundary verification and entry-level geological traverse"
+    ],
+    "relatedProducts": [
+      "garmin-etrex-32x",
+      "garmin-etrex-se",
+      "garmin-gpsmap-65s"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Garmin eTrex 22x",
+    "imageAlt": "Garmin eTrex 22x handheld GPS navigator with colour display",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02256-00/g/cf-lg-c904d488-016e-4120-9b38-f6f4a88b8d3f.jpg",
+    "imageSourceType": "official-manufacturer"
+  },
+  {
+    "id": "garmin-gpsmap-65s",
+    "slug": "garmin-gpsmap-65s",
+    "name": "Garmin GPSMAP 65s",
+    "brand": "Garmin",
+    "series": "GPSMAP",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "Handheld GPS",
+    "subcategorySlug": "handheld-gps",
+    "model": "GPSMAP 65s",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin.com/en-US/p/715072/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-gpsmap-65s/hero.webp",
+    "gallery": [
+      "/images/products/garmin-gpsmap-65s/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-gpsmap-65s/hero.webp"
+    ],
+    "shortDescription": "Rugged multi-band GNSS handheld navigator with 2.6-inch colour display, preloaded TopoActive maps, barometric altimeter, and 3-axis compass.",
+    "description": "The Garmin GPSMAP 65s provides high-accuracy positioning in challenging environments using multi-band technology and expanded GNSS support (GPS, GLONASS, Galileo, QZSS, and IRNSS). Featuring a 2.6-inch sunlight-readable colour display and classic quad-helix antenna, the 65s integrates full ABC sensors including a barometric altimeter and tilt-compensated 3-axis compass. Preloaded with routable TopoActive maps, 16 GB internal storage, and Bluetooth/ANT+ connectivity for the Garmin Explore platform, it runs up to 16 hours on 2 AA batteries with an IPX7 waterproof rating.",
+    "highlights": [
+      "Multi-band GNSS technology (GPS, GLONASS, Galileo, QZSS, IRNSS) for optimal precision",
+      "2.6-inch sunlight-readable 65K colour display (160 × 240 pixels)",
+      "ABC sensors: Barometric altimeter and tilt-compensated 3-axis electronic compass",
+      "Preloaded routable TopoActive maps with terrain contours and points of interest",
+      "16 GB internal storage with microSD card expansion slot",
+      "Wireless connectivity via Bluetooth and ANT+ with Garmin Explore app support"
+    ],
+    "keyHighlights": [
+      "Multi-band GNSS technology (GPS, GLONASS, Galileo, QZSS, IRNSS) for optimal precision",
+      "2.6-inch sunlight-readable 65K colour display (160 × 240 pixels)",
+      "ABC sensors: Barometric altimeter and tilt-compensated 3-axis electronic compass",
+      "Preloaded routable TopoActive maps with terrain contours and points of interest",
+      "16 GB internal storage with microSD card expansion slot",
+      "Wireless connectivity via Bluetooth and ANT+ with Garmin Explore app support"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.43\" × 2.15\" (3.6 × 5.5 cm); 2.6\" diag (6.6 cm)",
+        "group": "Display"
+      },
+      {
+        "label": "Display Resolution",
+        "value": "160 × 240 pixels, transflective 65K colour TFT",
+        "group": "Display"
+      },
+      {
+        "label": "GNSS Reception",
+        "value": "Multi-band, multi-constellation (GPS, GLONASS, Galileo, QZSS, IRNSS)",
+        "group": "Positioning"
+      },
+      {
+        "label": "Antenna Type",
+        "value": "External quad-helix antenna for high-sensitivity reception",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "Barometric altimeter, 3-axis tilt-compensated electronic compass",
+        "group": "Sensors"
+      },
+      {
+        "label": "Internal Storage",
+        "value": "16 GB internal storage (microSD card slot up to 32 GB)",
+        "group": "Storage"
+      },
+      {
+        "label": "Waypoints / Routes",
+        "value": "5,000 waypoints, 200 routes, 10,000 track points",
+        "group": "Storage"
+      },
+      {
+        "label": "Water Rating",
+        "value": "IPX7 waterproof standard",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Type",
+        "value": "2 AA batteries (NiMH, Lithium, or Alkaline; NiMH pack compatible)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 16 hours in GPS mode",
+        "group": "Power"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth, ANT+, and Mini USB",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Dimensions",
+        "value": "6.1 × 16.0 × 3.6 cm (2.4\" × 6.3\" × 1.4\")",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "217 g (7.7 oz) with batteries",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Multi-band frequency reception for superior tracking in deep canyons and dense tree canopy",
+      "Smart notifications and cloud synchronization with the Garmin Explore mobile app",
+      "Geocaching Live integration for paperless field searching and automatic updates"
+    ],
+    "applications": [
+      "High-precision cadastral boundary survey and topographical fieldwork",
+      "Forestry timber cruise, watershed mapping, and steep canyon navigation",
+      "Search and rescue deployment, mining reconnaissance, and institutional research"
+    ],
+    "relatedProducts": [
+      "garmin-gpsmap-67",
+      "garmin-etrex-32x",
+      "garmin-gpsmap-79s"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Garmin GPSMAP 65s",
+    "imageAlt": "Garmin GPSMAP 65s multi-band GNSS handheld GPS navigator",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02451-10/g/cf-lg-c69aa526-2abe-4c3c-971b-f6fb393eca08.jpg",
+    "imageSourceType": "official-manufacturer"
+  },
+  {
+    "id": "garmin-gpsmap-79s",
+    "slug": "garmin-gpsmap-79s",
+    "name": "Garmin GPSMAP 79s",
+    "brand": "Garmin",
+    "series": "GPSMAP",
+    "category": "GPS",
+    "categorySlug": "gps",
+    "subcategory": "Marine GPS",
+    "subcategorySlug": "marine-gps",
+    "model": "GPSMAP 79s",
+    "manufacturer": "Garmin Ltd.",
+    "sourceManufacturer": "Garmin Ltd.",
+    "sourceUrl": "https://www.garmin.com/en-GB/p/775910/",
+    "verificationStatus": "manufacturer-verified",
+    "status": "verified",
+    "heroImage": "/images/products/garmin-gpsmap-79s/hero.webp",
+    "gallery": [
+      "/images/products/garmin-gpsmap-79s/hero.webp"
+    ],
+    "galleryImages": [
+      "/images/products/garmin-gpsmap-79s/hero.webp"
+    ],
+    "shortDescription": "Rugged floating marine handheld GPS navigator with 3.0-inch sunlight-readable colour display, worldwide basemap, tilt-compensated compass, and multi-GNSS tracking.",
+    "description": "Built specifically for marine environments, coastal navigation, and wetland surveys, the Garmin GPSMAP 79s features a rugged, buoyant chassis that floats if accidentally dropped overboard. It boasts a 3.0-inch sunlight-readable colour display with scratch-resistant, bonded fogproof glass. Equipped with multi-GNSS constellation support (GPS, GLONASS, Galileo, QZSS, SBAS, BeiDou) and a 3-axis tilt-compensated electronic compass, the 79s includes a worldwide basemap, 8 GB of internal memory with microSD expansion for optional cartography, and up to 19 hours of battery life on 2 AA batteries.",
+    "highlights": [
+      "Buoyant floating design rated to IPX7 waterproof standards",
+      "Large 3.0-inch sunlight-readable colour display (240 × 400 pixels) with fogproof glass",
+      "Multi-GNSS reception (GPS, GLONASS, Galileo, QZSS, SBAS, BeiDou)",
+      "Tilt-compensated 3-axis electronic compass provides heading while stationary",
+      "Worldwide basemap with support for optional marine and topographic charts",
+      "Up to 19 hours of continuous battery life in GPS mode on 2 AA batteries"
+    ],
+    "keyHighlights": [
+      "Buoyant floating design rated to IPX7 waterproof standards",
+      "Large 3.0-inch sunlight-readable colour display (240 × 400 pixels) with fogproof glass",
+      "Multi-GNSS reception (GPS, GLONASS, Galileo, QZSS, SBAS, BeiDou)",
+      "Tilt-compensated 3-axis electronic compass provides heading while stationary",
+      "Worldwide basemap with support for optional marine and topographic charts",
+      "Up to 19 hours of continuous battery life in GPS mode on 2 AA batteries"
+    ],
+    "specifications": [
+      {
+        "label": "Display Size",
+        "value": "1.5\" W × 2.5\" H (3.8 × 6.3 cm); 3.0\" diag (7.6 cm)",
+        "group": "Display"
+      },
+      {
+        "label": "Display Resolution",
+        "value": "240 × 400 pixels, transflective 65K colour TFT",
+        "group": "Display"
+      },
+      {
+        "label": "Display Glass",
+        "value": "Bonded, scratch-resistant, fogproof chemically strengthened glass",
+        "group": "Display"
+      },
+      {
+        "label": "GNSS Reception",
+        "value": "Multi-GNSS (GPS, GLONASS, Galileo, QZSS, SBAS, BeiDou)",
+        "group": "Positioning"
+      },
+      {
+        "label": "Sensors",
+        "value": "3-axis tilt-compensated electronic compass",
+        "group": "Sensors"
+      },
+      {
+        "label": "Mapping",
+        "value": "Worldwide basemap (supports optional BlueChart g3 marine charts and custom maps)",
+        "group": "Mapping"
+      },
+      {
+        "label": "Internal Storage",
+        "value": "8 GB internal memory (microSD card slot up to 32 GB)",
+        "group": "Storage"
+      },
+      {
+        "label": "Waypoints / Routes",
+        "value": "10,000 waypoints, 250 routes, 20,000 track points",
+        "group": "Storage"
+      },
+      {
+        "label": "Water Rating",
+        "value": "IPX7 (buoyant; floats in freshwater and seawater)",
+        "group": "Durability"
+      },
+      {
+        "label": "Battery Type",
+        "value": "2 AA batteries (NiMH or Lithium recommended)",
+        "group": "Power"
+      },
+      {
+        "label": "Battery Life",
+        "value": "Up to 19 hours in GPS mode",
+        "group": "Power"
+      },
+      {
+        "label": "Interface",
+        "value": "High-speed Micro USB and NMEA 0183 compatible",
+        "group": "Connectivity"
+      },
+      {
+        "label": "Dimensions",
+        "value": "6.77 × 17.40 × 4.23 cm (2.67\" × 6.85\" × 1.67\")",
+        "group": "Physical"
+      },
+      {
+        "label": "Weight",
+        "value": "282 g (9.95 oz) with batteries",
+        "group": "Physical"
+      }
+    ],
+    "features": [
+      "Positive buoyancy engineering ensures the device floats if dropped in water",
+      "Bonded display construction prevents internal condensation and condensation fogging",
+      "Supports optional BlueChart g3 coastal cartography and LakeVü HD mapping via microSD"
+    ],
+    "applications": [
+      "Inshore coastal navigation, river basin surveys, and wetland inspection",
+      "Maritime fisheries patrolling, boat safety backup, and harbor navigation",
+      "Amphibious operations, flood relief positioning, and marine environmental monitoring"
+    ],
+    "relatedProducts": [
+      "garmin-gps-12h",
+      "garmin-gpsmap-65s",
+      "garmin-gpsmap-67"
+    ],
+    "featured": false,
+    "inquiryLabel": "Inquire About Garmin GPSMAP 79s",
+    "imageAlt": "Garmin GPSMAP 79s floating marine handheld GPS navigator",
+    "imageSourceUrl": "https://res.garmin.com/en/products/010-02635-00/v/cf-lg-0f2560a6-e475-4fd0-99b4-a3921af2c86d-1.jpg",
+    "imageSourceType": "official-manufacturer"
+  },
+  {
     "id": "garmin-etrex-32x",
     "slug": "garmin-etrex-32x",
     "name": "Garmin eTrex 32x",

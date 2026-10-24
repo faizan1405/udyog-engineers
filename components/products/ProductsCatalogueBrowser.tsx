@@ -33,6 +33,12 @@ function isSubcategoryMatch(productSlug?: string, targetSlug?: string): boolean 
   ) {
     return true;
   }
+  if (
+    (p === "marine-gps" || p === "garmin-marine-gps") &&
+    (t === "marine-gps" || t === "garmin-marine-gps")
+  ) {
+    return true;
+  }
   return false;
 }
 
